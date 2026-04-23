@@ -1,5 +1,6 @@
 *.bin
+*.nro
 output/
 __pycache__/
 .vscode/
-*.xlsx*
+dictionary.xlsx
