@@ -26,9 +26,10 @@ from src.core.validator import validate
 from src.core.ai_client import translate_batch
 
 ROOT = Path(__file__).resolve().parent.parent
-DICT_PATH = ROOT / "dictionary.xlsx"
-UA_CSV = ROOT / "ua.csv"
-LANG_JSON = ROOT / "languages.json"
+DATA_DIR = ROOT / "data"
+DICT_PATH = DATA_DIR / "dictionary.xlsx"
+UA_CSV = DATA_DIR / "ua.csv"
+LANG_JSON = DATA_DIR / "languages.json"
 OUTPUT_DIR = ROOT / "output"
 BUILD_SCRIPT = ROOT / "scripts" / "build_translation_bin.py"
 
