@@ -5,7 +5,7 @@
 ## User Review Required
 
 > [!IMPORTANT]
-> **Gemini Proxy URL**: Використовується `http://127.0.0.1:2048/v1/chat/completions`.
+> **Gemini Proxy**: Використовується `http://127.0.0.1:2048`. Детальний опис API див. у [gemini_proxy.md](file:///d:/git/dev/dbi_patcher/gemini_proxy.md).
 > **Модель**: `gemini-flash-lite-latest`.
 > **Бібліотека openpyxl**: Необхідна для роботи з Excel.
 
