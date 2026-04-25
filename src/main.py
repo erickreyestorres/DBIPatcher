@@ -216,6 +216,16 @@ def cmd_translate() -> None:
     for idx, (row, original, missing) in enumerate(rows_to_translate, 1):
         print(f"  [Row {row} | {idx}/{total_rows}] {original[:50]}  -> {len(missing)} langs")
 
+        # Skip AI translation for strings without Cyrillic — copy as-is
+        import re as _re
+        if not _re.search(r'[а-яА-ЯёЁіІїЇєЄґҐ]', original):
+            for lc in missing:
+                ws.cell(row, col_map[lc], original)
+                total_translated += 1
+            save_workbook(wb)
+            print(f"    [Row {row} | {idx}/{total_rows}] No Cyrillic — copied as-is.")
+            continue
+
         try:
             results = translate_batch(original, missing, row_id=row)
         except Exception as e:
