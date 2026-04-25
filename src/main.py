@@ -299,7 +299,8 @@ def cmd_translate() -> None:
 # ── validate ─────────────────────────────────────────────────────────
 
 def cmd_validate() -> None:
-    """Validate all translations in the dictionary."""
+    """Validate all translations in the dictionary using advanced Validator."""
+    from src.core.validator import Validator
     langs = load_languages()
     wb = open_or_create_workbook()
     ws = wb[SHEET_NAME]
@@ -307,26 +308,36 @@ def cmd_validate() -> None:
     header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
     col_map = {h: i + 1 for i, h in enumerate(header) if h}
 
+    # Pass BLOCK_JSON to validator for regex-aware checks
+    validator = Validator(str(BLOCK_JSON) if BLOCK_JSON.exists() else None)
+
     errors = 0
     checked = 0
+
+    print(f"Starting validation for {len([l for l in langs if l != 'ru'])} languages...")
 
     for row in range(2, ws.max_row + 1):
         original = ws.cell(row, col_map["Original"]).value
         if not original:
             continue
+        original_str = str(original)
+        
         for lc in langs:
             if lc not in col_map or lc == "ru":
                 continue
             translation = ws.cell(row, col_map[lc]).value
             if not translation:
                 continue
-            ok, msg = validate(original, str(translation), lc)
+            
             checked += 1
-            if not ok:
-                errors += 1
-                print(f"  [Row {row}][{lc}] {msg}")
+            row_errors = validator.validate_row(original_str, str(translation))
+            if row_errors:
+                errors += len(row_errors)
+                print(f"  [Row {row}][{lc}] Error(s):")
+                for err in row_errors:
+                    print(f"    - {err}")
 
-    print(f"Validation done. Checked: {checked}, Errors: {errors}")
+    print(f"\nValidation complete. Checked translations: {checked}, Total issues found: {errors}")
 
 
 # ── export ───────────────────────────────────────────────────────────
@@ -388,10 +399,10 @@ def cmd_build() -> None:
     print("Build done.")
 
 
-# ── align ────────────────────────────────────────────────────────────
-
 def cmd_align() -> None:
-    """Align colons in blocks defined in data/blocks.json."""
+    """Align colons in blocks defined in data/blocks.json (regex-based)."""
+    import re as _re
+
     blocks = load_blocks()
     if not blocks:
         print("No blocks defined in blocks.json.")
@@ -403,82 +414,100 @@ def cmd_align() -> None:
     header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
     col_map = {h: i + 1 for i, h in enumerate(header) if h}
 
-    # Invert blocks for quick lookup: { "OriginalText": "BlockID" }
-    row_to_block = {}
-    for bid, texts in blocks.items():
-        for t in texts:
-            row_to_block[t] = bid
-
-    # Collect all rows that belong to blocks
-    # grouped_data[block_id][lang_code] = list of (row_idx, current_val)
-    grouped_data = {}
-
+    # Cache all Original values for faster regex matching
+    originals = {}  # row -> original_str
     for row in range(2, ws.max_row + 1):
-        original = ws.cell(row, col_map["Original"]).value
-        if not original or original not in row_to_block:
-            continue
-        
-        bid = row_to_block[original]
-        if bid not in grouped_data:
-            grouped_data[bid] = {}
+        val = ws.cell(row, col_map["Original"]).value
+        if val:
+            originals[row] = str(val).strip()
 
-        for lc in langs:
-            if lc not in col_map or lc == "ru":
+    # Build grouped_data[block_id] = list of matched row indices
+    grouped_data = {}  # block_id -> [row_idx, ...]
+
+    for bid, patterns in blocks.items():
+        matched_rows = []
+        for pattern in patterns:
+            try:
+                regex = _re.compile(pattern, _re.IGNORECASE)
+            except _re.error as e:
+                print(f"  [WARN] Invalid regex in block {bid}: {pattern} -> {e}")
                 continue
-            if lc not in grouped_data[bid]:
-                grouped_data[bid][lc] = []
-            
-            val = ws.cell(row, col_map[lc]).value
-            if val:
-                grouped_data[bid][lc].append((row, str(val)))
+
+            found = False
+            for row, orig_val in originals.items():
+                if regex.search(orig_val):
+                    matched_rows.append(row)
+                    found = True
+                    break
+
+            if not found:
+                print(f"  [WARN] Pattern not found for block {bid}: {pattern[:50]}...")
+
+        if matched_rows:
+            grouped_data[bid] = matched_rows
 
     if not grouped_data:
-        print("No rows found matching blocks.json.")
+        print("No rows found matching blocks.json patterns.")
         return
 
-    affected_count = 0
-    for bid, lang_dict in grouped_data.items():
-        for lc, rows in lang_dict.items():
-            if not rows:
-                continue
+    # Language columns to process (all except 'ru' and 'Original')
+    lang_cols = {lc: col_map[lc] for lc in langs if lc in col_map and lc != "ru"}
+    # Also always process Original column
+    lang_cols["Original"] = col_map["Original"]
 
-            # Find max length before first colon
-            # Note: we use detokenize to get real character count (approx)
-            # but usually labels don't have many tokens.
-            max_prefix = 0
+    affected_count = 0
+
+    for bid, matched_rows in grouped_data.items():
+        print(f"  Aligning block: {bid} ({len(matched_rows)} rows)")
+
+        for lc, col_idx in lang_cols.items():
+            # 1. Collect prefix lengths for this language in this block
+            max_prefix_len = 0
             row_parts = []
 
-            for row_idx, val in rows:
-                if ":" in val:
-                    prefix, suffix = val.split(":", 1)
-                    # Detokenize to count visual length accurately
-                    visual_prefix = detokenize(prefix.strip())
-                    max_prefix = max(max_prefix, len(visual_prefix))
-                    row_parts.append((row_idx, prefix.strip(), suffix))
-                else:
-                    # No colon? Skip alignment for this row but keep it in list
-                    row_parts.append((row_idx, None, val))
+            for row_idx in matched_rows:
+                val = ws.cell(row_idx, col_idx).value
+                if not val:
+                    continue
+                val_str = str(val).strip()
 
-            # Apply padding
+                if ":" in val_str:
+                    prefix, suffix = val_str.split(":", 1)
+                    clean_prefix = prefix.rstrip()  # remove trailing spaces before colon
+                    visual_len = len(detokenize(clean_prefix))
+                    max_prefix_len = max(max_prefix_len, visual_len)
+                    row_parts.append((row_idx, clean_prefix, suffix))
+                else:
+                    row_parts.append((row_idx, None, val_str))
+
+            if max_prefix_len == 0:
+                continue
+
+            # 2. Apply padding so all colons line up
+            target_len = max_prefix_len + 1  # at least 1 space before colon
+
             for row_idx, prefix, suffix in row_parts:
-                if prefix is not None:
-                    # Pad prefix back. We need to handle tokens.
-                    # Simplest: pad detokenized prefix, then re-tokenize?
-                    # But usually prefixes are just text. 
-                    # Let's pad and re-join.
-                    padded_prefix = detokenize(prefix).ljust(max_prefix)
-                    # We re-tokenize just in case, though padding spaces shouldn't affect tokens
-                    new_val = f"{tokenize(padded_prefix)}:{suffix}"
-                    if ws.cell(row_idx, col_map[lc]).value != new_val:
-                        ws.cell(row_idx, col_map[lc]).value = new_val
-                        affected_count += 1
+                if prefix is None:
+                    continue
+
+                current_visual_len = len(detokenize(prefix))
+                padding = target_len - current_visual_len
+                if padding < 1:
+                    padding = 1
+
+                new_val = f"{prefix}{' ' * padding}:{suffix}"
+                old_val = ws.cell(row_idx, col_idx).value
+                if old_val != new_val:
+                    ws.cell(row_idx, col_idx).value = new_val
+                    affected_count += 1
 
     if affected_count > 0:
         ver = bump_version(wb)
         save_workbook(wb)
-        print(f"Alignment done. Adjusted {affected_count} cells. Version: {ver}")
+        print(f"\nAlignment done. Adjusted {affected_count} cells. Version: {ver}")
     else:
-        print("Alignment done. No changes needed.")
+        print("\nAlignment done. No changes needed.")
+
 
 
 # ── clear ────────────────────────────────────────────────────────────
