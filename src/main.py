@@ -186,8 +186,7 @@ def cmd_translate() -> None:
         shadok_lines = shadok_config["lines"]
         max_line_len = shadok_config["max_line_length"]
 
-        # Build lookup: shadok_line -> index in ordered list
-        # Find each shadok line's row in the dictionary
+        # Build lookup and populate shadok_row_set (always, even if translated)
         shadok_rows = []  # list of (order_index, row_idx, original_text)
         excel_lookup = {}
         for row in range(2, ws.max_row + 1):
@@ -200,69 +199,79 @@ def cmd_translate() -> None:
                 shadok_rows.append((i, excel_lookup[line], line))
                 shadok_row_set.add(excel_lookup[line])
 
-        # Check which shadok rows need translation
-        shadok_missing_langs = set()
-        for _, row_idx, _ in shadok_rows:
-            for lc in lang_codes:
-                cell_val = ws.cell(row_idx, col_map[lc]).value
-                if not cell_val or not str(cell_val).strip():
-                    shadok_missing_langs.add(lc)
+        # Check translated flag
+        if shadok_config.get("translated", False):
+            print(f"  [SHADOK] Already translated (flag in shadok.json). Skipping {len(shadok_row_set)} rows.")
+        else:
+            # Check which shadok rows need translation
+            shadok_missing_langs = set()
+            for _, row_idx, _ in shadok_rows:
+                for lc in lang_codes:
+                    cell_val = ws.cell(row_idx, col_map[lc]).value
+                    if not cell_val or not str(cell_val).strip():
+                        shadok_missing_langs.add(lc)
 
-        if shadok_missing_langs:
-            shadok_missing_langs = sorted(shadok_missing_langs)
-            print()
-            print("=" * 60)
-            print("  SHADOK BLOCK TRANSLATION")
-            print("=" * 60)
-            print(f"  Lines: {len(shadok_rows)}, Missing langs: {len(shadok_missing_langs)}")
-            print(f"  Max line length: {max_line_len}")
-            print("-" * 60)
+            if shadok_missing_langs:
+                shadok_missing_langs = sorted(shadok_missing_langs)
+                print()
+                print("=" * 60)
+                print("  SHADOK BLOCK TRANSLATION")
+                print("=" * 60)
+                print(f"  Lines: {len(shadok_rows)}, Missing langs: {len(shadok_missing_langs)}")
+                print(f"  Max line length: {max_line_len}")
+                print("-" * 60)
 
-            # Init special shadok session
-            init_session_shadok()
+                # Init special shadok session
+                init_session_shadok()
 
-            # Join all lines into one text
-            full_text = "\n".join(line for _, _, line in shadok_rows)
+                # Join all lines into one text
+                full_text = "\n".join(line for _, _, line in shadok_rows)
 
-            try:
-                results = translate_shadok_block(full_text, shadok_missing_langs, max_line_len)
+                try:
+                    results = translate_shadok_block(full_text, shadok_missing_langs, max_line_len)
 
-                # Split results and write to dictionary
-                for lc in shadok_missing_langs:
-                    translated_text = results.get(lc, "")
-                    if not translated_text:
-                        print(f"  [SHADOK][{lc}] Empty translation, skipping.")
-                        continue
+                    # Split results and write to dictionary
+                    for lc in shadok_missing_langs:
+                        translated_text = results.get(lc, "")
+                        if not translated_text:
+                            print(f"  [SHADOK][{lc}] Empty translation, skipping.")
+                            continue
 
-                    # Split translated text into lines
-                    trans_lines = translated_text.split("\n")
+                        # Split translated text into lines
+                        trans_lines = translated_text.split("\n")
 
-                    # Enforce max line count
-                    if len(trans_lines) > len(shadok_rows):
-                        trans_lines = trans_lines[:len(shadok_rows)]
+                        # Enforce max line count
+                        if len(trans_lines) > len(shadok_rows):
+                            trans_lines = trans_lines[:len(shadok_rows)]
 
-                    # Write each translated line to its corresponding row
-                    for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
-                        if line_idx < len(trans_lines):
-                            line = trans_lines[line_idx]
-                            # Enforce max line length
-                            if len(line) > max_line_len:
-                                line = line[:max_line_len]
-                            ws.cell(row_idx, col_map[lc], line)
-                        else:
-                            # Fewer translated lines than original — leave empty
-                            ws.cell(row_idx, col_map[lc], "")
+                        # Write each translated line to its corresponding row
+                        for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
+                            if line_idx < len(trans_lines):
+                                line = trans_lines[line_idx]
+                                # Enforce max line length
+                                if len(line) > max_line_len:
+                                    line = line[:max_line_len]
+                                ws.cell(row_idx, col_map[lc], line)
+                            else:
+                                # Fewer translated lines than original — leave empty
+                                ws.cell(row_idx, col_map[lc], "")
 
-                    print(f"  [SHADOK][{lc}] Written {min(len(trans_lines), len(shadok_rows))} lines.")
+                        print(f"  [SHADOK][{lc}] Written {min(len(trans_lines), len(shadok_rows))} lines.")
 
-                save_workbook(wb)
-                print("  [SHADOK] Saved to dictionary.")
+                    save_workbook(wb)
+                    print("  [SHADOK] Saved to dictionary.")
 
-            except Exception as e:
-                print(f"  [SHADOK] ERROR: {e}")
+                    # Set translated flag in shadok.json
+                    shadok_config["translated"] = True
+                    with SHADOK_JSON.open("w", encoding="utf-8") as f:
+                        json.dump(shadok_config, f, ensure_ascii=False, indent=2)
+                    print("  [SHADOK] Flag 'translated' set to true in shadok.json.")
 
-            print("=" * 60)
-            print()
+                except Exception as e:
+                    print(f"  [SHADOK] ERROR: {e}")
+
+                print("=" * 60)
+                print()
 
     # ── Scan: count rows that need translation (excluding shadoks) ───
     rows_to_translate = []
