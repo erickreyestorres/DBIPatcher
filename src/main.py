@@ -337,7 +337,27 @@ def cmd_validate() -> None:
                 for err in row_errors:
                     print(f"    - {err}")
 
-    print(f"\nValidation complete. Checked translations: {checked}, Total issues found: {errors}")
+    print(f"\n--- Translation checks: {checked} checked, {errors} issues ---")
+
+    # Phase 2: Regex block validation (blocks.json patterns vs Original column)
+    if validator.compiled_blocks:
+        print("\nRunning regex block validation (blocks.json)...")
+        originals = {}
+        for row in range(2, ws.max_row + 1):
+            val = ws.cell(row, col_map["Original"]).value
+            if val:
+                originals[row] = str(val).strip()
+
+        block_errors = validator.validate_blocks(originals)
+        if block_errors:
+            errors += len(block_errors)
+            for err in block_errors:
+                print(f"  {err}")
+            print(f"--- Block regex checks: {len(block_errors)} issues ---")
+        else:
+            print("--- Block regex checks: all OK ---")
+
+    print(f"\nValidation complete. Total issues: {errors}")
 
 
 # ── export ───────────────────────────────────────────────────────────
