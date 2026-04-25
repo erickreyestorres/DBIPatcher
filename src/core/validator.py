@@ -51,9 +51,9 @@ class Validator:
         return None
 
     def check_brackets(self, translation):
-        """Checks balanced brackets."""
+        """Checks balanced round and square brackets (NOT curly — those are format specifiers)."""
         stack = []
-        brackets = {"(": ")", "[": "]", "{": "}"}
+        brackets = {"(": ")", "[": "]"}
         for char in translation:
             if char in brackets:
                 stack.append(char)

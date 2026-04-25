@@ -266,14 +266,24 @@ def cmd_translate() -> None:
         row_fail = 0
         for lc in missing:
             translation = results.get(lc, "")
-            if translation and translation.strip():
-                ok, msg = validate(original, translation, lc)
-                if not ok and "English preservation" in msg:
-                    translation = original
+            if not translation or not translation.strip():
+                total_failed += 1
+                row_fail += 1
+                continue
+            
+            ok, msg = validate(original, translation, lc)
+            if ok:
                 ws.cell(row, col_map[lc], translation)
                 total_translated += 1
                 row_ok += 1
+            elif "English preservation" in msg:
+                # ASCII-only text should stay as original
+                ws.cell(row, col_map[lc], original)
+                total_translated += 1
+                row_ok += 1
             else:
+                # Invalid translation — do NOT write to Excel
+                print(f"    [Row {row}][{lc}] SKIPPED (invalid): {msg}")
                 total_failed += 1
                 row_fail += 1
 
