@@ -111,7 +111,14 @@ def init_session() -> None:
 
 
 def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = None) -> dict[str, str]:
-    """Translate text. Sends only user message."""
+    """Translate text with automatic retry and session recovery.
+    
+    On failure:
+      1. Retry up to 2 times in the current session.
+      2. If both retries fail, reinitialize the session (new chat + system instructions)
+         and retry once more.
+    """
+    import time
 
     user_content = json.dumps(
         {"text": text, "languages": target_langs}, ensure_ascii=False
@@ -123,26 +130,54 @@ def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = 
         "stream": False,
     }
 
-    resp_text = "N/A"
-    try:
-        resp = requests.post(API_URL, json=payload, timeout=TIMEOUT)
-        resp_text = resp.text
+    MAX_RETRIES = 2
+    last_error = None
 
-        if resp.status_code != 200:
-            print(f"  [Row {row_id}] Proxy error {resp.status_code}")
-            _log_interaction(payload, resp_text, row_id=row_id)
-            resp.raise_for_status()
-
-        data = resp.json()
-        content = data["choices"][0]["message"]["content"]
-        _log_interaction(payload, resp_text, row_id=row_id)
-        return _extract_json(content)
-
-    except Exception as e:
-        if resp_text == "N/A" and "resp" in locals():
+    for attempt in range(MAX_RETRIES + 1):
+        resp_text = "N/A"
+        try:
+            resp = requests.post(API_URL, json=payload, timeout=TIMEOUT)
             resp_text = resp.text
-        _log_interaction(payload, resp_text, row_id=row_id)
-        raise
+
+            if resp.status_code != 200:
+                print(f"  [Row {row_id}] Proxy error {resp.status_code} (attempt {attempt + 1})")
+                _log_interaction(payload, resp_text, row_id=row_id)
+                raise requests.HTTPError(f"Status {resp.status_code}")
+
+            data = resp.json()
+            content = data["choices"][0]["message"]["content"]
+            _log_interaction(payload, resp_text, row_id=row_id)
+            return _extract_json(content)
+
+        except Exception as e:
+            last_error = e
+            if resp_text == "N/A" and "resp" in locals():
+                resp_text = getattr(resp, 'text', 'N/A')
+            _log_interaction(payload, resp_text, row_id=row_id)
+
+            if attempt < MAX_RETRIES:
+                wait = 2 * (attempt + 1)
+                print(f"  [Row {row_id}] Retry {attempt + 1}/{MAX_RETRIES} in {wait}s...")
+                time.sleep(wait)
+            else:
+                # Both retries failed — session is likely broken
+                print(f"  [Row {row_id}] All {MAX_RETRIES} retries failed. Reinitializing session...")
+                try:
+                    init_session()
+                    time.sleep(1)
+                    # One final attempt with fresh session
+                    resp = requests.post(API_URL, json=payload, timeout=TIMEOUT)
+                    resp_text = resp.text
+                    if resp.status_code == 200:
+                        data = resp.json()
+                        content = data["choices"][0]["message"]["content"]
+                        _log_interaction(payload, resp_text, row_id=row_id)
+                        return _extract_json(content)
+                except Exception as recovery_error:
+                    print(f"  [Row {row_id}] Session recovery also failed: {recovery_error}")
+                    _log_interaction(payload, str(recovery_error), row_id=row_id)
+
+    raise RuntimeError(f"Translation failed after {MAX_RETRIES} retries + session recovery: {last_error}")
 
 
 def refine(correction: str, target_langs: list[str], row_id: Optional[int] = None) -> dict[str, str]:
