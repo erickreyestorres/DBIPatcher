@@ -110,6 +110,116 @@ def init_session() -> None:
     print(f"  [INIT] Ready!")
 
 
+SHADOK_SYSTEM_PROMPT = """\
+You are a literary translator. You will receive a Russian text that is a single cohesive literary passage (an easter egg from a Nintendo Switch app).
+
+INPUT FORMAT (JSON):
+{"text": "<full_russian_text>", "languages": ["<lang_code>", ...], "max_line_length": <number>}
+
+OUTPUT FORMAT (JSON only, nothing else):
+{"<lang_code>": "<translated_full_text>", ...}
+
+STRICT RULES:
+1. Translate the ENTIRE text as ONE literary passage. Preserve the narrative flow, humor, and style.
+2. Output ONLY the JSON object. No explanations, no thinking, no markdown.
+3. Each translated text must be a single string with newlines (\\n) separating lines.
+4. Each line in the translation MUST NOT exceed max_line_length characters.
+5. Do NOT add extra lines. Keep line count equal to or less than the original.
+6. Preserve proper names: Shadoks=Шадоки, Gibis=Гібі (adapt to target language).
+7. Preserve numbers (999999) as-is.
+8. Do NOT wrap output in ```json``` blocks.
+"""
+
+
+def init_session_shadok() -> None:
+    """Initialize a NEW chat session with shadok-specific system instructions."""
+    print("  [SHADOK-INIT] Creating new chat for Shadok block...")
+    try:
+        requests.post(NEW_CHAT_URL, timeout=15)
+    except Exception as e:
+        print(f"  [SHADOK-INIT] WARNING: new-chat failed: {e}")
+
+    print(f"  [SHADOK-INIT] Switching model -> {MODEL}...")
+    try:
+        requests.post(SWITCH_MODEL_URL, json={"model": MODEL}, timeout=30)
+    except Exception as e:
+        print(f"  [SHADOK-INIT] WARNING: switch-model failed: {e}")
+
+    print(f"  [SHADOK-INIT] Setting Shadok system instructions...")
+    try:
+        requests.post(
+            SYSTEM_INSTRUCTIONS_URL,
+            json={"content": SHADOK_SYSTEM_PROMPT},
+            timeout=15,
+        )
+    except Exception as e:
+        print(f"  [SHADOK-INIT] WARNING: system-instructions failed: {e}")
+
+    print(f"  [SHADOK-INIT] Ready!")
+
+
+def translate_shadok_block(full_text: str, target_langs: list[str], max_line_length: int) -> dict[str, str]:
+    """Translate the full Shadok text as one literary block.
+    
+    Returns {lang_code: translated_full_text_with_newlines}.
+    """
+    import time
+
+    user_content = json.dumps(
+        {"text": full_text, "languages": target_langs, "max_line_length": max_line_length},
+        ensure_ascii=False
+    )
+
+    payload = {
+        "model": MODEL,
+        "messages": [{"role": "user", "content": user_content}],
+        "stream": False,
+    }
+
+    MAX_RETRIES = 2
+    last_error = None
+
+    for attempt in range(MAX_RETRIES + 1):
+        resp_text = "N/A"
+        try:
+            resp = requests.post(API_URL, json=payload, timeout=300)  # longer timeout for big text
+            resp_text = resp.text
+
+            if resp.status_code != 200:
+                _log_interaction(payload, resp_text, row_id="SHADOK")
+                raise requests.HTTPError(f"Status {resp.status_code}")
+
+            data = resp.json()
+            content = data["choices"][0]["message"]["content"]
+            _log_interaction(payload, resp_text, row_id="SHADOK")
+            return _extract_json(content)
+
+        except Exception as e:
+            last_error = e
+            _log_interaction(payload, resp_text, row_id="SHADOK")
+
+            if attempt < MAX_RETRIES:
+                wait = 3 * (attempt + 1)
+                print(f"  [SHADOK] Retry {attempt + 1}/{MAX_RETRIES} in {wait}s...")
+                time.sleep(wait)
+            else:
+                print(f"  [SHADOK] All retries failed. Reinitializing...")
+                try:
+                    init_session_shadok()
+                    time.sleep(1)
+                    resp = requests.post(API_URL, json=payload, timeout=300)
+                    resp_text = resp.text
+                    if resp.status_code == 200:
+                        data = resp.json()
+                        content = data["choices"][0]["message"]["content"]
+                        _log_interaction(payload, resp_text, row_id="SHADOK")
+                        return _extract_json(content)
+                except Exception as recovery_error:
+                    print(f"  [SHADOK] Recovery failed: {recovery_error}")
+
+    raise RuntimeError(f"Shadok translation failed: {last_error}")
+
+
 def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = None) -> dict[str, str]:
     """Translate text with automatic retry and session recovery.
     
