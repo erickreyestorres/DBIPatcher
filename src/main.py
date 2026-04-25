@@ -21,7 +21,7 @@ from pathlib import Path
 
 import openpyxl
 
-from src.core.text_utils import tokenize, detokenize, normalize_tokens_out
+from src.core.text_utils import tokenize, detokenize, normalize_tokens_out, visual_length
 from src.core.validator import validate
 from src.core.ai_client import translate_batch, refine, init_session
 
@@ -504,7 +504,7 @@ def cmd_align() -> None:
                 if ":" in val_str:
                     prefix, suffix = val_str.split(":", 1)
                     clean_prefix = prefix.rstrip()  # remove trailing spaces before colon
-                    visual_len = len(detokenize(clean_prefix))
+                    visual_len = visual_length(clean_prefix)
                     max_prefix_len = max(max_prefix_len, visual_len)
                     row_parts.append((row_idx, clean_prefix, suffix))
                 else:
@@ -520,7 +520,7 @@ def cmd_align() -> None:
                 if prefix is None:
                     continue
 
-                current_visual_len = len(detokenize(prefix))
+                current_visual_len = visual_length(prefix)
                 padding = target_len - current_visual_len
                 if padding < 1:
                     padding = 1

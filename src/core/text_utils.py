@@ -43,3 +43,35 @@ def normalize_tokens_out(text: str) -> str:
         return ""
     # Якщо AI видав справжній перенос рядка замість токена - фіксимо
     return tokenize(text)
+
+# Regex для ANSI escape-послідовностей (наприклад \x1b[32;1m)
+RE_ANSI = re.compile(r'(\[\[ESC\]\]\[[^\]]*\]|\\x1b\[[^\]]*\]|\x1b\[[^\x1b]*?[a-zA-Z])')
+
+def visual_length(text: str) -> int:
+    """Обчислює візуальну довжину рядка на екрані Nintendo Switch.
+    
+    Видаляє:
+    - Токени [[LF]], [[CR]], [[TAB]], [[ESC]] (нульова ширина)
+    - ANSI escape-послідовності типу [[ESC]][32;1m (кольори/форматування)
+    - Літеральні \\n, \\r, \\t, \\x1b
+    """
+    if not text:
+        return 0
+    
+    s = text
+    # 1. Видаляємо ANSI escape-послідовності (з токенами або без)
+    s = RE_ANSI.sub('', s)
+    
+    # 2. Видаляємо залишені токени (без ANSI-хвоста)
+    s = s.replace('[[LF]]', '')
+    s = s.replace('[[CR]]', '')
+    s = s.replace('[[TAB]]', '')
+    s = s.replace('[[ESC]]', '')
+    
+    # 3. Видаляємо літеральні представлення
+    s = s.replace('\\n', '')
+    s = s.replace('\\r', '')
+    s = s.replace('\\t', '')
+    s = s.replace('\\x1b', '')
+    
+    return len(s)
