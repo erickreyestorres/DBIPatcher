@@ -1,6 +1,12 @@
 *.bin
 *.nro
+*.pyc
+*.pyo
 output/
 __pycache__/
 .vscode/
-dictionary.xlsx
+*.code-workspace
+logs/
+scratch/
+debug_*.txt
+~$*.xlsx

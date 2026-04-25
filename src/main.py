@@ -598,6 +598,13 @@ def main() -> int:
     parser.add_argument("lang", nargs="?", help="Language code (required for 'clear')")
     args = parser.parse_args()
 
+    # Clear log at every start
+    log_path = ROOT / "logs" / "ai_proxy.log"
+    log_path.parent.mkdir(parents=True, exist_ok=True)
+    from datetime import datetime, timezone
+    with open(log_path, "w", encoding="utf-8") as f:
+        f.write(f"--- SESSION: {args.command} | {datetime.now(timezone.utc).isoformat()} ---\n")
+
     if args.command == "all":
         cmd_all()
     elif args.command == "clear":
