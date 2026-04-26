@@ -71,10 +71,17 @@ class Validator:
         return None
 
     def check_parentheses_count(self, original, translation):
-        """Checks if the count of round brackets ( ) matches between original and translation."""
+        """Checks round bracket count: translation must have >= original count.
+        
+        Some languages (Korean, Japanese) use grammatical constructions
+        like 이(가), を(は) that add legitimate parentheses.
+        Translation can have MORE brackets, but not FEWER.
+        """
         for char in "()":
-            if original.count(char) != translation.count(char):
-                return f"Parenthesis count mismatch for '{char}': expected {original.count(char)}, found {translation.count(char)}"
+            orig_count = original.count(char)
+            trans_count = translation.count(char)
+            if trans_count < orig_count:
+                return f"Missing parenthesis '{char}': expected at least {orig_count}, found {trans_count}"
         return None
 
     def validate_row(self, original, translation):
