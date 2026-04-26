@@ -383,25 +383,24 @@ def _extract_json(content: str) -> dict[str, str]:
     Handles cases where:
     - AI wraps JSON in ```json ... ``` code blocks
     - AI adds "thinking" text before the JSON
-    - Translations contain {} format specifiers that look like empty JSON
+    - Translations contain unescaped quotes inside JSON string values
     """
     content = content.strip()
 
-    # Strategy 1: Look for ```json ... ``` code blocks
-    # Extract everything between ``` markers, then brace-match for the JSON object
+    # Step 1: Strip markdown code block if present
     code_block_match = re.search(r"```(?:json)?\s*(.*?)\s*```", content, re.DOTALL)
     if code_block_match:
-        inner = code_block_match.group(1).strip()
-        json_str = _find_outer_brace(inner)
-        if json_str:
-            return _parse_json_safe(json_str)
+        content = code_block_match.group(1).strip()
 
-    # Strategy 2: Find outermost { ... } using brace matching (handles nested braces in text)
-    json_str = _find_outer_brace(content)
-    if json_str:
-        return _parse_json_safe(json_str)
-
-    raise json.JSONDecodeError("No JSON object found in AI response", content, 0)
+    # Step 2: Find the first { and last } — that's our JSON envelope
+    first_brace = content.find("{")
+    last_brace = content.rfind("}")
+    
+    if first_brace < 0 or last_brace <= first_brace:
+        raise json.JSONDecodeError("No JSON object found in AI response", content, 0)
+    
+    json_str = content[first_brace:last_brace + 1]
+    return _parse_json_safe(json_str)
 
 
 def _find_outer_brace(text: str) -> str | None:

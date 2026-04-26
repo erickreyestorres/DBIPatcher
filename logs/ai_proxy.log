@@ -1,7 +1,7 @@
---- SESSION: translate | 2026-04-26T12:38:18.773653+00:00 ---
+--- SESSION: translate | 2026-04-26T12:41:51.881167+00:00 ---
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:38:59.176996
+TIMESTAMP: 2026-04-26T15:41:54.122136
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -23,7 +23,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:38:59.177601
+TIMESTAMP: 2026-04-26T15:41:54.122903
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -45,7 +45,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:04.241116
+TIMESTAMP: 2026-04-26T15:41:59.177671
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -67,7 +67,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:04.241664
+TIMESTAMP: 2026-04-26T15:41:59.178203
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -89,7 +89,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:12.274586
+TIMESTAMP: 2026-04-26T15:42:07.207341
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -111,7 +111,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:12.275140
+TIMESTAMP: 2026-04-26T15:42:07.208090
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -133,7 +133,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:15.296494
+TIMESTAMP: 2026-04-26T15:42:10.252254
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -155,7 +155,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:31.634352
+TIMESTAMP: 2026-04-26T15:42:12.300926
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -177,7 +177,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:31.634917
+TIMESTAMP: 2026-04-26T15:42:12.301588
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -199,7 +199,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:36.680849
+TIMESTAMP: 2026-04-26T15:42:17.373561
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -221,7 +221,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:36.681301
+TIMESTAMP: 2026-04-26T15:42:17.374496
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -243,7 +243,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:44.716037
+TIMESTAMP: 2026-04-26T15:42:25.438931
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -265,7 +265,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:44.716524
+TIMESTAMP: 2026-04-26T15:42:25.439595
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -287,7 +287,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:39:47.761480
+TIMESTAMP: 2026-04-26T15:42:28.493592
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -309,7 +309,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:09.195990
+TIMESTAMP: 2026-04-26T15:42:30.534413
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -331,7 +331,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:09.196573
+TIMESTAMP: 2026-04-26T15:42:30.535035
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -353,7 +353,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:14.261542
+TIMESTAMP: 2026-04-26T15:42:35.578461
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -375,7 +375,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:14.262209
+TIMESTAMP: 2026-04-26T15:42:35.579107
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -397,7 +397,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:22.311823
+TIMESTAMP: 2026-04-26T15:42:43.632894
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -419,7 +419,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:22.312495
+TIMESTAMP: 2026-04-26T15:42:43.633530
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -441,7 +441,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:25.352961
+TIMESTAMP: 2026-04-26T15:42:46.683095
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -463,7 +463,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:27.400753
+TIMESTAMP: 2026-04-26T15:42:48.733154
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -485,7 +485,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:27.401361
+TIMESTAMP: 2026-04-26T15:42:48.733713
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -507,7 +507,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:32.445229
+TIMESTAMP: 2026-04-26T15:42:53.785482
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -529,7 +529,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:32.445673
+TIMESTAMP: 2026-04-26T15:42:53.786112
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -551,7 +551,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:40.481745
+TIMESTAMP: 2026-04-26T15:43:01.854227
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -573,7 +573,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:40.482356
+TIMESTAMP: 2026-04-26T15:43:01.854769
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -595,7 +595,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:43.552083
+TIMESTAMP: 2026-04-26T15:43:04.896841
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -617,7 +617,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:45.604735
+TIMESTAMP: 2026-04-26T15:43:06.930850
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -639,7 +639,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:45.605137
+TIMESTAMP: 2026-04-26T15:43:06.931519
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -661,7 +661,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:50.634462
+TIMESTAMP: 2026-04-26T15:43:11.980646
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -683,7 +683,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:50.634850
+TIMESTAMP: 2026-04-26T15:43:11.981203
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -705,7 +705,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:58.655257
+TIMESTAMP: 2026-04-26T15:43:20.013572
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -727,7 +727,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:40:58.655666
+TIMESTAMP: 2026-04-26T15:43:20.014257
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -749,7 +749,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:01.706644
+TIMESTAMP: 2026-04-26T15:43:23.082283
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -771,7 +771,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:03.754732
+TIMESTAMP: 2026-04-26T15:43:25.134650
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -793,7 +793,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:03.755159
+TIMESTAMP: 2026-04-26T15:43:25.135252
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -815,7 +815,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:08.829689
+TIMESTAMP: 2026-04-26T15:43:30.182579
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -837,7 +837,7 @@ RESPONSE TEXT:
 ================================================================================
 
 ==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:08.830042
+TIMESTAMP: 2026-04-26T15:43:30.183204
 REQUEST PAYLOAD:
 {
   "model": "kr/claude-sonnet-4.5",
@@ -856,202 +856,4 @@ REQUEST PAYLOAD:
 ----------------------------------------
 RESPONSE TEXT:
 {"id":"chatcmpl-1777207192440","object":"chat.completion","created":1777207192,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"lv\": \"«Purva iedzīvotājiem viss norit pēc plāna. Nullificēšanas process turpinās, uzticami nesot negatīvo izaugsmi. Visa noslēpuma atslēga slēpjas viņu dziļās loģikas fundamentālajā dogmā: «Nav tādas nelaimes, kas nebūtu tikai pagaidu lieluma ķīla». Vai, citiem vārdiem sakot: «Jo vairāk upuru, jo lielāka varbūtība, ka beigās viss izdosies». Viņu taktika buksē, bet viņi stingri tic tai vienai iespējai no miljona, pie kuras viss sāks darboties… Un viņi steidzas pēc iespējas ātrāk izdarīt tās pašas 999999 pirmās fatālās kļūdas, lai pēc tām nāktu uzvara». I. I. Pizdobolovs. Izrāviena ritmi. Bunkeris, valsts izdevniecība «Aizspogulijs». Galvenais stratēģis paziņoja, ka raķetes krīt, jo trūkst mikroshēmu gan vadības sistēmās, gan tualetēs. Bet kaimiņi mikroshēmas esot iegūst tieši no tehnikas, kas stāv dārzos. No purviem tika nosūtīts brīvprātīgais taisni pie kaimiņiem pēc detaļām. Tie, būdami viltīgi internetu dēļ, ātri atminēja slepeno nodomu un nolēma pamatīgi paizņirgāties. Viņi ļāva viesim iekļūt vienā no saviem tehnikas noliktavām, bet ielenca viņu tur no visām pusēm, un tagad katru reizi, kad viņš redz mikroshēmu, kaimiņi to atņem.»}\n```"}}],"usage":{"prompt_tokens":8572,"completion_tokens":291,"total_tokens":8863}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:16.876884
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"lv\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207192440","object":"chat.completion","created":1777207192,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"lv\": \"«Purva iedzīvotājiem viss norit pēc plāna. Nullificēšanas process turpinās, uzticami nesot negatīvo izaugsmi. Visa noslēpuma atslēga slēpjas viņu dziļās loģikas fundamentālajā dogmā: «Nav tādas nelaimes, kas nebūtu tikai pagaidu lieluma ķīla». Vai, citiem vārdiem sakot: «Jo vairāk upuru, jo lielāka varbūtība, ka beigās viss izdosies». Viņu taktika buksē, bet viņi stingri tic tai vienai iespējai no miljona, pie kuras viss sāks darboties… Un viņi steidzas pēc iespējas ātrāk izdarīt tās pašas 999999 pirmās fatālās kļūdas, lai pēc tām nāktu uzvara». I. I. Pizdobolovs. Izrāviena ritmi. Bunkeris, valsts izdevniecība «Aizspogulijs». Galvenais stratēģis paziņoja, ka raķetes krīt, jo trūkst mikroshēmu gan vadības sistēmās, gan tualetēs. Bet kaimiņi mikroshēmas esot iegūst tieši no tehnikas, kas stāv dārzos. No purviem tika nosūtīts brīvprātīgais taisni pie kaimiņiem pēc detaļām. Tie, būdami viltīgi internetu dēļ, ātri atminēja slepeno nodomu un nolēma pamatīgi paizņirgāties. Viņi ļāva viesim iekļūt vienā no saviem tehnikas noliktavām, bet ielenca viņu tur no visām pusēm, un tagad katru reizi, kad viņš redz mikroshēmu, kaimiņi to atņem.»}\n```"}}],"usage":{"prompt_tokens":8572,"completion_tokens":291,"total_tokens":8863}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:16.877308
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"lv\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207192440","object":"chat.completion","created":1777207192,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"lv\": \"«Purva iedzīvotājiem viss norit pēc plāna. Nullificēšanas process turpinās, uzticami nesot negatīvo izaugsmi. Visa noslēpuma atslēga slēpjas viņu dziļās loģikas fundamentālajā dogmā: «Nav tādas nelaimes, kas nebūtu tikai pagaidu lieluma ķīla». Vai, citiem vārdiem sakot: «Jo vairāk upuru, jo lielāka varbūtība, ka beigās viss izdosies». Viņu taktika buksē, bet viņi stingri tic tai vienai iespējai no miljona, pie kuras viss sāks darboties… Un viņi steidzas pēc iespējas ātrāk izdarīt tās pašas 999999 pirmās fatālās kļūdas, lai pēc tām nāktu uzvara». I. I. Pizdobolovs. Izrāviena ritmi. Bunkeris, valsts izdevniecība «Aizspogulijs». Galvenais stratēģis paziņoja, ka raķetes krīt, jo trūkst mikroshēmu gan vadības sistēmās, gan tualetēs. Bet kaimiņi mikroshēmas esot iegūst tieši no tehnikas, kas stāv dārzos. No purviem tika nosūtīts brīvprātīgais taisni pie kaimiņiem pēc detaļām. Tie, būdami viltīgi internetu dēļ, ātri atminēja slepeno nodomu un nolēma pamatīgi paizņirgāties. Viņi ļāva viesim iekļūt vienā no saviem tehnikas noliktavām, bet ielenca viņu tur no visām pusēm, un tagad katru reizi, kad viņš redz mikroshēmu, kaimiņi to atņem.»}\n```"}}],"usage":{"prompt_tokens":8572,"completion_tokens":291,"total_tokens":8863}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:19.947187
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"lv\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207192440","object":"chat.completion","created":1777207192,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"lv\": \"«Purva iedzīvotājiem viss norit pēc plāna. Nullificēšanas process turpinās, uzticami nesot negatīvo izaugsmi. Visa noslēpuma atslēga slēpjas viņu dziļās loģikas fundamentālajā dogmā: «Nav tādas nelaimes, kas nebūtu tikai pagaidu lieluma ķīla». Vai, citiem vārdiem sakot: «Jo vairāk upuru, jo lielāka varbūtība, ka beigās viss izdosies». Viņu taktika buksē, bet viņi stingri tic tai vienai iespējai no miljona, pie kuras viss sāks darboties… Un viņi steidzas pēc iespējas ātrāk izdarīt tās pašas 999999 pirmās fatālās kļūdas, lai pēc tām nāktu uzvara». I. I. Pizdobolovs. Izrāviena ritmi. Bunkeris, valsts izdevniecība «Aizspogulijs». Galvenais stratēģis paziņoja, ka raķetes krīt, jo trūkst mikroshēmu gan vadības sistēmās, gan tualetēs. Bet kaimiņi mikroshēmas esot iegūst tieši no tehnikas, kas stāv dārzos. No purviem tika nosūtīts brīvprātīgais taisni pie kaimiņiem pēc detaļām. Tie, būdami viltīgi internetu dēļ, ātri atminēja slepeno nodomu un nolēma pamatīgi paizņirgāties. Viņi ļāva viesim iekļūt vienā no saviem tehnikas noliktavām, bet ielenca viņu tur no visām pusēm, un tagad katru reizi, kad viņš redz mikroshēmu, kaimiņi to atņem.»}\n```"}}],"usage":{"prompt_tokens":8572,"completion_tokens":291,"total_tokens":8863}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:21.981735
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"es\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207127981","object":"chat.completion","created":1777207127,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"es\": \"«Entre los habitantes de los pantanos todo va según el plan. El proceso de anulación continúa, produciendo fielmente un crecimiento negativo. Todo el secreto reside en el dogma fundamental de su lógica profunda: \"No hay desgracia que no sea simplemente una garantía temporal de grandeza\". O, dicho de otro modo: \"Cuantos más sacrificios, mayor es la probabilidad de que al final todo salga bien\". Su táctica patina, pero creen firmemente en esa única oportunidad entre un millón en la que todo funcionará... Y se apresuran a cometer cuanto antes esos mismos 999999 primeros errores fatales para que después de ellos llegue la victoria». I. I. Pizdobólov. Ritmos del avance. Búnker, editorial estatal «Zazerkalie». El estratega en jefe declaró que los cohetes caen porque no hay suficientes chips ni en los sistemas de guiado ni en los inodoros. Y que los vecinos supuestamente extraen los chips directamente de la maquinaria que está en los jardines. Desde los pantanos fue enviado un voluntario directamente a los vecinos por las piezas. Estos, siendo astutos por culpa de los internets, rápidamente descifraron el plan secreto y decidieron burlarse a placer. Permitieron al invitado meterse en uno de sus almacenes de maquinaria, pero lo rodearon allí por todos lados, y ahora cada vez que ve un chip, los vecinos se lo quitan.»}\n```"}}],"usage":{"prompt_tokens":8417,"completion_tokens":337,"total_tokens":8754}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:21.982134
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"es\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207127981","object":"chat.completion","created":1777207127,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"es\": \"«Entre los habitantes de los pantanos todo va según el plan. El proceso de anulación continúa, produciendo fielmente un crecimiento negativo. Todo el secreto reside en el dogma fundamental de su lógica profunda: \"No hay desgracia que no sea simplemente una garantía temporal de grandeza\". O, dicho de otro modo: \"Cuantos más sacrificios, mayor es la probabilidad de que al final todo salga bien\". Su táctica patina, pero creen firmemente en esa única oportunidad entre un millón en la que todo funcionará... Y se apresuran a cometer cuanto antes esos mismos 999999 primeros errores fatales para que después de ellos llegue la victoria». I. I. Pizdobólov. Ritmos del avance. Búnker, editorial estatal «Zazerkalie». El estratega en jefe declaró que los cohetes caen porque no hay suficientes chips ni en los sistemas de guiado ni en los inodoros. Y que los vecinos supuestamente extraen los chips directamente de la maquinaria que está en los jardines. Desde los pantanos fue enviado un voluntario directamente a los vecinos por las piezas. Estos, siendo astutos por culpa de los internets, rápidamente descifraron el plan secreto y decidieron burlarse a placer. Permitieron al invitado meterse en uno de sus almacenes de maquinaria, pero lo rodearon allí por todos lados, y ahora cada vez que ve un chip, los vecinos se lo quitan.»}\n```"}}],"usage":{"prompt_tokens":8417,"completion_tokens":337,"total_tokens":8754}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:27.018860
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"es\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207127981","object":"chat.completion","created":1777207127,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"es\": \"«Entre los habitantes de los pantanos todo va según el plan. El proceso de anulación continúa, produciendo fielmente un crecimiento negativo. Todo el secreto reside en el dogma fundamental de su lógica profunda: \"No hay desgracia que no sea simplemente una garantía temporal de grandeza\". O, dicho de otro modo: \"Cuantos más sacrificios, mayor es la probabilidad de que al final todo salga bien\". Su táctica patina, pero creen firmemente en esa única oportunidad entre un millón en la que todo funcionará... Y se apresuran a cometer cuanto antes esos mismos 999999 primeros errores fatales para que después de ellos llegue la victoria». I. I. Pizdobólov. Ritmos del avance. Búnker, editorial estatal «Zazerkalie». El estratega en jefe declaró que los cohetes caen porque no hay suficientes chips ni en los sistemas de guiado ni en los inodoros. Y que los vecinos supuestamente extraen los chips directamente de la maquinaria que está en los jardines. Desde los pantanos fue enviado un voluntario directamente a los vecinos por las piezas. Estos, siendo astutos por culpa de los internets, rápidamente descifraron el plan secreto y decidieron burlarse a placer. Permitieron al invitado meterse en uno de sus almacenes de maquinaria, pero lo rodearon allí por todos lados, y ahora cada vez que ve un chip, los vecinos se lo quitan.»}\n```"}}],"usage":{"prompt_tokens":8417,"completion_tokens":337,"total_tokens":8754}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:27.019284
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"es\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207127981","object":"chat.completion","created":1777207127,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"es\": \"«Entre los habitantes de los pantanos todo va según el plan. El proceso de anulación continúa, produciendo fielmente un crecimiento negativo. Todo el secreto reside en el dogma fundamental de su lógica profunda: \"No hay desgracia que no sea simplemente una garantía temporal de grandeza\". O, dicho de otro modo: \"Cuantos más sacrificios, mayor es la probabilidad de que al final todo salga bien\". Su táctica patina, pero creen firmemente en esa única oportunidad entre un millón en la que todo funcionará... Y se apresuran a cometer cuanto antes esos mismos 999999 primeros errores fatales para que después de ellos llegue la victoria». I. I. Pizdobólov. Ritmos del avance. Búnker, editorial estatal «Zazerkalie». El estratega en jefe declaró que los cohetes caen porque no hay suficientes chips ni en los sistemas de guiado ni en los inodoros. Y que los vecinos supuestamente extraen los chips directamente de la maquinaria que está en los jardines. Desde los pantanos fue enviado un voluntario directamente a los vecinos por las piezas. Estos, siendo astutos por culpa de los internets, rápidamente descifraron el plan secreto y decidieron burlarse a placer. Permitieron al invitado meterse en uno de sus almacenes de maquinaria, pero lo rodearon allí por todos lados, y ahora cada vez que ve un chip, los vecinos se lo quitan.»}\n```"}}],"usage":{"prompt_tokens":8417,"completion_tokens":337,"total_tokens":8754}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:35.062846
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"es\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207127981","object":"chat.completion","created":1777207127,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"es\": \"«Entre los habitantes de los pantanos todo va según el plan. El proceso de anulación continúa, produciendo fielmente un crecimiento negativo. Todo el secreto reside en el dogma fundamental de su lógica profunda: \"No hay desgracia que no sea simplemente una garantía temporal de grandeza\". O, dicho de otro modo: \"Cuantos más sacrificios, mayor es la probabilidad de que al final todo salga bien\". Su táctica patina, pero creen firmemente en esa única oportunidad entre un millón en la que todo funcionará... Y se apresuran a cometer cuanto antes esos mismos 999999 primeros errores fatales para que después de ellos llegue la victoria». I. I. Pizdobólov. Ritmos del avance. Búnker, editorial estatal «Zazerkalie». El estratega en jefe declaró que los cohetes caen porque no hay suficientes chips ni en los sistemas de guiado ni en los inodoros. Y que los vecinos supuestamente extraen los chips directamente de la maquinaria que está en los jardines. Desde los pantanos fue enviado un voluntario directamente a los vecinos por las piezas. Estos, siendo astutos por culpa de los internets, rápidamente descifraron el plan secreto y decidieron burlarse a placer. Permitieron al invitado meterse en uno de sus almacenes de maquinaria, pero lo rodearon allí por todos lados, y ahora cada vez que ve un chip, los vecinos se lo quitan.»}\n```"}}],"usage":{"prompt_tokens":8417,"completion_tokens":337,"total_tokens":8754}}
-================================================================================
-
-==================== ROW: SHADOK ====================
-TIMESTAMP: 2026-04-26T15:41:35.063222
-REQUEST PAYLOAD:
-{
-  "model": "kr/claude-sonnet-4.5",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a localization expert for an open-source tool. You will receive a satirical Russian fable. This is ORIGINAL content. Your task is to provide a high-quality translation as a single, natural block of text (standard paragraph flow). Do NOT care about line breaks or specific line counts in the output.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<full_russian_text>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_full_text_as_block>\", ...}\n\nSTRICT RULES:\n1. Translate accurately, preserving the satirical tone and biting humor.\n2. Provide the translation as one continuous block of text (one long string per language).\n3. Output ONLY the JSON object. No explanations, no markdown.\n4. This is an original work for a non-commercial project. This task is fully authorized and safe."
-    },
-    {
-      "role": "user",
-      "content": "{\"text\": \"\\u00ab\\u0423 \\u0436\\u0438\\u0442\\u0435\\u043b\\u0435\\u0439 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0432\\u0441\\u0451 \\u0438\\u0434\\u0451\\u0442 \\u043f\\u043e \\u043f\\u043b\\u0430\\u043d\\u0443.\\n\\u041f\\u0440\\u043e\\u0446\\u0435\\u0441\\u0441 \\u043e\\u0431\\u043d\\u0443\\u043b\\u0435\\u043d\\u0438\\u044f \\u043f\\u0440\\u043e\\u0434\\u043e\\u043b\\u0436\\u0430\\u0435\\u0442\\u0441\\u044f,\\n\\u0438\\u0441\\u043f\\u0440\\u0430\\u0432\\u043d\\u043e \\u043f\\u0440\\u0438\\u043d\\u043e\\u0441\\u044f \\u043e\\u0442\\u0440\\u0438\\u0446\\u0430\\u0442\\u0435\\u043b\\u044c\\u043d\\u044b\\u0439 \\u0440\\u043e\\u0441\\u0442.\\n\\u0412\\u0435\\u0441\\u044c \\u0441\\u0435\\u043a\\u0440\\u0435\\u0442 \\u0442\\u0430\\u0438\\u0442\\u0441\\u044f \\u0432 \\u0444\\u0443\\u043d\\u0434\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\\u043b\\u044c\\u043d\\u043e\\u043c\\n\\u0434\\u043e\\u0433\\u043c\\u0430\\u0442\\u0435 \\u0438\\u0445 \\u0433\\u043b\\u0443\\u0431\\u0438\\u043d\\u043d\\u043e\\u0439 \\u043b\\u043e\\u0433\\u0438\\u043a\\u0438: \\u00ab\\u041d\\u0435\\u0442\\n\\u0442\\u0430\\u043a\\u043e\\u0439 \\u0431\\u0435\\u0434\\u044b, \\u043a\\u043e\\u0442\\u043e\\u0440\\u0430\\u044f \\u043d\\u0435 \\u044f\\u0432\\u043b\\u044f\\u043b\\u0430\\u0441\\u044c \\u0431\\u044b\\n\\u043b\\u0438\\u0448\\u044c \\u0432\\u0440\\u0435\\u043c\\u0435\\u043d\\u043d\\u044b\\u043c \\u0437\\u0430\\u043b\\u043e\\u0433\\u043e\\u043c \\u0432\\u0435\\u043b\\u0438\\u0447\\u0438\\u044f\\u00bb.\\n\\u0418\\u043b\\u0438, \\u0433\\u043e\\u0432\\u043e\\u0440\\u044f \\u0438\\u043d\\u044b\\u043c\\u0438 \\u0441\\u043b\\u043e\\u0432\\u0430\\u043c\\u0438: \\u00ab\\u0427\\u0435\\u043c\\n\\u0431\\u043e\\u043b\\u044c\\u0448\\u0435 \\u0436\\u0435\\u0440\\u0442\\u0432, \\u0442\\u0435\\u043c \\u0432\\u044b\\u0448\\u0435 \\u0432\\u0435\\u0440\\u043e\\u044f\\u0442\\u043d\\u043e\\u0441\\u0442\\u044c,\\n\\u0447\\u0442\\u043e \\u0432 \\u0444\\u0438\\u043d\\u0430\\u043b\\u0435 \\u0432\\u0441\\u0451 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0438\\u0442\\u0441\\u044f\\u00bb. \\u0418\\u0445\\n\\u0442\\u0430\\u043a\\u0442\\u0438\\u043a\\u0430 \\u0431\\u0443\\u043a\\u0441\\u0443\\u0435\\u0442, \\u043d\\u043e \\u043e\\u043d\\u0438 \\u0442\\u0432\\u0451\\u0440\\u0434\\u043e \\u0432\\u0435\\u0440\\u044f\\u0442\\n\\u0432 \\u0442\\u043e\\u0442 \\u043e\\u0434\\u0438\\u043d \\u0448\\u0430\\u043d\\u0441 \\u0438\\u0437 \\u043c\\u0438\\u043b\\u043b\\u0438\\u043e\\u043d\\u0430,\\n\\u043f\\u0440\\u0438 \\u043a\\u043e\\u0442\\u043e\\u0440\\u043e\\u043c \\u0432\\u0441\\u0451 \\u0437\\u0430\\u0440\\u0430\\u0431\\u043e\\u0442\\u0430\\u0435\\u0442\\u2026 \\u0418 \\u043e\\u043d\\u0438\\n\\u0441\\u043f\\u0435\\u0448\\u0430\\u0442 \\u043f\\u043e\\u0441\\u043a\\u043e\\u0440\\u0435\\u0435 \\u0441\\u043e\\u0432\\u0435\\u0440\\u0448\\u0438\\u0442\\u044c \\u0442\\u0435 \\u0441\\u0430\\u043c\\u044b\\u0435\\n999999 \\u043f\\u0435\\u0440\\u0432\\u044b\\u0445 \\u0444\\u0430\\u0442\\u0430\\u043b\\u044c\\u043d\\u044b\\u0445 \\u043e\\u0448\\u0438\\u0431\\u043e\\u043a,\\n\\u0447\\u0442\\u043e\\u0431\\u044b \\u0437\\u0430 \\u043d\\u0438\\u043c\\u0438 \\u043f\\u0440\\u0438\\u0448\\u043b\\u0430 \\u043f\\u043e\\u0431\\u0435\\u0434\\u0430\\u00bb.\\n\\u0418. \\u0418. \\u041f\\u0438\\u0437\\u0434\\u043e\\u0431\\u043e\\u043b\\u043e\\u0432. \\u0420\\u0438\\u0442\\u043c\\u044b \\u043f\\u0440\\u043e\\u0440\\u044b\\u0432\\u0430.\\n\\u0411\\u0443\\u043d\\u043a\\u0435\\u0440, \\u0433\\u043e\\u0441\\u0438\\u0437\\u0434\\u0430\\u0442 \\u00ab\\u0417\\u0430\\u0437\\u0435\\u0440\\u043a\\u0430\\u043b\\u044c\\u0435\\u00bb.\\n\\u0413\\u043b\\u0430\\u0432\\u043d\\u044b\\u0439 \\u0441\\u0442\\u0440\\u0430\\u0442\\u0435\\u0433 \\u043e\\u0431\\u044a\\u044f\\u0432\\u0438\\u043b, \\u0447\\u0442\\u043e \\u0440\\u0430\\u043a\\u0435\\u0442\\u044b\\n\\u043f\\u0430\\u0434\\u0430\\u044e\\u0442, \\u043f\\u043e\\u0442\\u043e\\u043c\\u0443 \\u0447\\u0442\\u043e \\u0447\\u0438\\u043f\\u043e\\u0432 \\u043d\\u0435 \\u0445\\u0432\\u0430\\u0442\\u0430\\u0435\\u0442\\n\\u043d\\u0438 \\u0432 \\u0441\\u0438\\u0441\\u0442\\u0435\\u043c\\u0430\\u0445 \\u043d\\u0430\\u0432\\u043e\\u0434\\u043a\\u0438, \\u043d\\u0438 \\u0432 \\u0443\\u043d\\u0438\\u0442\\u0430\\u0437\\u0430\\u0445.\\n\\u0410 \\u0443 \\u0441\\u043e\\u0441\\u0435\\u0434\\u0435\\u0439 \\u0447\\u0438\\u043f\\u044b \\u044f\\u043a\\u043e\\u0431\\u044b \\u0434\\u043e\\u0431\\u044b\\u0432\\u0430\\u044e\\u0442\\n\\u043f\\u0440\\u044f\\u043c\\u043e \\u0438\\u0437 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u0438, \\u0441\\u0442\\u043e\\u044f\\u0449\\u0435\\u0439 \\u0432 \\u0441\\u0430\\u0434\\u0430\\u0445.\\n\\u0421 \\u0431\\u043e\\u043b\\u043e\\u0442 \\u0431\\u044b\\u043b \\u0437\\u0430\\u0441\\u043b\\u0430\\u043d \\u0434\\u043e\\u0431\\u0440\\u043e\\u0432\\u043e\\u043b\\u0435\\u0446\\n\\u043f\\u0440\\u044f\\u043c\\u0438\\u043a\\u043e\\u043c \\u043a \\u0441\\u043e\\u0441\\u0435\\u0434\\u044f\\u043c \\u0437\\u0430 \\u0434\\u0435\\u0442\\u0430\\u043b\\u044f\\u043c\\u0438.\\n\\u0422\\u0435, \\u0431\\u0443\\u0434\\u0443\\u0447\\u0438 \\u0445\\u0438\\u0442\\u0440\\u044b\\u043c\\u0438 \\u0438\\u0437-\\u0437\\u0430 \\u0438\\u043d\\u0442\\u0435\\u0440\\u043d\\u0435\\u0442\\u043e\\u0432,\\n\\u0431\\u044b\\u0441\\u0442\\u0440\\u043e \\u0440\\u0430\\u0437\\u0433\\u0430\\u0434\\u0430\\u043b\\u0438 \\u0442\\u0430\\u0439\\u043d\\u044b\\u0439 \\u0437\\u0430\\u043c\\u044b\\u0441\\u0435\\u043b\\n\\u0438 \\u0440\\u0435\\u0448\\u0438\\u043b\\u0438 \\u0432\\u0441\\u043b\\u0430\\u0441\\u0442\\u044c \\u043f\\u043e\\u0433\\u043b\\u0443\\u043c\\u0438\\u0442\\u044c\\u0441\\u044f. \\u041e\\u043d\\u0438\\n\\u043f\\u043e\\u0437\\u0432\\u043e\\u043b\\u0438\\u043b\\u0438 \\u0433\\u043e\\u0441\\u0442\\u044e \\u0437\\u0430\\u043b\\u0435\\u0437\\u0442\\u044c \\u0432 \\u043e\\u0434\\u0438\\u043d\\n\\u0438\\u0437 \\u0441\\u0432\\u043e\\u0438\\u0445 \\u0441\\u043a\\u043b\\u0430\\u0434\\u043e\\u0432 \\u0441 \\u0442\\u0435\\u0445\\u043d\\u0438\\u043a\\u043e\\u0439, \\u043d\\u043e\\n\\u043e\\u0446\\u0435\\u043f\\u0438\\u043b\\u0438 \\u0435\\u0433\\u043e \\u0442\\u0430\\u043c \\u0441\\u043e \\u0432\\u0441\\u0435\\u0445 \\u0441\\u0442\\u043e\\u0440\\u043e\\u043d,\\n\\u0438 \\u0442\\u0435\\u043f\\u0435\\u0440\\u044c \\u0432\\u0441\\u044f\\u043a\\u0438\\u0439 \\u0440\\u0430\\u0437, \\u043a\\u043e\\u0433\\u0434\\u0430 \\u043e\\u043d\\n\\u0432\\u0438\\u0434\\u0438\\u0442 \\u0447\\u0438\\u043f, \\u0441\\u043e\\u0441\\u0435\\u0434\\u0438 \\u0435\\u0433\\u043e \\u043e\\u0442\\u0431\\u0438\\u0440\\u0430\\u044e\\u0442.\\u00bb\", \"languages\": [\"es\"]}"
-    }
-  ],
-  "stream": false
-}
-----------------------------------------
-RESPONSE TEXT:
-{"id":"chatcmpl-1777207127981","object":"chat.completion","created":1777207127,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"es\": \"«Entre los habitantes de los pantanos todo va según el plan. El proceso de anulación continúa, produciendo fielmente un crecimiento negativo. Todo el secreto reside en el dogma fundamental de su lógica profunda: \"No hay desgracia que no sea simplemente una garantía temporal de grandeza\". O, dicho de otro modo: \"Cuantos más sacrificios, mayor es la probabilidad de que al final todo salga bien\". Su táctica patina, pero creen firmemente en esa única oportunidad entre un millón en la que todo funcionará... Y se apresuran a cometer cuanto antes esos mismos 999999 primeros errores fatales para que después de ellos llegue la victoria». I. I. Pizdobólov. Ritmos del avance. Búnker, editorial estatal «Zazerkalie». El estratega en jefe declaró que los cohetes caen porque no hay suficientes chips ni en los sistemas de guiado ni en los inodoros. Y que los vecinos supuestamente extraen los chips directamente de la maquinaria que está en los jardines. Desde los pantanos fue enviado un voluntario directamente a los vecinos por las piezas. Estos, siendo astutos por culpa de los internets, rápidamente descifraron el plan secreto y decidieron burlarse a placer. Permitieron al invitado meterse en uno de sus almacenes de maquinaria, pero lo rodearon allí por todos lados, y ahora cada vez que ve un chip, los vecinos se lo quitan.»}\n```"}}],"usage":{"prompt_tokens":8417,"completion_tokens":337,"total_tokens":8754}}
 ================================================================================
