@@ -474,17 +474,36 @@ def cmd_translate() -> None:
             else:
                 failed_langs.append(lc)
 
-        # ── Retry failed languages with fresh translation ────────────
-        if failed_langs:
-            print(f"    [Row {row}] Retrying {len(failed_langs)} failed langs: {', '.join(failed_langs)}")
+        # ── Retry failed languages with error context ─────────────────
+        MAX_RETRY_ROUNDS = 3
+        for retry_round in range(MAX_RETRY_ROUNDS):
+            if not failed_langs:
+                break
+
+            # Build error context for the AI
+            error_details = []
+            for lc in failed_langs:
+                translation = results.get(lc, "")
+                _, msg = validate(original, translation, lc) if translation else (False, "empty")
+                error_details.append(f"- {lc}: {msg}")
+
+            error_context = (
+                f"Retry round {retry_round + 1}. The following translations for "
+                f"\"{original}\" have validation errors:\n"
+                + "\n".join(error_details)
+                + "\n\nPlease fix these issues. "
+                f"Source text: \"{original}\""
+            )
+
+            print(f"    [Row {row}] Retry {retry_round + 1}/{MAX_RETRY_ROUNDS}: {len(failed_langs)} langs ({', '.join(failed_langs)})")
+
             try:
-                retry_results = translate_batch(original, failed_langs, row_id=row)
+                retry_results = refine(error_context, failed_langs, row_id=row)
+                still_failed = []
                 for lc in failed_langs:
                     translation = normalize_fullwidth(normalize_tokens_out(retry_results.get(lc, "")))
                     if not translation or not translation.strip():
-                        print(f"    [Row {row}][{lc}] SKIPPED (empty after retry)")
-                        total_failed += 1
-                        row_fail += 1
+                        still_failed.append(lc)
                         continue
                     ok, msg = validate(original, translation, lc)
                     if ok:
@@ -492,13 +511,19 @@ def cmd_translate() -> None:
                         total_translated += 1
                         row_ok += 1
                     else:
-                        print(f"    [Row {row}][{lc}] SKIPPED (still invalid): {msg}")
-                        total_failed += 1
-                        row_fail += 1
+                        results[lc] = translation  # update for next round's error context
+                        still_failed.append(lc)
+                failed_langs = still_failed
             except Exception as e:
-                print(f"    [Row {row}] Retry failed: {e}")
-                total_failed += len(failed_langs)
-                row_fail += len(failed_langs)
+                print(f"    [Row {row}] Retry error: {e}")
+                break
+            time.sleep(0.3)
+
+        # Mark remaining failed langs
+        for lc in failed_langs:
+            print(f"    [Row {row}][{lc}] SKIPPED (invalid after {MAX_RETRY_ROUNDS} retries)")
+            total_failed += 1
+            row_fail += 1
 
         save_workbook(wb)
 
