@@ -455,11 +455,11 @@ def cmd_translate() -> None:
         # ── Write results ────────────────────────────────────────────
         row_ok = 0
         row_fail = 0
+        failed_langs = []
         for lc in missing:
             translation = results.get(lc, "")
             if not translation or not translation.strip():
-                total_failed += 1
-                row_fail += 1
+                failed_langs.append(lc)
                 continue
             
             ok, msg = validate(original, translation, lc)
@@ -468,15 +468,37 @@ def cmd_translate() -> None:
                 total_translated += 1
                 row_ok += 1
             elif "English preservation" in msg:
-                # ASCII-only text should stay as original
                 ws.cell(row, col_map[lc], original)
                 total_translated += 1
                 row_ok += 1
             else:
-                # Invalid translation — do NOT write to Excel
-                print(f"    [Row {row}][{lc}] SKIPPED (invalid): {msg}")
-                total_failed += 1
-                row_fail += 1
+                failed_langs.append(lc)
+
+        # ── Retry failed languages with fresh translation ────────────
+        if failed_langs:
+            print(f"    [Row {row}] Retrying {len(failed_langs)} failed langs: {', '.join(failed_langs)}")
+            try:
+                retry_results = translate_batch(original, failed_langs, row_id=row)
+                for lc in failed_langs:
+                    translation = normalize_tokens_out(retry_results.get(lc, ""))
+                    if not translation or not translation.strip():
+                        print(f"    [Row {row}][{lc}] SKIPPED (empty after retry)")
+                        total_failed += 1
+                        row_fail += 1
+                        continue
+                    ok, msg = validate(original, translation, lc)
+                    if ok:
+                        ws.cell(row, col_map[lc], translation)
+                        total_translated += 1
+                        row_ok += 1
+                    else:
+                        print(f"    [Row {row}][{lc}] SKIPPED (still invalid): {msg}")
+                        total_failed += 1
+                        row_fail += 1
+            except Exception as e:
+                print(f"    [Row {row}] Retry failed: {e}")
+                total_failed += len(failed_langs)
+                row_fail += len(failed_langs)
 
         save_workbook(wb)
 

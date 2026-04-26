@@ -43,18 +43,27 @@ class Validator:
         return None
 
     def check_colon(self, original, translation):
-        """Checks if colon presence is preserved."""
-        if ":" in original and ":" not in translation:
+        """Checks if colon presence is preserved. Accepts full-width colon ： as equivalent."""
+        orig_has = ":" in original
+        trans_has = ":" in translation or "：" in translation
+        if orig_has and not trans_has:
             return "Missing colon in translation"
-        if ":" not in original and ":" in translation:
+        if not orig_has and trans_has:
             return "Unexpected colon in translation"
         return None
 
     def check_bracket_counts(self, original, translation):
-        """Checks if the total count of each bracket type matches between original and translation."""
+        """Checks bracket counts. Accepts CJK full-width brackets as equivalents."""
+        # Normalize full-width brackets to ASCII for counting
+        def normalize(text):
+            return text.replace("（", "(").replace("）", ")").replace("［", "[").replace("］", "]")
+        
+        norm_orig = normalize(original)
+        norm_trans = normalize(translation)
+        
         for char in "()[]":
-            if original.count(char) != translation.count(char):
-                return f"Bracket count mismatch for '{char}': expected {original.count(char)}, found {translation.count(char)}"
+            if norm_orig.count(char) != norm_trans.count(char):
+                return f"Bracket count mismatch for '{char}': expected {norm_orig.count(char)}, found {norm_trans.count(char)}"
         return None
 
     def validate_row(self, original, translation):
