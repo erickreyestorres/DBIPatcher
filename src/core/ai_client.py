@@ -174,6 +174,8 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
     # SAFE ENCODING: We manually dump and encode to ensure non-ASCII characters 
     # are escaped as \uXXXX. This prevents proxy-level encoding corruption.
     safe_data = json.dumps(payload, ensure_ascii=True).encode('utf-8')
+    MAX_RETRIES = 2
+    last_error = None
     headers = {"Content-Type": "application/json"}
 
     for attempt in range(MAX_RETRIES + 1):
@@ -244,6 +246,8 @@ def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = 
 
     # SAFE ENCODING
     safe_data = json.dumps(payload, ensure_ascii=True).encode('utf-8')
+    MAX_RETRIES = 2
+    last_error = None
     headers = {"Content-Type": "application/json"}
 
     for attempt in range(MAX_RETRIES + 1):
