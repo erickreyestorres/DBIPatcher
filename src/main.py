@@ -292,56 +292,72 @@ def cmd_translate() -> None:
                 print("-" * 60)
 
                 init_session_shadok()
-
                 full_text = "\n".join(line for _, _, line in shadok_rows)
 
                 try:
                     SHADOK_BATCH_SIZE = 3
-                    total_batches = (len(langs_to_translate) + SHADOK_BATCH_SIZE - 1) // SHADOK_BATCH_SIZE
+                    MAX_PASSES = 10
+                    
+                    for pass_idx in range(MAX_PASSES):
+                        # Re-calculate remaining languages in every pass
+                        remaining_langs = sorted([lc for lc in lang_codes if lc not in translated_langs])
+                        if not remaining_langs:
+                            break
+                            
+                        print(f"  [SHADOK] Pass {pass_idx + 1}/{MAX_PASSES}. Remaining: {len(remaining_langs)}")
+                        total_batches = (len(remaining_langs) + SHADOK_BATCH_SIZE - 1) // SHADOK_BATCH_SIZE
 
-                    for batch_idx in range(0, len(langs_to_translate), SHADOK_BATCH_SIZE):
-                        batch_langs = langs_to_translate[batch_idx:batch_idx + SHADOK_BATCH_SIZE]
-                        batch_num = batch_idx // SHADOK_BATCH_SIZE + 1
-                        print(f"  [SHADOK] Batch {batch_num}/{total_batches}: {', '.join(batch_langs)}")
+                        for batch_idx in range(0, len(remaining_langs), SHADOK_BATCH_SIZE):
+                            batch_langs = remaining_langs[batch_idx:batch_idx + SHADOK_BATCH_SIZE]
+                            batch_num = batch_idx // SHADOK_BATCH_SIZE + 1
+                            print(f"  [SHADOK] Batch {batch_num}/{total_batches}: {', '.join(batch_langs)}")
 
-                        batch_results = translate_shadok_block(full_text, batch_langs, max_line_len)
+                            try:
+                                batch_results = translate_shadok_block(full_text, batch_langs, max_line_len)
+                                
+                                # Write batch results immediately (safety save)
+                                for lc in batch_langs:
+                                    translated_text = batch_results.get(lc, "")
+                                    if not translated_text:
+                                        print(f"  [SHADOK][{lc}] Empty translation, skipping.")
+                                        continue
 
-                        # Write batch results immediately (safety save)
-                        for lc in batch_langs:
-                            translated_text = batch_results.get(lc, "")
-                            if not translated_text:
-                                print(f"  [SHADOK][{lc}] Empty translation, skipping.")
+                                    trans_lines = translated_text.split("\n")
+                                    # Relaxed rule: we don't force 33, but we clip if too long
+                                    if len(trans_lines) > len(shadok_rows):
+                                        trans_lines = trans_lines[:len(shadok_rows)]
+
+                                    for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
+                                        if line_idx < len(trans_lines):
+                                            line = trans_lines[line_idx]
+                                            if len(line) > max_line_len:
+                                                line = line[:max_line_len]
+                                            ws.cell(row_idx, col_map[lc], line)
+                                        else:
+                                            ws.cell(row_idx, col_map[lc], "")
+
+                                    translated_langs.add(lc)
+                                    print(f"  [SHADOK][{lc}] Written {min(len(trans_lines), len(shadok_rows))} lines.")
+
+                                # Save progress after each successful batch
+                                save_workbook(wb)
+                                shadok_config["translated_langs"] = sorted(list(translated_langs))
+                                with SHADOK_JSON.open("w", encoding="utf-8") as f:
+                                    json.dump(shadok_config, f, ensure_ascii=False, indent=2)
+                                
+                                time.sleep(0.5)
+
+                            except Exception as batch_error:
+                                print(f"  [SHADOK] Batch failed, skipping: {batch_error}")
                                 continue
 
-                            trans_lines = translated_text.split("\n")
-                            if len(trans_lines) > len(shadok_rows):
-                                trans_lines = trans_lines[:len(shadok_rows)]
-
-                            for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
-                                if line_idx < len(trans_lines):
-                                    line = trans_lines[line_idx]
-                                    if len(line) > max_line_len:
-                                        line = line[:max_line_len]
-                                    ws.cell(row_idx, col_map[lc], line)
-                                else:
-                                    ws.cell(row_idx, col_map[lc], "")
-
-                            translated_langs.add(lc)
-                            print(f"  [SHADOK][{lc}] Written {min(len(trans_lines), len(shadok_rows))} lines.")
-
-                        # Save progress after each batch
-                        save_workbook(wb)
-                        shadok_config["translated_langs"] = sorted(list(translated_langs))
-                        
-                        with SHADOK_JSON.open("w", encoding="utf-8") as f:
-                            json.dump(shadok_config, f, ensure_ascii=False, indent=2)
-
-                        time.sleep(0.5)
-
-                    print("  [SHADOK] All current batches complete.")
+                    if not any(lc not in translated_langs for lc in lang_codes):
+                        print("  [SHADOK] All languages complete!")
+                    else:
+                        print(f"  [SHADOK] Finished {MAX_PASSES} passes. Some languages might still be missing.")
 
                 except Exception as e:
-                    print(f"  [SHADOK] ERROR: {e}")
+                    print(f"  [SHADOK] Fatal error: {e}")
 
                 print("=" * 60)
                 print()
