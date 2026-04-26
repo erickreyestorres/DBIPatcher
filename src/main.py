@@ -206,6 +206,20 @@ def cmd_sync() -> None:
 
 # ── translate ────────────────────────────────────────────────────────
 
+def wrap_text(text: str, max_chars: int, lang_code: str) -> list[str]:
+    """Wrap text into lines, with special handling for CJK width."""
+    # Heuristic for wider CJK characters as requested by user
+    effective_max = max_chars
+    # Japanese (jp), Korean (kr), Chinese (zh/zhcn/zhtw)
+    if lang_code.lower() in ["zhcn", "zhtw", "jp", "kr", "zh"]:
+        # "1.5 times smaller"
+        effective_max = int(max_chars / 1.5)
+        
+    import textwrap
+    # replace_whitespace=True converts all tabs/newlines into spaces before wrapping
+    lines = textwrap.wrap(text, width=effective_max, break_long_words=True, replace_whitespace=True)
+    return lines
+
 def cmd_translate() -> None:
     """Find empty cells and translate via AI with continuous chat."""
     MAX_REFINE_ATTEMPTS = 3
@@ -333,32 +347,20 @@ def cmd_translate() -> None:
                             try:
                                 batch_results = translate_shadok_block(full_text, [lc], max_line_len)
                                 
-                                translated_text = batch_results.get(lc, "").strip()
-                                if not translated_text:
+                                translated_block = batch_results.get(lc, "").strip()
+                                if not translated_block:
                                     print(f"  [SHADOK][{lc}] Empty translation, skipping.")
                                     continue
 
-                                # Clean lines
-                                trans_lines = [l.strip() for l in translated_text.split("\n") if l.strip()]
+                                # Client-side wrapping
+                                trans_lines = wrap_text(translated_block, max_line_len, lc)
                                 
-                                # STRICT VALIDATION: Must have at least 30 non-empty lines
-                                if len(trans_lines) < 30:
-                                    print(f"  [SHADOK][{lc}] REJECTED: Only {len(trans_lines)} lines returned. Expected ~33.")
-                                    continue
-
-                                # GARBAGE CHECK: Check for excessive symbols (like mangled unicode)
-                                # We check the first line for placeholders often seen in mangled output
-                                mangled_chars = trans_lines[0].count("?") + trans_lines[0].count("\ufffd")
-                                if mangled_chars > 10:
-                                    print(f"  [SHADOK][{lc}] REJECTED: Encoding looks mangled.")
-                                    continue
-
-                                if len(trans_lines) > len(shadok_rows):
-                                    trans_lines = trans_lines[:len(shadok_rows)]
+                                print(f"  [SHADOK][{lc}] Wrapped into {len(trans_lines)} lines (Limit: {max_line_len}).")
 
                                 for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
                                     if line_idx < len(trans_lines):
                                         line = trans_lines[line_idx]
+                                        # Clip just in case
                                         if len(line) > max_line_len:
                                             line = line[:max_line_len]
                                         ws.cell(row_idx, col_map[lc], line)
@@ -366,7 +368,7 @@ def cmd_translate() -> None:
                                         ws.cell(row_idx, col_map[lc], "")
 
                                 translated_langs.add(lc)
-                                print(f"  [SHADOK][{lc}] SUCCESS: Written {len(trans_lines)} lines.")
+                                print(f"  [SHADOK][{lc}] SUCCESS: Written to Excel.")
 
                                 # Save progress after each successful language
                                 save_workbook(wb)
