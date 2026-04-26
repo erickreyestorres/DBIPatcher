@@ -32,6 +32,7 @@ DICT_PATH = DATA_DIR / "dictionary.xlsx"
 UA_CSV = DATA_DIR / "ua.csv"
 LANG_JSON = DATA_DIR / "languages.json"
 OUTPUT_DIR = ROOT / "output"
+TRANSLATIONS_DIR = ROOT / "translations"
 BUILD_SCRIPT = ROOT / "scripts" / "build_translation_bin.py"
 
 SHEET_NAME = "Translations"
@@ -700,14 +701,14 @@ def cmd_export() -> None:
     header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
     col_map = {h: i + 1 for i, h in enumerate(header) if h}
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    TRANSLATIONS_DIR.mkdir(parents=True, exist_ok=True)
 
     missing_total = 0
     
     for lc in langs:
         if lc not in col_map or lc == "ru":
             continue
-        csv_path = OUTPUT_DIR / f"{lc}.csv"
+        csv_path = TRANSLATIONS_DIR / f"{lc}.csv"
         count = 0
         missing_count = 0
         with csv_path.open("w", encoding="utf-8", newline="") as f:
@@ -749,7 +750,7 @@ def cmd_build() -> None:
     for lc in langs:
         if lc == "ru":
             continue
-        csv_path = OUTPUT_DIR / f"{lc}.csv"
+        csv_path = TRANSLATIONS_DIR / f"{lc}.csv"
         if not csv_path.exists():
             print(f"  Skip {lc}: no CSV")
             continue

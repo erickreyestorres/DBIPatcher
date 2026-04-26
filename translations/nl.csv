@@ -1,0 +1,1206 @@
+original,translation
+"X - выбор, Y - инверсия выбора, (+) - меню","X - Selecteer, Y - Selectie omkeren, (+) - Menu"
+"X - выбор, Y - инверсия выбора, (+) - меню, L3 - запуск","X - Selecteer, Y - Selectie omkeren, (+) - Menu, L3 - Starten"
+"X - выбор, Y - инверсия выбора, (+) - меню, R3 - сортировка","X - Selecteer, Y - Selectie omkeren, (+) - Menu, R3 - Sorteren"
+"X - выбор, Y - инверсия выбора, (+) - меню, R3 - сортировка, L3 - запуск","X - Selecteer, Y - Selectie omkeren, (+) - Menu, R3 - Sorteren, L3 - Starten"
+"X - выбор, Y - инвертирование выбора, A - открыть, (-) - 2ая панель","X - Selecteer, Y - Selectie omkeren, A - Openen, (-) - 2e paneel"
+"X - выбор, Y - инвертирование выбора, ⬅/➡ - смена панели, (-) - закрыть","X - Selecteer, Y - Selectie omkeren, ⬅/➡ - Paneel wisselen, (-) - Sluiten"
+"ZL/ZR - смена даты, Y - период, X - сортировка, (+) - выбрать пользователя","ZL/ZR - Datum wijzigen, Y - Periode, X - Sorteren, (+) - Gebruiker selecteren"
+864,864
+. Время игры \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m,. Speeltijd \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m
+Невозможно смонтировать системный раздел,Kan systeempartitie niet aankoppelen
+"DPAD или стики для перемещения, (+) - Настройки","DPAD of sticks om te bewegen, (+) - Instellingen"
+Ошибка создания файла: {},Fout bij aanmaken bestand: {}
+Подключение к серверу...,Verbinden met server...
+"Бункер, госиздат «Зазеркалье».",I. I. Pizdoebolov. Ritmes van
+      Название: {}\n      Издатель: {}\n      Версия: ,      Titel: {}\n      Uitgever: {}\n      Versie: 
+   Это действие будет нельзя отменить   ,   Deze actie kan niet ongedaan worden gemaakt   
+SDK подменён,SDK vervangen
+Тип оборудования        : {},Hardwaretype           : {}
+Точка доступа,Toegangspunt
+Традиционный китайский,Traditioneel Chinees
+Транзисторов:      {:>3},Transistoren:      {:>3}
+Требуется вручную разрешить синхронизацию времени через Интернет в настройках,Handmatige inschakeling van tijdsynchronisatie via internet in instellingen is vereist
+Тёмная комната,Donkere kamer
+Убрать из любимых,Verwijderen uit favorieten
+Увеличить размер (в МБ),Grootte verhogen (in MB)
+"Уверены, что хотите продолжить?",Weet u zeker dat u wilt doorgaan?
+Удаление Wi-Fi профиля,Wi-Fi-profiel verwijderen
+Удаление Wi-Fi профиля...,Wi-Fi-profiel verwijderen...
+Удаление {} бекапа,{} back-up verwijderen
+Удаление {} бекапов,{} back-ups verwijderen
+Удаление {} сохранений,{} spelopslagen verwijderen
+Удаление {} сохранения,{} spelopslag verwijderen
+Удаление бекапов,Back-ups verwijderen
+Удаление записи об игре...,Spelrecord verwijderen...
+Удаление игр,Games verwijderen
+Удаление игры ,Game verwijderen 
+Удаление игры целиком: [{}],Spel volledig verwijderen: [{}]
+"SSID: {}, Пароль: {}","SSID: {}, Wachtwoord: {}"
+Удаление каталога LFS,LFS-map verwijderen
+Удаление контента,Inhoud verwijderen
+Удаление настроек родительского контроля...,Ouderlijk toezicht-instellingen verwijderen...
+Удаление не удалось.\n\nНажмите любую кнопку для продолжения,Verwijderen mislukt.\n\nDruk op een willekeurige knop om door te gaan
+Удаление неиспользуемого {}...,Ongebruikte {} verwijderen...
+Удаление плейсхолдера...,Tijdelijke aanduiding verwijderen...
+Удаление пользователя,Gebruiker verwijderen
+Удаление пользователя...,Gebruiker verwijderen...
+Удаление ранее установленных файлов...,Eerder geïnstalleerde bestanden verwijderen...
+Удаление родительского контроля,Ouderlijk toezicht verwijderen
+SaveFS очищена,SaveFS gewist
+Удаление связи с Nintendo account...,Nintendo-accountkoppeling verwijderen...
+Удаление сохранений,Opslaggegevens verwijderen
+Удаление сохранения целиком,Volledige opslaggegevens verwijderen
+Удаление старого     {}...,Oude {} verwijderen     {}...
+Удаление старого файла {}...,Oud bestand {} verwijderen...
+Удаление старой записи об игре...,Oud spelrecord verwijderen...
+Удаление старой папки {}...,Oude map {} verwijderen...
+Удаление тайтла: [{}],Titel verwijderen: [{}]
+Удаление тикетов ({}),Tickets verwijderen ({})
+Удаление...,Verwijderen...
+TempC0               : {:04x},TempC0               : {:04x}
+Удалить,Verwijderen
+Удалить LFS,LFS verwijderen
+Удалить сохранения,Opslaggegevens verwijderen
+Удалить старые бекапы,Oude back-ups verwijderen
+Удаляется {} из {}...,Bezig met verwijderen van {} van {}...
+Удаляется {}...,Bezig met verwijderen van {}...
+Удаляется бекап ,Back-up verwijderen 
+Удаляется запись о контенте...,Inhoudsrecord verwijderen...
+Удаляется запись об игре...,Spelrecord verwijderen...
+Удаляется игра и весь связанный контент,Spel en alle gerelateerde inhoud verwijderen
+Titlekey не может быть инициализирован,Titlekey kan niet worden geïnitialiseerd
+Удаляется папка LFS...,LFS-map verwijderen...
+Удаляется пустая папка,Lege map verwijderen
+Удаляется сохранение {}...,Opslaggegevens {} verwijderen...
+Удаляется старая запись о контенте...,Oud inhoudsrecord verwijderen...
+Удаляется старый cnmt.nca...,Oude cnmt.nca verwijderen...
+Удаляется тикет: {}...,Ticket verwijderen: {}...
+Удалять после установки: ,Verwijderen na installatie: 
+Удаляются все объекты из альбома для игры,Alle items uit het spelalbum verwijderen
+Удаляются все сохранения для игры,Alle opslaggegevens voor het spel verwijderen
+Удаляются сохранения...,Opslaggegevens verwijderen...
+"UID: {}, Ник: {}","UID: {}, Bijnaam: {}"
+Удалённые,Verwijderd
+Удачный экспорт,Succesvolle export
+Уделение старого тикета...,Oud ticket verwijderen...
+Упаковка каталога в RomFS,Map inpakken in RomFS
+Упрощенный китайский,Vereenvoudigd Chinees
+Уровень заряда батареи         : {},Batterijniveau         : {}
+Успешно разобран как PFS0 файл,Succesvol geparseerd als PFS0-bestand
+Устанавливается {},Installeren {}
+Установить как аватар...,Instellen als avatar...
+Установка,Installatie
+URL для проверки обновлений,URL voor updatecontrole
+Установка анлокера...,Unlocker installeren...
+Установка завершена,Installatie voltooid
+Установка игр (NAND),Games installeren (NAND)
+Установка игр (SD Card),Games installeren (SD-kaart)
+Установка игры завершена,Installatie van de game voltooid
+Установка обновлений игр,Game-updates installeren
+Установка прервана,Installatie onderbroken
+Установка с картриджа,Installeren vanaf cartridge
+Установка тайтлов ({}/{}),Titels installeren ({}/{})
+Установка через DBIbackend,Installeren via DBIbackend
+USB Соединение,USB-verbinding
+Установка ярлыка...,Snelkoppeling installeren...
+Установлен,Geïnstalleerd
+Установленные,Geïnstalleerd
+Установленные homebrew,Geïnstalleerde homebrew
+Установленные homebrew ({}),Geïnstalleerde homebrew ({})
+Установленные игры,Geïnstalleerde games
+Установленные тикеты,Geïnstalleerde tickets
+Установленные тикеты ({}),Geïnstalleerde tickets ({})
+Файл повреждён и не может быть установлен. Не найдена сигнатура HEAD,Bestand is beschadigd en kan niet worden geïnstalleerd. HEAD-handtekening niet gevonden
+Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе root,Bestand is beschadigd en kan niet worden geïnstalleerd. HFS0-handtekening niet gevonden in root-partitie
+Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Draadloos LAN MAC-adres: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе secure,Bestand is beschadigd en kan niet worden geïnstalleerd. HFS0-handtekening niet gevonden in secure-partitie
+Файл повреждён и не может быть установлен. Не найдена сигнатура PFS0,Bestand is beschadigd en kan niet worden geïnstalleerd. PFS0-handtekening niet gevonden
+Файл слишком большой для хранилища,Bestand is te groot voor opslag
+Файл: {},Bestand: {}
+Фиксация ФС...,Bestandssysteem commit...
+Финальный размер: {},Definitieve grootte: {}
+Формирование списка...,Lijst genereren...
+Форсированный язык    : {},Geforceerde taal    : {}
+Форсированный язык    : {} ({}),Geforceerde taal    : {} ({})
+  Автоопределение,  Automatisch detecteren
+Форсировано вклчение USB 3.0: {},USB 3.0 gedwongen ingeschakeld: {}
+Форсировать UTF-8,Forceer UTF-8
+Форсировать язык,Forceer taal
+Французский,Frans
+"Х:{}, Т:{}, РЦ:{}","H:{}, T:{}, R:{}"
+Хранилища MTP,MTP-opslag
+Хранилище только для чтения,Alleen-lezen opslag
+Хэш версии              : {},Versie-hash             : {}
+Целевая запись о контенте не найдена,Doelinhoudrecord niet gevonden
+ЧАСТЬ КОНТЕНТА ОТСУТСТВУЕТ. ИГРА НЕ БУДЕТ РАБОТАТЬ,EEN DEEL VAN DE INHOUD ONTBREEKT. HET SPEL ZAL NIET WERKEN
+Число транзисторов: {:>3},Aantal transistoren: {:>3}
+Число уникальных сыграных игр : {},Aantal unieke gespeelde spellen : {}
+Число ходов:        {:>3},Aantal zetten:          {:>3}
+Читать дату файлов,Bestandsdatum lezen
+Чтение каталога...,Map lezen...
+Чтение списка файлов...,Bestandslijst lezen...
+Что-то плохое грядёт,Er komt iets ergs aan
+Что-то пошло не так. Пропускаем оставшийся файл,Er is iets misgegaan. Het resterende bestand wordt overgeslagen
+"Чтобы вернуться, нажмите B",Druk op B om terug te keren
+Шадок у Гиби,Shadok bij Gibi
+Шифрование секции ,Versleuteling van sectie
+Экзосфера очищает CAL0      : {},Exosfeer wist CAL0      : {}
+Экран                 : ({:08X}) {},Scherm                : ({:08X}) {}
+Экспорт SDK,SDK-export
+Экспортировать,Exporteren
+Экспортировать SDK,SDK exporteren
+Это действие будет нельзя отменить,Deze actie kan niet ongedaan worden gemaakt
+Язык                    : {},Taal                    : {}
+Январь,Januari
+Японский,Japans
+Ярлык   : ,Snelkoppeling   : 
+Ярлык для DBI,Snelkoppeling voor DBI
+"больше жертв, тем выше вероятность,","is'. Of, anders gezegd: 'Hoe meer"
+быстро разгадали тайный замысел,moerassen werd een vrijwilliger
+"оцепили его там со всех сторон,",lekker te spotten. Ze lieten de gast
+"Или, говоря иными словами: «Чем",tijdelijk onderpand voor grootsheid
+"тактика буксует, но они твёрдо верят",het uiteindelijk lukt'. Hun tactiek
+да,ja
+при котором всё заработает… И они,die ene kans op een miljoen waarbij
+"и теперь всякий раз, когда он",een van hun opslagplaatsen met
+лишь временным залогом величия».,geen ramp die niet slechts een
+"в тот один шанс из миллиона,","hapert, maar ze geloven rotsvast in"
+чтобы за ними пришла победа».,"fatale fouten te maken, zodat daarna"
+не является LFS папкой,is geen LFS-map
+не является LFS папкой игры,is geen game LFS-map
+нет,nee
+"такой беды, которая не являлась бы",diepgewortelde logica: 'Er bestaat
+"из своих складов с техникой, но",snel het geheime plan en besloten
+"999999 первых фатальных ошибок,",om zo snel mogelijk die 999999 eerste
+спешат поскорее совершить те самые,alles wél werkt... En ze haasten zich
+"Те, будучи хитрыми из-за интернетов,",in tuinen worden gehaald. Vanuit de
+прямиком к соседям за деталями.,zouden chips rechtstreeks uit apparatuu
+исправно принося отрицательный рост.,gaat door en levert gestaag negatieve
+догмате их глубинной логики: «Нет,het fundamentele dogma van hun
+что в финале всё получится». Их,"slachtoffers, hoe groter de kans dat"
+"прямо из техники, стоящей в садах.","tekort zijn, zowel in geleidingssysteme"
+и решили всласть поглумиться. Они,gestuurd naar de buren voor onderdelen.
+"ZL/ZR - смена даты, Y - период","ZL/ZR - datum wijzigen, Y - periode"
+"видит чип, соседи его отбирают.»","apparatuur binnengaan, maar omsingelden"
+"падают, потому что чипов не хватает",'Spiegelland'.
+"ни в системах наводки, ни в унитазах.",De hoofdstrateeg verklaarde dat de
+позволили гостю залезть в один,"Die, sluw door het internet, doorzagen"
+"Получено: {}, (скорость не определена)","Ontvangen: {}, (snelheid niet gedefinieerd)"
+Игры добавлены в список исключений,Games toegevoegd aan uitsluitingslijst
+Новых игр в список исключений добавлено не было,Er zijn geen nieuwe games toegevoegd aan de uitsluitingslijst
+"Интервал автобекапа сейвов, дни","Interval voor automatische back-up van savegames, dagen"
+Просмотр МТР устройства [{}],MTP-apparaat bekijken [{}]
+Просмотр USB диска [{}],USB-schijf bekijken [{}]
+Заряд батареи (сырое значение) : {},Batterijlading (ruwe waarde) : {}
+ru,ru
+Конфигурация зарядки            : {},Laadconfiguratie            : {}
+Режим Hi-Z включён              : {},Hi-Z-modus ingeschakeld              : {}
+Зарядка батареи включена        : {},Batterij opladen ingeschakeld        : {}
+Маршрут электропитания          : {},Voedingspad          : {}
+Напряжение источника            : {} mV,Bronspanning            : {} mV
+Ток источника                   : {} mA,Bronstroom                    : {} mA
+Быстрая зарядка разрешена       : {},Snelladen ingeschakeld          : {}
+[CRC ОШИБКА ФАЙЛА],[BESTANDS-CRC-FOUT]
+Целевая прошивка            : {}.{}.{},Doelfirmware                : {}.{}.{}
+Поддерживаемая версия HOS   : {},Ondersteunde HOS-versie   : {}
+Будет скачана и установлена прошивка системы из файла {}.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены,Systeemfirmware wordt gedownload en geïnstalleerd vanuit bestand {}.\n\nDruk op (+) om door te gaan\nElke andere knop om te annuleren
+Распаковка архива не удалась,Uitpakken van archief mislukt
+Сканирование архива не удалось,Scannen van archief mislukt
+Установить все обновления из этой папки,Alle updates uit deze map installeren
+Япония,Japan
+Русский,Russisch
+Февраль,Februari
+Октябрь,Oktober
+[HASH MISMATCH: GC ➡ eShop],[HASH MISMATCH: GC ➡ eShop]
+Ноябрь,November
+ {} минут, {} minuten
+Игрок,Speler
+Время,Tijd
+Язык    : ,Taal    : 
+Контент,Inhoud
+[HASH: OK],[HASH: OK]
+Красная,Rode
+Путь    : ,Pad :
+И. И. Пиздоболов. Ритмы прорыва.,de overwinning komt».
+[HASH MISMATCH: Неисправимо],[HASH-MISMATCH: Onherstelbaar]
+[ПРЕД],[VORIG]
+Альбом,Album
+Выход,Afsluiten
+и т.д...,enz...
+{} бекап,{} back-up
+874,874
+Пишется тело: {}/{}MB \r,Body schrijven: {}/{}MB \r
+Пишется скриншот\n,Screenshot schrijven\n
+Пишется таблица хешей\n,Hashtabel schrijven\n
+Пишется подпись видео\n,Videosignatuur schrijven\n
+Операция завершена\n,Bewerking voltooid\n
+Предел входного тока (буст)     : {} mA,Ingangsstroomlimiet (boost)     : {} mA
+Предел тока быстрой зарядки     : {} mA,Laadstroomlimiet snelladen     : {} mA
+Напряжение батареи              : {} mV,Batterijspanning              : {} mV
+Контроллер источника получен    : {},Broncontroller ontvangen    : {}
+OTG Запрошен                    : {},OTG aangevraagd                    : {}
+"Будет скачана и установлена прошивка системы из файла {}.\n\nВНИМАНИЕ!!! Похоже, эта версия не поддерживается текущей атмосферой.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены",Systeemfirmware wordt gedownload en geïnstalleerd vanuit bestand {}.\n\nWAARSCHUWING!!! Het lijkt erop dat deze versie niet wordt ondersteund door de huidige Atmosphere.\n\nDruk op (+) om door te gaan\nDruk op een andere knop om te annuleren
+Копирование файла не удалось,Kopiëren van bestand mislukt
+Daybreak.nro не найден,Daybreak.nro niet gevonden
+Изображение добавлено в альбом,Afbeelding toegevoegd aan album
+Ошибка добавления изобржения в альбом: {},Fout bij het toevoegen van afbeelding aan album: {}
+Добавить в альбом,Toevoegen aan album
+Анализ mp4 файла,mp4-bestand analyseren
+Длительность: {},Duur: {}
+ОШИБКА! Файл не содержит один видео трек,FOUT! Het bestand bevat niet één videotrack
+ОШИБКА! Файл не содержит один аудио трек,FOUT! Het bestand bevat niet één audiotrack
+ОШИБКА! У видео трека неподдерживаемый кодек,FOUT! De videotrack heeft een niet-ondersteunde codec
+ОШИБКА! У аудио трека неподдерживаемый кодек,FOUT! Audiotrack heeft een niet-ondersteunde codec
+ОШИБКА! Аудио трек не стерео,FOUT! Audiotrack is niet stereo
+[{}] Общий тикет для {},[{}] Algemeen ticket voor {}
+ОШИБКА! У аудио трека неподходящая частота дискретизации,FOUT! Audiotrack heeft een ongeschikte samplefrequentie
+ОШИБКА! У видео трека неподходящая ширина,FOUT! Videotrack heeft een ongeschikte breedte
+ОШИБКА! У видео трека неподходящая высота,FOUT! Videotrack heeft een ongeschikte hoogte
+ВНИМАНИЕ! Возможно видео поток содержит B-Frames. Файл может не воспроизводиться,WAARSCHUWING! Videostream bevat mogelijk B-frames. Bestand wordt mogelijk niet afgespeeld
+"Похоже, это не MP4 файл",Het lijkt erop dat dit geen MP4-bestand is
+Открыть как RomFS,Openen als RomFS
+\x1b[31;1mГ\x1b[37;1m,\x1b[31;1mГ\x1b[37;1m
+\x1b[32;1mШ\x1b[37;1m,\x1b[32;1mШ\x1b[37;1m
+Ваша SD карта является подделкой. Рекомендуется заменить SD карту на проверенную.,Uw SD-kaart is vervalst. Het wordt aanbevolen om de SD-kaart te vervangen door een geverifieerde kaart.
+[{}] Персональный тикет для {},[{}] Persoonlijk ticket voor {}
+Кажется ваша SD карта является подделкой.\n\nВозможны проблемы с установкой игр.\nВ этом случае рекомендуется заменить SD карту на проверенную.,Uw SD-kaart lijkt vervalst te zijn.\n\nEr kunnen problemen optreden bij het installeren van games.\nIn dit geval wordt aanbevolen de SD-kaart te vervangen door een geverifieerde kaart.
+Информация о SD карте,SD-kaartinformatie
+Производитель    : {:s} ({:02X}),Fabrikant       : {:s} ({:02X})
+OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
+Имя продукта     : {:s},Productnaam       : {:s}
+Ревизия продукта : {:s},Productrevisie : {:s}
+Серийный номер   : {:s},Serienummer      : {:s}
+[ПОДПИСЬ: DBI],[HANDTEKENING: DBI]
+.    Время игры    \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m,.    Speeltijd    \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m
+"ZL/ZR смена даты, Y период, X сортировка, (+) выбрать пользователя","ZL/ZR datum wijzigen, Y periode, X sortering, (+) gebruiker selecteren"
+[{}МБ] {}МБ из {}МБ ({:.2f} МБ/сек)\x1b[0K\r,[{}MB] {}MB van {}MB ({:.2f} MB/sec)\x1b[0K\r
+"X выбор, Y обратить выбор, (+) меню, R3 сортировка, L3 запуск","X selecteren, Y selectie omkeren, (+) menu, R3 sorteren, L3 starten"
+Создать все известные ({}),Alle bekende aanmaken ({})
+"X выбор, Y обратить выбор, (+) меню, L3 запуск","X selecteren, Y selectie omkeren, (+) menu, L3 starten"
+"DPAD или стики для перемещения, (+) Настройки","DPAD of sticks om te bewegen, (+) Instellingen"
+Просмотр HTTP/FTP/Github сервера...,HTTP/FTP/Github-server doorzoeken...
+"X выбор, Y обратить выбор, (+) меню, R3 сортировка","X selecteren, Y selectie omkeren, (+) menu, R3 sorteren"
+"X выбор, Y обр. выбор, (+) меню","X selecteren, Y selectie omkeren, (+) menu"
+"X выбор, Y обратить выбор, A открыть, (-) 2ая панель, (+) меню","X selecteren, Y selectie omkeren, A openen, (-) 2e paneel, (+) menu"
+"X выбор, Y обр. выбор, ⬅/➡ смена панели, (-) закрыть, (+) меню","X selecteren, Y deselecteren, ⬅/➡ paneel wisselen, (-) sluiten, (+) menu"
+[ДЕЛЬТА ФРАГМЕНТ НЕ НУЖЕН],[DELTA FRAGMENT NIET NODIG]
+[КОНТЕНТ ОТСУТСТВУЕТ],[INHOUD ONTBREEKT]
+[НЕ СОЗДАТЬ ПЛЕЙСХОЛДЕР],[GEEN TIJDELIJKE AANDUIDING MAKEN]
+[НЕДОСТАТОЧНО МЕСТА],[ONVOLDOENDE RUIMTE]
+  Кодировка...,  Coderen...
+[НЕИЗВЕСТНОЕ СЖАТИЕ],[ONBEKENDE COMPRESSIE]
+[ОТСУТСТВУЕТ],[ONTBREEKT]
+[ОШБК],[FOUT]
+[ОШИБКА NCA MAGIC],[NCA MAGIC FOUT]
+[ОШИБКА ЗАПИСИ В ПЛЕЙСХОЛДЕР],[FOUT BIJ SCHRIJVEN NAAR TIJDELIJKE AANDUIDING]
+[ОШИБКА РАСПАКОВКИ ZSTD: {}],[ZSTD-DECOMPRESSIEFOUT: {}]
+[ОШИБКА РАСПАКОВКИ],[UITPAKFOUT]
+[ОШИБКА],[FOUT]
+[ОШИБКА] Отсутствует URL списка обновлений,[FOUT] Update lijst URL ontbreekt
+[ПЕРЕДАЧА OK],[OVERDRACHT OK]
+  Применить,  Toepassen
+[ПЕРЕДАЧА ПРЕРВАНА],[OVERDRACHT ONDERBROKEN]
+[ПОВРЕЖДЁННЫЙ NCA],[BESCHADIGDE NCA]
+[ПОДПИСЬ: OK],[HANDTEKENING: OK]
+[ПОДПИСЬ: XCI➡NSP],[HANDTEKENING: XCI➡NSP]
+[ПОДПИСЬ: Поддельная],[HANDTEKENING: Vals]
+[СТАРАЯ ПРОШИВКА],[OUDE FIRMWARE]
+[ТРЕБУЕТСЯ РЕЖИМ ТАЙТЛА],[TITELMODUS VEREIST]
+[ФАЙЛ ПОВРЕЖДЁН],[BESTAND BESCHADIGD]
+[ХЕШ ИСПРАВЛЕН],[HASH HERSTELD]
+  Редактирование,  Bewerken
+[ХЕШ НЕ СОВПАДАЕТ],[HASH KOMT NIET OVEREEN]
+\nНачало обработки dlc {}: {:016X},\nStart DLC-verwerking {}: {:016X}
+\nНачало обработки программы {},\nVerwerking van applicatie {} gestart
+\nНачало создания Data.nca,\nStart van Data.nca aanmaak
+\nНачало создания Meta.nca,\nMeta.nca aanmaken gestart
+\nОшибка USB обмена,\nUSB-overdrachts fout
+\nСборка PFS0,\nPFS0 bouwen
+\nСборка RomFS,\nRomFS bouwen
+\nСекция 0,\nSectie 0
+\nСекция 1,\nSectie 1
+ (по времени игры), (op speeltijd)
+\nСекция 2,\nSectie 2
+\nСоздан NSP: {},\nNSP aangemaakt: {}
+\nШифрование NCA,\nNCA-versleuteling
+{:04d} {} {:02d}. Всего: {} час,{:04d} {} {:02d}. Totaal: {} uur
+{:04d} {} {:02d}. Всего: {} часа,{:04d} {} {:02d}. Totaal: {} uur
+{:04d} {} {:02d}. Всего: {} часов,{:04d} {} {:02d}. Totaal: {} uur
+{:4d} {}. Всего: {} час,{:4d} {}. Totaal: {} uur
+{:4d} {}. Всего: {} часа,{:4d} {}. Totaal: {} uur
+{:4d} {}. Всего: {} часов,{:4d} {}. Totaal: {} uur
+ (по названию игры), (op spelnaam)
+{:4d}. Всего: {} час,{:4d}. Totaal: {} uur
+{:4d}. Всего: {} часа,{:4d}. Totaal: {} uur
+{:4d}. Всего: {} часов,{:4d}. Totaal: {} uur
+{:>3} {}{:<50}\x1b[37;1m {:>10},{:>3} {}{:<50}\x1b[37;1m {:>10}
+{:>6} объектов обработано. {:>5} записей найдено...\r,{:>6} objecten verwerkt. {:>5} items gevonden...\r
+{:>6}/{}kB уже скачано...\r,{:>6}/{}kB al gedownload...\r
+{} cохранение,{} opslag
+{} cохранений,{} opgeslagen
+{} cохранения,{} opslaggegevens
+ (по числу запусков), (op aantal starts)
+{} бекапа,{} back-up
+{} бекапов,{} back-ups
+{} записей ({}),{} items ({})
+{} записи ({}),{} items ({})
+{} запись ({}),{} item ({})
+{} игр ({}),{} spellen ({})
+{} игра ({}),{} game ({})
+{} игры ({}),{} spellen ({})
+{} сохранение,{} opslag
+{} сохранений,{} opgeslagen bestanden
+{} сохранения,{} opslaggegevens
+{} тикет,{} ticket
+{} тикета,{} tickets
+{} тикетов,{} tickets
+{}-{} FW:{}{} SDK:{},{}-{} FW:{}{} SDK:{}
+"{}/{} MB (Ср: {:.1f} MB/sec, Тек: {:.1f} MB/sec) Ост. {:02d}:{:02d}      \r","{}/{} MB (Gem: {:.1f} MB/s, Huid: {:.1f} MB/s) Rest. {:02d}:{:02d}      \r"
+"{}/{} МБ, {:.2f} МБ/сек","{}/{} MB, {:.2f} MB/sec"
+{}: {} потерянная запись,{}: {} weesitem
+{}: {} потерянных записей,{}: {} verloren items
+{}: {} потерянных записи,{}: {} verloren items
+     {:<10} Шифрование: {} Размер установки: {}{:>10},     {:<10} Versleuteling: {} Installatiegrootte: {}{:>10}
+ [НЕ МОГУ ОТКРЫТЬ ФАЙЛ], [KAN BESTAND NIET OPENEN]
+{}: {}/{} ({:.2f} МБ/сек),{}: {}/{} ({:.2f} MB/sec)
+{}: {}/{} ({}%) ({:.2f} МБ/сек),{}: {}/{} ({}%) ({:.2f} MB/s)
+{}: пропускается {}/{} ({:.2f} МБ/сек),{}: overslaan {}/{} ({:.2f} MB/sec)
+"{}\n\nВосстановление бекапа не удалось\n\nНажмите A - прервать, другая кнопка - продолжить","{}\n\nBack-up herstellen mislukt\n\nDruk op A om af te breken, andere knop om door te gaan"
+{}МБ из {}МБ ({:.2f} МБ/сек)\x1b[0K\r,{}MB van {}MB ({:.2f} MB/sec)\x1b[0K\r
+«У жителей болот всё идёт по плану.,«Bij de moerasbewoners loopt alles
+Ёмкость с завода   : {} mAh,Fabriekscapaciteit : {} mAh
+АВТО,AUTO
+Аватар установлен,Avatar ingesteld
+Август,Augustus
+Австралия,Australië
+Автозапуск FTP: ,FTP automatisch starten: 
+Автозапуск MTP,MTP automatisch starten
+Автозапуск списка homebrew,Autostart homebrew-lijst
+Автоповтор кнопок при удержании,Automatische knopherhaling bij ingedrukt houden
+Автор   : ,Auteur  : 
+Агрументы для ярлыка,Snelkoppeling argumenten
+Адрес FTP сервера: {},FTP-serveradres: {}
+Адрес HTTP сервера: {},HTTP-serveradres: {}
+ {:>5} часа, {:>5} uur
+Альбом (0°),Album (0°)
+Американский английский,Amerikaans Engels
+Апрель,April
+База этой игры не самодостаточна. Не забудьте установить обновление,De basis van dit spel is niet zelfvoorzienend. Vergeet niet de update te installeren
+Базовое хранилище: ,Basisopslag: 
+Бекапы,Back-ups
+Бекапы сохранений ({}),Back-ups van opslaggegevens ({})
+Британский английский,Brits Engels
+ {:>5} часов, {:>5} uur
+В альбоме найден {} объект,{} object gevonden in album
+В альбоме найдено {} объекта,{} objecten gevonden in album
+В альбоме найдено {} объектов,{} objecten gevonden in album
+В альбоме отсутствуют объекты,Geen objecten in album
+В файле /switch/prod.keys отсутствуют необходимые ключи.\n\nЧасть функций программы будет недоступна.\n\nПерегрузитесь в Hekate и используйте Lockpick_RCM.bin пейлоад\nдля дампа ключей из SysNAND.,Vereiste sleutels ontbreken in het bestand /switch/prod.keys.\n\nSommige functies van de applicatie zullen niet beschikbaar zijn.\n\nHerstart naar Hekate en gebruik de Lockpick_RCM.bin payload\nom sleutels uit SysNAND te dumpen.
+ВНИМАНИЕ ,WAARSCHUWING 
+ВНИМАНИЕ! ,WAARSCHUWING! 
+ВНИМАНИЕ! Тайтл {:016X} не установлен,WAARSCHUWING! Titel {:016X} is niet geïnstalleerd
+ВНИМАНИЕ! Установленная версия ({}) не совпадает с желаемой ({}),WAARSCHUWING! De geïnstalleerde versie ({}) komt niet overeen met de gewenste ({})
+ВО ВРЕМЯ ПЕРЕДАЧИ ФАЙЛА НАЙДЕНЫ ОШИБКИ. УСТАНОВКА ПРЕРВАНА,FOUTEN GEVONDEN TIJDENS BESTANDSOVERDRACHT. INSTALLATIE AFGEBROKEN
+ {} в чёрном списке., {} op zwarte lijst.
+Введите URL сервера (HTTP или (S)FTP),Voer server-URL in (HTTP of (S)FTP)
+Введите агрументы для ярлыка или оставьте пустым,Voer argumenten in voor de snelkoppeling of laat leeg
+Введите желаемый номер страницы,Voer gewenst paginanummer in
+Введите новое имя,Voer nieuwe naam in
+Введите новое имя каталога,Voer nieuwe mapnaam in
+Введите новое имя файла,Voer nieuwe bestandsnaam in
+Введите номер DLC,Voer DLC-nummer in
+Версия  : ,Versie  : 
+Версия {} [v{}],Versie {} [v{}]
+Версия атмосферы            : {}.{}.{},Atmosphere-versie           : {}.{}.{}
+Версия прошивки         : {}.{}.{}-{}.{},Firmwareversie          : {}.{}.{}-{}.{}
+Вместо пользователя {} использовать:,Gebruiken in plaats van gebruiker {}:
+Внимание! ,Waarschuwing! 
+Внимание!\nНекоторые файлы были заблокированы и поэтому пропущены.,Waarschuwing!\nSommige bestanden waren vergrendeld en daarom overgeslagen.
+Во время разбора\n\n{}\n\nвозникла следующая ошибка:\n\n{},Tijdens het parseren van\n\n{}\n\nis de volgende fout opgetreden:\n\n{}
+Во время установки тикетов были ошибки. Проверьте наличие ES сигпатчей,Er zijn fouten opgetreden tijdens het installeren van tickets. Controleer op ES sigpatches
+Во время экспорта были ошибки,Er zijn fouten opgetreden tijdens het exporteren
+Возраст батареи                 : {}%,Batterijleeftijd               : {}%
+Возраст батареи                : {},Batterijleeftijd              : {}
+Возраст батареи                : {}%,Batterijleeftijd                : {}%
+ {} минута, {} minuut
+Возрастной рейтинг,Leeftijdsclassificatie
+Восстановить,Herstellen
+Восстановить бекап...,Back-up herstellen...
+Восстановить для...,Herstellen voor...
+Восстановить как бекап сохранения,Herstellen als save-backup
+Восстановление бекапа,Back-up herstellen
+Восстановление не удалось,Herstel mislukt
+Восстановление успешно,Herstel geslaagd
+Восстановление: {},Herstellen: {}
+ {} минуты, {} minuten
+Время гашения экрана в секундах,Time-out voor schermdemping in seconden
+Время игры: {:02}:{:02}:{:02},Speeltijd: {:02}:{:02}:{:02}
+Время передачи {:d}:{:02d}:{:02d},Overdrachtstijd {:d}:{:02d}:{:02d}
+Все игровые сессии,Alle spelsessies
+Все игроки,Alle spelers
+Все объекты,Alle objecten
+Все файлы в порядке,Alle bestanden zijn OK
+Всего {} байт получен,{} bytes ontvangen
+Всего {} байт послан,{} bytes verzonden
+Всего {} байта получено,{} bytes in totaal ontvangen
+ Да, Ja
+Всего {} байта послано,{} bytes verzonden
+Всего {} байтов получено,{} bytes in totaal ontvangen
+Всего {} байтов послано,{} bytes verzonden
+Всего записей: {},Totaal aantal items: {}
+Всего освобождено места : ,Totaal vrijgemaakte ruimte : 
+Всего отослано: {} ({}/сек),Totaal verzonden: {} ({}/sec)
+Всего программ: {},Totaal titels: {}
+Вставить,Invoegen
+Вставка...,Invoegen...
+Всё время. Всего: {} час,Alle tijd. Totaal: {} uur
+ Да , Ja 
+Всё время. Всего: {} часа,Alle tijd. Totaal: {} uur
+Всё время. Всего: {} часов,Alle tijd. Totaal: {} uur
+Вы собираетесь удалить следующие бекапы:,U staat op het punt de volgende back-ups te verwijderen:
+Вы собираетесь удалить следующие игры:,U staat op het punt de volgende games te verwijderen:
+Вы собираетесь удалить следующие сохранения:,U staat op het punt de volgende opgeslagen bestanden te verwijderen:
+Вы собираетесь удалить следующие тикеты:,U staat op het punt de volgende tickets te verwijderen:
+Вы уверены в удалении {} записей?\n\n(+) - ДА   B - Отмена,Weet u zeker dat u {} items wilt verwijderen?\n\n(+) - JA   B - Annuleren
+Вы уверены в удалении {} записи?\n\n(+) - ДА   B - Отмена,Weet u zeker dat u {} item wilt verwijderen?\n\n(+) - JA   B - Annuleren
+Вы уверены в удалении {} объекта?\n\n(+) - ДА   B - Отмена,Weet u zeker dat u {} object wilt verwijderen?\n\n(+) - JA   B - Annuleren
+Вы уверены в удалении {} объектов?\n\n(+) - ДА   B - Отмена,Weet u zeker dat u {} objecten wilt verwijderen?\n\n(+) - JA   B - Annuleren
+    {:>2} сек,    {:>2} sec
+ Закрытие игры, Game sluiten
+"Вы уверены, что хотите удалить {}?\n\n(+) - ДА, другая кнопка - НЕТ","Weet u zeker dat u {} wilt verwijderen?\n\n(+) - JA, andere knop - NEE"
+"Вы уверены, что хотите удалить\n{}?\n\n(+) - ДА  В - Отмена",Weet u zeker dat u wilt verwijderen\n{}?\n\n(+) - JA  B - Annuleren
+Выберите пользователя,Gebruiker selecteren
+Выберите тип сохранения,Selecteer opslagtype
+Выбрать все файлы игры,Alle spelbestanden selecteren
+Выбрать того же пользователя,Dezelfde gebruiker selecteren
+Выбрать ту же игру,Hetzelfde spel selecteren
+Выйти из DBI           : ,DBI afsluiten          : 
+Выключать экран,Scherm uitschakelen
+Выключить экран        : ,Scherm uitschakelen    : 
+ Запуск игры, Game starten
+Вырезать,Knippen
+Выход на рабочий стол,Afsluiten naar HOME-menu
+Вычисление хэша,Hash berekenen
+Вычисленное время конца : {},Berekende eindtijd : {}
+Вычисленное время начала: {},Berekende starttijd: {}
+Генерация DLC [{:016X}][v{}],DLC genereren [{:016X}][v{}]
+Генерация DLC анлокера...,DLC-unlocker genereren...
+Генерируется анлокер для {:016X} с номером {} и версией {}...,Unlocker wordt gegenereerd voor {:016X} met nummer {} en versie {}...
+Генерируется ярлык для пути '{}' и аргументов '{}'...,Snelkoppeling maken voor pad '{}' en argumenten '{}'...
+ Логаут пользователя \x1b[36;1m{}\x1b[37;1m, Gebruiker \x1b[36;1m{}\x1b[37;1m uitloggen
+Главное меню,Hoofdmenu
+Голландский,Nederlands
+Да,Ja
+"Да, я уверен","Ja, ik weet het zeker"
+Дамп анлокера в '{}'...,Unlocker dumpen naar '{}'...
+Дамп текущей прошивки,Dump huidige firmware
+Дамп ярлыка в '{}'...,Snelkoppeling dumpen naar '{}'...
+Дата первого игрового события : {},Datum van eerste game-evenement : {}
+Действия с файлами,Bestandsbewerkingen
+Действия с файлами ({}),Bestandsacties ({})
+ Логин пользователя \x1b[36;1m{}\x1b[37;1m, Gebruikersnaam \x1b[36;1m{}\x1b[37;1m
+Декабрь,December
+День,Dag
+Диаграмма активности,Activiteitsgrafiek
+Для бекапов,Voor back-ups
+Для выхода нажмите любую кнопку,Druk op een willekeurige knop om af te sluiten
+Для дампов,Voor dumps
+Для логов,Voor logs
+Добавить в любимые,Toevoegen aan favorieten
+Добавлять суффикс к имени файла,Achtervoegsel toevoegen aan bestandsnaam
+Достаточное питание            : {},Voldoende voeding              : {}
+ Переключение на игру, Overschakelen naar game
+Европа,Europa
+Есть исправление RCM бага   : {},RCM-bugfix aanwezig   : {}
+"Есть несохранёные изменения.\nВы хотите их сохранить?\n\n(+) - Да, сохранить\n\n(-) - Выйти без сохранения\n\nДругая кнопка - Отмена","Er zijn niet-opgeslagen wijzigingen.\nWilt u deze opslaan?\n\n(+) - Ja, opslaan\n\n(-) - Afsluiten zonder opslaan\n\nAndere knop - Annuleren"
+Желаемая версия: {},Gewenste versie: {}
+Журнал активности,Activiteitenlogboek
+Журналирование действий,Actielogboek
+Завершено,Voltooid
+Загружается список обновлений...,Updatelijst laden...
+Загружено ,Geladen 
+Загрузка изображения...,Afbeelding laden...
+ Режим работы изменился: {}, Bedrijfsmodus gewijzigd: {}
+Загрузка текста...{}%,Tekst laden...{}%
+Загрузка файла... {}%,Bestand laden... {}%
+Задать размер файла {} не удалось: {},Bestandsgrootte {} instellen mislukt: {}
+Закладки на SD,Bladwijzers op SD
+Закончено за {:02d}:{:02d}:{:02d},Voltooid in {:02d}:{:02d}:{:02d}
+Закончилась память при посылке ответа,Onvoldoende geheugen bij verzenden van antwoord
+Закончились дополнительные буферы. Скорость записи на носитель слишком низка,Extra buffers uitgeput. Schrijfsnelheid naar opslagmedium te laag
+Закрытие соединения,Verbinding sluiten
+Закрытие соединения к {}:{},Verbinding met {}:{} wordt gesloten
+ Сброс системных часов, Systeemklok resetten
+Запаковать LFS в romfs.bin,Pak LFS in romfs.bin
+Запаковать в romfs.bin,Inpakken in romfs.bin
+Запаковка папки в RomFS,Map inpakken in RomFS
+Записанное время конца  : {},Opgenomen eindtijd  : {}
+Записанное время начала : {},Opgenomen starttijd : {}
+Запись в CAL0 разрешена     : {},CAL0 schrijven toegestaan     : {}
+Запись в файл...,Schrijven naar bestand...
+Запись за пределами файла,Schrijven buiten bestand
+Заполнение нулями,Opvullen met nullen
+Заполнить свободное место на SD нулями,Vrije ruimte op SD vullen met nullen
+ Сворачивание игры, Game onderbreken
+Запрет захвата видео,Video-opname verbieden
+Запрет скриншотов,Schermafbeeldingen verboden
+Запрещено,Verboden
+Запрос на удаление ,Verwijderverzoek 
+Запускавшиеся игры,Gestarte spellen
+Запускать точку доступа,Toegangspunt starten
+Запустить FTP сервер,FTP-server starten
+Запустить FTP сервер...,FTP-server starten...
+Запустить HTTP сервер,HTTP-server starten
+Запустить HTTP сервер...,HTTP-server starten...
+ Состояние электропитания изменилось: {}, Voedingsstatus gewijzigd: {}
+Запустить МТР соединение,Start MTP-verbinding
+Запустить случайную игру,Willekeurig spel starten
+Заряд батареи                  : {},Batterijlading                 : {}
+Заряд батареи                  : {}%,Batterijlading                 : {}%
+Заряд батареи (сырое значение) : {}%,Batterijlading (onbewerkte waarde): {}%
+Зарядка батареи                : {},Batterijlading                 : {}
+Здесь пусто,Hier is niets
+Игра анонсирует SDK {},Game kondigt SDK {} aan
+" и {} новое DLC,"," en {} nieuwe DLC,"
+"Игра анонсирует более новый SDK ({}), чем текущая прошивка ({})",Game vereist een nieuwere SDK ({}) dan de huidige firmware ({})
+Игра использует titleId от дополнения,Game gebruikt titleId van DLC
+Игра использует titleId от обновления,Game gebruikt titleId van update
+Извлечь в LFS,Uitpakken naar LFS
+Изменение размера сохранения на {} [{}]...,Grootte van opslag wijzigen naar {} [{}]...
+Изменить версию DLC (десятичную),DLC-versie wijzigen (decimaal)
+Изменить номер DLC (десятичный),DLC-nummer wijzigen (decimaal)
+Изменить номер DLC (шестнадцатеричный),DLC-nummer wijzigen (hexadecimaal)
+Изменён размер SaveFS,SaveFS-grootte gewijzigd
+"Главный стратег объявил, что ракеты","doorbraak. Bunker, staatsuitgeverij"
+" и {} новых DLC,"," en {} nieuwe DLC's,"
+Импорт исправленного тикета...,Gecorrigeerd ticket importeren...
+Импорт тикета...,Ticket importeren...
+Имя     : ,Naam    : 
+"Имя каталога\n'{}'\nсодержит недопустимые символы.\nОн не может быть создан.\n\nНажмите A - прервать, B - пропустить, X - переименовать","Mapnaam\n'{}'\nbevat ongeldige tekens.\nDeze kan niet worden aangemaakt.\n\nDruk op A - afbreken, B - overslaan, X - hernoemen"
+"Имя файла\n'{}'\nсодержит недопустимые символы.\nОн не может быть создан.\n\nНажмите A - прервать, B - пропустить, X - переименовать","Bestandsnaam\n'{}'\nbevat ongeldige tekens.\nHet kan niet worden aangemaakt.\n\nDruk op A - afbreken, B - overslaan, X - hernoemen"
+Инсталлируется romfs.bin,romfs.bin wordt geïnstalleerd
+Инструменты,Hulpmiddelen
+Информация о зарядке батареи,Informatie over batterij opladen
+Информация о контенте,Contentinformatie
+Информация о контенте ({}),Inhoudsinformatie ({})
+ сортировка по дате создания, sorteren op aanmaakdatum
+Информация о прошивке,Firmware-informatie
+Информация о системе,Systeeminformatie
+Информация о сохранении,Opslaggegevens
+Информация о сохранении...,Opslaggegevens...
+Информация о тикете,Ticket-informatie
+Информация о тикете...,Ticket-informatie...
+Информация об NSP,NSP-informatie
+Информация об атмосфере,Atmosphere-informatie
+Информация об игровой активности,Informatie over spelactiviteit
+Информация об источние питания,Informatie over stroombron
+ сортировка по имени, sorteren op naam
+Информация об оборудовании,Hardware-informatie
+Информация...,Informatie...
+Испанский,Spaans
+Использовано дополнительной памяти: {}. Создано буферов: {},Extra geheugen gebruikt: {}. Buffers aangemaakt: {}
+Использовать 5 GHz,Gebruik 5 GHz
+Использовать MSG_WAITALL в recv,Gebruik MSG_WAITALL in recv
+Использовать для неё TitleID,Gebruik TitleID ervoor
+Использовать папку для...,Map gebruiken voor...
+Использовать разгон,Overklokken gebruiken
+Использовать скрытый SSID,Verborgen SSID gebruiken
+ сортировка по имени игры, sorteren op spelnaam
+Используется ,Gebruikt 
+Используется USB{},USB{} wordt gebruikt
+"Процесс обнуления продолжается,",volgens plan. Het nulstellingsproces
+Источник питания                : {},Stroombron                        : {}
+Итальянский,Italiaans
+Ищется control для ProgramId {},Zoeken naar control voor ProgramId {}
+Ищется exefs/romfs для ProgramId {},Zoeken naar exefs/romfs voor ProgramId {}
+Ищется exefs/romfs/logo для ProgramId {},Zoeken naar exefs/romfs/logo voor ProgramId {}
+Ищется {},Zoeken naar {}
+ сортировка по месту установки, sorteren op installatielocatie
+Июль,Juli
+Июнь,Juni
+Канадский французский,Canadees Frans
+"Когда ваше устройство подключится, нажмите любую кнопку",Druk op een willekeurige knop wanneer uw apparaat verbinding maakt
+Код партии батареи    : {} ({}),Batterij lotcode      : {} ({})
+Кодировка,Codering
+Конвертация в фейковые ,Conversie naar nep 
+Конец игры            : -,Einde van het spel    : -
+Конец игры            : {},Einde van spel        : {}
+ сортировка по общему размеру, sorteren op totale grootte
+Контент уже на месте,Inhoud is al aanwezig
+Копирование IVFC слой {} в nca: {},IVFC-laag {} kopiëren naar nca: {}
+Копирование PFS0 в nca,PFS0 naar nca kopiëren
+Копирование PFS0 хэш таблицы в nca,PFS0-hashtabel kopiëren naar nca
+Копирование SDK {} в файл: {}...,SDK {} kopiëren naar bestand: {}...
+Копировать,Kopiëren
+Корейский,Koreaans
+Корень не найден,Root niet gevonden
+Корень сохранения не существует,Opslagroot bestaat niet
+ сортировка по пользователю, sorteren op gebruiker
+Корея,Korea
+Курсор на обеих панелях,Cursor op beide panelen
+Латиноамериканский испанский,Latijns-Amerikaans Spaans
+Май,Mei
+Март,Maart
+Масштаб: По ширине,Schaal: Aanpassen aan breedte
+Масштаб: По экрану,Schaal: Aanpassen aan scherm
+Масштаб: Точка в точку,Schaal: Pixel Perfect
+Масштаб: Увеличение x2,Schaal: 2x vergroting
+ сортировка по порядку игры, sorteren op spelvolgorde
+Место в  NAND         : {},Ruimte in NAND       : {}
+Место на SD карте     : {},SD-kaartruimte     : {}
+Место на приставке не занято,Geen ruimte bezet op de console
+Место установки        : ,Installatielocatie     : 
+Мета контент отсутствует,Meta-inhoud ontbreekt
+Миссия провалена\n\nНажмите А для выхода,Missie mislukt\n\nDruk op A om af te sluiten
+Миссия успешна\n\nОсталось ходов: {}\n\nНажмите А для выхода,Missie geslaagd\n\nZetten over: {}\n\nDruk op A om af te sluiten
+Модификация файла не удалась,Bestandswijziging mislukt
+На выбранном устройстве нет достаточного свободного места для установки,Er is niet genoeg vrije ruimte op het geselecteerde apparaat voor installatie
+На месте нет достаточно свободного места,Onvoldoende vrije ruimte beschikbaar
+ сортировка по размеру, sorteren op grootte
+Нажмите (+) для перезаписи конфига обновлённым\n\nЛюбую другую кнопку для пропуска,Druk op (+) om de configuratie te overschrijven met de bijgewerkte\n\nEen andere knop om over te slaan
+"Нажмите (+) для удаления, любую другую кнопку для пропуска...\n (-) Удалять все, больше не спрашивая","Druk op (+) om te verwijderen, een andere knop om over te slaan...\n (-) Alles verwijderen zonder opnieuw te vragen"
+"Нажмите A, чтобы продолжить, другую кнопку, чтобы выйти","Druk op A om door te gaan, een andere knop om af te sluiten"
+"Нажмите B, чтобы вернуться",Druk op B om terug te keren
+Нажмите любую кнопку,Druk op een willekeurige knop
+Название: ,Naam: 
+Найден SDK: {},SDK gevonden: {}
+Найден {} зарегистрированный контент-файл,{} geregistreerd inhoudsbestand gevonden
+Найден {} контент-файл,{} inhoudsbestand gevonden
+Найден {} пользователь,{} gebruiker gevonden
+%% заряд-разряд    : {},%% opladen-ontladen    : {}
+Найден {} потерянный контент-файл,{} verweesde inhoudsbestand gevonden
+Найден {} файл,{} bestand gevonden
+Найден {} файл с ошибками,{} bestand met fouten gevonden
+Найден и удалён {} неиспользуемый тикет,Gevonden en verwijderd {} ongebruikt ticket
+Найдена {} запись об игре,{} game-item gevonden
+Найдена {} запись об ошибках,{} foutrecord gevonden
+Найдена {} установленная игра,{} geïnstalleerd spel gevonden
+Найдено {} записей об играх,{} game-records gevonden
+Найдено {} записей об ошибках,{} foutmeldingen gevonden
+Найдено {} записи об играх,{} game-items gevonden
+Весь секрет таится в фундаментальном,groei op. Het hele geheim schuilt in
+({}/{}) Устанавливается {},({}/{}) Installeren {}
+Найдено {} записи об ошибках,{} foutmeldingen gevonden
+Найдено {} зарегистрированных контент-файла,{} geregistreerde inhoudsbestanden gevonden
+Найдено {} зарегистрированных контент-файлов,{} geregistreerde inhoudsbestanden gevonden
+Найдено {} контент-файла,{} inhoudsbestanden gevonden
+Найдено {} контент-файлов,{} inhoudsbestanden gevonden
+Найдено {} обновление,{} update gevonden
+Найдено {} обновлений,{} updates gevonden
+Найдено {} обновления,{} updates gevonden
+Найдено {} пользователей,{} gebruikers gevonden
+Найдено {} пользователя,{} gebruiker gevonden
+Найдено {} потерянных контент-файла,{} verloren inhoudsbestanden gevonden
+Найдено {} потерянных контент-файлов,{} verweesde inhoudsbestanden gevonden
+Найдено {} сохранение,{} opgeslagen bestand gevonden
+Найдено {} сохранение...,{} opgeslagen bestand gevonden...
+Найдено {} сохранений,{} saves gevonden
+Найдено {} сохранений...,{} opslagbestanden gevonden...
+Найдено {} сохранения,{} opgeslagen bestanden gevonden
+Найдено {} сохранения...,{} opslagbestanden gevonden...
+Найдено {} установленные игры,{} geïnstalleerde games gevonden
+Найдено {} установленных игр,{} geïnstalleerde games gevonden
+Найдено {} файла,{} bestand gevonden
+Найдено {} файла с ошибками,{} bestanden met fouten gevonden
+Найдено {} файлов,{} bestanden gevonden
+Найдено {} файлов с ошибками,{} bestanden met fouten gevonden
+Найдено и удалено {} неиспользуемых тикета,{} ongebruikte tickets gevonden en verwijderd
+Найдено и удалено {} неиспользуемых тикетов,{} ongebruikte tickets gevonden en verwijderd
+Найдено существующее сохранение. Восстанавливаю бекап в него...,Bestaande opslag gevonden. Backup wordt hersteld...
+Настройки,Instellingen
+Настройки DBI,DBI-instellingen
+Настройки FB2,FB2-instellingen
+Начало игры           : -,Start van het spel     : -
+Начало игры           : {},Start van het spel     : {}
+Начало создания Control.nca,Starten met aanmaken van Control.nca
+Начало создания Program.nca,Start van Program.nca aanmaak
+Начало установки. Место установки: ,Installatie gestart. Installatielocatie: 
+Начать установку,Installatie starten
+Не доступно,Niet beschikbaar
+Не известно,Onbekend
+"Не найден USB диск, который смог бы вместить получившийся дамп. Убедитесь, что он отформатирован в ExFAT.",Geen USB-schijf gevonden die de resulterende dump kan bevatten. Zorg ervoor dat deze is geformatteerd als ExFAT.
+Не найдены требуемые тикеты,Vereiste tickets niet gevonden
+. Время простоя \x1b[33;1m{:02}:{:02}:{:02}\x1b[37;1m,. Inactieve tijd \x1b[33;1m{:02}:{:02}:{:02}\x1b[37;1m
+Не получилось создать NSP,Kan NSP niet aanmaken
+Не удалось получить список,Kan lijst niet ophalen
+Не удалось установить аватар\n{},Kan avatar niet instellen\n{}
+Не установлен,Niet geïnstalleerd
+Невозможно найти путь,Kan pad niet vinden
+Невозможно открыть папку журналов ошибок,Kan foutlogmap niet openen
+Невозможно переименовать '{}' в '{}':,Kan '{}' niet hernoemen naar '{}':
+Невозможно получить список LFS,Kan LFS-lijst niet ophalen
+Невозможно получить список пользователей,Kan gebruikerslijst niet ophalen
+Невозможно получить статус связи с Nintendo Account,Kan de koppelstatus van Nintendo Account niet ophalen
+...готово,...klaar
+Невозможно получить число записей об ошибках,Kan aantal foutrecords niet ophalen
+Невозможно прочитать общие тикеты,Kan gemeenschappelijke tickets niet lezen
+Невозможно прочитать персонализированные тикеты,Kan gepersonaliseerde tickets niet lezen
+Невозможно разобрать content meta,Kan content meta niet parseren
+Невозможно разобрать content meta. Неожиданная ошибка,Kan content meta niet parseren. Onverwachte fout
+Невозможно разобрать content meta. УСТАРЕВШАЯ ПРОШИВКА. Требуется обновление HOS,Kan content meta niet parseren. VEROUDERDE FIRMWARE. HOS-update vereist
+Невозможно разобрать nca. УСТАРЕВШАЯ ПРОШИВКА. Требуется обновление HOS,Kan nca niet parseren. VEROUDERDE FIRMWARE. HOS-update vereist
+Невозможно разобрать индекс кеша,Kan cache-index niet parseren
+Невозможно распаковать '{}':,Kan '{}' niet uitpakken:
+Невозможно скопировать файл\n   '{}'\n➡ '{}'\n,Kan bestand niet kopiëren\n   '{}'\n➡ '{}'\n
+Невозможно смонтировать сохранение,Kan opslag niet koppelen
+Невозможно смонтировать устройство сохраниения,Kan opslagapparaat niet koppelen
+Невозможно создать выходной zip-файл: ,Kan uitvoer-zipbestand niet maken: 
+Невозможно создать каталог,Kan map niet aanmaken
+Невозможно создать каталог '{}':,Kan map '{}' niet aanmaken:
+Невозможно создать файл,Kan bestand niet aanmaken
+Невозможно создать файл '{}':,Kan bestand '{}' niet aanmaken:
+Недопустимый идентификатор,Ongeldige identificatie
+Неизвестная игра [{:016x}],Onbekend spel [{:016x}]
+: {:>4} сохранение,: {:>4} opslag
+Неизвестно,Onbekend
+Неизвестный тайтл,Onbekende titel
+Неиспользуемый тикет: ,Ongebruikt ticket: 
+Немецкий,Duits
+Неправильное хранилище,Ongeldige opslag
+Неправильный родительский объект,Ongeldig bovenliggend object
+Нет,Nee
+Нет ,Nee 
+Нет VFS. Прекращение работы,Geen VFS. Beëindigen
+Нет exefs VFS. Прекращение работы,Geen exefs VFS. Beëindigen
+: {:>4} сохранений,: {:>4} opgeslagen bestanden
+Нет logo VFS. Прекращение работы,Geen logo VFS. Beëindigen
+Нет romfs VFS. Прекращение работы,Geen romfs VFS. Beëindigen
+Нет лого,Geen logo
+Нечего устанавливать,Niets te installeren
+Никнейм консоли         : {},Console bijnaam         : {}
+А у соседей чипы якобы добывают,raketten neerstorten omdat er chips
+Новое имя для '{}',Nieuwe naam voor '{}'
+Новый каталог,Nieuwe map
+Новый размер сохранения в МБ,Nieuwe opslaggrootte in MB
+Новый рейтинг (-1 для удаления),Nieuwe beoordeling (-1 om te verwijderen)
+: {:>4} сохранения,: {:>4} saves
+Номер страницы,Paginanummer
+Ночь,Nacht
+Нужен связанный аккаунт,Gekoppeld account vereist
+ОШИБКА ПОЛУЧЕНИЯ ЭКСТРА ДАННЫХ,FOUT BIJ HET OPHALEN VAN EXTRA GEGEVENS
+Обнаружены недопустимые символы,Ongeldige tekens gedetecteerd
+Обновить DBI,DBI bijwerken
+Обновить DBI из этого файла,DBI bijwerken vanuit dit bestand
+Обновить TitleDB,TitleDB bijwerken
+   {:>3} мин,   {:>3} min
+Обновление TitleDB,TitleDB bijwerken
+Обновление базы данных...,Database bijwerken...
+Обновление версии до {} {}\n\nНажмите (+) для продолжения\nЛюбую другую кнопку для отмены,Versie bijwerken naar {} {}\n\nDruk op (+) om door te gaan\nEen andere knop om te annuleren
+Обновление времени...,Tijd bijwerken...
+Обновление закончено\n\nНажмите любую кнопку\nдля перезапуска DBI,Update voltooid\n\nDruk op een willekeurige knop\nom DBI opnieuw te starten
+Обновление фейковой записи {} ➡ [v{}],Nep-record bijwerken {} ➡ [v{}]
+Обновление. Пожалуйста подождите...,Bijwerken. Even geduld...
+Обновляется запись об игре...,Game-record wordt bijgewerkt...
+Обрабатывается запись {:016X},Record {:016X} wordt verwerkt
+Обратный альбом (180°),Omgekeerd album (180°)
+Обратный портрет (270°),Omgekeerd portret (270°)
+Общее время активной игры     : {} часов,Totale actieve speeltijd     : {} uur
+Общее время дампа {:d}:{:02d}:{:02d},Totale dumptijd {:d}:{:02d}:{:02d}
+Общее время запущенных игр    : {} часов,Totale speeltijd    : {} uur
+Общее время игры      : -,Totale speeltijd      : -
+Общее время игры      : {:d} часов {:02d} минут,Totale speeltijd      : {:d} uur {:02d} minuten
+Общее время установки: {:d}:{:02d}:{:02d},Totale installatietijd: {:d}:{:02d}:{:02d}
+Общее время: {:02}:{:02}:{:02},Totale tijd: {:02}:{:02}:{:02}
+Общее занимаемое место: N:{} + S:{} = {},Totale gebruikte ruimte: N:{} + S:{} = {}
+Общее число запусков  : -,Totaal aantal starts : -
+Общее число игровых сессий    : {},Totaal aantal spelsessies    : {}
+Общие,Algemeen
+Общий размер передачи  : ,Totale overdrachtsgrootte : 
+Общий размер установки : ,Totale installatiegrootte : 
+Общий размер установки: {},Totale installatiegrootte: {}
+Объединение списков,Lijsten samenvoegen
+Объект {} не допустим,Object {} is niet toegestaan
+Объект {} не может быть создан,Object {} kan niet worden aangemaakt
+Объект не открыт для редактирования,Object is niet geopend voor bewerking
+Объект удалён,Object verwijderd
+Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC-adres   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Объект уже открыт для редактирования,Object is al geopend voor bewerking
+Огибка получения адреса сокета: {} {},Fout bij het ophalen van socketadres: {} {}
+Ожидаемый размер: {},Verwachte grootte: {}
+Ожидается ,Verwacht 
+Ожидается большой (>4GB) файл,Groot (>4GB) bestand verwacht
+Ожидается запуск dbibackend на стороне ПК...,Wachten op start van dbibackend aan PC-zijde...
+Ожидание включения интерфейса: ,Wachten op interface-activering: 
+Ожидание: {} секунд,Wachten: {} seconden
+Ожидание: {} секунда,Wachten: {} seconde
+Ожидание: {} секунды,Wachten: {} seconden
+CDIR в листинге,CDIR in lijst
+Ориентация,Oriëntatie
+Ориентация...,Oriëntatie...
+Освобождено места в NAND: ,NAND-ruimte vrijgemaakt: 
+Освобождено места на SD : ,Vrijgemaakte ruimte op SD : 
+Основной SDK не найден. Пробуем мультипрограмный вариант,Hoofd-SDK niet gevonden. Probeer multi-programma variant
+Оставить сохранения,Opslaggegevens behouden
+Осталось ходов:    {:>3},Zetten over:    {:>3}
+Остаток файла пропускается,Rest van bestand wordt overgeslagen
+Отключение связи с мобильным приложением...,Verbinding met mobiele app verbreken...
+Configuration Id1     : {},Configuration Id1     : {}
+Открываем папку прошивки...,Firmware-map openen...
+Открыть,Openen
+Открыть вторую панель,Tweede paneel openen
+Открыть как 7Z,Openen als 7Z
+Открыть как RAR,Openen als RAR
+Открыть как ZIP,Openen als ZIP
+Открыть как hex,Openen als hex
+Открыть как текст,Openen als tekst
+Открыть контент по MTP,Inhoud openen via MTP
+Открыть папку LFS,LFS-map openen
+Content meta не найден. Установка прервана,Content-meta niet gevonden. Installatie afgebroken
+Отослано {}/{} байт,{}/{} bytes verzonden
+Отсутствуют ES сигпатчи!,ES sigpatches ontbreken!
+Очистка /atmosphere/contents,Opschonen van /atmosphere/contents
+Очистка кеша rightsId...,RightsId-cache wissen...
+Очистка папки...,Map opschonen...
+Очистка плейсхолдеров...,Plaatshouders wissen...
+Очистка системы от мусора,Systeem opschonen van rommel
+Очистка сохранений,Opslaggegevens wissen
+Очистка...,Opschonen...
+Ошибка FTP сервера,FTP-serverfout
+DBI Просмотр альбома,DBI Albumweergave
+Ошибка во время копирования файла,Fout bij het kopiëren van bestand
+Ошибка во время обновления тайтла,Fout tijdens het bijwerken van de titel
+Ошибка выделения сокета: {},Socketallocatiefout: {}
+Ошибка завершения соединения: {},Fout bij beëindigen verbinding: {}
+Ошибка загрузки картинки,Fout bij laden van afbeelding
+Ошибка загрузки файла из альбома: {},Fout bij het laden van bestand uit album: {}
+Ошибка закрытия сокета: {},Fout bij sluiten van socket: {}
+Ошибка записи файла: {},Fout bij schrijven van bestand: {}
+Ошибка изменения размера файла,Fout bij het wijzigen van bestandsgrootte
+Ошибка инициализации {}: {},Initialisatiefout {}: {}
+"DPAD и стики - прокрутка, L - стр. вверх, R - стр. вниз","DPAD en sticks - scrollen, L - pagina omhoog, R - pagina omlaag"
+Ошибка опроса сокета: {},Socket-pollingfout: {}
+Ошибка открытия каталога: {},Fout bij openen van map: {}
+Ошибка открытия сокета: {},Fout bij openen socket: {}
+Ошибка открытия файла,Fout bij openen van bestand
+Ошибка открытия файла '{}': {},Fout bij openen van bestand '{}': {}
+Ошибка открытия файла: {},Fout bij openen van bestand: {}
+Ошибка отсылки: {},Verzendfout: {}
+Ошибка переименования: {},Hernoemen fout: {}
+Ошибка подключения: {},Verbindingsfout: {}
+Ошибка подмены SDK: {},SDK-vervangingsfout: {}
+"DPAD и стики - прокрутка, L - стр. вверх, R - стр. вниз, R3 - Текст/Hex","DPAD en sticks - scrollen, L - pagina omhoog, R - pagina omlaag, R3 - Tekst/Hex"
+Ошибка получения адреса узла: {},Fout bij het ophalen van het knooppuntadres: {}
+Ошибка получения внеочередных данных: {},Fout bij ophalen van out-of-band gegevens: {}
+Ошибка получения имени сокета: {} {},Fout bij ophalen socketnaam: {} {}
+Ошибка получения информаци о файле: {},Fout bij het ophalen van bestandsinformatie: {}
+Ошибка получения размера файла: {},Fout bij ophalen bestandsgrootte: {}
+Ошибка получения флагов сокета: {},Fout bij het ophalen van socket-vlaggen: {}
+Ошибка получения хранилища {},Fout bij ophalen van opslag {}
+Ошибка получения: {},Ophaalfout: {}
+Ошибка получения: {} {},Ophaalfout: {} {}
+Ошибка посылки файла: {},Fout bij verzenden bestand: {}
+   Получение списка бекапов...   ,   Backuplijst ophalen...   
+Ошибка привязки сокета к порту {}: {},Fout bij het binden van socket aan poort {}: {}
+Ошибка привязки: {},Bindingsfout: {}
+Ошибка принятия соединения: {} {},Fout bij accepteren van verbinding: {} {}
+Ошибка приёма соединения: {},Fout bij ontvangen verbinding: {}
+Ошибка проверси метки сокета: {},Fout bij verificatie van socketlabel: {}
+Ошибка прослушивания: {},Luisterfout: {}
+Ошибка прослушки сокета: {},Socket luisterfout: {}
+Ошибка сжатия,Compressiefout
+Ошибка создания каталога: {},Fout bij het aanmaken van map: {}
+Ошибка создания сокета: {},Fout bij aanmaken socket: {}
+DPAD/Стики - Навигация по страницам\n\n     ZR+ZL - Переход к странице... \n\n       L/R - Навигация по главам   \n\n       (-) - Эта подсказка         \n\n       (+) - Меню                  ,DPAD/Sticks - Paginanavigatie\n\n     ZR+ZL - Ga naar pagina... \n\n       L/R - Hoofdstuknavigatie   \n\n       (-) - Deze hint         \n\n       (+) - Menu                  
+Ошибка создания сохранения,Fout bij het aanmaken van opgeslagen data
+Ошибка удаления каталога: {},Fout bij verwijderen van map: {}
+Ошибка удаления файла: {},Fout bij verwijderen van bestand: {}
+Ошибка установки флагов сокета: {},Fout bij instellen socketvlaggen: {}
+Ошибка чтения записи об игре: {},Fout bij het lezen van gamerecord: {}
+Ошибка чтения каталога: {},Fout bij lezen van map: {}
+Ошибка чтения регистров max17050: ,Fout bij het lezen van max17050-registers: 
+Ошибка чтения сохранённых параметров контроллера: ,Fout bij het lezen van opgeslagen controllerparameters: 
+Ошибка чтения файла: {},Fout bij het lezen van bestand: {}
+DeviceId                : {0:} ({0:016X}),DeviceId                : {0:} ({0:016X})
+Ошибок не найдено,Geen fouten gevonden
+Ошибочный номер DLC (Должен быть в диапазоне 0x001-0x7FF),Ongeldig DLC-nummer (Moet in het bereik 0x001-0x7FF liggen)
+Ошибочный номер DLC (Должен быть в диапазоне 1-2047),Ongeldig DLC-nummer (Moet in het bereik 1-2047 liggen)
+"Ошибочный тикет {0}: kg {1:02X}, pm {2:02X}","Ongeldig ticket {0}: kg {1:02X}, pm {2:02X}"
+Папка LFS не найдена,LFS-map niet gevonden
+Папка для бекапа сохранений,Back-upmap voor opslaggegevens
+Папка для дампа игр,Map voor game-dumps
+Папка журналов,Logmap
+Папка обновления очищена,Update-map gewist
+DramId                  : {} ({}),DramId                  : {} ({})
+Параметры FTP,FTP-instellingen
+Параметры MTP,MTP-instellingen
+Параметры установки,Installatieopties
+Пароль,Wachtwoord
+Перевернуть джойконы,Joycons omdraaien
+Перевернуть экран,Scherm omdraaien
+Передача окончена,Overdracht voltooid
+Переименование объекта,Object hernoemen
+Переименовать,Hernoemen
+Перейти к первой странице,Ga naar eerste pagina
+Emummc включён              : {},Emummc ingeschakeld              : {}
+Перейти к последней странице,Ga naar laatste pagina
+Перейти к странице...,Ga naar pagina...
+Переместить,Verplaatsen
+Переместить в NAND,Verplaats naar NAND
+Переместить на SD карту,Verplaatsen naar SD-kaart
+"Перемещение {} ({}, {}) в {}","Verplaatsen van {} ({}, {}) naar {}"
+Перемещение {} записей,{} items verplaatsen
+Перемещение {} записи,{} item verplaatsen
+Перемещение {} игр,{} games verplaatsen
+Перемещение {} игры,Verplaatsen van {} spel
+FTP сервер (нажмите B для остановки),FTP-server (druk op B om te stoppen)
+Перемещение контента,Inhoud verplaatsen
+Перенос строк,Regeleinde
+Переносить слова,Woorden afbreken
+Переоткрытие ФС сохранения: {},Heropenen opslag-FS: {}
+Пишется новая запись о контенте...,Nieuw contentrecord wordt geschreven...
+Пишется новый cnmt.nca...,Nieuwe cnmt.nca wordt geschreven...
+Платформа               : {},Platform                : {}
+Подготовка...,Voorbereiden...
+Подключаемся к {}...,Verbinden met {}...
+FullCap              : {:04x} ({} mAh),FullCap              : {:04x} ({} mAh)
+Подключено к {}:{},Verbonden met {}:{}
+Подмена SDK,SDK-vervanging
+Подменить SDK,SDK vervangen
+Подсвечивать файлы обновлений,Update-bestanden markeren
+Подсчитывается размер установки...,Installatiegrootte wordt berekend...
+Подсчитывается размер установки...{}%,Installatiegrootte berekenen...{}%
+Подсчитываются объекты в альбоме в NAND,Objecten in album in NAND worden geteld
+Подсчитываются объекты в альбоме на SD карте,Objecten in album op SD-kaart worden geteld
+Подсчёт метаданных...,Metadata tellen...
+Подсчёт основного хэша,Berekenen van hoofd-hash
+FullCapNom           : {:04x} ({} mAh),FullCapNom           : {:04x} ({} mAh)
+Подсчёт хэша секции,Sectie-hash berekenen
+"Пожалуйста, подключите вашу консоль к ПК кабелем USB Type-C или нажмите B",Sluit uw console aan op de pc met een USB Type-C-kabel of druk op B
+"Пожалуйста, подождите...",Even geduld...
+Поиск записей об ошибках,Zoeken naar foutlogboeken
+Поиск неиспользуемых тикетов,Zoeken naar ongebruikte tickets
+Поиск подготовленного системного обновления,Zoeken naar voorbereid systeemupdate
+Поиск потерянных тайтлов,Zoeken naar verloren titels
+Поиск потерянных файлов в NAND,Zoeken naar verloren bestanden in NAND
+Поиск потерянных файлов на SD,Zoeken naar verloren bestanden op SD
+Поиск сохранений удалённых пользователей...,Zoeken naar opslaggegevens van verwijderde gebruikers...
+Get chargeInfoFields : {},Get chargeInfoFields : {}
+Показываемая версия     : {},Weergegeven versie     : {}
+Показываемое название   : {},Weergavenaam            : {}
+Показывать 'Обновить отсюда',Toon 'Hier bijwerken'
+Показывать объединённый NSP,Samengevoegde NSP weergeven
+Показывать папку 'Mods&Cheats',Map 'Mods&Cheats' weergeven
+Показывать прогрев кеша,Cache-opwarming weergeven
+Показывать размер LFS (долго),LFS-grootte weergeven (traag)
+Показывать секунды,Seconden weergeven
+Показывать часы в статусе,Klok in status weergeven
+Поколение ключа             : {},Sleutelgeneratie             : {}
+Git commit hash             : {:016X},Git commit hash             : {:016X}
+Полная ёмкость     : {} mAh,Volledige capaciteit     : {} mAh
+Получен список из {} записей,Lijst met {} items ontvangen
+Получен список из {} записи,Lijst met {} items ontvangen
+Получение версий установленных игр,Geïnstalleerde gameversies ophalen
+Получение информации из hac_versionlist...,Informatie ophalen uit hac_versionlist...
+Получение информации из системы...,Systeeminformatie ophalen...
+Получение информации об играх...,Spelgegevens ophalen...
+Получение списка тикетов...,Ticketlijst ophalen...
+Получение файла: {} МБ ({:.2f} МБ/сек),Bestand ontvangen: {} MB ({:.2f} MB/s)
+Получение файла: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Bestand ontvangen: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m MB/sec)
+   Получение списка бекапов...{}/{}    ,   Backuplijst ophalen...{}/{}    
+IavgEmpty            : {:04x},IavgEmpty            : {:04x}
+Полученное время: {},Ontvangen tijd: {}
+Полученный размер: {},Ontvangen grootte: {}
+"Получено: {}, ({:.2f} МБ/сек)","Ontvangen: {}, ({:.2f} MB/s)"
+Пользователь {} не найден. Создание сохранения невозможно,Gebruiker {} niet gevonden. Opslaan maken onmogelijk
+Пользователь не найден,Gebruiker niet gevonden
+Пользовательские хранилища,Aangepaste opslaglocaties
+Попытаться разобрать,Proberen te parseren
+Попытка исправить,Poging tot reparatie
+Портрет (90°),Staand (90°)
+Португальский,Portugees
+"L+⬅-Начало, L+➡-Конец, ZL-Регистр, ZR-Ввод, Y-Пробел, X-Забой, R3-Язык","L+⬅-Begin, L+➡-Einde, ZL-Hoofdletter, ZR-Enter, Y-Spatie, X-Backspace, R3-Taal"
+После удаления игры не будут запускаться,Games worden niet gestart na verwijdering
+Посылается файл: {},Bestand verzenden: {}
+Посылается файл: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Bestand verzenden: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m MB/s)
+Превышен размер командного буфера,Commandobuffergrootte overschreden
+Предел входного тока            : {} mA,Ingangsstroom limiet            : {} mA
+Предел напряжения заряда батареи: {} mV,Batterij oplaadspanningslimiet: {} mV
+LFS мод.: -,LFS-modus: -
+Предназначение          : {},Doel                    : {}
+Предоставить по FTP,Verstrekken via FTP
+Предупреждения: ,Waarschuwingen: 
+Прекращение прослушивания на {}:{},Stoppen met luisteren op {}:{}
+Прервано пользователем,Afgebroken door gebruiker
+Привязка к {}:{},Binden aan {}:{}
+Принято соединение от {}:{},Verbinding geaccepteerd van {}:{}
+Проверить целостность,Integriteit controleren
+"LFS мод.: Присутствует, Размер: ","LFS-mod: Aanwezig, Grootte: "
+Проверка magic...,Magic controleren...
+"Проверка {} ({}, {}), {}","Verificatie {} ({}, {}), {}"
+Проверка картриджа...,Cartridge controleren...
+Проверка на наличие  {}...,Controleren op {}...
+Проверка обновлений,Controleren op updates
+Проверка обновлений игр,Controleren op game-updates
+Проверка сохранений,Opslaggegevens controleren
+Проверка целостности ({}),Integriteitscontrole ({})
+Проверяется: {},Controleren: {}
+Проверять хэш при установке,Hash controleren tijdens installatie
+"LFS мод.: Присутствует, Размер: подсчёт отключен в настройках","LFS-mod: Aanwezig, Grootte: berekening uitgeschakeld in instellingen"
+Проверяются бекапы...,Back-ups controleren...
+Проверяются сохранения,Saves controleren
+Программа {}. Control не найдена,Applicatie {}. Control niet gevonden
+Программа {}. Exefs не найдена,Programma {}. Exefs niet gevonden
+Программа {}. Romfs не найдена,Applicatie {}. Romfs niet gevonden
+Произошла неизвестная ошибка,Er is een onbekende fout opgetreden
+Произошла ошибка:,Er is een fout opgetreden:
+Произошла ошибка: ,Er is een fout opgetreden: 
+Произошла ошибка: {},Er is een fout opgetreden: {}
+Пропускаем файл до начала secure раздела ,Bestand overslaan tot het begin van de beveiligde sectie 
+LFS папка игры,LFS spelmap
+Пропускается: {}          \r,Overslaan: {}          \r
+Прослушивание на {}:{},Luisteren op {}:{}
+Просмотр SD карты,SD-kaart verkennen
+Просмотр USB носителей,USB-stations doorzoeken
+Просмотр альбома по HTTP,Album bekijken via HTTP
+Просмотр раздела SYSTEM,SYSTEM-partitie verkennen
+Просмотр раздела USER,USER-partitie verkennen
+Просмотр сети,Netwerk verkennen
+MTP Респондер (нажмите B для остановки),MTP-responder (druk op B om te stoppen)
+Просмотр сохранений,Opgeslagen bestanden bekijken
+Просмотр тикетов,Tickets bekijken
+Просмотр установленных игр,Geïnstalleerde games bekijken
+Просмотреть игры,Bekijk games
+Просто запуск,Gewoon starten
+Разбор,Parseren
+Раздел secure не найден,Secure-sectie niet gevonden
+Размер  : ,Grootte  : 
+"Размер  : {}, {} файл","Grootte  : {}, {} bestand"
+"Размер  : {}, {} файла","Grootte  : {}, {} bestand"
+"Размер  : {}, {} файлов","Grootte  : {}, {} bestanden"
+Размер посылаемого файла   : {},Grootte van verzonden bestand: {}
+Размер сохранений     : {},Grootte van opslaggegevens     : {}
+Размер: {},Grootte: {}
+Разрешено,Toegestaan
+Распаковать в подкаталог,Uitpakken naar submap
+Распаковать сюда,Hier uitpakken
+Распаковка файла,Bestand uitpakken
+Растущие цветы:     {},Groeiende bloemen:     {}
+Nintendo Account задан и связан,Nintendo-account ingesteld en gekoppeld
+Регион                  : {},Regio                   : {}
+Регистрация контента {}...,Inhoud registreren {}...
+Регистрация файла {}...,Bestand {} registreren...
+Регистры котроллера MAX17050,MAX17050-controllerregisters
+Редактирование возрастного рейтинга...,Leeftijdsclassificatie bewerken...
+Редактирование запретов,Beperkingen bewerken
+Режим HiZ зарядки       : {},HiZ-oplaadmodus          : {}
+Режим киоска            : {},Kioskmodus              : {}
+Рендеринг FB2,FB2-rendering
+С болот был заслан доброволец,als in toiletten. En bij de buren
+"Nintendo Account задан, но не связан","Nintendo Account ingesteld, maar niet gekoppeld"
+Родительский PIN        : {},Ouderlijke PIN        : {}
+Сброс требуемой версии,Vereiste versie resetten
+Сброс требуемой версии к ,Vereiste versie resetten naar 
+Сбросить требуемую версию,Vereiste versie resetten
+Сведения,Informatie
+Сведения...,Informatie...
+Свободное место в хранилище: {},Vrije opslagruimte: {}
+Свободное место: {},Vrije ruimte: {}
+Сгенерировать и установить,Genereren en installeren
+   Получение списка сохранений...   ,   Ophalen van opslaglijst...   
+Nintendo Account не задан,Nintendo Account niet ingesteld
+Сдампить на SD карту,Dumpen naar SD-kaart
+Сдампить на внешний USB,Dumpen naar externe USB
+Сдампить текущую прошивку,Huidige firmware dumpen
+Сдамплено: {}/{} ({}%) ({:.2f} МБ/сек),Gedumpt: {}/{} ({}%) ({:.2f} MB/sec)
+Сделать бекап,Back-up maken
+"Сделать бекап, если новее",Back-up maken indien nieuwer
+Северная Америка,Noord-Amerika
+Сентябрь,September
+Сепия,Sepia
+Сервер запущен,Server gestart
+Сервер предлагает выполнить обновление DBI\n\nНажите (+) для согласия\nЛюбую другую кнопку для отмены,De server biedt aan om een DBI-update uit te voeren\n\nDruk op (+) om te bevestigen\nEen andere knop om te annuleren
+Серийный # прочитанный  : {},Serienummer gelezen  : {}
+Серийный # угаданный    : {},Serienummer geraden    : {}
+Серийный номер        : {},Serienummer        : {}
+Сессии,Sessies
+Сессия закрыта,Sessie gesloten
+Сессия открыта,Sessie geopend
+Силовая роль                    : {},Energierol                      : {}
+Синхронизация времени по NTP,NTP-tijdsynchronisatie
+Системные приложения,Systeemapplicaties
+QrTable00            : {:04x},QrTable00            : {:04x}
+Системный по умолчанию,Systeemstandaard
+Сканирование директорий...,Mappen scannen...
+Сканирование игр...,Games scannen...
+Скачано {}/{},Gedownload {}/{}
+Скачивание файла не удалось,Bestand downloaden mislukt
+Скорость USB интерфейса: ,USB-interfacesnelheid: 
+Скорость передачи: {:.2f} МБ/сек,Overdrachtssnelheid: {:.2f} MB/sec
+Смещать курсор после выделения,Cursor verplaatsen na selectie
+Собираются сведения...,Informatie verzamelen...
+Соединение сброшено,Verbinding gereset
+QrTable10            : {:04x},QrTable10            : {:04x}
+Сожжено предохранителей : {},Verbrande zekeringen: {}
+Создавать LFS папку,LFS-map maken
+Создан zip-файл: ,Zip-bestand aangemaakt: 
+Создание DLC анлокера,DLC-unlocker aanmaken
+Создание NSP,NSP aanmaken
+Создание sdmc:/versions.txt,Aanmaken van sdmc:/versions.txt
+Создание бекапа сохранения ,Maken van back-up van opslaggegevens 
+Создание дампа ({}),Dump maken ({})
+Создание дампа: {},Dump maken: {}
+Создание единого репака,Maken van een uniforme repack
+QrTable20            : {:04x},QrTable20            : {:04x}
+Создание записи об игре...,Spelrecord aanmaken...
+Создание каталога: ,Map aanmaken: 
+Создание новой записи об игре...,Nieuwe game-invoer aanmaken...
+Создание объекта: ,Object aanmaken: 
+Создание плейсхолдера: {}...,Tijdelijke aanduiding maken: {}...
+"Создание репака Id: {:016X}, Версия: {}, Тип: {}","Repack aanmaken Id: {:016X}, Versie: {}, Type: {}"
+Создание строк... {}%,Strings aanmaken... {}%
+Создание таблицы имён,Naamtabel aanmaken
+Создание тела файла,Bestandsinhoud aanmaken
+Создание точки доступа...,Toegangspunt aanmaken...
+QrTable30            : {:04x},QrTable30            : {:04x}
+Создание фейковой записи... ,Nep-record aanmaken... 
+Создание хэш таблицы,Hash-tabel aanmaken
+Создание ярлыка,Snelkoppeling maken
+Создано новое сохранение. Восстанавливаю бекап в него...,Nieuwe opslag aangemaakt. Backup wordt hersteld...
+Создать sdmc:/versions.txt,sdmc:/versions.txt aanmaken
+Создать единый репак,Enkele repack maken
+Создать новое сохранение...,Nieuwe opslag maken...
+Создать новый каталог...,Nieuwe map maken...
+Создать новый файл...,Nieuw bestand maken...
+Создать ярлык,Snelkoppeling maken
+RCOMP0               : {:04x},RCOMP0               : {:04x}
+Создать ярлык для hbmenu,Snelkoppeling maken voor hbmenu
+Создать ярлык на рабочий стол для DBI...,Snelkoppeling op bureaublad maken voor DBI...
+Создать ярлык с аргументами...,Snelkoppeling met argumenten maken...
+Создаётся MTP хранилище: ,MTP-opslag wordt aangemaakt: 
+Создаётся обновлённая запись об игре...,Bijgewerkt spelrecord wordt aangemaakt...
+Сохранение для {} уже существует,Opslaggegevens voor {} bestaan al
+Сохранения,Opslaggegevens
+Сохранения будут удалены!,Opslaggegevens worden verwijderd!
+Сохранения только в RO режиме,Opgeslagen bestanden alleen in RO-modus
+RTC запущены (приблизительно) : {},RTC gestart (ongeveer): {}
+Сохранения удалённых игр ({}),Saves van verwijderde games ({})
+Сохранения установленных игр ({}),Saves van geïnstalleerde games ({})
+Сохранёные в системе параметры котроллера батареи,In systeem opgeslagen batterijcontroller-parameters
+Средняя температура: {}°C,Gemiddelde temperatuur: {}°C
+Статистика игры ,Spelstatistieken 
+Строка поиска: ,Zoekstring: 
+Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Totaal %% opladen-ontladen: {} (~{} 0-100 cycli)
+Существующая запись об игре не найдена,Bestaand spelrecord niet gevonden
+Существующее сохранение не найдено и новое не может быть создано,Bestaande opslag niet gevonden en nieuwe kan niet worden aangemaakt
+SDK {} уже был экспортирован: {},SDK {} is al geëxporteerd: {}
+Тайтл не установлен,Titel niet geïnstalleerd
+Тайтл установлен,Titel geïnstalleerd
+Тайтлы с ошибками:,Titels met fouten:
+Текущая ёмкость                 : {}%,Huidige capaciteit                : {}%
+Текущая ёмкость    : {} mAh,Huidige capaciteit    : {} mAh
+Текущее время: {},Huidige tijd: {}
+Текущее напряжение : {} mV,Huidige spanning : {} mV
+Текущий заряд      : {}%,Huidige lading      : {}%
+Текущий ток        : {} mA,Huidige stroom        : {} mA
+SDK на подмену не найдены,Geen SDK gevonden voor vervanging
+Тема,Thema
+Тема отображения,Weergavethema
+Температура        : {}°C,Temperatuur        : {}°C
+Температура батареи             : {}°C,Batterijtemperatuur             : {}°C
+Тикет исправлен,Ticket opgelost
+Тикеты,Tickets
+Тикеты не найдены,Geen tickets gevonden
+Тип SoC                 : {},SoC-type                : {}
+Тип источника питания          : {},Type voeding                    : {}
+881,881

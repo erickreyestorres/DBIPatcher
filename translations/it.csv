@@ -1,0 +1,1206 @@
+original,translation
+"X - выбор, Y - инверсия выбора, (+) - меню","X - Seleziona, Y - Inverti selezione, (+) - Menu"
+"X - выбор, Y - инверсия выбора, (+) - меню, L3 - запуск","X - Seleziona, Y - Inverti selezione, (+) - Menu, L3 - Avvia"
+"X - выбор, Y - инверсия выбора, (+) - меню, R3 - сортировка","X - Seleziona, Y - Inverti selezione, (+) - Menu, R3 - Ordina"
+"X - выбор, Y - инверсия выбора, (+) - меню, R3 - сортировка, L3 - запуск","X - Seleziona, Y - Inverti selezione, (+) - Menu, R3 - Ordina, L3 - Avvia"
+"X - выбор, Y - инвертирование выбора, A - открыть, (-) - 2ая панель","X - Seleziona, Y - Inverti selezione, A - Apri, (-) - 2° pannello"
+"X - выбор, Y - инвертирование выбора, ⬅/➡ - смена панели, (-) - закрыть","X - Seleziona, Y - Inverti selezione, ⬅/➡ - Cambia pannello, (-) - Chiudi"
+"ZL/ZR - смена даты, Y - период, X - сортировка, (+) - выбрать пользователя","ZL/ZR - Cambia data, Y - Periodo, X - Ordina, (+) - Seleziona utente"
+864,864
+. Время игры \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m,. Tempo di gioco \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m
+Невозможно смонтировать системный раздел,Impossibile montare la partizione di sistema
+"DPAD или стики для перемещения, (+) - Настройки","DPAD o stick per muoversi, (+) - Impostazioni"
+Ошибка создания файла: {},Errore durante la creazione del file: {}
+Подключение к серверу...,Connessione al server...
+"Бункер, госиздат «Зазеркалье».",la vittoria».
+      Название: {}\n      Издатель: {}\n      Версия: ,      Titolo: {}\n      Editore: {}\n      Versione: 
+   Это действие будет нельзя отменить   ,   Questa azione non può essere annullata   
+SDK подменён,SDK sostituito
+Тип оборудования        : {},Tipo di hardware       : {}
+Точка доступа,Punto di accesso
+Традиционный китайский,Cinese tradizionale
+Транзисторов:      {:>3},Transistor:      {:>3}
+Требуется вручную разрешить синхронизацию времени через Интернет в настройках,È necessario abilitare manualmente la sincronizzazione dell'ora tramite Internet nelle impostazioni
+Тёмная комната,Stanza buia
+Убрать из любимых,Rimuovi dai preferiti
+Увеличить размер (в МБ),Aumenta dimensioni (in MB)
+"Уверены, что хотите продолжить?",Sei sicuro di voler continuare?
+Удаление Wi-Fi профиля,Eliminazione profilo Wi-Fi
+Удаление Wi-Fi профиля...,Eliminazione profilo Wi-Fi...
+Удаление {} бекапа,Eliminazione backup {}
+Удаление {} бекапов,Eliminazione di {} backup
+Удаление {} сохранений,Eliminazione di {} salvataggi
+Удаление {} сохранения,Eliminazione di {} salvataggio
+Удаление бекапов,Eliminazione backup
+Удаление записи об игре...,Eliminazione del record di gioco...
+Удаление игр,Eliminazione giochi
+Удаление игры ,Eliminazione gioco 
+Удаление игры целиком: [{}],Elimina gioco completo: [{}]
+"SSID: {}, Пароль: {}","SSID: {}, Password: {}"
+Удаление каталога LFS,Eliminazione directory LFS
+Удаление контента,Eliminazione contenuto
+Удаление настроек родительского контроля...,Eliminazione delle impostazioni di parental control...
+Удаление не удалось.\n\nНажмите любую кнопку для продолжения,Eliminazione fallita.\n\nPremi un tasto qualsiasi per continuare
+Удаление неиспользуемого {}...,Eliminazione di {} inutilizzato...
+Удаление плейсхолдера...,Eliminazione del segnaposto...
+Удаление пользователя,Eliminazione utente
+Удаление пользователя...,Eliminazione utente...
+Удаление ранее установленных файлов...,Eliminazione dei file installati in precedenza...
+Удаление родительского контроля,Eliminazione parental control
+SaveFS очищена,SaveFS pulita
+Удаление связи с Nintendo account...,Eliminazione del collegamento all'account Nintendo...
+Удаление сохранений,Eliminazione salvataggi
+Удаление сохранения целиком,Eliminazione del salvataggio completo
+Удаление старого     {}...,Eliminazione vecchio     {}...
+Удаление старого файла {}...,Eliminazione vecchio file {}...
+Удаление старой записи об игре...,Eliminazione del vecchio record di gioco...
+Удаление старой папки {}...,Eliminazione vecchia cartella {}...
+Удаление тайтла: [{}],Eliminazione titolo: [{}]
+Удаление тикетов ({}),Eliminazione ticket ({})
+Удаление...,Eliminazione...
+TempC0               : {:04x},TempC0               : {:04x}
+Удалить,Elimina
+Удалить LFS,Elimina LFS
+Удалить сохранения,Elimina salvataggi
+Удалить старые бекапы,Elimina vecchi backup
+Удаляется {} из {}...,Eliminazione di {} su {}...
+Удаляется {}...,Eliminazione di {}...
+Удаляется бекап ,Eliminazione backup 
+Удаляется запись о контенте...,Eliminazione record del contenuto...
+Удаляется запись об игре...,Eliminazione record di gioco...
+Удаляется игра и весь связанный контент,Eliminazione del gioco e di tutti i contenuti correlati
+Titlekey не может быть инициализирован,Titlekey non può essere inizializzato
+Удаляется папка LFS...,Eliminazione cartella LFS...
+Удаляется пустая папка,Eliminazione cartella vuota
+Удаляется сохранение {}...,Eliminazione salvataggio {}...
+Удаляется старая запись о контенте...,Eliminazione vecchio record del contenuto...
+Удаляется старый cnmt.nca...,Eliminazione vecchio cnmt.nca...
+Удаляется тикет: {}...,Eliminazione ticket: {}...
+Удалять после установки: ,Elimina dopo l'installazione: 
+Удаляются все объекты из альбома для игры,Eliminazione di tutti gli elementi dall'album di gioco
+Удаляются все сохранения для игры,Eliminazione di tutti i salvataggi per il gioco
+Удаляются сохранения...,Eliminazione dati di salvataggio...
+"UID: {}, Ник: {}","UID: {}, Nickname: {}"
+Удалённые,Eliminati
+Удачный экспорт,Esportazione riuscita
+Уделение старого тикета...,Eliminazione vecchio ticket...
+Упаковка каталога в RomFS,Impacchettamento directory in RomFS
+Упрощенный китайский,Cinese semplificato
+Уровень заряда батареи         : {},Livello batteria         : {}
+Успешно разобран как PFS0 файл,Analizzato correttamente come file PFS0
+Устанавливается {},Installazione di {}
+Установить как аватар...,Imposta come avatar...
+Установка,Installazione
+URL для проверки обновлений,URL per il controllo aggiornamenti
+Установка анлокера...,Installazione unlocker...
+Установка завершена,Installazione completata
+Установка игр (NAND),Installa giochi (NAND)
+Установка игр (SD Card),Installazione giochi (Scheda SD)
+Установка игры завершена,Installazione del gioco completata
+Установка обновлений игр,Installa aggiornamenti giochi
+Установка прервана,Installazione interrotta
+Установка с картриджа,Installa da cartuccia
+Установка тайтлов ({}/{}),Installazione titoli ({}/{})
+Установка через DBIbackend,Installa tramite DBIbackend
+USB Соединение,Connessione USB
+Установка ярлыка...,Installazione collegamento...
+Установлен,Installato
+Установленные,Installati
+Установленные homebrew,Homebrew installato
+Установленные homebrew ({}),Homebrew installato ({})
+Установленные игры,Giochi installati
+Установленные тикеты,Ticket installati
+Установленные тикеты ({}),Ticket installati ({})
+Файл повреждён и не может быть установлен. Не найдена сигнатура HEAD,Il file è danneggiato e non può essere installato. Firma HEAD non trovata
+Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе root,Il file è danneggiato e non può essere installato. Firma HFS0 non trovata nella partizione root
+Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizzo MAC LAN wireless: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе secure,Il file è danneggiato e non può essere installato. Firma HFS0 non trovata nella partizione secure
+Файл повреждён и не может быть установлен. Не найдена сигнатура PFS0,Il file è danneggiato e non può essere installato. Firma PFS0 non trovata
+Файл слишком большой для хранилища,Il file è troppo grande per l'archiviazione
+Файл: {},File: {}
+Фиксация ФС...,Commit del file system...
+Финальный размер: {},Dimensione finale: {}
+Формирование списка...,Generazione lista...
+Форсированный язык    : {},Lingua forzata    : {}
+Форсированный язык    : {} ({}),Lingua forzata    : {} ({})
+  Автоопределение,  Rilevamento automatico
+Форсировано вклчение USB 3.0: {},Forza USB 3.0 abilitato: {}
+Форсировать UTF-8,Forza UTF-8
+Форсировать язык,Forza lingua
+Французский,Francese
+"Х:{}, Т:{}, РЦ:{}","H:{}, T:{}, R:{}"
+Хранилища MTP,Archiviazione MTP
+Хранилище только для чтения,Archiviazione di sola lettura
+Хэш версии              : {},Hash della versione     : {}
+Целевая запись о контенте не найдена,Record del contenuto di destinazione non trovato
+ЧАСТЬ КОНТЕНТА ОТСУТСТВУЕТ. ИГРА НЕ БУДЕТ РАБОТАТЬ,PARTE DEL CONTENUTO MANCANTE. IL GIOCO NON FUNZIONERÀ
+Число транзисторов: {:>3},Numero di transistor: {:>3}
+Число уникальных сыграных игр : {},Numero di giochi unici giocati : {}
+Число ходов:        {:>3},Numero di mosse:        {:>3}
+Читать дату файлов,Leggi data file
+Чтение каталога...,Lettura directory in corso...
+Чтение списка файлов...,Lettura elenco file in corso...
+Что-то плохое грядёт,Qualcosa di brutto sta arrivando
+Что-то пошло не так. Пропускаем оставшийся файл,Qualcosa è andato storto. Saltando il file rimanente
+"Чтобы вернуться, нажмите B",Premi B per tornare indietro
+Шадок у Гиби,Shadok da Gibi
+Шифрование секции ,Cifratura della sezione
+Экзосфера очищает CAL0      : {},L'esosfera pulisce CAL0      : {}
+Экран                 : ({:08X}) {},Schermo               : ({:08X}) {}
+Экспорт SDK,Esportazione SDK
+Экспортировать,Esporta
+Экспортировать SDK,Esporta SDK
+Это действие будет нельзя отменить,Questa azione non può essere annullata
+Язык                    : {},Lingua                  : {}
+Январь,Gennaio
+Японский,Giapponese
+Ярлык   : ,Collegamento   : 
+Ярлык для DBI,Collegamento per DBI
+"больше жертв, тем выше вероятность,","greatezza». O, in altre parole: «Più"
+быстро разгадали тайный замысел,inviato un volontario dai vicini
+"оцепили его там со всех сторон,",prendersi gioco. Permisero
+"Или, говоря иными словами: «Чем",non sia pegno temporaneo di
+"тактика буксует, но они твёрдо верят",probabilità che alla fine tutto
+да,sì
+при котором всё заработает… И они,credono fermamente in quella
+"и теперь всякий раз, когда он",all'ospite di entrare in un
+лишь временным залогом величия».,profonda: «Non esiste disgrazia che
+"в тот один шанс из миллиона,","riesca». La loro tattica arranca, ma"
+чтобы за ними пришла победа».,a commettere quei primi 999999
+не является LFS папкой,non è una cartella LFS
+не является LFS папкой игры,non è una cartella di gioco LFS
+нет,no
+"такой беды, которая не являлась бы",fondamentale della loro logica
+"из своих складов с техникой, но",il piano segreto e decisero di
+"999999 первых фатальных ошибок,",tutto funzionerà... E si affrettano
+спешат поскорее совершить те самые,possibilità su un milione in cui
+"Те, будучи хитрыми из-за интернетов,",nei giardini. Dalle paludi fu
+прямиком к соседям за деталями.,chip direttamente da dispositivi
+исправно принося отрицательный рост.,"di azzeramento continua, portando"
+догмате их глубинной логики: «Нет,L'intero segreto risiede nel dogma
+что в финале всё получится». Их,"vittime ci sono, più alta è la"
+"прямо из техники, стоящей в садах.",sia nei sistemi di puntamento che
+и решили всласть поглумиться. Они,"per i componenti. Quelli, astuti"
+"ZL/ZR - смена даты, Y - период","ZL/ZR - cambia data, Y - periodo"
+"видит чип, соседи его отбирают.»","magazzino, ma lo circondarono, e"
+"падают, потому что чипов не хватает","Bunker, casa editrice «Specchio»."
+"ни в системах наводки, ни в унитазах.",Il capo stratega ha dichiarato che
+позволили гостю залезть в один,"grazie a internet, capirono subito"
+"Получено: {}, (скорость не определена)","Ricevuto: {}, (velocità non definita)"
+Игры добавлены в список исключений,Giochi aggiunti alla lista di esclusione
+Новых игр в список исключений добавлено не было,Nessun nuovo gioco è stato aggiunto all'elenco di esclusione
+"Интервал автобекапа сейвов, дни","Intervallo backup automatico salvataggi, giorni"
+Просмотр МТР устройства [{}],Visualizzazione dispositivo MTP [{}]
+Просмотр USB диска [{}],Visualizzazione disco USB [{}]
+Заряд батареи (сырое значение) : {},Carica batteria (valore grezzo) : {}
+ru,ru
+Конфигурация зарядки            : {},Configurazione di ricarica            : {}
+Режим Hi-Z включён              : {},Modalità Hi-Z attivata              : {}
+Зарядка батареи включена        : {},Ricarica batteria attivata        : {}
+Маршрут электропитания          : {},Percorso alimentazione          : {}
+Напряжение источника            : {} mV,Tensione sorgente            : {} mV
+Ток источника                   : {} mA,Corrente sorgente             : {} mA
+Быстрая зарядка разрешена       : {},Ricarica rapida abilitata       : {}
+[CRC ОШИБКА ФАЙЛА],[ERRORE CRC FILE]
+Целевая прошивка            : {}.{}.{},Firmware di destinazione    : {}.{}.{}
+Поддерживаемая версия HOS   : {},Versione HOS supportata   : {}
+Будет скачана и установлена прошивка системы из файла {}.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены,Il firmware di sistema verrà scaricato e installato dal file {}.\n\nPremi (+) per continuare\nQualsiasi altro tasto per annullare
+Распаковка архива не удалась,Estrazione archivio fallita
+Сканирование архива не удалось,Scansione archivio fallita
+Установить все обновления из этой папки,Installa tutti gli aggiornamenti da questa cartella
+Япония,Giappone
+Русский,Russo
+Февраль,Febbraio
+Октябрь,Ottobre
+[HASH MISMATCH: GC ➡ eShop],[HASH MISMATCH: GC ➡ eShop]
+Ноябрь,Novembre
+ {} минут, {} minuti
+Игрок,Giocatore
+Время,Tempo
+Язык    : ,Lingua  : 
+Контент,Contenuto
+[HASH: OK],[HASH: OK]
+Красная,Rossa
+Путь    : ,Percorso :
+И. И. Пиздоболов. Ритмы прорыва.,"errori fatali, affinché poi arrivi"
+[HASH MISMATCH: Неисправимо],[HASH MISMATCH: Irrecuperabile]
+[ПРЕД],[PREC]
+Альбом,Album
+Выход,Esci
+и т.д...,ecc...
+{} бекап,{} backup
+874,874
+Пишется тело: {}/{}MB \r,Scrittura corpo: {}/{}MB \r
+Пишется скриншот\n,Scrittura screenshot\n
+Пишется таблица хешей\n,Scrittura tabella hash\n
+Пишется подпись видео\n,Scrittura firma video\n
+Операция завершена\n,Operazione completata\n
+Предел входного тока (буст)     : {} mA,Limite corrente in ingresso (boost)     : {} mA
+Предел тока быстрой зарядки     : {} mA,Limite corrente di ricarica rapida     : {} mA
+Напряжение батареи              : {} mV,Tensione batteria              : {} mV
+Контроллер источника получен    : {},Controller sorgente ricevuto    : {}
+OTG Запрошен                    : {},OTG richiesto                    : {}
+"Будет скачана и установлена прошивка системы из файла {}.\n\nВНИМАНИЕ!!! Похоже, эта версия не поддерживается текущей атмосферой.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены",Il firmware di sistema verrà scaricato e installato dal file {}.\n\nATTENZIONE!!! Sembra che questa versione non sia supportata dall'Atmosphere corrente.\n\nPremi (+) per continuare\nPremi un altro tasto per annullare
+Копирование файла не удалось,Copia del file fallita
+Daybreak.nro не найден,Daybreak.nro non trovato
+Изображение добавлено в альбом,Immagine aggiunta all'album
+Ошибка добавления изобржения в альбом: {},Errore durante l'aggiunta dell'immagine all'album: {}
+Добавить в альбом,Aggiungi all'album
+Анализ mp4 файла,Analisi del file mp4
+Длительность: {},Durata: {}
+ОШИБКА! Файл не содержит один видео трек,ERRORE! Il file non contiene un tracciato video
+ОШИБКА! Файл не содержит один аудио трек,ERRORE! Il file non contiene una traccia audio
+ОШИБКА! У видео трека неподдерживаемый кодек,ERRORE! La traccia video ha un codec non supportato
+ОШИБКА! У аудио трека неподдерживаемый кодек,ERRORE! La traccia audio ha un codec non supportato
+ОШИБКА! Аудио трек не стерео,ERRORE! La traccia audio non è stereo
+[{}] Общий тикет для {},[{}] Ticket comune per {}
+ОШИБКА! У аудио трека неподходящая частота дискретизации,ERRORE! La traccia audio ha una frequenza di campionamento non idonea
+ОШИБКА! У видео трека неподходящая ширина,ERRORE! La traccia video ha una larghezza non idonea
+ОШИБКА! У видео трека неподходящая высота,ERRORE! La traccia video ha un'altezza non idonea
+ВНИМАНИЕ! Возможно видео поток содержит B-Frames. Файл может не воспроизводиться,ATTENZIONE! Il flusso video potrebbe contenere B-Frame. Il file potrebbe non essere riprodotto
+"Похоже, это не MP4 файл",Sembra che questo non sia un file MP4
+Открыть как RomFS,Apri come RomFS
+\x1b[31;1mГ\x1b[37;1m,\x1b[31;1mГ\x1b[37;1m
+\x1b[32;1mШ\x1b[37;1m,\x1b[32;1mШ\x1b[37;1m
+Ваша SD карта является подделкой. Рекомендуется заменить SD карту на проверенную.,La tua scheda SD è contraffatta. Si consiglia di sostituire la scheda SD con una verificata.
+[{}] Персональный тикет для {},[{}] Ticket personale per {}
+Кажется ваша SD карта является подделкой.\n\nВозможны проблемы с установкой игр.\nВ этом случае рекомендуется заменить SD карту на проверенную.,"La tua scheda SD sembra essere contraffatta.\n\nPotrebbero verificarsi problemi con l'installazione dei giochi.\nIn questo caso, si consiglia di sostituire la scheda SD con una verificata."
+Информация о SD карте,Informazioni sulla scheda SD
+Производитель    : {:s} ({:02X}),Produttore      : {:s} ({:02X})
+OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
+Имя продукта     : {:s},Nome prodotto     : {:s}
+Ревизия продукта : {:s},Revisione prodotto : {:s}
+Серийный номер   : {:s},Numero di serie  : {:s}
+[ПОДПИСЬ: DBI],[FIRMA: DBI]
+.    Время игры    \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m,.    Tempo di gioco    \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m
+"ZL/ZR смена даты, Y период, X сортировка, (+) выбрать пользователя","ZL/ZR cambia data, Y periodo, X ordinamento, (+) seleziona utente"
+[{}МБ] {}МБ из {}МБ ({:.2f} МБ/сек)\x1b[0K\r,[{}MB] {}MB di {}MB ({:.2f} MB/sec)\x1b[0K\r
+"X выбор, Y обратить выбор, (+) меню, R3 сортировка, L3 запуск","X seleziona, Y inverti selezione, (+) menu, R3 ordina, L3 avvia"
+Создать все известные ({}),Crea tutti i conosciuti ({})
+"X выбор, Y обратить выбор, (+) меню, L3 запуск","X seleziona, Y inverti selezione, (+) menu, L3 avvia"
+"DPAD или стики для перемещения, (+) Настройки","DPAD o stick per muoversi, (+) Impostazioni"
+Просмотр HTTP/FTP/Github сервера...,Esplorazione server HTTP/FTP/Github...
+"X выбор, Y обратить выбор, (+) меню, R3 сортировка","X seleziona, Y inverti selezione, (+) menu, R3 ordina"
+"X выбор, Y обр. выбор, (+) меню","X seleziona, Y inverti selezione, (+) menu"
+"X выбор, Y обратить выбор, A открыть, (-) 2ая панель, (+) меню","X seleziona, Y inverti selezione, A apri, (-) 2° pannello, (+) menu"
+"X выбор, Y обр. выбор, ⬅/➡ смена панели, (-) закрыть, (+) меню","X seleziona, Y deseleziona, ⬅/➡ cambia pannello, (-) chiudi, (+) menu"
+[ДЕЛЬТА ФРАГМЕНТ НЕ НУЖЕН],[FRAMMENTO DELTA NON NECESSARIO]
+[КОНТЕНТ ОТСУТСТВУЕТ],[CONTENUTO MANCANTE]
+[НЕ СОЗДАТЬ ПЛЕЙСХОЛДЕР],[NON CREARE SEGNAPOSTO]
+[НЕДОСТАТОЧНО МЕСТА],[SPAZIO INSUFFICIENTE]
+  Кодировка...,  Codifica...
+[НЕИЗВЕСТНОЕ СЖАТИЕ],[COMPRESSIONE SCONOSCIUTA]
+[ОТСУТСТВУЕТ],[MANCANTE]
+[ОШБК],[ERRORE]
+[ОШИБКА NCA MAGIC],[ERRORE NCA MAGIC]
+[ОШИБКА ЗАПИСИ В ПЛЕЙСХОЛДЕР],[ERRORE DI SCRITTURA NEL SEGNAPOSTO]
+[ОШИБКА РАСПАКОВКИ ZSTD: {}],[ERRORE DI DECOMPRESSIONE ZSTD: {}]
+[ОШИБКА РАСПАКОВКИ],[ERRORE DI ESTRAZIONE]
+[ОШИБКА],[ERRORE]
+[ОШИБКА] Отсутствует URL списка обновлений,[ERRORE] URL dell'elenco aggiornamenti mancante
+[ПЕРЕДАЧА OK],[TRASFERIMENTO OK]
+  Применить,  Applica
+[ПЕРЕДАЧА ПРЕРВАНА],[TRASFERIMENTO INTERROTTO]
+[ПОВРЕЖДЁННЫЙ NCA],[NCA CORROTTO]
+[ПОДПИСЬ: OK],[FIRMA: OK]
+[ПОДПИСЬ: XCI➡NSP],[FIRMA: XCI➡NSP]
+[ПОДПИСЬ: Поддельная],[FIRMA: Falsa]
+[СТАРАЯ ПРОШИВКА],[FIRMWARE VECCHIO]
+[ТРЕБУЕТСЯ РЕЖИМ ТАЙТЛА],[MODALITÀ TITOLO RICHIESTA]
+[ФАЙЛ ПОВРЕЖДЁН],[FILE DANNEGGIATO]
+[ХЕШ ИСПРАВЛЕН],[HASH CORRETTO]
+  Редактирование,  Modifica
+[ХЕШ НЕ СОВПАДАЕТ],[HASH NON CORRISPONDENTE]
+\nНачало обработки dlc {}: {:016X},\nAvvio elaborazione DLC {}: {:016X}
+\nНачало обработки программы {},\nAvvio elaborazione applicazione {}
+\nНачало создания Data.nca,\nInizio creazione Data.nca
+\nНачало создания Meta.nca,\nInizio creazione Meta.nca
+\nОшибка USB обмена,\nErrore di trasferimento USB
+\nСборка PFS0,\nCreazione PFS0
+\nСборка RomFS,\nCostruzione RomFS
+\nСекция 0,\nSezione 0
+\nСекция 1,\nSezione 1
+ (по времени игры), (per tempo di gioco)
+\nСекция 2,\nSezione 2
+\nСоздан NSP: {},\nNSP creato: {}
+\nШифрование NCA,\nCrittografia NCA
+{:04d} {} {:02d}. Всего: {} час,{:04d} {} {:02d}. Totale: {} ore
+{:04d} {} {:02d}. Всего: {} часа,{:04d} {} {:02d}. Totale: {} ore
+{:04d} {} {:02d}. Всего: {} часов,{:04d} {} {:02d}. Totale: {} ore
+{:4d} {}. Всего: {} час,{:4d} {}. Totale: {} ore
+{:4d} {}. Всего: {} часа,{:4d} {}. Totale: {} ore
+{:4d} {}. Всего: {} часов,{:4d} {}. Totale: {} ore
+ (по названию игры), (per nome del gioco)
+{:4d}. Всего: {} час,{:4d}. Totale: {} ore
+{:4d}. Всего: {} часа,{:4d}. Totale: {} ore
+{:4d}. Всего: {} часов,{:4d}. Totale: {} ore
+{:>3} {}{:<50}\x1b[37;1m {:>10},{:>3} {}{:<50}\x1b[37;1m {:>10}
+{:>6} объектов обработано. {:>5} записей найдено...\r,{:>6} oggetti elaborati. {:>5} voci trovate...\r
+{:>6}/{}kB уже скачано...\r,{:>6}/{}kB già scaricato...\r
+{} cохранение,{} salvataggio
+{} cохранений,{} salvato
+{} cохранения,{} dati di salvataggio
+ (по числу запусков), (per numero di avvii)
+{} бекапа,{} backup
+{} бекапов,{} backup
+{} записей ({}),{} voci ({})
+{} записи ({}),{} voci ({})
+{} запись ({}),{} voce ({})
+{} игр ({}),{} giochi ({})
+{} игра ({}),{} gioco ({})
+{} игры ({}),{} giochi ({})
+{} сохранение,{} salvataggio
+{} сохранений,{} salvataggi
+{} сохранения,{} dati di salvataggio
+{} тикет,{} ticket
+{} тикета,{} ticket
+{} тикетов,{} ticket
+{}-{} FW:{}{} SDK:{},{}-{} FW:{}{} SDK:{}
+"{}/{} MB (Ср: {:.1f} MB/sec, Тек: {:.1f} MB/sec) Ост. {:02d}:{:02d}      \r","{}/{} MB (Media: {:.1f} MB/s, Att: {:.1f} MB/s) Rim. {:02d}:{:02d}      \r"
+"{}/{} МБ, {:.2f} МБ/сек","{}/{} MB, {:.2f} MB/sec"
+{}: {} потерянная запись,{}: {} voce orfana
+{}: {} потерянных записей,{}: {} voci perse
+{}: {} потерянных записи,{}: {} voci perse
+     {:<10} Шифрование: {} Размер установки: {}{:>10},     {:<10} Crittografia: {} Dimensione installazione: {}{:>10}
+ [НЕ МОГУ ОТКРЫТЬ ФАЙЛ], [IMPOSSIBILE APRIRE IL FILE]
+{}: {}/{} ({:.2f} МБ/сек),{}: {}/{} ({:.2f} MB/sec)
+{}: {}/{} ({}%) ({:.2f} МБ/сек),{}: {}/{} ({}%) ({:.2f} MB/s)
+{}: пропускается {}/{} ({:.2f} МБ/сек),{}: saltato {}/{} ({:.2f} MB/sec)
+"{}\n\nВосстановление бекапа не удалось\n\nНажмите A - прервать, другая кнопка - продолжить","{}\n\nRipristino del backup non riuscito\n\nPremi A per interrompere, altro pulsante per continuare"
+{}МБ из {}МБ ({:.2f} МБ/сек)\x1b[0K\r,{}MB di {}MB ({:.2f} MB/sec)\x1b[0K\r
+«У жителей болот всё идёт по плану.,«Negli abitanti delle paludi tutto
+Ёмкость с завода   : {} mAh,Capacità di fabbrica: {} mAh
+АВТО,AUTO
+Аватар установлен,Avatar impostato
+Август,Agosto
+Австралия,Australia
+Автозапуск FTP: ,Avvio automatico FTP: 
+Автозапуск MTP,Avvio automatico MTP
+Автозапуск списка homebrew,Avvio automatico lista homebrew
+Автоповтор кнопок при удержании,Ripetizione automatica pulsanti quando tenuti premuti
+Автор   : ,Autore  : 
+Агрументы для ярлыка,Argomenti collegamento
+Адрес FTP сервера: {},Indirizzo server FTP: {}
+Адрес HTTP сервера: {},Indirizzo del server HTTP: {}
+ {:>5} часа, {:>5} ore
+Альбом (0°),Album (0°)
+Американский английский,Inglese americano
+Апрель,Aprile
+База этой игры не самодостаточна. Не забудьте установить обновление,La base di questo gioco non è autosufficiente. Non dimenticare di installare l'aggiornamento
+Базовое хранилище: ,Memoria di base: 
+Бекапы,Backup
+Бекапы сохранений ({}),Backup dei dati di salvataggio ({})
+Британский английский,Inglese britannico
+ {:>5} часов, {:>5} ore
+В альбоме найден {} объект,{} oggetto trovato nell'album
+В альбоме найдено {} объекта,Trovati {} oggetti nell'album
+В альбоме найдено {} объектов,{} oggetti trovati nell'album
+В альбоме отсутствуют объекты,Nessun oggetto nell'album
+В файле /switch/prod.keys отсутствуют необходимые ключи.\n\nЧасть функций программы будет недоступна.\n\nПерегрузитесь в Hekate и используйте Lockpick_RCM.bin пейлоад\nдля дампа ключей из SysNAND.,Le chiavi necessarie mancano nel file /switch/prod.keys.\n\nAlcune funzionalità dell'applicazione non saranno disponibili.\n\nRiavvia in Hekate e usa il payload Lockpick_RCM.bin\nper estrarre le chiavi da SysNAND.
+ВНИМАНИЕ ,ATTENZIONE 
+ВНИМАНИЕ! ,ATTENZIONE! 
+ВНИМАНИЕ! Тайтл {:016X} не установлен,ATTENZIONE! Il titolo {:016X} non è installato
+ВНИМАНИЕ! Установленная версия ({}) не совпадает с желаемой ({}),ATTENZIONE! La versione installata ({}) non corrisponde a quella desiderata ({})
+ВО ВРЕМЯ ПЕРЕДАЧИ ФАЙЛА НАЙДЕНЫ ОШИБКИ. УСТАНОВКА ПРЕРВАНА,ERRORI RILEVATI DURANTE IL TRASFERIMENTO DEL FILE. INSTALLAZIONE INTERROTTA
+ {} в чёрном списке., {} nella blacklist.
+Введите URL сервера (HTTP или (S)FTP),Inserisci l'URL del server (HTTP o (S)FTP)
+Введите агрументы для ярлыка или оставьте пустым,Inserisci argomenti per il collegamento o lascia vuoto
+Введите желаемый номер страницы,Inserisci il numero di pagina desiderato
+Введите новое имя,Inserisci nuovo nome
+Введите новое имя каталога,Inserisci il nuovo nome della directory
+Введите новое имя файла,Inserisci il nuovo nome del file
+Введите номер DLC,Inserisci il numero DLC
+Версия  : ,Versione: 
+Версия {} [v{}],Versione {} [v{}]
+Версия атмосферы            : {}.{}.{},Versione Atmosphere         : {}.{}.{}
+Версия прошивки         : {}.{}.{}-{}.{},Versione firmware       : {}.{}.{}-{}.{}
+Вместо пользователя {} использовать:,Usa al posto dell'utente {}:
+Внимание! ,Attenzione! 
+Внимание!\nНекоторые файлы были заблокированы и поэтому пропущены.,Attenzione!\nAlcuni file erano bloccati e quindi sono stati saltati.
+Во время разбора\n\n{}\n\nвозникла следующая ошибка:\n\n{},Durante l'analisi di\n\n{}\n\nsi è verificato il seguente errore:\n\n{}
+Во время установки тикетов были ошибки. Проверьте наличие ES сигпатчей,Si sono verificati errori durante l'installazione dei ticket. Verificare la presenza di sigpatch ES
+Во время экспорта были ошибки,Si sono verificati errori durante l'esportazione
+Возраст батареи                 : {}%,Età della batteria             : {}%
+Возраст батареи                : {},Età della batteria            : {}
+Возраст батареи                : {}%,Età della batteria                : {}%
+ {} минута, {} minuto
+Возрастной рейтинг,Classificazione per età
+Восстановить,Ripristina
+Восстановить бекап...,Ripristina backup...
+Восстановить для...,Ripristina per...
+Восстановить как бекап сохранения,Ripristina come backup del salvataggio
+Восстановление бекапа,Ripristino backup
+Восстановление не удалось,Ripristino fallito
+Восстановление успешно,Ripristino riuscito
+Восстановление: {},Ripristino: {}
+ {} минуты, {} minuti
+Время гашения экрана в секундах,Timeout di attenuazione dello schermo in secondi
+Время игры: {:02}:{:02}:{:02},Tempo di gioco: {:02}:{:02}:{:02}
+Время передачи {:d}:{:02d}:{:02d},Tempo di trasferimento {:d}:{:02d}:{:02d}
+Все игровые сессии,Tutte le sessioni di gioco
+Все игроки,Tutti i giocatori
+Все объекты,Tutti gli oggetti
+Все файлы в порядке,Tutti i file sono OK
+Всего {} байт получен,{} byte ricevuti
+Всего {} байт послан,{} byte inviati
+Всего {} байта получено,{} byte ricevuti in totale
+ Да, Sì
+Всего {} байта послано,{} byte inviati
+Всего {} байтов получено,{} byte ricevuti in totale
+Всего {} байтов послано,{} byte inviati
+Всего записей: {},Voci totali: {}
+Всего освобождено места : ,Spazio totale liberato : 
+Всего отослано: {} ({}/сек),Totale inviato: {} ({}/sec)
+Всего программ: {},Totale titoli: {}
+Вставить,Inserisci
+Вставка...,Inserimento...
+Всё время. Всего: {} час,Tutto il tempo. Totale: {} ore
+ Да , Sì 
+Всё время. Всего: {} часа,Tutto il tempo. Totale: {} ore
+Всё время. Всего: {} часов,Tutto il tempo. Totale: {} ore
+Вы собираетесь удалить следующие бекапы:,Stai per eliminare i seguenti backup:
+Вы собираетесь удалить следующие игры:,Stai per eliminare i seguenti giochi:
+Вы собираетесь удалить следующие сохранения:,Stai per eliminare i seguenti salvataggi:
+Вы собираетесь удалить следующие тикеты:,Stai per eliminare i seguenti ticket:
+Вы уверены в удалении {} записей?\n\n(+) - ДА   B - Отмена,Sei sicuro di voler eliminare {} voci?\n\n(+) - SÌ   B - Annulla
+Вы уверены в удалении {} записи?\n\n(+) - ДА   B - Отмена,Sei sicuro di voler eliminare {} voce?\n\n(+) - SÌ   B - Annulla
+Вы уверены в удалении {} объекта?\n\n(+) - ДА   B - Отмена,Sei sicuro di voler eliminare {} oggetto?\n\n(+) - SÌ   B - Annulla
+Вы уверены в удалении {} объектов?\n\n(+) - ДА   B - Отмена,Sei sicuro di voler eliminare {} oggetti?\n\n(+) - SÌ   B - Annulla
+    {:>2} сек,    {:>2} sec
+ Закрытие игры, Chiusura gioco
+"Вы уверены, что хотите удалить {}?\n\n(+) - ДА, другая кнопка - НЕТ","Sei sicuro di voler eliminare {}?\n\n(+) - SÌ, altro pulsante - NO"
+"Вы уверены, что хотите удалить\n{}?\n\n(+) - ДА  В - Отмена",Sei sicuro di voler eliminare\n{}?\n\n(+) - SÌ  B - Annulla
+Выберите пользователя,Seleziona utente
+Выберите тип сохранения,Seleziona tipo di salvataggio
+Выбрать все файлы игры,Seleziona tutti i file del gioco
+Выбрать того же пользователя,Seleziona lo stesso utente
+Выбрать ту же игру,Seleziona lo stesso gioco
+Выйти из DBI           : ,Esci da DBI            : 
+Выключать экран,Spegni schermo
+Выключить экран        : ,Spegni schermo         : 
+ Запуск игры, Avvio del gioco
+Вырезать,Taglia
+Выход на рабочий стол,Esci al menu HOME
+Вычисление хэша,Calcolo hash
+Вычисленное время конца : {},Tempo di fine calcolato : {}
+Вычисленное время начала: {},Ora di inizio calcolata: {}
+Генерация DLC [{:016X}][v{}],Generazione DLC [{:016X}][v{}]
+Генерация DLC анлокера...,Generazione sblocco DLC...
+Генерируется анлокер для {:016X} с номером {} и версией {}...,Generazione unlocker per {:016X} con numero {} e versione {}...
+Генерируется ярлык для пути '{}' и аргументов '{}'...,Generazione collegamento per il percorso '{}' e argomenti '{}'...
+ Логаут пользователя \x1b[36;1m{}\x1b[37;1m, Disconnessione utente \x1b[36;1m{}\x1b[37;1m
+Главное меню,Menu principale
+Голландский,Olandese
+Да,Sì
+"Да, я уверен","Sì, sono sicuro"
+Дамп анлокера в '{}'...,Dump dello sblocco in '{}'...
+Дамп текущей прошивки,Dump del firmware corrente
+Дамп ярлыка в '{}'...,Dump collegamento in '{}'...
+Дата первого игрового события : {},Data del primo evento di gioco : {}
+Действия с файлами,Operazioni sui file
+Действия с файлами ({}),Azioni file ({})
+ Логин пользователя \x1b[36;1m{}\x1b[37;1m, Nome utente \x1b[36;1m{}\x1b[37;1m
+Декабрь,Dicembre
+День,Giorno
+Диаграмма активности,Grafico attività
+Для бекапов,Per i backup
+Для выхода нажмите любую кнопку,Premi un pulsante qualsiasi per uscire
+Для дампов,Per i dump
+Для логов,Per i log
+Добавить в любимые,Aggiungi ai preferiti
+Добавлять суффикс к имени файла,Aggiungi suffisso al nome file
+Достаточное питание            : {},Alimentazione sufficiente      : {}
+ Переключение на игру, Passaggio al gioco
+Европа,Europa
+Есть исправление RCM бага   : {},Correzione bug RCM presente   : {}
+"Есть несохранёные изменения.\nВы хотите их сохранить?\n\n(+) - Да, сохранить\n\n(-) - Выйти без сохранения\n\nДругая кнопка - Отмена","Ci sono modifiche non salvate.\nVuoi salvarle?\n\n(+) - Sì, salva\n\n(-) - Esci senza salvare\n\nAltro pulsante - Annulla"
+Желаемая версия: {},Versione desiderata: {}
+Журнал активности,Registro attività
+Журналирование действий,Registrazione azioni
+Завершено,Completato
+Загружается список обновлений...,Caricamento elenco aggiornamenti...
+Загружено ,Caricato 
+Загрузка изображения...,Caricamento immagine...
+ Режим работы изменился: {}, Modalità operativa modificata: {}
+Загрузка текста...{}%,Caricamento testo...{}%
+Загрузка файла... {}%,Caricamento file... {}%
+Задать размер файла {} не удалось: {},Impossibile impostare la dimensione del file {}: {}
+Закладки на SD,Segnalibri su SD
+Закончено за {:02d}:{:02d}:{:02d},Completato in {:02d}:{:02d}:{:02d}
+Закончилась память при посылке ответа,Memoria esaurita durante l'invio della risposta
+Закончились дополнительные буферы. Скорость записи на носитель слишком низка,Buffer aggiuntivi esauriti. La velocità di scrittura sulla memoria è troppo bassa
+Закрытие соединения,Chiusura connessione
+Закрытие соединения к {}:{},Chiusura connessione a {}:{}
+ Сброс системных часов, Ripristina orologio di sistema
+Запаковать LFS в romfs.bin,Impacchetta LFS in romfs.bin
+Запаковать в romfs.bin,Impacchetta in romfs.bin
+Запаковка папки в RomFS,Compressione cartella in RomFS
+Записанное время конца  : {},Ora di fine registrata  : {}
+Записанное время начала : {},Ora di inizio registrata : {}
+Запись в CAL0 разрешена     : {},Scrittura CAL0 consentita     : {}
+Запись в файл...,Scrittura nel file...
+Запись за пределами файла,Scrittura oltre il file
+Заполнение нулями,Riempimento con zeri
+Заполнить свободное место на SD нулями,Riempi lo spazio libero su SD con zeri
+ Сворачивание игры, Sospensione gioco
+Запрет захвата видео,Vieta acquisizione video
+Запрет скриншотов,Divieto di screenshot
+Запрещено,Vietato
+Запрос на удаление ,Richiesta di eliminazione 
+Запускавшиеся игры,Giochi avviati
+Запускать точку доступа,Avvia punto di accesso
+Запустить FTP сервер,Avvia server FTP
+Запустить FTP сервер...,Avvia server FTP...
+Запустить HTTP сервер,Avvia server HTTP
+Запустить HTTP сервер...,Avvio del server HTTP...
+ Состояние электропитания изменилось: {}, Stato alimentazione modificato: {}
+Запустить МТР соединение,Avvia connessione MTP
+Запустить случайную игру,Avvia gioco casuale
+Заряд батареи                  : {},Carica batteria                : {}
+Заряд батареи                  : {}%,Carica batteria                : {}%
+Заряд батареи (сырое значение) : {}%,Carica batteria (valore grezzo): {}%
+Зарядка батареи                : {},Carica batteria                : {}
+Здесь пусто,Niente qui
+Игра анонсирует SDK {},Il gioco annuncia SDK {}
+" и {} новое DLC,"," e {} nuovo DLC,"
+"Игра анонсирует более новый SDK ({}), чем текущая прошивка ({})",Il gioco richiede un SDK più recente ({}) rispetto al firmware attuale ({})
+Игра использует titleId от дополнения,Il gioco usa il titleId dal DLC
+Игра использует titleId от обновления,Il gioco usa il titleId dall'aggiornamento
+Извлечь в LFS,Estrai in LFS
+Изменение размера сохранения на {} [{}]...,Ridimensionamento salvataggio a {} [{}]...
+Изменить версию DLC (десятичную),Modifica versione DLC (decimale)
+Изменить номер DLC (десятичный),Modifica numero DLC (decimale)
+Изменить номер DLC (шестнадцатеричный),Modifica numero DLC (esadecimale)
+Изменён размер SaveFS,Dimensione SaveFS modificata
+"Главный стратег объявил, что ракеты",I. I. Pizdabolov. Ritmi della svolta.
+" и {} новых DLC,"," e {} nuovi DLC,"
+Импорт исправленного тикета...,Importazione ticket corretto...
+Импорт тикета...,Importazione ticket...
+Имя     : ,Nome    : 
+"Имя каталога\n'{}'\nсодержит недопустимые символы.\nОн не может быть создан.\n\nНажмите A - прервать, B - пропустить, X - переименовать","Il nome della directory\n'{}'\ncontiene caratteri non validi.\nNon può essere creata.\n\nPremere A - interrompi, B - salta, X - rinomina"
+"Имя файла\n'{}'\nсодержит недопустимые символы.\nОн не может быть создан.\n\nНажмите A - прервать, B - пропустить, X - переименовать","Il nome del file\n'{}'\ncontiene caratteri non validi.\nNon può essere creato.\n\nPremi A - interrompi, B - salta, X - rinomina"
+Инсталлируется romfs.bin,Installazione di romfs.bin
+Инструменты,Strumenti
+Информация о зарядке батареи,Informazioni sulla ricarica della batteria
+Информация о контенте,Informazioni sul contenuto
+Информация о контенте ({}),Informazioni sul contenuto ({})
+ сортировка по дате создания, ordina per data di creazione
+Информация о прошивке,Informazioni sul firmware
+Информация о системе,Informazioni di sistema
+Информация о сохранении,Informazioni di salvataggio
+Информация о сохранении...,Informazioni di salvataggio...
+Информация о тикете,Informazioni sul ticket
+Информация о тикете...,Informazioni sul ticket...
+Информация об NSP,Informazioni NSP
+Информация об атмосфере,Informazioni su Atmosphere
+Информация об игровой активности,Informazioni sull'attività di gioco
+Информация об источние питания,Informazioni sulla fonte di alimentazione
+ сортировка по имени, ordina per nome
+Информация об оборудовании,Informazioni hardware
+Информация...,Informazioni...
+Испанский,Spagnolo
+Использовано дополнительной памяти: {}. Создано буферов: {},Memoria aggiuntiva utilizzata: {}. Buffer creati: {}
+Использовать 5 GHz,Usa 5 GHz
+Использовать MSG_WAITALL в recv,Usa MSG_WAITALL in recv
+Использовать для неё TitleID,Usa TitleID per essa
+Использовать папку для...,Usa cartella per...
+Использовать разгон,Usa overclocking
+Использовать скрытый SSID,Usa SSID nascosto
+ сортировка по имени игры, ordina per nome del gioco
+Используется ,Usato 
+Используется USB{},Utilizzo di USB{}
+"Процесс обнуления продолжается,",procede secondo il piano. Il processo
+Источник питания                : {},Fonte di alimentazione            : {}
+Итальянский,Italiano
+Ищется control для ProgramId {},Ricerca control per ProgramId {}
+Ищется exefs/romfs для ProgramId {},Ricerca exefs/romfs per ProgramId {}
+Ищется exefs/romfs/logo для ProgramId {},Ricerca di exefs/romfs/logo per ProgramId {}
+Ищется {},Ricerca di {}
+ сортировка по месту установки, ordina per posizione di installazione
+Июль,Luglio
+Июнь,Giugno
+Канадский французский,Francese canadese
+"Когда ваше устройство подключится, нажмите любую кнопку",Premi un pulsante qualsiasi quando il dispositivo si connette
+Код партии батареи    : {} ({}),Codice lotto batteria : {} ({})
+Кодировка,Codifica
+Конвертация в фейковые ,Conversione in falsi 
+Конец игры            : -,Fine del gioco        : -
+Конец игры            : {},Fine del gioco        : {}
+ сортировка по общему размеру, ordina per dimensione totale
+Контент уже на месте,Il contenuto è già presente
+Копирование IVFC слой {} в nca: {},Copia del livello IVFC {} in nca: {}
+Копирование PFS0 в nca,Copia di PFS0 in nca
+Копирование PFS0 хэш таблицы в nca,Copia della tabella hash PFS0 in nca
+Копирование SDK {} в файл: {}...,Copia di SDK {} nel file: {}...
+Копировать,Copia
+Корейский,Coreano
+Корень не найден,Root non trovata
+Корень сохранения не существует,La radice del salvataggio non esiste
+ сортировка по пользователю, ordina per utente
+Корея,Corea
+Курсор на обеих панелях,Cursore su entrambi i pannelli
+Латиноамериканский испанский,Spagnolo latinoamericano
+Май,Maggio
+Март,Marzo
+Масштаб: По ширине,Scala: Adatta alla larghezza
+Масштаб: По экрану,Scala: Adatta allo schermo
+Масштаб: Точка в точку,Scala: Pixel perfetto
+Масштаб: Увеличение x2,Scala: Ingrandimento x2
+ сортировка по порядку игры, ordina per ordine di gioco
+Место в  NAND         : {},Spazio in NAND       : {}
+Место на SD карте     : {},Spazio su scheda SD     : {}
+Место на приставке не занято,Nessuno spazio occupato sulla console
+Место установки        : ,Posizione installazione: 
+Мета контент отсутствует,Contenuto meta mancante
+Миссия провалена\n\nНажмите А для выхода,Missione fallita\n\nPremi A per uscire
+Миссия успешна\n\nОсталось ходов: {}\n\nНажмите А для выхода,Missione riuscita\n\nMosse rimanenti: {}\n\nPremi A per uscire
+Модификация файла не удалась,Modifica del file non riuscita
+На выбранном устройстве нет достаточного свободного места для установки,Non c'è abbastanza spazio libero sul dispositivo selezionato per l'installazione
+На месте нет достаточно свободного места,Spazio libero insufficiente
+ сортировка по размеру, ordina per dimensione
+Нажмите (+) для перезаписи конфига обновлённым\n\nЛюбую другую кнопку для пропуска,Premi (+) per sovrascrivere la configurazione con quella aggiornata\n\nQualsiasi altro pulsante per saltare
+"Нажмите (+) для удаления, любую другую кнопку для пропуска...\n (-) Удалять все, больше не спрашивая","Premi (+) per eliminare, qualsiasi altro pulsante per saltare...\n (-) Elimina tutto senza chiedere più"
+"Нажмите A, чтобы продолжить, другую кнопку, чтобы выйти","Premi A per continuare, un altro pulsante per uscire"
+"Нажмите B, чтобы вернуться",Premi B per tornare
+Нажмите любую кнопку,Premi un pulsante qualsiasi
+Название: ,Nome: 
+Найден SDK: {},SDK trovato: {}
+Найден {} зарегистрированный контент-файл,Trovato {} file di contenuto registrato
+Найден {} контент-файл,Trovato {} file di contenuto
+Найден {} пользователь,Trovato {} utente
+%% заряд-разряд    : {},%% carica-scarica    : {}
+Найден {} потерянный контент-файл,Trovato {} file di contenuto orfano
+Найден {} файл,Trovato {} file
+Найден {} файл с ошибками,Trovato {} file con errori
+Найден и удалён {} неиспользуемый тикет,Trovato ed eliminato {} ticket inutilizzato
+Найдена {} запись об игре,Trovata {} voce di gioco
+Найдена {} запись об ошибках,Trovato {} record di errore
+Найдена {} установленная игра,Trovato {} gioco installato
+Найдено {} записей об играх,Trovati {} record di giochi
+Найдено {} записей об ошибках,Trovati {} report di errore
+Найдено {} записи об играх,Trovate {} voci di giochi
+Весь секрет таится в фундаментальном,regolarmente una crescita negativa.
+({}/{}) Устанавливается {},({}/{}) Installazione di {}
+Найдено {} записи об ошибках,Trovati {} report di errore
+Найдено {} зарегистрированных контент-файла,Trovati {} file di contenuto registrati
+Найдено {} зарегистрированных контент-файлов,Trovati {} file di contenuto registrati
+Найдено {} контент-файла,Trovati {} file di contenuto
+Найдено {} контент-файлов,{} file di contenuto trovati
+Найдено {} обновление,{} aggiornamento trovato
+Найдено {} обновлений,Trovati {} aggiornamenti
+Найдено {} обновления,Trovati {} aggiornamenti
+Найдено {} пользователей,Trovati {} utenti
+Найдено {} пользователя,Trovato {} utente
+Найдено {} потерянных контент-файла,Trovati {} file di contenuto persi
+Найдено {} потерянных контент-файлов,Trovati {} file di contenuto orfani
+Найдено {} сохранение,Trovato {} salvataggio
+Найдено {} сохранение...,Trovato {} salvataggio...
+Найдено {} сохранений,Trovati {} salvataggi
+Найдено {} сохранений...,Trovati {} salvataggi...
+Найдено {} сохранения,Trovati {} salvataggi
+Найдено {} сохранения...,Trovati {} salvataggi...
+Найдено {} установленные игры,Trovati {} giochi installati
+Найдено {} установленных игр,Trovati {} giochi installati
+Найдено {} файла,{} file trovato
+Найдено {} файла с ошибками,Trovati {} file con errori
+Найдено {} файлов,{} file trovati
+Найдено {} файлов с ошибками,Trovati {} file con errori
+Найдено и удалено {} неиспользуемых тикета,Trovati e rimossi {} ticket inutilizzati
+Найдено и удалено {} неиспользуемых тикетов,Trovati e rimossi {} ticket inutilizzati
+Найдено существующее сохранение. Восстанавливаю бекап в него...,Salvataggio esistente trovato. Ripristino del backup...
+Настройки,Impostazioni
+Настройки DBI,Impostazioni DBI
+Настройки FB2,Impostazioni FB2
+Начало игры           : -,Inizio del gioco       : -
+Начало игры           : {},Inizio del gioco       : {}
+Начало создания Control.nca,Inizio creazione Control.nca
+Начало создания Program.nca,Inizio creazione Program.nca
+Начало установки. Место установки: ,Installazione avviata. Posizione di installazione: 
+Начать установку,Avvia installazione
+Не доступно,Non disponibile
+Не известно,Sconosciuto
+"Не найден USB диск, который смог бы вместить получившийся дамп. Убедитесь, что он отформатирован в ExFAT.",Nessuna unità USB trovata in grado di contenere il dump risultante. Assicurati che sia formattata in ExFAT.
+Не найдены требуемые тикеты,Ticket richiesti non trovati
+. Время простоя \x1b[33;1m{:02}:{:02}:{:02}\x1b[37;1m,. Tempo di inattività \x1b[33;1m{:02}:{:02}:{:02}\x1b[37;1m
+Не получилось создать NSP,Impossibile creare NSP
+Не удалось получить список,Impossibile recuperare l'elenco
+Не удалось установить аватар\n{},Impossibile impostare l'avatar\n{}
+Не установлен,Non installato
+Невозможно найти путь,Impossibile trovare il percorso
+Невозможно открыть папку журналов ошибок,Impossibile aprire la cartella dei log degli errori
+Невозможно переименовать '{}' в '{}':,Impossibile rinominare '{}' in '{}':
+Невозможно получить список LFS,Impossibile ottenere l'elenco LFS
+Невозможно получить список пользователей,Impossibile recuperare l'elenco utenti
+Невозможно получить статус связи с Nintendo Account,Impossibile ottenere lo stato del collegamento dell'account Nintendo
+...готово,...fatto
+Невозможно получить число записей об ошибках,Impossibile ottenere il numero di record di errore
+Невозможно прочитать общие тикеты,Impossibile leggere i ticket comuni
+Невозможно прочитать персонализированные тикеты,Impossibile leggere i ticket personalizzati
+Невозможно разобрать content meta,Impossibile analizzare content meta
+Невозможно разобрать content meta. Неожиданная ошибка,Impossibile analizzare il content meta. Errore imprevisto
+Невозможно разобрать content meta. УСТАРЕВШАЯ ПРОШИВКА. Требуется обновление HOS,Impossibile analizzare il content meta. FIRMWARE OBSOLETO. Aggiornamento HOS richiesto
+Невозможно разобрать nca. УСТАРЕВШАЯ ПРОШИВКА. Требуется обновление HOS,Impossibile analizzare nca. FIRMWARE OBSOLETO. Aggiornamento HOS richiesto
+Невозможно разобрать индекс кеша,Impossibile analizzare l'indice della cache
+Невозможно распаковать '{}':,Impossibile estrarre '{}':
+Невозможно скопировать файл\n   '{}'\n➡ '{}'\n,Impossibile copiare il file\n   '{}'\n➡ '{}'\n
+Невозможно смонтировать сохранение,Impossibile montare il salvataggio
+Невозможно смонтировать устройство сохраниения,Impossibile montare il dispositivo di salvataggio
+Невозможно создать выходной zip-файл: ,Impossibile creare il file zip di output: 
+Невозможно создать каталог,Impossibile creare la directory
+Невозможно создать каталог '{}':,Impossibile creare la directory '{}':
+Невозможно создать файл,Impossibile creare il file
+Невозможно создать файл '{}':,Impossibile creare il file '{}':
+Недопустимый идентификатор,Identificatore non valido
+Неизвестная игра [{:016x}],Gioco sconosciuto [{:016x}]
+: {:>4} сохранение,: {:>4} salvataggio
+Неизвестно,Sconosciuto
+Неизвестный тайтл,Titolo sconosciuto
+Неиспользуемый тикет: ,Ticket non utilizzato: 
+Немецкий,Tedesco
+Неправильное хранилище,Archiviazione non valida
+Неправильный родительский объект,Oggetto genitore non valido
+Нет,No
+Нет ,No 
+Нет VFS. Прекращение работы,Nessun VFS. Terminazione
+Нет exefs VFS. Прекращение работы,Nessun exefs VFS. Terminazione
+: {:>4} сохранений,: {:>4} salvataggi
+Нет logo VFS. Прекращение работы,Nessun logo VFS. Terminazione
+Нет romfs VFS. Прекращение работы,Nessun romfs VFS. Terminazione
+Нет лого,Nessun logo
+Нечего устанавливать,Niente da installare
+Никнейм консоли         : {},Nickname della console  : {}
+А у соседей чипы якобы добывают,i razzi cadono perché mancano chip
+Новое имя для '{}',Nuovo nome per '{}'
+Новый каталог,Nuova directory
+Новый размер сохранения в МБ,Nuova dimensione salvataggio in MB
+Новый рейтинг (-1 для удаления),Nuova valutazione (-1 per rimuovere)
+: {:>4} сохранения,: {:>4} salvataggi
+Номер страницы,Numero di pagina
+Ночь,Notte
+Нужен связанный аккаунт,Account collegato richiesto
+ОШИБКА ПОЛУЧЕНИЯ ЭКСТРА ДАННЫХ,ERRORE NEL RECUPERO DEI DATI EXTRA
+Обнаружены недопустимые символы,Caratteri non validi rilevati
+Обновить DBI,Aggiorna DBI
+Обновить DBI из этого файла,Aggiorna DBI da questo file
+Обновить TitleDB,Aggiorna TitleDB
+   {:>3} мин,   {:>3} min
+Обновление TitleDB,Aggiornamento TitleDB
+Обновление базы данных...,Aggiornamento database...
+Обновление версии до {} {}\n\nНажмите (+) для продолжения\nЛюбую другую кнопку для отмены,Aggiornamento alla versione {} {}\n\nPremi (+) per continuare\nQualsiasi altro pulsante per annullare
+Обновление времени...,Aggiornamento ora...
+Обновление закончено\n\nНажмите любую кнопку\nдля перезапуска DBI,Aggiornamento completato\n\nPremi un pulsante qualsiasi\nper riavviare DBI
+Обновление фейковой записи {} ➡ [v{}],Aggiornamento record fittizio {} ➡ [v{}]
+Обновление. Пожалуйста подождите...,Aggiornamento. Attendere prego...
+Обновляется запись об игре...,Aggiornamento record di gioco...
+Обрабатывается запись {:016X},Elaborazione record {:016X}
+Обратный альбом (180°),Album invertito (180°)
+Обратный портрет (270°),Ritratto inverso (270°)
+Общее время активной игры     : {} часов,Tempo di gioco attivo totale     : {} ore
+Общее время дампа {:d}:{:02d}:{:02d},Tempo totale di dump {:d}:{:02d}:{:02d}
+Общее время запущенных игр    : {} часов,Tempo di gioco totale    : {} ore
+Общее время игры      : -,Tempo di gioco totale      : -
+Общее время игры      : {:d} часов {:02d} минут,Tempo di gioco totale      : {:d} ore {:02d} minuti
+Общее время установки: {:d}:{:02d}:{:02d},Tempo totale di installazione: {:d}:{:02d}:{:02d}
+Общее время: {:02}:{:02}:{:02},Tempo totale: {:02}:{:02}:{:02}
+Общее занимаемое место: N:{} + S:{} = {},Spazio totale occupato: N:{} + S:{} = {}
+Общее число запусков  : -,Numero totale di avvii : -
+Общее число игровых сессий    : {},Numero totale di sessioni di gioco    : {}
+Общие,Generale
+Общий размер передачи  : ,Dimensione totale trasferimento : 
+Общий размер установки : ,Dimensione totale installazione : 
+Общий размер установки: {},Dimensione totale installazione: {}
+Объединение списков,Unisci elenchi
+Объект {} не допустим,L'oggetto {} non è consentito
+Объект {} не может быть создан,L'oggetto {} non può essere creato
+Объект не открыт для редактирования,L'oggetto non è aperto per la modifica
+Объект удалён,Oggetto eliminato
+Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizzo MAC Bluetooth : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Объект уже открыт для редактирования,L'oggetto è già aperto per la modifica
+Огибка получения адреса сокета: {} {},Errore durante il recupero dell'indirizzo del socket: {} {}
+Ожидаемый размер: {},Dimensione prevista: {}
+Ожидается ,Previsto 
+Ожидается большой (>4GB) файл,File di grandi dimensioni (>4GB) previsto
+Ожидается запуск dbibackend на стороне ПК...,In attesa dell'avvio di dbibackend sul PC...
+Ожидание включения интерфейса: ,In attesa dell'attivazione dell'interfaccia: 
+Ожидание: {} секунд,Attesa: {} secondi
+Ожидание: {} секунда,Attesa: {} secondo
+Ожидание: {} секунды,Attesa: {} secondi
+CDIR в листинге,CDIR nell'elenco
+Ориентация,Orientamento
+Ориентация...,Orientamento...
+Освобождено места в NAND: ,Spazio NAND liberato: 
+Освобождено места на SD : ,Spazio liberato su SD : 
+Основной SDK не найден. Пробуем мультипрограмный вариант,SDK principale non trovato. Provo variante multiprogramma
+Оставить сохранения,Mantieni i salvataggi
+Осталось ходов:    {:>3},Mosse rimanenti:    {:>3}
+Остаток файла пропускается,Il resto del file viene saltato
+Отключение связи с мобильным приложением...,Disconnessione dall'app mobile...
+Configuration Id1     : {},Configuration Id1     : {}
+Открываем папку прошивки...,Apertura cartella firmware...
+Открыть,Apri
+Открыть вторую панель,Apri secondo pannello
+Открыть как 7Z,Apri come 7Z
+Открыть как RAR,Apri come RAR
+Открыть как ZIP,Apri come ZIP
+Открыть как hex,Apri come hex
+Открыть как текст,Apri come testo
+Открыть контент по MTP,Apri contenuto tramite MTP
+Открыть папку LFS,Apri cartella LFS
+Content meta не найден. Установка прервана,Meta contenuto non trovato. Installazione interrotta
+Отослано {}/{} байт,Inviati {}/{} byte
+Отсутствуют ES сигпатчи!,Mancano i sigpatch ES!
+Очистка /atmosphere/contents,Pulizia di /atmosphere/contents
+Очистка кеша rightsId...,Cancellazione cache rightsId...
+Очистка папки...,Pulizia cartella...
+Очистка плейсхолдеров...,Cancellazione segnaposto...
+Очистка системы от мусора,Pulizia del sistema dalla spazzatura
+Очистка сохранений,Cancellazione salvataggi
+Очистка...,Pulizia...
+Ошибка FTP сервера,Errore del server FTP
+DBI Просмотр альбома,DBI Visualizzazione album
+Ошибка во время копирования файла,Errore durante la copia del file
+Ошибка во время обновления тайтла,Errore durante l'aggiornamento del titolo
+Ошибка выделения сокета: {},Errore di allocazione socket: {}
+Ошибка завершения соединения: {},Errore di chiusura connessione: {}
+Ошибка загрузки картинки,Errore nel caricamento dell'immagine
+Ошибка загрузки файла из альбома: {},Errore nel caricamento del file dall'album: {}
+Ошибка закрытия сокета: {},Errore di chiusura del socket: {}
+Ошибка записи файла: {},Errore di scrittura del file: {}
+Ошибка изменения размера файла,Errore nel ridimensionamento del file
+Ошибка инициализации {}: {},Errore di inizializzazione {}: {}
+"DPAD и стики - прокрутка, L - стр. вверх, R - стр. вниз","DPAD e stick - scorrimento, L - pagina su, R - pagina giù"
+Ошибка опроса сокета: {},Errore di polling del socket: {}
+Ошибка открытия каталога: {},Errore nell'apertura della directory: {}
+Ошибка открытия сокета: {},Errore apertura socket: {}
+Ошибка открытия файла,Errore nell'apertura del file
+Ошибка открытия файла '{}': {},Errore nell'apertura del file '{}': {}
+Ошибка открытия файла: {},Errore nell'apertura del file: {}
+Ошибка отсылки: {},Errore di invio: {}
+Ошибка переименования: {},Errore di rinomina: {}
+Ошибка подключения: {},Errore di connessione: {}
+Ошибка подмены SDK: {},Errore di sostituzione SDK: {}
+"DPAD и стики - прокрутка, L - стр. вверх, R - стр. вниз, R3 - Текст/Hex","DPAD e stick - scorrimento, L - pag. su, R - pag. giù, R3 - Testo/Hex"
+Ошибка получения адреса узла: {},Errore durante il recupero dell'indirizzo del nodo: {}
+Ошибка получения внеочередных данных: {},Errore nel recupero dei dati fuori banda: {}
+Ошибка получения имени сокета: {} {},Errore durante il recupero del nome del socket: {} {}
+Ошибка получения информаци о файле: {},Errore durante il recupero delle informazioni del file: {}
+Ошибка получения размера файла: {},Errore durante il recupero della dimensione del file: {}
+Ошибка получения флагов сокета: {},Errore durante il recupero dei flag del socket: {}
+Ошибка получения хранилища {},Errore nel recupero dell'archiviazione {}
+Ошибка получения: {},Errore di recupero: {}
+Ошибка получения: {} {},Errore di recupero: {} {}
+Ошибка посылки файла: {},Errore invio file: {}
+   Получение списка бекапов...   ,   Recupero elenco backup...   
+Ошибка привязки сокета к порту {}: {},Errore nel binding del socket alla porta {}: {}
+Ошибка привязки: {},Errore di binding: {}
+Ошибка принятия соединения: {} {},Errore di accettazione connessione: {} {}
+Ошибка приёма соединения: {},Errore ricezione connessione: {}
+Ошибка проверси метки сокета: {},Errore di verifica dell'etichetta del socket: {}
+Ошибка прослушивания: {},Errore di ascolto: {}
+Ошибка прослушки сокета: {},Errore di ascolto del socket: {}
+Ошибка сжатия,Errore di compressione
+Ошибка создания каталога: {},Errore durante la creazione della directory: {}
+Ошибка создания сокета: {},Errore nella creazione del socket: {}
+DPAD/Стики - Навигация по страницам\n\n     ZR+ZL - Переход к странице... \n\n       L/R - Навигация по главам   \n\n       (-) - Эта подсказка         \n\n       (+) - Меню                  ,DPAD/Stick - Navigazione pagine\n\n     ZR+ZL - Vai a pagina... \n\n       L/R - Navigazione capitoli   \n\n       (-) - Questo suggerimento         \n\n       (+) - Menu                  
+Ошибка создания сохранения,Errore durante la creazione del salvataggio
+Ошибка удаления каталога: {},Errore durante l'eliminazione della directory: {}
+Ошибка удаления файла: {},Errore durante l'eliminazione del file: {}
+Ошибка установки флагов сокета: {},Errore nell'impostazione dei flag del socket: {}
+Ошибка чтения записи об игре: {},Errore nella lettura del record di gioco: {}
+Ошибка чтения каталога: {},Errore di lettura della directory: {}
+Ошибка чтения регистров max17050: ,Errore nella lettura dei registri max17050: 
+Ошибка чтения сохранённых параметров контроллера: ,Errore nella lettura dei parametri salvati del controller: 
+Ошибка чтения файла: {},Errore di lettura del file: {}
+DeviceId                : {0:} ({0:016X}),DeviceId                : {0:} ({0:016X})
+Ошибок не найдено,Nessun errore trovato
+Ошибочный номер DLC (Должен быть в диапазоне 0x001-0x7FF),Numero DLC non valido (Deve essere nell'intervallo 0x001-0x7FF)
+Ошибочный номер DLC (Должен быть в диапазоне 1-2047),Numero DLC non valido (Deve essere nell'intervallo 1-2047)
+"Ошибочный тикет {0}: kg {1:02X}, pm {2:02X}","Ticket non valido {0}: kg {1:02X}, pm {2:02X}"
+Папка LFS не найдена,Cartella LFS non trovata
+Папка для бекапа сохранений,Cartella backup dati di salvataggio
+Папка для дампа игр,Cartella dump giochi
+Папка журналов,Cartella dei log
+Папка обновления очищена,Cartella aggiornamenti svuotata
+DramId                  : {} ({}),DramId                  : {} ({})
+Параметры FTP,Impostazioni FTP
+Параметры MTP,Impostazioni MTP
+Параметры установки,Opzioni di installazione
+Пароль,Password
+Перевернуть джойконы,Capovolgi joycon
+Перевернуть экран,Capovolgi schermo
+Передача окончена,Trasferimento completato
+Переименование объекта,Rinomina oggetto
+Переименовать,Rinomina
+Перейти к первой странице,Vai alla prima pagina
+Emummc включён              : {},Emummc abilitato              : {}
+Перейти к последней странице,Vai all'ultima pagina
+Перейти к странице...,Vai alla pagina...
+Переместить,Sposta
+Переместить в NAND,Sposta in NAND
+Переместить на SD карту,Sposta su scheda SD
+"Перемещение {} ({}, {}) в {}","Spostamento di {} ({}, {}) in {}"
+Перемещение {} записей,Spostamento di {} voci
+Перемещение {} записи,Spostamento di {} voce
+Перемещение {} игр,Spostamento di {} giochi
+Перемещение {} игры,Spostamento di {} gioco
+FTP сервер (нажмите B для остановки),Server FTP (premi B per fermare)
+Перемещение контента,Spostamento contenuto
+Перенос строк,A capo
+Переносить слова,A capo automatico
+Переоткрытие ФС сохранения: {},Riapertura FS di salvataggio: {}
+Пишется новая запись о контенте...,Scrittura nuovo record di contenuto...
+Пишется новый cnmt.nca...,Scrittura del nuovo cnmt.nca...
+Платформа               : {},Piattaforma             : {}
+Подготовка...,Preparazione...
+Подключаемся к {}...,Connessione a {}...
+FullCap              : {:04x} ({} mAh),FullCap              : {:04x} ({} mAh)
+Подключено к {}:{},Connesso a {}:{}
+Подмена SDK,Sostituzione SDK
+Подменить SDK,Sostituisci SDK
+Подсвечивать файлы обновлений,Evidenzia file di aggiornamento
+Подсчитывается размер установки...,Calcolo dimensione installazione...
+Подсчитывается размер установки...{}%,Calcolo dimensione installazione...{}%
+Подсчитываются объекты в альбоме в NAND,Conteggio oggetti nell'album nella NAND
+Подсчитываются объекты в альбоме на SD карте,Conteggio oggetti nell'album sulla scheda SD
+Подсчёт метаданных...,Conteggio metadati...
+Подсчёт основного хэша,Calcolo dell'hash principale
+FullCapNom           : {:04x} ({} mAh),FullCapNom           : {:04x} ({} mAh)
+Подсчёт хэша секции,Calcolo hash sezione
+"Пожалуйста, подключите вашу консоль к ПК кабелем USB Type-C или нажмите B",Collega la tua console al PC con un cavo USB Type-C o premi B
+"Пожалуйста, подождите...",Attendere prego...
+Поиск записей об ошибках,Ricerca dei registri degli errori
+Поиск неиспользуемых тикетов,Ricerca ticket non utilizzati
+Поиск подготовленного системного обновления,Ricerca aggiornamento di sistema preparato
+Поиск потерянных тайтлов,Ricerca titoli persi
+Поиск потерянных файлов в NAND,Ricerca file persi nella NAND
+Поиск потерянных файлов на SD,Ricerca file persi su SD
+Поиск сохранений удалённых пользователей...,Ricerca salvataggi di utenti eliminati...
+Get chargeInfoFields : {},Get chargeInfoFields : {}
+Показываемая версия     : {},Versione visualizzata     : {}
+Показываемое название   : {},Nome visualizzato       : {}
+Показывать 'Обновить отсюда',Mostra 'Aggiorna da qui'
+Показывать объединённый NSP,Mostra NSP unificato
+Показывать папку 'Mods&Cheats',Mostra cartella 'Mods&Cheats'
+Показывать прогрев кеша,Mostra riscaldamento cache
+Показывать размер LFS (долго),Mostra dimensione LFS (lento)
+Показывать секунды,Mostra secondi
+Показывать часы в статусе,Mostra orologio nello stato
+Поколение ключа             : {},Generazione chiave           : {}
+Git commit hash             : {:016X},Git commit hash             : {:016X}
+Полная ёмкость     : {} mAh,Capacità totale     : {} mAh
+Получен список из {} записей,Ricevuta lista di {} voci
+Получен список из {} записи,Ricevuta lista di {} voci
+Получение версий установленных игр,Recupero versioni dei giochi installati
+Получение информации из hac_versionlist...,Recupero informazioni da hac_versionlist...
+Получение информации из системы...,Recupero informazioni di sistema...
+Получение информации об играх...,Recupero informazioni sui giochi...
+Получение списка тикетов...,Recupero elenco ticket...
+Получение файла: {} МБ ({:.2f} МБ/сек),Ricezione file: {} MB ({:.2f} MB/s)
+Получение файла: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Ricezione file: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m MB/sec)
+   Получение списка бекапов...{}/{}    ,   Recupero elenco backup...{}/{}    
+IavgEmpty            : {:04x},IavgEmpty            : {:04x}
+Полученное время: {},Ora ricevuta: {}
+Полученный размер: {},Dimensione ricevuta: {}
+"Получено: {}, ({:.2f} МБ/сек)","Ricevuto: {}, ({:.2f} MB/s)"
+Пользователь {} не найден. Создание сохранения невозможно,Utente {} non trovato. Creazione salvataggio impossibile
+Пользователь не найден,Utente non trovato
+Пользовательские хранилища,Archivi personalizzati
+Попытаться разобрать,Prova ad analizzare
+Попытка исправить,Tentativo di riparazione
+Портрет (90°),Verticale (90°)
+Португальский,Portoghese
+"L+⬅-Начало, L+➡-Конец, ZL-Регистр, ZR-Ввод, Y-Пробел, X-Забой, R3-Язык","L+⬅-Inizio, L+➡-Fine, ZL-Maiusc, ZR-Invio, Y-Spazio, X-Cancella, R3-Lingua"
+После удаления игры не будут запускаться,I giochi non si avvieranno dopo l'eliminazione
+Посылается файл: {},Invio file: {}
+Посылается файл: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Invio file: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m MB/s)
+Превышен размер командного буфера,Dimensione buffer comandi superata
+Предел входного тока            : {} mA,Limite corrente in ingresso            : {} mA
+Предел напряжения заряда батареи: {} mV,Limite di tensione di carica della batteria: {} mV
+LFS мод.: -,Modalità LFS: -
+Предназначение          : {},Scopo                   : {}
+Предоставить по FTP,Fornisci tramite FTP
+Предупреждения: ,Avvisi: 
+Прекращение прослушивания на {}:{},Interruzione ascolto su {}:{}
+Прервано пользователем,Interrotto dall'utente
+Привязка к {}:{},Collegamento a {}:{}
+Принято соединение от {}:{},Connessione accettata da {}:{}
+Проверить целостность,Verifica integrità
+"LFS мод.: Присутствует, Размер: ","Mod LFS: Presente, Dimensione: "
+Проверка magic...,Controllo magic...
+"Проверка {} ({}, {}), {}","Verifica {} ({}, {}), {}"
+Проверка картриджа...,Controllo cartuccia...
+Проверка на наличие  {}...,Verifica di {}...
+Проверка обновлений,Controllo aggiornamenti
+Проверка обновлений игр,Controllo aggiornamenti giochi
+Проверка сохранений,Controllo salvataggi
+Проверка целостности ({}),Verifica integrità ({})
+Проверяется: {},Verifica: {}
+Проверять хэш при установке,Verifica hash durante l'installazione
+"LFS мод.: Присутствует, Размер: подсчёт отключен в настройках","Mod LFS: Presente, Dimensione: calcolo disabilitato nelle impostazioni"
+Проверяются бекапы...,Controllo dei backup...
+Проверяются сохранения,Controllo salvataggi
+Программа {}. Control не найдена,Applicazione {}. Control non trovato
+Программа {}. Exefs не найдена,Programma {}. Exefs non trovato
+Программа {}. Romfs не найдена,Applicazione {}. Romfs non trovato
+Произошла неизвестная ошибка,Si è verificato un errore sconosciuto
+Произошла ошибка:,Si è verificato un errore:
+Произошла ошибка: ,Si è verificato un errore: 
+Произошла ошибка: {},Si è verificato un errore: {}
+Пропускаем файл до начала secure раздела ,Salto del file all'inizio della sezione sicura 
+LFS папка игры,Cartella LFS del gioco
+Пропускается: {}          \r,Saltato: {}          \r
+Прослушивание на {}:{},In ascolto su {}:{}
+Просмотр SD карты,Sfoglia scheda SD
+Просмотр USB носителей,Sfoglia unità USB
+Просмотр альбома по HTTP,Visualizza album tramite HTTP
+Просмотр раздела SYSTEM,Esplora partizione SYSTEM
+Просмотр раздела USER,Sfoglia partizione USER
+Просмотр сети,Sfoglia rete
+MTP Респондер (нажмите B для остановки),Risponditore MTP (premi B per fermare)
+Просмотр сохранений,Visualizza salvataggi
+Просмотр тикетов,Visualizza ticket
+Просмотр установленных игр,Visualizza giochi installati
+Просмотреть игры,Visualizza giochi
+Просто запуск,Avvia semplicemente
+Разбор,Analisi
+Раздел secure не найден,Sezione secure non trovata
+Размер  : ,Dimensione  : 
+"Размер  : {}, {} файл","Dimensione  : {}, {} file"
+"Размер  : {}, {} файла","Dimensione  : {}, {} file"
+"Размер  : {}, {} файлов","Dimensione  : {}, {} file"
+Размер посылаемого файла   : {},Dimensione del file inviato: {}
+Размер сохранений     : {},Dimensione salvataggi     : {}
+Размер: {},Dimensione: {}
+Разрешено,Consentito
+Распаковать в подкаталог,Estrai in sottocartella
+Распаковать сюда,Estrai qui
+Распаковка файла,Estrazione file
+Растущие цветы:     {},Fiori in crescita:     {}
+Nintendo Account задан и связан,Account Nintendo impostato e collegato
+Регион                  : {},Regione                 : {}
+Регистрация контента {}...,Registrazione contenuto {}...
+Регистрация файла {}...,Registrazione file {}...
+Регистры котроллера MAX17050,Registri del controller MAX17050
+Редактирование возрастного рейтинга...,Modifica classificazione per età...
+Редактирование запретов,Modifica restrizioni
+Режим HiZ зарядки       : {},Modalità di carica HiZ   : {}
+Режим киоска            : {},Modalità chiosco        : {}
+Рендеринг FB2,Rendering FB2
+С болот был заслан доброволец,nei water. E i vicini estraggono
+"Nintendo Account задан, но не связан","Account Nintendo impostato, ma non collegato"
+Родительский PIN        : {},PIN parentale        : {}
+Сброс требуемой версии,Ripristina versione richiesta
+Сброс требуемой версии к ,Ripristino della versione richiesta a 
+Сбросить требуемую версию,Ripristina versione richiesta
+Сведения,Informazioni
+Сведения...,Informazioni...
+Свободное место в хранилище: {},Spazio di archiviazione libero: {}
+Свободное место: {},Spazio libero: {}
+Сгенерировать и установить,Genera e installa
+   Получение списка сохранений...   ,   Recupero elenco salvataggi...   
+Nintendo Account не задан,Account Nintendo non impostato
+Сдампить на SD карту,Dump su scheda SD
+Сдампить на внешний USB,Dump su USB esterno
+Сдампить текущую прошивку,Dump del firmware corrente
+Сдамплено: {}/{} ({}%) ({:.2f} МБ/сек),Dumpato: {}/{} ({}%) ({:.2f} MB/sec)
+Сделать бекап,Crea backup
+"Сделать бекап, если новее",Esegui backup se più recente
+Северная Америка,Nord America
+Сентябрь,Settembre
+Сепия,Seppia
+Сервер запущен,Server avviato
+Сервер предлагает выполнить обновление DBI\n\nНажите (+) для согласия\nЛюбую другую кнопку для отмены,Il server offre di eseguire un aggiornamento di DBI\n\nPremi (+) per confermare\nQualsiasi altro pulsante per annullare
+Серийный # прочитанный  : {},Numero di serie letto  : {}
+Серийный # угаданный    : {},Numero di serie indovinato    : {}
+Серийный номер        : {},Numero di serie        : {}
+Сессии,Sessioni
+Сессия закрыта,Sessione chiusa
+Сессия открыта,Sessione aperta
+Силовая роль                    : {},Ruolo di alimentazione          : {}
+Синхронизация времени по NTP,Sincronizzazione ora NTP
+Системные приложения,Applicazioni di sistema
+QrTable00            : {:04x},QrTable00            : {:04x}
+Системный по умолчанию,Predefinito di sistema
+Сканирование директорий...,Scansione delle directory...
+Сканирование игр...,Scansione giochi...
+Скачано {}/{},Scaricato {}/{}
+Скачивание файла не удалось,Download del file non riuscito
+Скорость USB интерфейса: ,Velocità interfaccia USB: 
+Скорость передачи: {:.2f} МБ/сек,Velocità di trasferimento: {:.2f} MB/sec
+Смещать курсор после выделения,Sposta il cursore dopo la selezione
+Собираются сведения...,Raccolta informazioni...
+Соединение сброшено,Connessione ripristinata
+QrTable10            : {:04x},QrTable10            : {:04x}
+Сожжено предохранителей : {},Fusibili bruciati: {}
+Создавать LFS папку,Crea cartella LFS
+Создан zip-файл: ,File zip creato: 
+Создание DLC анлокера,Creazione sblocco DLC
+Создание NSP,Creazione NSP
+Создание sdmc:/versions.txt,Creazione di sdmc:/versions.txt
+Создание бекапа сохранения ,Creazione backup dati di salvataggio 
+Создание дампа ({}),Creazione dump ({})
+Создание дампа: {},Creazione dump: {}
+Создание единого репака,Creazione di un repack unificato
+QrTable20            : {:04x},QrTable20            : {:04x}
+Создание записи об игре...,Creazione record di gioco...
+Создание каталога: ,Creazione directory: 
+Создание новой записи об игре...,Creazione nuova voce di gioco...
+Создание объекта: ,Creazione oggetto: 
+Создание плейсхолдера: {}...,Creazione segnaposto: {}...
+"Создание репака Id: {:016X}, Версия: {}, Тип: {}","Creazione repack Id: {:016X}, Versione: {}, Tipo: {}"
+Создание строк... {}%,Creazione stringhe... {}%
+Создание таблицы имён,Creazione tabella nomi
+Создание тела файла,Creazione del corpo del file
+Создание точки доступа...,Creazione punto di accesso...
+QrTable30            : {:04x},QrTable30            : {:04x}
+Создание фейковой записи... ,Creazione record falso... 
+Создание хэш таблицы,Creazione tabella hash
+Создание ярлыка,Creazione collegamento
+Создано новое сохранение. Восстанавливаю бекап в него...,Nuovo salvataggio creato. Ripristino del backup...
+Создать sdmc:/versions.txt,Crea sdmc:/versions.txt
+Создать единый репак,Crea repack singolo
+Создать новое сохранение...,Crea nuovo salvataggio...
+Создать новый каталог...,Crea nuova cartella...
+Создать новый файл...,Crea nuovo file...
+Создать ярлык,Crea collegamento
+RCOMP0               : {:04x},RCOMP0               : {:04x}
+Создать ярлык для hbmenu,Crea collegamento per hbmenu
+Создать ярлык на рабочий стол для DBI...,Crea collegamento sul desktop per DBI...
+Создать ярлык с аргументами...,Crea collegamento con argomenti...
+Создаётся MTP хранилище: ,Creazione archivio MTP: 
+Создаётся обновлённая запись об игре...,Creazione record di gioco aggiornato...
+Сохранение для {} уже существует,I dati di salvataggio per {} esistono già
+Сохранения,Dati di salvataggio
+Сохранения будут удалены!,I dati di salvataggio verranno eliminati!
+Сохранения только в RO режиме,Salvataggi solo in modalità RO
+RTC запущены (приблизительно) : {},RTC avviato (approssimativamente): {}
+Сохранения удалённых игр ({}),Salvataggi di giochi eliminati ({})
+Сохранения установленных игр ({}),Salvataggi dei giochi installati ({})
+Сохранёные в системе параметры котроллера батареи,Parametri del controller della batteria salvati nel sistema
+Средняя температура: {}°C,Temperatura media: {}°C
+Статистика игры ,Statistiche di gioco 
+Строка поиска: ,Stringa di ricerca: 
+Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Totale %% carica-scarica: {} (~{} 0-100 cicli)
+Существующая запись об игре не найдена,Record di gioco esistente non trovato
+Существующее сохранение не найдено и новое не может быть создано,Salvataggio esistente non trovato e impossibile crearne uno nuovo
+SDK {} уже был экспортирован: {},SDK {} è già stato esportato: {}
+Тайтл не установлен,Titolo non installato
+Тайтл установлен,Titolo installato
+Тайтлы с ошибками:,Titoli con errori:
+Текущая ёмкость                 : {}%,Capacità attuale                  : {}%
+Текущая ёмкость    : {} mAh,Capacità attuale    : {} mAh
+Текущее время: {},Ora attuale: {}
+Текущее напряжение : {} mV,Tensione attuale : {} mV
+Текущий заряд      : {}%,Carica attuale      : {}%
+Текущий ток        : {} mA,Corrente attuale        : {} mA
+SDK на подмену не найдены,Nessun SDK trovato per la sostituzione
+Тема,Tema
+Тема отображения,Tema di visualizzazione
+Температура        : {}°C,Temperatura        : {}°C
+Температура батареи             : {}°C,Temperatura batteria            : {}°C
+Тикет исправлен,Ticket corretto
+Тикеты,Ticket
+Тикеты не найдены,Nessun ticket trovato
+Тип SoC                 : {},Tipo SoC                : {}
+Тип источника питания          : {},Tipo di alimentazione           : {}
+881,881
