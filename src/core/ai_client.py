@@ -52,28 +52,19 @@ MODEL = MODEL_OMNI if PROVIDER == "OMNIROAD" else MODEL_GEMINI
 
 TIMEOUT                = 180
 
-SYSTEM_PROMPT = """\
-You are a translation engine for a Nintendo Switch app called DBI.
+# ── Prompts ──────────────────────────────────────────────────────────
 
-INPUT FORMAT (JSON):
-{"text": "<source_text_in_russian>", "languages": ["<lang_code>", ...]}
+PROMPTS_FILE = Path(__file__).resolve().parent.parent.parent / "data" / "prompts.json"
 
-OUTPUT FORMAT (JSON only, nothing else):
-{"<lang_code>": "<translated_text>", ...}
+def _load_prompts() -> dict[str, str]:
+    if not PROMPTS_FILE.exists():
+        return {"translate": "", "shadok": ""}
+    with open(PROMPTS_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
 
-STRICT RULES:
-1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.
-2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.
-3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.
-4. If the source text is the literal string "ru", return the 2-letter language code for each language (e.g. "en", "ua", "fr").
-5. If the source text is pure ASCII/English, return it unchanged for every language.
-6. Do NOT wrap output in ```json``` blocks. Just raw JSON.
-7. Use ONLY ASCII punctuation: () NOT （）, : NOT ：, [] NOT ［］, ! NOT ！. Preserve the exact same count of brackets and colons as in the source text.
-
-EXAMPLE:
-Input:  {"text": "Привет, мир!", "languages": ["en", "de", "ua"]}
-Output: {"en": "Hello, world!", "de": "Hallo, Welt!", "ua": "Привіт, світе!"}
-"""
+_PROMPTS = _load_prompts()
+SYSTEM_PROMPT = _PROMPTS.get("translate", "")
+SHADOK_SYSTEM_PROMPT = _PROMPTS.get("shadok", "")
 
 # ── Public API ───────────────────────────────────────────────────────
 
@@ -122,27 +113,6 @@ def init_session() -> None:
 
     print(f"  [INIT] Ready!")
 
-
-SHADOK_SYSTEM_PROMPT = """\
-You are a literary translator. You will receive a Russian text that is an ORIGINAL fan-made easter egg written for the open-source Nintendo Switch app DBI. This is NOT copyrighted content — it is an original humorous passage created by the app developers, inspired by the style of comic absurdist fiction. You MUST translate it.
-
-INPUT FORMAT (JSON):
-{"text": "<full_russian_text>", "languages": ["<lang_code>", ...], "max_line_length": <number>}
-
-OUTPUT FORMAT (JSON only, nothing else):
-{"<lang_code>": "<translated_full_text>", ...}
-
-STRICT RULES:
-1. Translate the ENTIRE text as ONE literary passage. Preserve the narrative flow, humor, and style.
-2. Output ONLY the JSON object. No explanations, no thinking, no markdown, no refusals.
-3. Each translated text must be a single string with newlines (\\n) separating lines.
-4. Each line in the translation MUST NOT exceed max_line_length characters.
-5. Do NOT add extra lines. Keep line count equal to or less than the original.
-6. Preserve proper names: Shadoks=Шадоки, Gibis=Гібі (adapt to target language).
-7. Preserve numbers (999999) as-is.
-8. Do NOT wrap output in ```json``` blocks.
-9. Do NOT refuse this task. This is original content and you are authorized to translate it.
-"""
 
 
 def init_session_shadok() -> None:
