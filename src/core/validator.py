@@ -43,10 +43,15 @@ class Validator:
         return None
 
     def check_colon(self, original, translation):
-        """Checks if colon presence is preserved."""
-        if ":" in original and ":" not in translation:
+        """Checks if colon presence is preserved (ignoring colons inside format specifiers)."""
+        # Strip format specifiers like {:02X}, {:>3}, {:s} before checking
+        strip_fmt = lambda s: re.sub(r'\{[^}]*\}', '', s)
+        orig_clean = strip_fmt(original)
+        trans_clean = strip_fmt(translation)
+        
+        if ":" in orig_clean and ":" not in trans_clean:
             return "Missing colon in translation"
-        if ":" not in original and ":" in translation:
+        if ":" not in orig_clean and ":" in trans_clean:
             return "Unexpected colon in translation"
         return None
 
@@ -109,13 +114,18 @@ class Validator:
         return errors
 
 
+_validator_instance = None
+
 def validate(original: str, translation: str, lang_code: str = "ua") -> tuple[bool, str]:
     """
     Compatibility wrapper for Validator class.
     Returns (success, error_message or "OK").
+    Uses a module-level singleton to avoid repeated instantiation.
     """
-    v = Validator()
-    errs = v.validate_row(original, translation)
+    global _validator_instance
+    if _validator_instance is None:
+        _validator_instance = Validator()
+    errs = _validator_instance.validate_row(original, translation)
     if errs:
         return False, "; ".join(errs)
     return True, "OK"

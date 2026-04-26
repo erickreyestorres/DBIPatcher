@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import subprocess
 import sys
 import time
@@ -396,9 +397,8 @@ def cmd_translate() -> None:
     for idx, (row, original, missing) in enumerate(rows_to_translate, 1):
         print(f"  [Row {row} | {idx}/{total_rows}] {original[:50]}  -> {len(missing)} langs")
 
-        # Skip AI translation if string has 3 or fewer Cyrillic characters — copy as-is
-        import re as _re
-        cyrillic_count = len(_re.findall(r'[а-яА-ЯёЁіІїЇєЄґҐ]', original))
+        # Skip AI translation if string has no Cyrillic characters — copy as-is
+        cyrillic_count = len(re.findall(r'[а-яА-ЯёЁіІїЇєЄґҐ]', original))
         if cyrillic_count <= 3:
             for lc in missing:
                 ws.cell(row, col_map[lc], original)
@@ -480,7 +480,7 @@ def cmd_translate() -> None:
             try:
                 retry_results = translate_batch(original, failed_langs, row_id=row)
                 for lc in failed_langs:
-                    translation = normalize_tokens_out(retry_results.get(lc, ""))
+                    translation = normalize_fullwidth(normalize_tokens_out(retry_results.get(lc, "")))
                     if not translation or not translation.strip():
                         print(f"    [Row {row}][{lc}] SKIPPED (empty after retry)")
                         total_failed += 1
@@ -665,7 +665,6 @@ def cmd_build() -> None:
 
 def cmd_align() -> None:
     """Align colons in blocks defined in data/blocks.json (regex-based)."""
-    import re as _re
 
     blocks = load_blocks()
     if not blocks:
