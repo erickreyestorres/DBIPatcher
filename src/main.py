@@ -739,6 +739,9 @@ def cmd_export() -> None:
     else:
         print("\nExport done.")
 
+    print("\n[BUILD] Auto-building binaries...")
+    cmd_build()
+
 
 # ── build ────────────────────────────────────────────────────────────
 
