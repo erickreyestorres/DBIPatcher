@@ -177,6 +177,17 @@ def cmd_sync() -> None:
         val = ws.cell(row, col_map["Original"]).value
         if val:
             existing.add(val)
+            
+    # CRITICAL: Since Shadok translations replace 'Original' with their satellite text,
+    # the original text from ua.csv will falsely appear as missing.
+    # We must explicitly track original Shadok texts and match them dynamically.
+    shadok_origs_stripped = set()
+    shadok_config = load_shadok_config()
+    if shadok_config:
+        for item in shadok_config.get("mapping", []):
+            if item["new"] in existing:
+                # Keep track of the original Shadok texts (stripped)
+                shadok_origs_stripped.add(item["orig"].strip())
 
     # Read ua.csv and insert missing
     added = 0
@@ -189,6 +200,11 @@ def cmd_sync() -> None:
             ru_tok = tokenize(ru_raw)
             if ru_tok in existing:
                 continue
+            
+            # Formatting-agnostic check for Shadok strings (which often have leading spaces)
+            if ru_tok.strip() in shadok_origs_stripped:
+                continue
+
             next_row = ws.max_row + 1
             ws.cell(next_row, col_map["Original"], ru_tok)
             existing.add(ru_tok)
@@ -296,7 +312,7 @@ def cmd_translate() -> None:
                 val = ws.cell(row_idx, col).value
                 if val and str(val).strip():
                     non_empty_count += 1
-            if non_empty_count >= 30:
+            if non_empty_count >= 20:
                 valid_translated_langs.append(lc)
             else:
                 print(f"  [SHADOK] CLEANUP: Language '{lc}' has only {non_empty_count}/33 lines. Resetting.")
