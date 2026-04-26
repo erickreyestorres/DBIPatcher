@@ -263,6 +263,28 @@ def cmd_translate() -> None:
         # Determine what to do based on progress
         translated_langs = set(shadok_config.get("translated_langs", []))
 
+        # CLEANUP: If any language in translated_langs has suspiciously few lines in the Excel,
+        # remove it from the set so it gets re-translated.
+        valid_translated_langs = []
+        for lc in sorted(list(translated_langs)):
+            if lc not in col_map: continue
+            col = col_map[lc]
+            non_empty_count = 0
+            for _, row_idx, _ in shadok_rows:
+                val = ws.cell(row_idx, col).value
+                if val and str(val).strip():
+                    non_empty_count += 1
+            if non_empty_count >= 30:
+                valid_translated_langs.append(lc)
+            else:
+                print(f"  [SHADOK] CLEANUP: Language '{lc}' has only {non_empty_count}/33 lines. Resetting.")
+        
+        translated_langs = set(valid_translated_langs)
+        shadok_config["translated_langs"] = valid_translated_langs
+        # Save cleanup results
+        with SHADOK_JSON.open("w", encoding="utf-8") as f:
+            json.dump(shadok_config, f, ensure_ascii=False, indent=2)
+
         if not force_all and all(lc in translated_langs for lc in lang_codes):
             print(f"  [SHADOK] All languages already translated. Skipping.")
         else:
@@ -295,7 +317,7 @@ def cmd_translate() -> None:
                 full_text = "\n".join(line for _, _, line in shadok_rows)
 
                 try:
-                    SHADOK_BATCH_SIZE = 3
+                    SHADOK_BATCH_SIZE = 1 
                     MAX_PASSES = 10
                     
                     for pass_idx in range(MAX_PASSES):
@@ -305,50 +327,59 @@ def cmd_translate() -> None:
                             break
                             
                         print(f"  [SHADOK] Pass {pass_idx + 1}/{MAX_PASSES}. Remaining: {len(remaining_langs)}")
-                        total_batches = (len(remaining_langs) + SHADOK_BATCH_SIZE - 1) // SHADOK_BATCH_SIZE
+                        total_batches = len(remaining_langs)
 
-                        for batch_idx in range(0, len(remaining_langs), SHADOK_BATCH_SIZE):
-                            batch_langs = remaining_langs[batch_idx:batch_idx + SHADOK_BATCH_SIZE]
-                            batch_num = batch_idx // SHADOK_BATCH_SIZE + 1
-                            print(f"  [SHADOK] Batch {batch_num}/{total_batches}: {', '.join(batch_langs)}")
+                        for batch_idx, lc in enumerate(remaining_langs):
+                            print(f"  [SHADOK] Pass {pass_idx+1}: {lc} ({batch_idx+1}/{total_batches})")
 
                             try:
-                                batch_results = translate_shadok_block(full_text, batch_langs, max_line_len)
+                                batch_results = translate_shadok_block(full_text, [lc], max_line_len)
                                 
-                                # Write batch results immediately (safety save)
-                                for lc in batch_langs:
-                                    translated_text = batch_results.get(lc, "")
-                                    if not translated_text:
-                                        print(f"  [SHADOK][{lc}] Empty translation, skipping.")
-                                        continue
+                                translated_text = batch_results.get(lc, "").strip()
+                                if not translated_text:
+                                    print(f"  [SHADOK][{lc}] Empty translation, skipping.")
+                                    continue
 
-                                    trans_lines = translated_text.split("\n")
-                                    # Relaxed rule: we don't force 33, but we clip if too long
-                                    if len(trans_lines) > len(shadok_rows):
-                                        trans_lines = trans_lines[:len(shadok_rows)]
+                                # Clean lines
+                                trans_lines = [l.strip() for l in translated_text.split("\n") if l.strip()]
+                                
+                                # STRICT VALIDATION: Must have at least 30 non-empty lines
+                                if len(trans_lines) < 30:
+                                    print(f"  [SHADOK][{lc}] REJECTED: Only {len(trans_lines)} lines returned. Expected ~33.")
+                                    continue
 
-                                    for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
-                                        if line_idx < len(trans_lines):
-                                            line = trans_lines[line_idx]
-                                            if len(line) > max_line_len:
-                                                line = line[:max_line_len]
-                                            ws.cell(row_idx, col_map[lc], line)
-                                        else:
-                                            ws.cell(row_idx, col_map[lc], "")
+                                # GARBAGE CHECK: Check for excessive symbols (like mangled unicode)
+                                # We check the first line for placeholders often seen in mangled output
+                                mangled_chars = trans_lines[0].count("?") + trans_lines[0].count("\ufffd")
+                                if mangled_chars > 10:
+                                    print(f"  [SHADOK][{lc}] REJECTED: Encoding looks mangled.")
+                                    continue
 
-                                    translated_langs.add(lc)
-                                    print(f"  [SHADOK][{lc}] Written {min(len(trans_lines), len(shadok_rows))} lines.")
+                                if len(trans_lines) > len(shadok_rows):
+                                    trans_lines = trans_lines[:len(shadok_rows)]
 
-                                # Save progress after each successful batch
+                                for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
+                                    if line_idx < len(trans_lines):
+                                        line = trans_lines[line_idx]
+                                        if len(line) > max_line_len:
+                                            line = line[:max_line_len]
+                                        ws.cell(row_idx, col_map[lc], line)
+                                    else:
+                                        ws.cell(row_idx, col_map[lc], "")
+
+                                translated_langs.add(lc)
+                                print(f"  [SHADOK][{lc}] SUCCESS: Written {len(trans_lines)} lines.")
+
+                                # Save progress after each successful language
                                 save_workbook(wb)
                                 shadok_config["translated_langs"] = sorted(list(translated_langs))
                                 with SHADOK_JSON.open("w", encoding="utf-8") as f:
                                     json.dump(shadok_config, f, ensure_ascii=False, indent=2)
                                 
-                                time.sleep(0.5)
+                                time.sleep(0.8)
 
                             except Exception as batch_error:
-                                print(f"  [SHADOK] Batch failed, skipping: {batch_error}")
+                                print(f"  [SHADOK][{lc}] FAILED: {batch_error}")
                                 continue
 
                     if not any(lc not in translated_langs for lc in lang_codes):
