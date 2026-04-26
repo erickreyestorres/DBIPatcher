@@ -1,1 +1,485 @@
---- SESSION: translate | 2026-04-25T15:49:38.905771+00:00 ---
+--- NEW SESSION STARTED AT 2026-04-26T11:58:56.891938 | PROVIDER: OMNIROAD ---
+
+==================== ROW: 402 ====================
+TIMESTAMP: 2026-04-26T11:58:58.969043
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"text\": \"ВНИМАНИЕ! Тайтл {:016X} не установлен\", \"languages\": [\"kr\"]}"
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192907201","object":"chat.completion","created":1777192907,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"{\"kr\": \"주의! 타이틀 {:016X}이(가) 설치되지 않았습니다\"}"}}],"usage":{"prompt_tokens":4444,"completion_tokens":10,"total_tokens":4454}}
+================================================================================
+
+==================== ROW: 402 ====================
+TIMESTAMP: 2026-04-26T11:59:01.034453
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- kr: Bracket count mismatch for '(': expected 0, found 1\n\nPlease fix them. Source text: \"ВНИМАНИЕ! Тайтл {:016X} не установлен\"\n\nReturn the corrected full JSON object with ALL languages: kr."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192912279","object":"chat.completion","created":1777192912,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"kr\": \"주의! 타이틀 {:016X}이(가) 설치되지 않았습니다\"}\n```"}}],"usage":{"prompt_tokens":4490,"completion_tokens":13,"total_tokens":4503}}
+================================================================================
+
+==================== ROW: 402 ====================
+TIMESTAMP: 2026-04-26T11:59:03.384367
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- kr: Bracket count mismatch for '(': expected 0, found 1\n\nPlease fix them. Source text: \"ВНИМАНИЕ! Тайтл {:016X} не установлен\"\n\nReturn the corrected full JSON object with ALL languages: kr."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192912279","object":"chat.completion","created":1777192912,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"kr\": \"주의! 타이틀 {:016X}이(가) 설치되지 않았습니다\"}\n```"}}],"usage":{"prompt_tokens":4490,"completion_tokens":13,"total_tokens":4503}}
+================================================================================
+
+==================== ROW: 471 ====================
+TIMESTAMP: 2026-04-26T11:59:33.369316
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"text\": \"Вы уверены, что хотите удалить {}?[[LF]][[LF]](+) - ДА, другая кнопка - НЕТ\", \"languages\": [\"kr\"]}"
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192926554","object":"chat.completion","created":1777192926,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"{\"kr\": \"{}을(를) 삭제하시겠습니까?[[LF]][[LF]](+) - 예, 다른 버튼 - 아니오\"}"}}],"usage":{"prompt_tokens":4487,"completion_tokens":14,"total_tokens":4501}}
+================================================================================
+
+==================== ROW: 471 ====================
+TIMESTAMP: 2026-04-26T11:59:35.406359
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- kr: Bracket count mismatch for '(': expected 1, found 2\n\nPlease fix them. Source text: \"Вы уверены, что хотите удалить {}?[[LF]][[LF]](+) - ДА, другая кнопка - НЕТ\"\n\nReturn the corrected full JSON object with ALL languages: kr."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192932657","object":"chat.completion","created":1777192932,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"kr\": \"{}을(를) 삭제하시겠습니까?[[LF]][[LF]](+) - 예, 다른 버튼 - 아니오\"}\n```"}}],"usage":{"prompt_tokens":4533,"completion_tokens":17,"total_tokens":4550}}
+================================================================================
+
+==================== ROW: 471 ====================
+TIMESTAMP: 2026-04-26T11:59:37.750548
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- kr: Bracket count mismatch for '(': expected 1, found 2\n\nPlease fix them. Source text: \"Вы уверены, что хотите удалить {}?[[LF]][[LF]](+) - ДА, другая кнопка - НЕТ\"\n\nReturn the corrected full JSON object with ALL languages: kr."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192932657","object":"chat.completion","created":1777192932,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"kr\": \"{}을(를) 삭제하시겠습니까?[[LF]][[LF]](+) - 예, 다른 버튼 - 아니오\"}\n```"}}],"usage":{"prompt_tokens":4533,"completion_tokens":17,"total_tokens":4550}}
+================================================================================
+
+==================== ROW: 561 ====================
+TIMESTAMP: 2026-04-26T11:59:40.720253
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"text\": \"Заряд батареи (сырое значение) : {}%\", \"languages\": [\"jp\", \"zhcn\", \"zhtw\"]}"
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192940164","object":"chat.completion","created":1777192940,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"{\"jp\": \"バッテリー残量（生の値）: {}%\", \"zhcn\": \"电池电量（原始值）：{}%\", \"zhtw\": \"電池電量（原始值）：{}%\"}"}}],"usage":{"prompt_tokens":4479,"completion_tokens":19,"total_tokens":4498}}
+================================================================================
+
+==================== ROW: 561 ====================
+TIMESTAMP: 2026-04-26T11:59:42.754223
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- jp: Bracket count mismatch for '(': expected 1, found 0\n- zhcn: Missing colon in translation; Bracket count mismatch for '(': expected 1, found 0\n- zhtw: Missing colon in translation; Bracket count mismatch for '(': expected 1, found 0\n\nPlease fix them. Source text: \"Заряд батареи (сырое значение) : {}%\"\n\nReturn the corrected full JSON object with ALL languages: jp, zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192944239","object":"chat.completion","created":1777192944,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"jp\": \"バッテリー残量（生の値）: {}%\", \"zhcn\": \"电池电量（原始值）: {}%\", \"zhtw\": \"電池電量（原始值）: {}%\"}\n```"}}],"usage":{"prompt_tokens":4580,"completion_tokens":22,"total_tokens":4602}}
+================================================================================
+
+==================== ROW: 561 ====================
+TIMESTAMP: 2026-04-26T11:59:45.074609
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- jp: Bracket count mismatch for '(': expected 1, found 0\n- zhcn: Bracket count mismatch for '(': expected 1, found 0\n- zhtw: Bracket count mismatch for '(': expected 1, found 0\n\nPlease fix them. Source text: \"Заряд батареи (сырое значение) : {}%\"\n\nReturn the corrected full JSON object with ALL languages: jp, zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192948578","object":"chat.completion","created":1777192948,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"jp\": \"バッテリー残量（生の値）: {}%\", \"zhcn\": \"电池电量（原始值）: {}%\", \"zhtw\": \"電池電量（原始值）: {}%\"}\n```"}}],"usage":{"prompt_tokens":4568,"completion_tokens":22,"total_tokens":4590}}
+================================================================================
+
+==================== ROW: 602 ====================
+TIMESTAMP: 2026-04-26T11:59:48.067524
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"text\": \"Использовано дополнительной памяти: {}. Создано буферов: {}\", \"languages\": [\"zhcn\", \"zhtw\"]}"
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192954300","object":"chat.completion","created":1777192954,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"{\"zhcn\": \"已使用额外内存：{}。已创建缓冲区：{}\", \"zhtw\": \"已使用額外記憶體：{}。已建立緩衝區：{}\"}"}}],"usage":{"prompt_tokens":4481,"completion_tokens":16,"total_tokens":4497}}
+================================================================================
+
+==================== ROW: 602 ====================
+TIMESTAMP: 2026-04-26T11:59:50.112423
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- zhcn: Missing colon in translation\n- zhtw: Missing colon in translation\n\nPlease fix them. Source text: \"Использовано дополнительной памяти: {}. Создано буферов: {}\"\n\nReturn the corrected full JSON object with ALL languages: zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192958189","object":"chat.completion","created":1777192958,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"zhcn\": \"已使用额外内存：{}。已创建缓冲区：{}\", \"zhtw\": \"已使用額外記憶體：{}。已建立緩衝區：{}\"}\n```"}}],"usage":{"prompt_tokens":4526,"completion_tokens":19,"total_tokens":4545}}
+================================================================================
+
+==================== ROW: 602 ====================
+TIMESTAMP: 2026-04-26T11:59:52.456058
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- zhcn: Missing colon in translation\n- zhtw: Missing colon in translation\n\nPlease fix them. Source text: \"Использовано дополнительной памяти: {}. Создано буферов: {}\"\n\nReturn the corrected full JSON object with ALL languages: zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192958189","object":"chat.completion","created":1777192958,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"zhcn\": \"已使用额外内存：{}。已创建缓冲区：{}\", \"zhtw\": \"已使用額外記憶體：{}。已建立緩衝區：{}\"}\n```"}}],"usage":{"prompt_tokens":4526,"completion_tokens":19,"total_tokens":4545}}
+================================================================================
+
+==================== ROW: 667 ====================
+TIMESTAMP: 2026-04-26T11:59:55.462460
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"text\": \"Найден SDK: {}\", \"languages\": [\"zhcn\", \"zhtw\"]}"
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192965874","object":"chat.completion","created":1777192965,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"{\"zhcn\": \"找到 SDK：{}\", \"zhtw\": \"找到 SDK：{}\"}"}}],"usage":{"prompt_tokens":4434,"completion_tokens":10,"total_tokens":4444}}
+================================================================================
+
+==================== ROW: 667 ====================
+TIMESTAMP: 2026-04-26T11:59:57.494789
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- zhcn: Missing colon in translation\n- zhtw: Missing colon in translation\n\nPlease fix them. Source text: \"Найден SDK: {}\"\n\nReturn the corrected full JSON object with ALL languages: zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192969608","object":"chat.completion","created":1777192969,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"zhcn\": \"找到 SDK：{}\", \"zhtw\": \"找到 SDK：{}\"}\n```"}}],"usage":{"prompt_tokens":4479,"completion_tokens":13,"total_tokens":4492}}
+================================================================================
+
+==================== ROW: 667 ====================
+TIMESTAMP: 2026-04-26T11:59:59.847738
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- zhcn: Missing colon in translation\n- zhtw: Missing colon in translation\n\nPlease fix them. Source text: \"Найден SDK: {}\"\n\nReturn the corrected full JSON object with ALL languages: zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192969608","object":"chat.completion","created":1777192969,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"zhcn\": \"找到 SDK：{}\", \"zhtw\": \"找到 SDK：{}\"}\n```"}}],"usage":{"prompt_tokens":4479,"completion_tokens":13,"total_tokens":4492}}
+================================================================================
+
+==================== ROW: 718 ====================
+TIMESTAMP: 2026-04-26T12:00:02.828376
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"text\": \"Начало установки. Место установки: \", \"languages\": [\"zhcn\", \"zhtw\"]}"
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192977031","object":"chat.completion","created":1777192977,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"{\"zhcn\": \"开始安装。安装位置：\", \"zhtw\": \"開始安裝。安裝位置：\"}"}}],"usage":{"prompt_tokens":4450,"completion_tokens":11,"total_tokens":4461}}
+================================================================================
+
+==================== ROW: 718 ====================
+TIMESTAMP: 2026-04-26T12:00:04.869650
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- zhcn: Missing colon in translation\n- zhtw: Missing colon in translation\n\nPlease fix them. Source text: \"Начало установки. Место установки: \"\n\nReturn the corrected full JSON object with ALL languages: zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192980923","object":"chat.completion","created":1777192980,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"zhcn\": \"开始安装。安装位置：\", \"zhtw\": \"開始安裝。安裝位置：\"}\n```"}}],"usage":{"prompt_tokens":4493,"completion_tokens":14,"total_tokens":4507}}
+================================================================================
+
+==================== ROW: 718 ====================
+TIMESTAMP: 2026-04-26T12:00:07.192055
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- zhcn: Missing colon in translation\n- zhtw: Missing colon in translation\n\nPlease fix them. Source text: \"Начало установки. Место установки: \"\n\nReturn the corrected full JSON object with ALL languages: zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192980923","object":"chat.completion","created":1777192980,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"zhcn\": \"开始安装。安装位置：\", \"zhtw\": \"開始安裝。安裝位置：\"}\n```"}}],"usage":{"prompt_tokens":4493,"completion_tokens":14,"total_tokens":4507}}
+================================================================================
+
+==================== ROW: 776 ====================
+TIMESTAMP: 2026-04-26T12:00:10.152560
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"text\": \"Новый рейтинг (-1 для удаления)\", \"languages\": [\"zhcn\", \"zhtw\"]}"
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192988454","object":"chat.completion","created":1777192988,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"{\"zhcn\": \"新评级（-1 表示删除）\", \"zhtw\": \"新評級（-1 表示刪除）\"}"}}],"usage":{"prompt_tokens":4457,"completion_tokens":12,"total_tokens":4469}}
+================================================================================
+
+==================== ROW: 776 ====================
+TIMESTAMP: 2026-04-26T12:00:12.160077
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- zhcn: Bracket count mismatch for '(': expected 1, found 0\n- zhtw: Bracket count mismatch for '(': expected 1, found 0\n\nPlease fix them. Source text: \"Новый рейтинг (-1 для удаления)\"\n\nReturn the corrected full JSON object with ALL languages: zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192992206","object":"chat.completion","created":1777192992,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"zhcn\": \"新评级（-1 表示删除）\", \"zhtw\": \"新評級（-1 表示刪除）\"}\n```"}}],"usage":{"prompt_tokens":4523,"completion_tokens":15,"total_tokens":4538}}
+================================================================================
+
+==================== ROW: 776 ====================
+TIMESTAMP: 2026-04-26T12:00:14.486012
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "The following translations have errors:\n- zhcn: Bracket count mismatch for '(': expected 1, found 0\n- zhtw: Bracket count mismatch for '(': expected 1, found 0\n\nPlease fix them. Source text: \"Новый рейтинг (-1 для удаления)\"\n\nReturn the corrected full JSON object with ALL languages: zhcn, zhtw."
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777192992206","object":"chat.completion","created":1777192992,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"```json\n{\"zhcn\": \"新评级（-1 表示删除）\", \"zhtw\": \"新評級（-1 表示刪除）\"}\n```"}}],"usage":{"prompt_tokens":4523,"completion_tokens":15,"total_tokens":4538}}
+================================================================================
+
+==================== ROW: 811 ====================
+TIMESTAMP: 2026-04-26T12:00:17.464644
+REQUEST PAYLOAD:
+{
+  "model": "kr/claude-sonnet-4.5",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a translation engine for a Nintendo Switch app called DBI.\n\nINPUT FORMAT (JSON):\n{\"text\": \"<source_text_in_russian>\", \"languages\": [\"<lang_code>\", ...]}\n\nOUTPUT FORMAT (JSON only, nothing else):\n{\"<lang_code>\": \"<translated_text>\", ...}\n\nSTRICT RULES:\n1. Output ONLY the JSON object. No explanations, no thinking, no markdown, no comments.\n2. Tokens [[LF]], [[CR]], [[TAB]], [[ESC]] are formatting placeholders — keep them exactly as-is.\n3. Preserve all format specifiers: {}, {:02}, {:>3}, \\x1b, etc. Do NOT translate or modify them.\n4. If the source text is the literal string \"ru\", return the 2-letter language code for each language (e.g. \"en\", \"ua\", \"fr\").\n5. If the source text is pure ASCII/English, return it unchanged for every language.\n6. Do NOT wrap output in ```json``` blocks. Just raw JSON.\n\nEXAMPLE:\nInput:  {\"text\": \"Привет, мир!\", \"languages\": [\"en\", \"de\", \"ua\"]}\nOutput: {\"en\": \"Hello, world!\", \"de\": \"Hallo, Welt!\", \"ua\": \"Привіт, світе!\"}\n"
+    },
+    {
+      "role": "user",
+      "content": "{\"text\": \"Общий размер установки: {}\", \"languages\": [\"zhcn\", \"zhtw\"]}"
+    }
+  ],
+  "stream": false
+}
+----------------------------------------
+RESPONSE TEXT:
+{"id":"chatcmpl-1777193000370","object":"chat.completion","created":1777193000,"model":"claude-sonnet-4.5","choices":[{"index":0,"finish_reason":"stop","message":{"role":"assistant","content":"{\"zhcn\": \"安装总大小：{}\", \"zhtw\": \"安裝總大小：{}\"}"}}],"usage":{"prompt_tokens":4440,"completion_tokens":10,"total_tokens":4450}}
+================================================================================

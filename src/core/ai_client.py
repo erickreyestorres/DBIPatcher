@@ -33,11 +33,23 @@ def _log_interaction(payload: dict, response_text: str, row_id: Optional[int] = 
 
 # ── Configuration ────────────────────────────────────────────────────
 
+# Providers: "GEMINI_PROXY" or "OMNIROAD"
+PROVIDER               = "OMNIROAD"
+
+# Gemini Proxy Config
 API_URL                = "http://127.0.0.1:2048/v1/chat/completions"
 NEW_CHAT_URL           = "http://127.0.0.1:2048/api/new-chat"
 SYSTEM_INSTRUCTIONS_URL = "http://127.0.0.1:2048/api/system-instructions"
 SWITCH_MODEL_URL       = "http://127.0.0.1:2048/api/switch-model"
-MODEL                  = "gemini-flash-lite-latest"
+MODEL_GEMINI           = "gemini-flash-lite-latest"
+
+# OmniRoad Config
+OMNIROAD_URL           = "http://localhost:20128/v1/chat/completions"
+MODEL_OMNI             = "kr/claude-sonnet-4.5"
+
+# Active Model (will be chosen based on PROVIDER)
+MODEL = MODEL_OMNI if PROVIDER == "OMNIROAD" else MODEL_GEMINI
+
 TIMEOUT                = 180
 
 SYSTEM_PROMPT = """\
@@ -65,17 +77,17 @@ Output: {"en": "Hello, world!", "de": "Hallo, Welt!", "ua": "Привіт, св�
 # ── Public API ───────────────────────────────────────────────────────
 
 def init_session() -> None:
-    """Full initialization:
-      1. POST /api/new-chat
-      2. POST /api/switch-model
-      3. POST /api/system-instructions
-    """
+    """Initialize session based on provider."""
     # Clear log
     print("  [INIT] Clearing log file...")
     with open(LOG_FILE, "w", encoding="utf-8") as f:
-        f.write(f"--- NEW SESSION STARTED AT {datetime.now().isoformat()} ---\n")
+        f.write(f"--- NEW SESSION STARTED AT {datetime.now().isoformat()} | PROVIDER: {PROVIDER} ---\n")
 
-    # New chat
+    if PROVIDER == "OMNIROAD":
+        print(f"  [INIT] OmniRoad ({MODEL}) selected. Ready!")
+        return
+
+    # Gemini Proxy initialization
     print("  [INIT] Creating new chat...")
     try:
         resp = requests.post(NEW_CHAT_URL, timeout=15)
@@ -133,6 +145,10 @@ STRICT RULES:
 
 def init_session_shadok() -> None:
     """Initialize a NEW chat session with shadok-specific system instructions."""
+    if PROVIDER == "OMNIROAD":
+        print(f"  [SHADOK-INIT] OmniRoad ({MODEL}) selected. Ready!")
+        return
+
     print("  [SHADOK-INIT] Creating new chat for Shadok block...")
     try:
         requests.post(NEW_CHAT_URL, timeout=15)
@@ -159,10 +175,7 @@ def init_session_shadok() -> None:
 
 
 def translate_shadok_block(full_text: str, target_langs: list[str], max_line_length: int) -> dict[str, str]:
-    """Translate the full Shadok text as one literary block.
-    
-    Returns {lang_code: translated_full_text_with_newlines}.
-    """
+    """Translate the full Shadok text as one literary block."""
     import time
 
     user_content = json.dumps(
@@ -170,9 +183,19 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
         ensure_ascii=False
     )
 
+    if PROVIDER == "OMNIROAD":
+        messages = [
+            {"role": "system", "content": SHADOK_SYSTEM_PROMPT},
+            {"role": "user", "content": user_content}
+        ]
+        url = OMNIROAD_URL
+    else:
+        messages = [{"role": "user", "content": user_content}]
+        url = API_URL
+
     payload = {
         "model": MODEL,
-        "messages": [{"role": "user", "content": user_content}],
+        "messages": messages,
         "stream": False,
     }
 
@@ -182,7 +205,7 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
     for attempt in range(MAX_RETRIES + 1):
         resp_text = "N/A"
         try:
-            resp = requests.post(API_URL, json=payload, timeout=300)  # longer timeout for big text
+            resp = requests.post(url, json=payload, timeout=300)
             resp_text = resp.text
 
             if resp.status_code != 200:
@@ -207,7 +230,7 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
                 try:
                     init_session_shadok()
                     time.sleep(1)
-                    resp = requests.post(API_URL, json=payload, timeout=300)
+                    resp = requests.post(url, json=payload, timeout=300)
                     resp_text = resp.text
                     if resp.status_code == 200:
                         data = resp.json()
@@ -221,22 +244,26 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
 
 
 def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = None) -> dict[str, str]:
-    """Translate text with automatic retry and session recovery.
-    
-    On failure:
-      1. Retry up to 2 times in the current session.
-      2. If both retries fail, reinitialize the session (new chat + system instructions)
-         and retry once more.
-    """
+    """Translate text with automatic retry and session recovery."""
     import time
 
     user_content = json.dumps(
         {"text": text, "languages": target_langs}, ensure_ascii=False
     )
 
+    if PROVIDER == "OMNIROAD":
+        messages = [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_content}
+        ]
+        url = OMNIROAD_URL
+    else:
+        messages = [{"role": "user", "content": user_content}]
+        url = API_URL
+
     payload = {
         "model": MODEL,
-        "messages": [{"role": "user", "content": user_content}],
+        "messages": messages,
         "stream": False,
     }
 
@@ -246,7 +273,7 @@ def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = 
     for attempt in range(MAX_RETRIES + 1):
         resp_text = "N/A"
         try:
-            resp = requests.post(API_URL, json=payload, timeout=TIMEOUT)
+            resp = requests.post(url, json=payload, timeout=TIMEOUT)
             resp_text = resp.text
 
             if resp.status_code != 200:
@@ -276,7 +303,7 @@ def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = 
                     init_session()
                     time.sleep(1)
                     # One final attempt with fresh session
-                    resp = requests.post(API_URL, json=payload, timeout=TIMEOUT)
+                    resp = requests.post(url, json=payload, timeout=TIMEOUT)
                     resp_text = resp.text
                     if resp.status_code == 200:
                         data = resp.json()
@@ -300,9 +327,24 @@ def refine(correction: str, target_langs: list[str], row_id: Optional[int] = Non
         f"{', '.join(target_langs)}."
     )
 
+    if PROVIDER == "OMNIROAD":
+        # For OmniRoad, we'd ideally want to keep history, but since we're simulating 
+        # stateless calls here, we'll just send it as a follow-up.
+        # However, without session management in OMNIROAD_URL, we'll just send it as user message.
+        # Actually, OmniRoad should support chat history if we manage it. 
+        # For now, let's keep it simple and send common SYSTEM_PROMPT.
+        messages = [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_content}
+        ]
+        url = OMNIROAD_URL
+    else:
+        messages = [{"role": "user", "content": user_content}]
+        url = API_URL
+
     payload = {
         "model": MODEL,
-        "messages": [{"role": "user", "content": user_content}],
+        "messages": messages,
         "stream": False,
     }
 
@@ -312,7 +354,7 @@ def refine(correction: str, target_langs: list[str], row_id: Optional[int] = Non
     for attempt in range(MAX_RETRIES + 1):
         resp_text = "N/A"
         try:
-            resp = requests.post(API_URL, json=payload, timeout=TIMEOUT)
+            resp = requests.post(url, json=payload, timeout=TIMEOUT)
             resp_text = resp.text
 
             if resp.status_code != 200:
@@ -339,7 +381,7 @@ def refine(correction: str, target_langs: list[str], row_id: Optional[int] = Non
                 try:
                     init_session()
                     time.sleep(1)
-                    resp = requests.post(API_URL, json=payload, timeout=TIMEOUT)
+                    resp = requests.post(url, json=payload, timeout=TIMEOUT)
                     resp_text = resp.text
                     if resp.status_code == 200:
                         data = resp.json()

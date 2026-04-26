@@ -38,6 +38,7 @@ META_SHEET = "Metadata"
 
 BLOCK_JSON = DATA_DIR / "blocks.json"
 SHADOK_JSON = DATA_DIR / "shadok.json"
+DBI_VERSION_ROW = 9  # Row in dictionary.xlsx that holds DBI version number
 
 
 def load_shadok_config() -> dict | None:
@@ -46,6 +47,16 @@ def load_shadok_config() -> dict | None:
         return None
     with SHADOK_JSON.open("r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def get_nro_version() -> str | None:
+    """Extract DBI version from NRO filename (e.g. DBI.892.ru_patched.nro -> '892')."""
+    import re as _re
+    for nro_file in ROOT.glob("DBI.*.nro"):
+        match = _re.search(r'DBI\.(\d+)\.', nro_file.name)
+        if match:
+            return match.group(1)
+    return None
 
 # ── helpers ──────────────────────────────────────────────────────────
 
@@ -157,6 +168,20 @@ def cmd_sync() -> None:
             ws.cell(next_row, col_map["Original"], ru_tok)
             existing.add(ru_tok)
             added += 1
+
+    # Update DBI version from NRO filename
+    nro_ver = get_nro_version()
+    if nro_ver:
+        current_ver = ws.cell(DBI_VERSION_ROW, col_map["Original"]).value
+        if str(current_ver) != nro_ver:
+            print(f"  Updating DBI version: {current_ver} -> {nro_ver}")
+            # Write version to Original and ALL language columns
+            for col_idx in col_map.values():
+                ws.cell(DBI_VERSION_ROW, col_idx, nro_ver)
+        else:
+            print(f"  DBI version already current: {nro_ver}")
+    else:
+        print("  WARNING: No DBI.*.nro file found, version not updated.")
 
     ver = bump_version(wb)
     save_workbook(wb)
@@ -356,14 +381,15 @@ def cmd_translate() -> None:
     for idx, (row, original, missing) in enumerate(rows_to_translate, 1):
         print(f"  [Row {row} | {idx}/{total_rows}] {original[:50]}  -> {len(missing)} langs")
 
-        # Skip AI translation for strings without Cyrillic — copy as-is
+        # Skip AI translation if string has 3 or fewer Cyrillic characters — copy as-is
         import re as _re
-        if not _re.search(r'[а-яА-ЯёЁіІїЇєЄґҐ]', original):
+        cyrillic_count = len(_re.findall(r'[а-яА-ЯёЁіІїЇєЄґҐ]', original))
+        if cyrillic_count <= 3:
             for lc in missing:
                 ws.cell(row, col_map[lc], original)
                 total_translated += 1
             save_workbook(wb)
-            print(f"    [Row {row} | {idx}/{total_rows}] No Cyrillic — copied as-is.")
+            print(f"    [Row {row} | {idx}/{total_rows}] Cyrillic count {cyrillic_count} <= 3 — copied as-is.")
             continue
 
         try:

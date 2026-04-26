@@ -50,18 +50,11 @@ class Validator:
             return "Unexpected colon in translation"
         return None
 
-    def check_brackets(self, translation):
-        """Checks balanced round and square brackets (NOT curly — those are format specifiers)."""
-        stack = []
-        brackets = {"(": ")", "[": "]"}
-        for char in translation:
-            if char in brackets:
-                stack.append(char)
-            elif char in brackets.values():
-                if not stack or brackets[stack.pop()] != char:
-                    return f"Unbalanced brackets in: {translation[:60]}"
-        if stack:
-            return f"Unbalanced brackets in: {translation[:60]}"
+    def check_bracket_counts(self, original, translation):
+        """Checks if the total count of each bracket type matches between original and translation."""
+        for char in "()[]":
+            if original.count(char) != translation.count(char):
+                return f"Bracket count mismatch for '{char}': expected {original.count(char)}, found {translation.count(char)}"
         return None
 
     def validate_row(self, original, translation):
@@ -80,7 +73,7 @@ class Validator:
         err = self.check_colon(original, translation)
         if err: errors.append(err)
         
-        err = self.check_brackets(translation)
+        err = self.check_bracket_counts(original, translation)
         if err: errors.append(err)
         
         return errors
