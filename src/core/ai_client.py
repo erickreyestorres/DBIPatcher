@@ -21,7 +21,7 @@ def _log_interaction(payload: dict, response_text: str, row_id: Optional[int] = 
         log_entry = (
             f"\n{'='*20} {row_label} {'='*20}\n"
             f"TIMESTAMP: {timestamp}\n"
-            f"REQUEST PAYLOAD:\n{json.dumps(payload, ensure_ascii=False, indent=2)}\n"
+            f"REQUEST PAYLOAD:\n{json.dumps(payload, ensure_ascii=True, indent=2)}\n"
             f"{'-'*40}\n"
             f"RESPONSE TEXT:\n{response_text}\n"
             f"{'='*80}\n"
@@ -152,7 +152,7 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
 
     user_content = json.dumps(
         {"text": full_text, "languages": target_langs, "max_line_length": max_line_length},
-        ensure_ascii=False
+        ensure_ascii=True
     )
 
     if PROVIDER == "OMNIROAD":
@@ -171,13 +171,15 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
         "stream": False,
     }
 
-    MAX_RETRIES = 2
-    last_error = None
+    # SAFE ENCODING: We manually dump and encode to ensure non-ASCII characters 
+    # are escaped as \uXXXX. This prevents proxy-level encoding corruption.
+    safe_data = json.dumps(payload, ensure_ascii=True).encode('utf-8')
+    headers = {"Content-Type": "application/json"}
 
     for attempt in range(MAX_RETRIES + 1):
         resp_text = "N/A"
         try:
-            resp = requests.post(url, json=payload, timeout=300)
+            resp = requests.post(url, data=safe_data, headers=headers, timeout=300)
             resp_text = resp.text
 
             if resp.status_code != 200:
@@ -202,7 +204,7 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
                 try:
                     init_session_shadok()
                     time.sleep(1)
-                    resp = requests.post(url, json=payload, timeout=300)
+                    resp = requests.post(url, data=safe_data, headers=headers, timeout=300)
                     resp_text = resp.text
                     if resp.status_code == 200:
                         data = resp.json()
@@ -220,7 +222,8 @@ def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = 
     import time
 
     user_content = json.dumps(
-        {"text": text, "languages": target_langs}, ensure_ascii=False
+        {"text": text, "languages": target_langs},
+        ensure_ascii=True
     )
 
     if PROVIDER == "OMNIROAD":
@@ -239,13 +242,14 @@ def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = 
         "stream": False,
     }
 
-    MAX_RETRIES = 2
-    last_error = None
+    # SAFE ENCODING
+    safe_data = json.dumps(payload, ensure_ascii=True).encode('utf-8')
+    headers = {"Content-Type": "application/json"}
 
     for attempt in range(MAX_RETRIES + 1):
         resp_text = "N/A"
         try:
-            resp = requests.post(url, json=payload, timeout=TIMEOUT)
+            resp = requests.post(url, data=safe_data, headers=headers, timeout=TIMEOUT)
             resp_text = resp.text
 
             if resp.status_code != 200:
@@ -275,7 +279,7 @@ def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = 
                     init_session()
                     time.sleep(1)
                     # One final attempt with fresh session
-                    resp = requests.post(url, json=payload, timeout=TIMEOUT)
+                    resp = requests.post(url, data=safe_data, headers=headers, timeout=TIMEOUT)
                     resp_text = resp.text
                     if resp.status_code == 200:
                         data = resp.json()
@@ -353,7 +357,7 @@ def refine(correction: str, target_langs: list[str], row_id: Optional[int] = Non
                 try:
                     init_session()
                     time.sleep(1)
-                    resp = requests.post(url, json=payload, timeout=TIMEOUT)
+                    resp = requests.post(url, data=safe_data, headers=headers, timeout=TIMEOUT)
                     resp_text = resp.text
                     if resp.status_code == 200:
                         data = resp.json()
