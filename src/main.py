@@ -137,6 +137,21 @@ def cmd_sync() -> None:
     # Read current header to build col map
     header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
 
+    # Remove columns not in languages.json (except 'Original')
+    valid_cols = {"Original"} | set(langs.keys())
+    cols_to_remove = []
+    for ci, col_name in enumerate(header):
+        if col_name and col_name not in valid_cols:
+            cols_to_remove.append((ci + 1, col_name))  # 1-indexed
+    
+    if cols_to_remove:
+        # Delete in reverse order to preserve indices
+        for col_idx, col_name in sorted(cols_to_remove, reverse=True):
+            ws.delete_cols(col_idx)
+            print(f"  Removed column '{col_name}' (not in languages.json)")
+        # Re-read header after deletion
+        header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
+
     # Add missing language columns
     for lang_code in langs:
         if lang_code not in header:
