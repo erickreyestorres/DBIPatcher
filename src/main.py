@@ -537,6 +537,12 @@ def cmd_translate() -> None:
             cell_val = ws.cell(row, col_map[lc]).value
             if not cell_val or not str(cell_val).strip():
                 missing.append(lc)
+            else:
+                ok, msg = validate(str(original), str(cell_val), lc)
+                if not ok and "English preservation" not in msg:
+                    print(f"  [Row {row}][{lc}] Invalid existing translation, scheduling re-translation: {msg}")
+                    ws.cell(row, col_map[lc], "")
+                    missing.append(lc)
         if missing:
             rows_to_translate.append((row, original, missing))
 
@@ -793,7 +799,7 @@ def cmd_validate() -> None:
         for row in range(2, ws.max_row + 1):
             val = ws.cell(row, col_map["Original"]).value
             if val:
-                originals[row] = str(val).strip()
+                originals[row] = str(val)
 
         block_errors = validator.validate_blocks(originals)
         if block_errors:

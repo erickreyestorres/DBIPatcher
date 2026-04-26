@@ -64,9 +64,12 @@ class Validator:
         orig_clean = strip_fmt(original)
         trans_clean = strip_fmt(translation)
         
-        if ":" in orig_clean and ":" not in trans_clean:
+        has_colon_orig = ":" in orig_clean or "：" in orig_clean
+        has_colon_trans = ":" in trans_clean or "：" in trans_clean
+        
+        if has_colon_orig and not has_colon_trans:
             return "Missing colon in translation"
-        if ":" not in orig_clean and ":" in trans_clean:
+        if not has_colon_orig and has_colon_trans:
             return "Unexpected colon in translation"
         return None
 
@@ -77,9 +80,9 @@ class Validator:
         like 이(가), を(は) that add legitimate parentheses.
         Translation can have MORE brackets, but not FEWER.
         """
-        for char in "()":
-            orig_count = original.count(char)
-            trans_count = translation.count(char)
+        for char, full_char in [("(", "（"), (")", "）")]:
+            orig_count = original.count(char) + original.count(full_char)
+            trans_count = translation.count(char) + translation.count(full_char)
             if trans_count < orig_count:
                 return f"Missing parenthesis '{char}': expected at least {orig_count}, found {trans_count}"
         return None
