@@ -926,7 +926,7 @@ COMMANDS = {
 
 
 def cmd_all() -> None:
-    for name in ("sync", "translate", "align", "validate", "export", "build"):
+    for name in ("sync", "translate", "align", "validate", "export"):
         print(f"\n{'='*60}\n  STEP: {name}\n{'='*60}")
         COMMANDS[name]()
 
