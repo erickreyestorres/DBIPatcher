@@ -259,17 +259,16 @@ def cmd_translate() -> None:
             config_changed = True
 
         # Determine what to do based on flag
-        flag = shadok_config.get("translated")  # True, False, or None (absent)
+        flag = shadok_config.get("translated")
+        translated_langs = set(shadok_config.get("translated_langs", []))
 
-        if flag is True:
+        if flag is True and not force_all:
             print(f"  [SHADOK] Already translated (flag=true). Skipping {len(shadok_row_set)} rows.")
         else:
-            # Determine which languages to translate
-            if flag is False:
-                # Explicit false → force re-translate ALL languages
+            if force_all:
                 langs_to_translate = sorted(lang_codes)
-                print(f"  [SHADOK] Flag=false → force re-translate all {len(langs_to_translate)} languages.")
-
+                translated_langs = set()
+                print(f"  [SHADOK] Force re-translate all {len(langs_to_translate)} languages.")
                 # Clear all shadok cells before re-translating
                 for _, row_idx, _ in shadok_rows:
                     for lc in langs_to_translate:
@@ -277,18 +276,15 @@ def cmd_translate() -> None:
                             ws.cell(row_idx, col_map[lc], "")
                 save_workbook(wb)
                 print(f"  [SHADOK] Cleared {len(shadok_rows)} × {len(langs_to_translate)} cells.")
-
             else:
-                # Flag absent (None) → check first shadok row to find missing langs
-                first_row_idx = shadok_rows[0][1] if shadok_rows else None
-                langs_to_translate = []
-                if first_row_idx:
-                    for lc in lang_codes:
-                        cell_val = ws.cell(first_row_idx, col_map[lc]).value
-                        if not cell_val or not str(cell_val).strip():
-                            langs_to_translate.append(lc)
+                # Filter out languages already translated according to config
+                langs_to_translate = sorted([lc for lc in lang_codes if lc not in translated_langs])
+                if not langs_to_translate:
+                    print(f"  [SHADOK] All languages already translated. Skipping.")
+                    shadok_config["translated"] = True
+                    config_changed = True
                 else:
-                    langs_to_translate = sorted(lang_codes)
+                    print(f"  [SHADOK] {len(langs_to_translate)} languages remaining: {', '.join(langs_to_translate)}")
 
             if langs_to_translate:
                 print()
@@ -305,7 +301,6 @@ def cmd_translate() -> None:
 
                 try:
                     SHADOK_BATCH_SIZE = 3
-                    all_results = {}
                     total_batches = (len(langs_to_translate) + SHADOK_BATCH_SIZE - 1) // SHADOK_BATCH_SIZE
 
                     for batch_idx in range(0, len(langs_to_translate), SHADOK_BATCH_SIZE):
@@ -314,7 +309,6 @@ def cmd_translate() -> None:
                         print(f"  [SHADOK] Batch {batch_num}/{total_batches}: {', '.join(batch_langs)}")
 
                         batch_results = translate_shadok_block(full_text, batch_langs, max_line_len)
-                        all_results.update(batch_results)
 
                         # Write batch results immediately (safety save)
                         for lc in batch_langs:
@@ -336,15 +330,21 @@ def cmd_translate() -> None:
                                 else:
                                     ws.cell(row_idx, col_map[lc], "")
 
+                            translated_langs.add(lc)
                             print(f"  [SHADOK][{lc}] Written {min(len(trans_lines), len(shadok_rows))} lines.")
 
+                        # Save progress after each batch
                         save_workbook(wb)
+                        shadok_config["translated_langs"] = sorted(list(translated_langs))
+                        if len(translated_langs) >= len(lang_codes):
+                            shadok_config["translated"] = True
+                        
+                        with SHADOK_JSON.open("w", encoding="utf-8") as f:
+                            json.dump(shadok_config, f, ensure_ascii=False, indent=2)
+
                         time.sleep(0.5)
 
-                    print("  [SHADOK] All batches complete.")
-
-                    shadok_config["translated"] = True
-                    config_changed = True
+                    print("  [SHADOK] All current batches complete.")
 
                 except Exception as e:
                     print(f"  [SHADOK] ERROR: {e}")
@@ -352,7 +352,7 @@ def cmd_translate() -> None:
                 print("=" * 60)
                 print()
             else:
-                print(f"  [SHADOK] All languages translated (checked first line). Skipping.")
+                print(f"  [SHADOK] No languages to translate. Skipping.")
                 shadok_config["translated"] = True
                 config_changed = True
 
