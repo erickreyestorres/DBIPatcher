@@ -130,6 +130,15 @@ def save_workbook(wb: openpyxl.Workbook) -> None:
                 raise
 
 
+def sanitize_string(s: str | None) -> str:
+    """Remove illegal control characters that openpyxl cannot handle."""
+    if s is None:
+        return ""
+    s = str(s)
+    # Remove control characters except \n, \r, \t
+    return re.sub(r'[\x00-\x08\x0b-\x0c\x0e-\x1f]', '', s)
+
+
 # ── sync ─────────────────────────────────────────────────────────────
 
 def cmd_sync() -> None:
@@ -326,11 +335,13 @@ def cmd_translate() -> None:
                 actual_val = str(ws.cell(row_idx, col_map["Original"]).value or "")
                 leading_spaces_count = len(actual_val) - len(actual_val.lstrip(' '))
                 
-                padded_new_text = (" " * leading_spaces_count) + new_text.lstrip(' ')
-                # SYNC: Update Original and RU in Excel to the NEW satellite text (with proper padding)
-                ws.cell(row_idx, col_map["Original"], padded_new_text)
+                padded_new_text = sanitize_string((" " * leading_spaces_count) + new_text.lstrip(' '))
+                # Preserve Original column (it's our binary mapping key!)
+                # We only update the language columns (ru, en, etc.)
                 if "ru" in col_map:
                     ws.cell(row_idx, col_map["ru"], padded_new_text)
+                if "ua" in col_map:
+                    ws.cell(row_idx, col_map["ua"], padded_new_text)
                 # Ensure the original text falls into the dictionary mapping but pass the padding forward
                 shadok_rows.append((shadok_order_idx, row_idx, leading_spaces_count))
                 shadok_order_idx += 1
@@ -351,17 +362,21 @@ def cmd_translate() -> None:
             for lc in sorted(list(translated_langs)):
                 if lc not in col_map: continue
                 col = col_map[lc]
-                non_empty_count = 0
+                # Check if this language is REALLY complete in Excel
+                # (Every row in shadok_rows must be non-empty)
+                excel_complete = True
                 for _, row_idx, _ in shadok_rows:
-                    val = ws.cell(row_idx, col).value
-                    if val and str(val).strip():
-                        non_empty_count += 1
-                # Flexible threshold: CJK languages are more compact
-                threshold = 10 if lc in ["zhcn", "zhtw", "jp", "kr"] else 20
-                if non_empty_count >= threshold:
+                    val = ws.cell(row_idx, col_map[lc]).value
+                    if not val or not str(val).strip():
+                        excel_complete = False
+                        break
+                
+                if excel_complete:
                     valid_translated_langs.append(lc)
                 else:
-                    print(f"  [SHADOK] CLEANUP: Language '{lc}' has only {non_empty_count}/{len(shadok_rows)} lines. Resetting.")
+                    # If even one cell is empty, it needs translation
+                    print(f"  [SHADOK] Language '{lc}' is incomplete in Excel. Resetting.")
+
             
             translated_langs = set(valid_translated_langs)
             shadok_config["translated_langs"] = valid_translated_langs
@@ -433,14 +448,14 @@ def cmd_translate() -> None:
                                         order_idx, row_idx, lead_spaces = shadok_rows[i]
                                         
                                         if not current_text.strip():
-                                            ws.cell(row_idx, col_map[lc], "")
+                                            ws.cell(row_idx, col_map[lc], "\u200b")
                                             continue
                                             
                                         # If lead_spaces > 0, we treat this as a start of a new part (like a signature).
                                         # But we also have a limit for the line length.
                                         wrapped = wrap_text(current_text, max_line_len, lc)
                                         if not wrapped:
-                                            ws.cell(row_idx, col_map[lc], "")
+                                            ws.cell(row_idx, col_map[lc], "\u200b")
                                             continue
                                             
                                         line_val = wrapped[0]
@@ -513,14 +528,10 @@ def cmd_translate() -> None:
         if row in shadok_row_set:
             continue  # skip strictly mapped shadok rows
             
-        actual_val = str(ws.cell(row, col_map["Original"]).value or "")
-        if actual_val.strip() in shadok_all_strings:
-            # Skip any duplicate or stray Shadok rows so they don't break the general pipeline
-            continue
-            
         original = ws.cell(row, col_map["Original"]).value
-        if not original:
+        if not original or not str(original).strip():
             continue
+
         missing = []
         for lc in lang_codes:
             cell_val = ws.cell(row, col_map[lc]).value
@@ -849,6 +860,70 @@ def cmd_export() -> None:
     cmd_build()
 
 
+def cmd_sync() -> None:
+    """Sync Excel dictionary with translations/ua.csv and ru.csv."""
+    wb = open_or_create_workbook()
+    ws = wb[SHEET_NAME]
+    header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
+    col_map = {h: i + 1 for i, h in enumerate(header) if h}
+
+    # 1. Collect all current keys from Excel
+    excel_keys = {}  # original_text -> row_index
+    for row in range(2, ws.max_row + 1):
+        val = ws.cell(row, col_map["Original"]).value
+        if val:
+            excel_keys[str(val).strip()] = row
+
+    # 2. Collect all valid keys from source CSVs
+    valid_source_keys = set()
+    source_data = {} # key -> tokenized_text
+    
+    # Read from DATA_DIR (Source of truth), NOT translations/
+    for csv_file in [DATA_DIR / "ua.csv", DATA_DIR / "ru.csv"]:
+        path = Path(csv_file)
+        if not path.exists(): continue
+        
+        with open(path, "r", encoding="utf-8-sig") as f:
+            reader = csv.reader(f)
+            for row in reader:
+                if len(row) >= 1:
+                    orig_tok = tokenize(row[0].strip())
+                    if not orig_tok: continue
+                    valid_source_keys.add(orig_tok)
+                    if orig_tok not in source_data:
+                        trans = tokenize(row[1].strip()) if len(row) > 1 else orig_tok
+                        source_data[orig_tok] = trans
+
+    # 3. Synchronize: Add missing, update existing, DELETE orphans
+    added = 0
+    
+    for orig_tok, trans_tok in source_data.items():
+        if orig_tok not in excel_keys:
+            new_row = ws.max_row + 1
+            ws.cell(new_row, col_map["Original"], orig_tok)
+            if "ru" in col_map: ws.cell(new_row, col_map["ru"], trans_tok)
+            if "ua" in col_map: ws.cell(new_row, col_map["ua"], trans_tok)
+            added += 1
+            excel_keys[orig_tok] = new_row
+
+
+    # 4. Critical Cleanup: Delete rows from Excel that are NO LONGER in source CSVs
+    to_delete = []
+    for orig, row_idx in excel_keys.items():
+        if orig not in valid_source_keys:
+            to_delete.append(row_idx)
+    
+    if to_delete:
+        print(f"  [SYNC] Deleting {len(to_delete)} orphaned rows not found in source CSVs.")
+        for row_idx in sorted(to_delete, reverse=True):
+            ws.delete_rows(row_idx)
+
+    # Bump version or just update status
+    ver = get_version(wb)
+    print(f"Sync done. Added: {added}, Version: {ver}")
+    save_workbook(wb)
+
+
 # ── build ────────────────────────────────────────────────────────────
 
 def cmd_build() -> None:
@@ -1026,16 +1101,44 @@ def cmd_deploy() -> None:
     print("  STEP: deploy")
     print("="*60)
 
-    # 1. Get versions
+    # 1. Get versions & Check completeness
     try:
         dbi_ver = get_nro_version() or "unknown"
         wb = open_or_create_workbook()
+        ws = wb[SHEET_NAME]
         patcher_ver = get_version(wb)
+        
+        header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
+        col_map = {h: i + 1 for i, h in enumerate(header) if h}
+        langs = load_languages()
+        lang_codes = [lc for lc in langs if lc in col_map and lc != "ru"]
+
+        print("  [CHECK] Verifying translation completeness...")
+        missing_count = 0
+        for row in range(2, ws.max_row + 1):
+            if not ws.cell(row, col_map["Original"]).value: continue
+            for lc in lang_codes:
+                val = ws.cell(row, col_map[lc]).value
+                if not val or not str(val).strip():
+                    missing_count += 1
+        
+        if missing_count > 0:
+            print(f"  [ERROR] Cannot deploy: Found {missing_count} missing translations!")
+            print("  Please run 'python -m src.main translate' first.")
+            return
+
     except Exception as e:
-        print(f"  [ERROR] Failed to get version: {e}")
+        print(f"  [ERROR] Preparation failed: {e}")
         return
 
-    # 2. Git operations
+    # 2. Check if tag already exists on GitHub
+    print(f"  [CHECK] Checking if tag {dbi_ver} already exists...")
+    check_tag = subprocess.run(["gh", "release", "view", dbi_ver], capture_output=True, text=True)
+    if check_tag.returncode == 0:
+        print(f"  [ERROR] Release {dbi_ver} already exists on GitHub. Deployment aborted to prevent overwrite.")
+        return
+
+    # 3. Git operations
     print("  [GIT] Staging changes and pushing...")
     try:
         subprocess.run(["git", "add", "."], check=True)
@@ -1051,7 +1154,8 @@ def cmd_deploy() -> None:
         print(f"  [ERROR] Git operation failed: {e}")
         return
 
-    # 3. Prepare release body
+    # 4. Prepare release body
+    # (template remains same)
     langs_list = """*   **BE** — Belarusian
 *   **DE** — German
 *   **EN** — English (US)

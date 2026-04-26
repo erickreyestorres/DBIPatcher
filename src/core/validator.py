@@ -94,8 +94,8 @@ class Validator:
         err = self.check_placeholders(original, translation)
         if err: errors.append(err)
         
-        err = self.check_square_bracket_tags(original, translation)
-        if err: errors.append(err)
+        # We intentionally SKIP check_square_bracket_tags for DBI. 
+        # In DBI, square brackets are used for translatable statuses like [ОШИБКА], [ОТСУТСТВУЕТ].
         
         err = self.check_tokens(original, translation)
         if err: errors.append(err)

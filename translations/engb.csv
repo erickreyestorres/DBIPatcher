@@ -6,7 +6,6 @@ original,translation
 "X - выбор, Y - инвертирование выбора, A - открыть, (-) - 2ая панель","X - Select, Y - Invert selection, A - Open, (-) - 2nd panel"
 "X - выбор, Y - инвертирование выбора, ⬅/➡ - смена панели, (-) - закрыть","X - Select, Y - Invert selection, ⬅/➡ - Change panel, (-) - Close"
 "ZL/ZR - смена даты, Y - период, X - сортировка, (+) - выбрать пользователя","ZL/ZR - Change date, Y - Period, X - Sort, (+) - Select user"
-892,892
 . Время игры \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m,. Playtime \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m
 Невозможно смонтировать системный раздел,Unable to mount system partition
 "DPAD или стики для перемещения, (+) - Настройки","DPAD or sticks to move, (+) - Settings"
@@ -35,7 +34,6 @@ SDK подменён,SDK replaced
 Удаление игр,Deleting games
 Удаление игры ,Deleting game 
 Удаление игры целиком: [{}],Delete full game: [{}]
-"SSID : {}, Пароль: {}","SSID : {}, Password: {}"
 Удаление каталога LFS,Deleting LFS directory
 Удаление контента,Deleting content
 Удаление настроек родительского контроля...,Deleting parental control settings...
@@ -57,7 +55,6 @@ SaveFS очищена,SaveFS cleared
 Удаление тайтла: [{}],Deleting title: [{}]
 Удаление тикетов ({}),Deleting tickets ({})
 Удаление...,Deleting...
-TempC0                : {:04x},TempC0                    : {:04x}
 Удалить,Delete
 Удалить LFS,Delete LFS
 Удалить сохранения,Delete saves
@@ -75,7 +72,6 @@ Titlekey не может быть инициализирован,Titlekey cannot
 Удаляется старая запись о контенте...,Deleting old content record...
 Удаляется старый cnmt.nca...,Deleting old cnmt.nca...
 Удаляется тикет: {}...,Deleting ticket: {}...
-Удалять после установки :,Delete after install    :
 Удаляются все объекты из альбома для игры,Deleting all items from the game album
 Удаляются все сохранения для игры,Deleting all saves for the game
 Удаляются сохранения...,Deleting save data...
@@ -112,7 +108,6 @@ USB Соединение,USB connection
 Установленные тикеты ({}),Installed tickets ({})
 Файл повреждён и не может быть установлен. Не найдена сигнатура HEAD,File is corrupted and cannot be installed. HEAD signature not found
 Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе root,File is corrupted and cannot be installed. HFS0 signature not found in root partition
-Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC address : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе secure,File is corrupted and cannot be installed. HFS0 signature not found in secure partition
 Файл повреждён и не может быть установлен. Не найдена сигнатура PFS0,File is corrupted and cannot be installed. PFS0 signature not found
 Файл слишком большой для хранилища,File is too large for storage
@@ -123,7 +118,6 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless
 Форсированный язык    : {},Forced language    : {}
 Форсированный язык    : {} ({}),Forced language    : {} ({})
   Автоопределение,  Auto-detect
-Форсировано вклчение USB 3.0 : {},Force USB 3.0 enabled   : {}
 Форсировать UTF-8,Force UTF-8
 Форсировать язык,Force language
 Французский,French
@@ -144,8 +138,6 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless
 "Чтобы вернуться, нажмите B",Press B to go back
 Шадок у Гиби,Shadok at Gibi
 Шифрование секции ,Section encryption
-Экзосфера очищает CAL0       : {},Exosphere clearing CAL0 : {}
-Экран                  : ({:08X}) {},Screen                   : ({:08X}) {}
 Экспорт SDK,SDK Export
 Экспортировать,Export
 Экспортировать SDK,Export SDK
@@ -167,16 +159,7 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless
 Просмотр USB диска [{}],Viewing USB drive [{}]
 Заряд батареи (сырое значение) : {},Battery charge (raw value) : {}
 ru,ru
-Конфигурация зарядки             : {},Charging configuration       : {}
-Режим Hi-Z включён               : {},Hi-Z mode enabled            : {}
-Зарядка батареи включена         : {},Battery charging enabled     : {}
-Маршрут электропитания           : {},Power path                   : {}
-Напряжение источника             : {} mV,Source voltage               : {} mV
-Ток источника                    : {} mA,Source current               : {} mA
-Быстрая зарядка разрешена        : {},Fast charging enabled        : {}
 [CRC ОШИБКА ФАЙЛА],[FILE CRC ERROR]
-Целевая прошивка             : {}.{}.{},Target firmware         : {}.{}.{}
-Поддерживаемая версия HOS    : {},Supported HOS version   : {}
 Будет скачана и установлена прошивка системы из файла {}.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены,System firmware will be downloaded and installed from file {}.\n\nPress (+) to continue\nAny other button to cancel
 Распаковка архива не удалась,Archive extraction failed
 Сканирование архива не удалось,Archive scanning failed
@@ -207,11 +190,6 @@ ru,ru
 Пишется таблица хешей\n,Writing hash table\n
 Пишется подпись видео\n,Writing video signature\n
 Операция завершена\n,Operation completed\n
-Предел входного тока (буст)      : {} mA,Input current limit (boost)  : {} mA
-Предел тока быстрой зарядки      : {} mA,Fast charging current limit  : {} mA
-Напряжение батареи               : {} mV,Battery voltage              : {} mV
-Контроллер источника получен     : {},Source controller received   : {}
-OTG Запрошен                     : {},OTG requested                : {}
 "Будет скачана и установлена прошивка системы из файла {}.\n\nВНИМАНИЕ!!! Похоже, эта версия не поддерживается текущей атмосферой.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены",System firmware will be downloaded and installed from file {}.\n\nWARNING!!! It seems this version is not supported by the current Atmosphere.\n\nPress (+) to continue\nPress any other button to cancel
 Копирование файла не удалось,Failed to copy file
 Daybreak.nro не найден,Daybreak.nro not found
@@ -340,7 +318,6 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 {}: пропускается {}/{} ({:.2f} МБ/сек),{}: skipping {}/{} ({:.2f} MB/sec)
 "{}\n\nВосстановление бекапа не удалось\n\nНажмите A - прервать, другая кнопка - продолжить","{}\n\nBackup restoration failed\n\nPress A to abort, any other button to continue"
 {}МБ из {}МБ ({:.2f} МБ/сек)\x1b[0K\r,{}MB of {}MB ({:.2f} MB/sec)\x1b[0K\r
-Ёмкость с завода    : {} mAh,Factory capacity    : {} mAh
 АВТО,AUTO
 Аватар установлен,Avatar set
 Август,August
@@ -383,7 +360,6 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Введите номер DLC,Enter DLC number
 Версия  : ,Version : 
 Версия {} [v{}],Version {} [v{}]
-Версия атмосферы             : {}.{}.{},Atmosphere version      : {}.{}.{}
 Версия прошивки         : {}.{}.{}-{}.{},Firmware version  : {}.{}.{}-{}.{}
 Вместо пользователя {} использовать:,Use instead of user {}:
 Внимание! ,Warning! 
@@ -391,7 +367,6 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Во время разбора\n\n{}\n\nвозникла следующая ошибка:\n\n{},Whilst parsing\n\n{}\n\nthe following error occurred:\n\n{}
 Во время установки тикетов были ошибки. Проверьте наличие ES сигпатчей,Errors occurred during ticket installation. Check for ES sigpatches
 Во время экспорта были ошибки,Errors occurred during export
-Возраст батареи                  : {}%,Battery age                  : {}%
 Возраст батареи                : {},Battery age                : {}
 Возраст батареи                : {}%,Battery age                : {}%
  {} минута, {} minute
@@ -445,9 +420,7 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Выбрать все файлы игры,Select all game files
 Выбрать того же пользователя,Select the same user
 Выбрать ту же игру,Select the same game
-Выйти из DBI            :,Exit DBI                :
 Выключать экран,Turn off screen
-Выключить экран         :,Turn off screen         :
  Запуск игры, Launching game
 Вырезать,Cut
 Выход на рабочий стол,Exit to Home Menu
@@ -481,7 +454,6 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Достаточное питание            : {},Sufficient power           : {}
  Переключение на игру, Switching to game
 Европа,Europe
-Есть исправление RCM бага    : {},RCM bug fix present     : {}
 "Есть несохранёные изменения.\nВы хотите их сохранить?\n\n(+) - Да, сохранить\n\n(-) - Выйти без сохранения\n\nДругая кнопка - Отмена","There are unsaved changes.\nDo you want to save them?\n\n(+) - Yes, save\n\n(-) - Exit without saving\n\nOther button - Cancel"
 Желаемая версия: {},Desired version: {}
 Журнал активности,Activity Log
@@ -506,7 +478,6 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Запаковка папки в RomFS,Packing folder into RomFS
 Записанное время конца  : {},Recorded end time  : {}
 Записанное время начала : {},Recorded start time : {}
-Запись в CAL0 разрешена      : {},CAL0 write allowed      : {}
 Запись в файл...,Writing to file...
 Запись за пределами файла,Write beyond file
 Заполнение нулями,Zero filling
@@ -577,7 +548,6 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
  сортировка по имени игры, sort by game name
 Используется ,Used 
 Используется USB{},Using USB{}
-Источник питания                 : {},Power source                 : {}
 Итальянский,Italian
 Ищется control для ProgramId {},Searching for control for ProgramId {}
 Ищется exefs/romfs для ProgramId {},Searching for exefs/romfs for ProgramId {}
@@ -617,7 +587,6 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Место в  NAND         : {},Space in NAND        : {}
 Место на SD карте     : {},SD card space     : {}
 Место на приставке не занято,No space occupied on the console
-Место установки         :,Install location        :
 Мета контент отсутствует,Meta content is missing
 Миссия провалена\n\nНажмите А для выхода,Mission failed\n\nPress A to exit
 Миссия успешна\n\nОсталось ходов: {}\n\nНажмите А для выхода,Mission successful\n\nMoves left: {}\n\nPress A to exit
@@ -635,7 +604,6 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Найден {} зарегистрированный контент-файл,Found {} registered content file
 Найден {} контент-файл,Found {} content file
 Найден {} пользователь,Found {} user
-%% заряд-разряд     : {},%% charge-discharge : {}
 Найден {} потерянный контент-файл,Found {} orphaned content file
 Найден {} файл,Found {} file
 Найден {} файл с ошибками,Found {} file with errors
@@ -770,15 +738,12 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Общее число запусков  : -,Total number of launches : -
 Общее число игровых сессий    : {},Total number of game sessions : {}
 Общие,General
-Общий размер передачи   :,Total transfer size     :
-Общий размер установки  :,Total installation size :
 Общий размер установки: {},Total installation size: {}
 Объединение списков,Merge lists
 Объект {} не допустим,Object {} is not allowed
 Объект {} не может быть создан,Object {} cannot be created
 Объект не открыт для редактирования,Object is not open for editing
 Объект удалён,Object deleted
-Bluetooth MAC адрес    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC address    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Объект уже открыт для редактирования,Object is already open for editing
 Огибка получения адреса сокета: {} {},Error getting socket address: {} {}
 Ожидаемый размер: {},Expected size: {}
@@ -799,7 +764,6 @@ CDIR в листинге,CDIR in listing
 Осталось ходов:    {:>3},Moves left:    {:>3}
 Остаток файла пропускается,Remainder of file is skipped
 Отключение связи с мобильным приложением...,Disconnecting from mobile app...
-Configuration Id1      : {},Configuration Id1        : {}
 Открываем папку прошивки...,Opening firmware folder...
 Открыть,Open
 Открыть вторую панель,Open second panel
@@ -896,7 +860,6 @@ DramId                  : {} ({}),DramId            : {} ({})
 Переименование объекта,Renaming object
 Переименовать,Rename
 Перейти к первой странице,Go to first page
-Emummc включён               : {},Emummc enabled          : {}
 Перейти к последней странице,Go to last page
 Перейти к странице...,Go to page...
 Переместить,Move
@@ -917,7 +880,6 @@ FTP сервер (нажмите B для остановки),FTP server (press 
 Платформа               : {},Platform          : {}
 Подготовка...,Preparing...
 Подключаемся к {}...,Connecting to {}...
-FullCap               : {:04x} ({} mAh),FullCap                   : {:04x} ({} mAh)
 Подключено к {}:{},Connected to {}:{}
 Подмена SDK,SDK Replacement
 Подменить SDK,Replace SDK
@@ -928,7 +890,6 @@ FullCap               : {:04x} ({} mAh),FullCap                   : {:04x} ({} m
 Подсчитываются объекты в альбоме на SD карте,Counting objects in album on SD card
 Подсчёт метаданных...,Counting metadata...
 Подсчёт основного хэша,Calculating main hash
-FullCapNom            : {:04x} ({} mAh),FullCapNom                : {:04x} ({} mAh)
 Подсчёт хэша секции,Calculating section hash
 "Пожалуйста, подключите вашу консоль к ПК кабелем USB Type-C или нажмите B",Please connect your console to the PC with a USB Type-C cable or press B
 "Пожалуйста, подождите...",Please wait...
@@ -949,9 +910,6 @@ Get chargeInfoFields : {},Get chargeInfoFields : {}
 Показывать размер LFS (долго),Show LFS size (slow)
 Показывать секунды,Show seconds
 Показывать часы в статусе,Show clock in status
-Поколение ключа              : {},Key generation          : {}
-Git commit hash              : {:016X},Git commit hash         : {:016X}
-Полная ёмкость      : {} mAh,Full capacity       : {} mAh
 Получен список из {} записей,Received list of {} entries
 Получен список из {} записи,Received list of {} entries
 Получение версий установленных игр,Getting installed game versions
@@ -962,7 +920,6 @@ Git commit hash              : {:016X},Git commit hash         : {:016X}
 Получение файла: {} МБ ({:.2f} МБ/сек),Receiving file: {} MB ({:.2f} MB/s)
 Получение файла: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Receiving file: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m MB/sec)
    Получение списка бекапов...{}/{}    ,   Retrieving backup list...{}/{}    
-IavgEmpty             : {:04x},IavgEmpty                 : {:04x}
 Полученное время: {},Received time: {}
 Полученный размер: {},Received size: {}
 "Получено: {}, ({:.2f} МБ/сек)","Received: {}, ({:.2f} MB/s)"
@@ -978,8 +935,6 @@ IavgEmpty             : {:04x},IavgEmpty                 : {:04x}
 Посылается файл: {},Sending file: {}
 Посылается файл: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Sending file: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m MB/s)
 Превышен размер командного буфера,Command buffer size exceeded
-Предел входного тока             : {} mA,Input current limit          : {} mA
-Предел напряжения заряда батареи : {} mV,Battery charge voltage limit : {} mV
 LFS мод.: -,LFS mode: -
 Предназначение          : {},Purpose           : {}
 Предоставить по FTP,Provide via FTP
@@ -1074,14 +1029,11 @@ Nintendo Account не задан,Nintendo Account not set
 Сервер предлагает выполнить обновление DBI\n\nНажите (+) для согласия\nЛюбую другую кнопку для отмены,The server offers to perform a DBI update\n\nPress (+) to confirm\nAny other button to cancel
 Серийный # прочитанный  : {},Serial # read     : {}
 Серийный # угаданный    : {},Serial # guessed  : {}
-Серийный номер         : {},Serial number            : {}
 Сессии,Sessions
 Сессия закрыта,Session closed
 Сессия открыта,Session opened
-Силовая роль                     : {},Power role                   : {}
 Синхронизация времени по NTP,NTP time synchronisation
 Системные приложения,System applications
-QrTable00             : {:04x},QrTable00                 : {:04x}
 Системный по умолчанию,System default
 Сканирование директорий...,Scanning directories...
 Сканирование игр...,Scanning games...
@@ -1092,7 +1044,6 @@ QrTable00             : {:04x},QrTable00                 : {:04x}
 Смещать курсор после выделения,Move cursor after selection
 Собираются сведения...,Gathering information...
 Соединение сброшено,Connection reset
-QrTable10             : {:04x},QrTable10                 : {:04x}
 Сожжено предохранителей : {},Fuses burnt       : {}
 Создавать LFS папку,Create LFS folder
 Создан zip-файл: ,Zip file created: 
@@ -1103,7 +1054,6 @@ QrTable10             : {:04x},QrTable10                 : {:04x}
 Создание дампа ({}),Creating dump ({})
 Создание дампа: {},Creating dump: {}
 Создание единого репака,Creating a unified repack
-QrTable20             : {:04x},QrTable20                 : {:04x}
 Создание записи об игре...,Creating game record...
 Создание каталога: ,Creating directory: 
 Создание новой записи об игре...,Creating new game entry...
@@ -1114,7 +1064,6 @@ QrTable20             : {:04x},QrTable20                 : {:04x}
 Создание таблицы имён,Creating name table
 Создание тела файла,Creating file body
 Создание точки доступа...,Creating access point...
-QrTable30             : {:04x},QrTable30                 : {:04x}
 Создание фейковой записи... ,Creating fake record... 
 Создание хэш таблицы,Creating hash table
 Создание ярлыка,Creating shortcut
@@ -1125,7 +1074,6 @@ QrTable30             : {:04x},QrTable30                 : {:04x}
 Создать новый каталог...,Create new directory...
 Создать новый файл...,Create new file...
 Создать ярлык,Create shortcut
-RCOMP0                : {:04x},RCOMP0                    : {:04x}
 Создать ярлык для hbmenu,Create shortcut for hbmenu
 Создать ярлык на рабочий стол для DBI...,Create desktop shortcut for DBI...
 Создать ярлык с аргументами...,Create shortcut with arguments...
@@ -1139,27 +1087,18 @@ RTC запущены (приблизительно) : {},RTC started (approximat
 Сохранения удалённых игр ({}),Saves of deleted games ({})
 Сохранения установленных игр ({}),Saves of installed games ({})
 Сохранёные в системе параметры котроллера батареи,Battery controller parameters saved in system
-Средняя температура : {}°C,Average temperature : {}°C
 Статистика игры ,Game statistics 
 Строка поиска: ,Search string: 
-Сумма %% заряд-разряд : {} (~{} 0-100 циклов),Total %% charge-discharge : {} (~{} 0-100 cycles)
 Существующая запись об игре не найдена,Existing game record not found
 Существующее сохранение не найдено и новое не может быть создано,Existing save not found and new one cannot be created
 SDK {} уже был экспортирован: {},SDK {} has already been exported: {}
 Тайтл не установлен,Title not installed
 Тайтл установлен,Title installed
 Тайтлы с ошибками:,Titles with errors:
-Текущая ёмкость                  : {}%,Current capacity             : {}%
-Текущая ёмкость     : {} mAh,Current capacity    : {} mAh
 Текущее время: {},Current time: {}
-Текущее напряжение  : {} mV,Current voltage     : {} mV
-Текущий заряд       : {}%,Current charge      : {}%
-Текущий ток         : {} mA,Current draw        : {} mA
 SDK на подмену не найдены,No SDK found for replacement
 Тема,Theme
 Тема отображения,Display theme
-Температура         : {}°C,Temperature         : {}°C
-Температура батареи              : {}°C,Battery temperature          : {}°C
 Тикет исправлен,Ticket fixed
 Тикеты,Tickets
 Тикеты не найдены,No tickets found
@@ -1167,40 +1106,97 @@ SDK на подмену не найдены,No SDK found for replacement
 Тип источника питания          : {},Power supply type          : {}
 864,864
 881,881
-"больше жертв, тем выше вероятность,",put it another way: 'The more
-быстро разгадали тайный замысел,equipment standing in their gardens. A
-"оцепили его там со всех сторон,","internets, quickly figured out the"
-"Или, говоря иными словами: «Чем","temporary pledge of greatness.' Or, to"
-"тактика буксует, но они твёрдо верят",that everything will work out in the
-при котором всё заработает… И они,"wheels, but they firmly believe in that"
-"и теперь всякий раз, когда он",secret plan and decided to have a
-лишь временным залогом величия».,misfortune that would not be merely a
-"в тот один шанс из миллиона,",end.' Their tactics are spinning their
-чтобы за ними пришла победа».,"make those very first 999,999 fatal"
-"такой беды, которая не являлась бы",their profound logic: 'There is no
-"из своих складов с техникой, но","They, being cunning because of their"
-"999999 первых фатальных ошибок,",will finally work... And they rush to
-спешат поскорее совершить те самые,one-in-a-million chance when everything
-"Те, будучи хитрыми из-за интернетов,",supposedly extract chips directly from
-прямиком к соседям за деталями.,the toilets. And the neighbours
-исправно принося отрицательный рост.,"zeroing out continues, dutifully"
-догмате их глубинной логики: «Нет,secret lies in the fundamental dogma of
-что в финале всё получится». Их,"sacrifices, the higher the probability"
-"прямо из техники, стоящей в садах.",because there aren't enough chips
-и решили всласть поглумиться. Они,volunteer was sent from the swamps
-"видит чип, соседи его отбирают.»",proper laugh. They allowed the guest to
-"падают, потому что чипов не хватает","Bunker, state publisher «Through the"
-"ни в системах наводки, ни в унитазах.",Looking Glass». The chief strategist
-позволили гостю залезть в один,straight to the neighbours for parts.
-«У жителей болот всё идёт по плану.,The swamp dwellers have everything
-"Процесс обнуления продолжается,",going according to plan. The process of
-А у соседей чипы якобы добывают,announced that rockets are falling
-С болот был заслан доброволец,either in the guidance systems or in
-"          Бункер, госиздат «Зазеркалье».","          Бункер, госиздат «Зазеркалье»."
-  И. И. Пиздоболов. Ритмы прорыва.,  И. И. Пиздоболов. Ритмы прорыва.
-"    Главный стратег объявил, что ракеты","    Главный стратег объявил, что ракеты"
-    Весь секрет таится в фундаментальном,    Весь секрет таится в фундаментальном
-"          Бункер, госиздат «Зазеркалье».","          Бункер, госиздат «Зазеркалье»."
-  И. И. Пиздоболов. Ритмы прорыва.,  И. И. Пиздоболов. Ритмы прорыва.
-"    Главный стратег объявил, что ракеты","    Главный стратег объявил, что ракеты"
-    Весь секрет таится в фундаментальном,    Весь секрет таится в фундаментальном
+"          Париж, издательство Грассе.",          that victory will follow. I. 
+"больше шансов, что оно заработает». Их",put it another way: 'The more
+быстро проникли в планы шадоков и,equipment standing in their gardens. A
+"всякий раз, когда растение расцветает","internets, quickly figured out the"
+"выражениях: «Чем больше неудач, тем","temporary pledge of greatness.' Or, to"
+"вычислили, что у них есть по крайней",that everything will work out in the
+заработает… И они торопятся поскорее,"wheels, but they firmly believe in that"
+"и дает транзистор, они мчатся, чтобы",secret plan and decided to have a
+"и не кончилось успехом». Или, в других",misfortune that would not be merely a
+"мере один шанс из миллиона, что она",end.' Their tactics are spinning their
+миллионная заработает».,"make those very first 999,999 fatal"
+"ничего, что бы непрерывно продолжалось",their profound logic: 'There is no
+"но окружили его со всех сторон, и","They, being cunning because of their"
+"опытов, чтобы быть уверенными, что",will finally work... And they rush to
+осуществить 999999 первых неудачных,one-in-a-million chance when everything
+"очень умные благодаря своим шляпам,",supposedly extract chips directly from
+"планету гиби искать транзисторы. Гиби,",the toilets. And the neighbours
+постоянно кончаясь неудачами.,"zeroing out continues, dutifully"
+принципов шадокской логики: «Нет,secret lies in the fundamental dogma of
+"ракета еще несовершенна, но они","sacrifices, the higher the probability"
+"растений, произрастающих на огородах.",because there aren't enough chips
+решили позабавиться. Они позволили,volunteer was sent from the swamps
+собрать урожай прежде шадока.,proper laugh. They allowed the guest to
+"терпят неудачу потому, что не хватает","Bunker, state publisher «Through the"
+транзисторов в системах безопасности.,Looking Glass». The chief strategist
+"шадоку забраться в один из их огородов,",straight to the neighbours for parts.
+  Жак Руксель. Великолепие навыворот.,"  mistakes as quickly as possible, so"
+«У шадоков ситуация удовлетворительна.,The swamp dwellers have everything
+"    Великий колдун сказал, что ракеты",    Pizdobolov. Rhythms of Breakthrough
+"Испытания ракет продолжаются,",going according to plan. The process of
+    Дело здесь в одном из основных,    delivering negative growth. The who
+Но у гиби транзисторы собирают с,announced that rockets are falling
+Решено послать одного из шадоков на,either in the guidance systems or in
+original,original
+"SSID : {}, Пароль: {}","SSID : {}, Password: {}"
+TempC0                : {:04x},TempC0                  : {:04x}
+Удалять после установки :,Delete after installation :
+Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC address : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0 : {},Forced USB 3.0 enabled : {}
+Экзосфера очищает CAL0       : {},Exosphere clears CAL0  : {}
+Экран                  : ({:08X}) {},Screen                   : ({:08X}) {}
+Конфигурация зарядки             : {},Charge configuration         : {}
+Режим Hi-Z включён               : {},Hi-Z mode enabled            : {}
+Зарядка батареи включена         : {},Battery charging enabled     : {}
+Маршрут электропитания           : {},Power delivery route         : {}
+Напряжение источника             : {} mV,Source voltage               : {} mV
+Ток источника                    : {} mA,Source current               : {} mA
+Быстрая зарядка разрешена        : {},Fast charging allowed        : {}
+Целевая прошивка             : {}.{}.{},Target firmware        : {}.{}.{}
+Поддерживаемая версия HOS    : {},Supported HOS version  : {}
+Предел входного тока (буст)      : {} mA,Input current limit (boost)  : {} mA
+Предел тока быстрой зарядки      : {} mA,Fast charging current limit  : {} mA
+Напряжение батареи               : {} mV,Battery voltage              : {} mV
+Контроллер источника получен     : {},Source controller obtained   : {}
+OTG Запрошен                     : {},OTG Requested                : {}
+Ёмкость с завода    : {} mAh,Factory capacity    : {} mAh
+Версия атмосферы             : {}.{}.{},Atmosphere version     : {}.{}.{}
+Возраст батареи                  : {}%,Battery age                  : {}%
+Выйти из DBI            :,Exit DBI                  :
+Выключить экран         :,Turn off screen           :
+Есть исправление RCM бага    : {},Has RCM bug fix        : {}
+Запись в CAL0 разрешена      : {},CAL0 write allowed     : {}
+Источник питания                 : {},Power source                 : {}
+Место установки         :,Install location          :
+%% заряд-разряд     : {},%% charge-discharge : {}
+Общий размер передачи   :,Total transfer size       :
+Общий размер установки  :,Total installation size   :
+Bluetooth MAC адрес    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC address    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Configuration Id1      : {},Configuration Id1        : {}
+Emummc включён               : {},Emummc enabled         : {}
+FullCap               : {:04x} ({} mAh),FullCap                 : {:04x} ({} mAh)
+FullCapNom            : {:04x} ({} mAh),FullCapNom              : {:04x} ({} mAh)
+Поколение ключа              : {},Key generation         : {}
+Git commit hash              : {:016X},Git commit hash        : {:016X}
+Полная ёмкость      : {} mAh,Full capacity       : {} mAh
+IavgEmpty             : {:04x},IavgEmpty               : {:04x}
+Предел входного тока             : {} mA,Input current limit          : {} mA
+Предел напряжения заряда батареи : {} mV,Battery charge voltage limit : {} mV
+Серийный номер         : {},Serial number            : {}
+Силовая роль                     : {},Power role                   : {}
+QrTable00             : {:04x},QrTable00               : {:04x}
+QrTable10             : {:04x},QrTable10               : {:04x}
+QrTable20             : {:04x},QrTable20               : {:04x}
+QrTable30             : {:04x},QrTable30               : {:04x}
+RCOMP0                : {:04x},RCOMP0                  : {:04x}
+Средняя температура : {}°C,Average temperature : {}°C
+Сумма %% заряд-разряд : {} (~{} 0-100 циклов),Sum %% charge-discharge : {} (~{} 0-100 cycles)
+Текущая ёмкость                  : {}%,Current capacity             : {}%
+Текущая ёмкость     : {} mAh,Current capacity    : {} mAh
+Текущее напряжение  : {} mV,Current voltage     : {} mV
+Текущий заряд       : {}%,Current charge      : {}%
+Текущий ток         : {} mA,Current draw        : {} mA
+Температура         : {}°C,Temperature         : {}°C
+Температура батареи              : {}°C,Battery temperature          : {}°C

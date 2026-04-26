@@ -6,7 +6,6 @@ original,translation
 "X - выбор, Y - инвертирование выбора, A - открыть, (-) - 2ая панель","X - vali, Y - pööra valik, A - ava, (-) - 2. paneel"
 "X - выбор, Y - инвертирование выбора, ⬅/➡ - смена панели, (-) - закрыть","X - vali, Y - pööra valik, ⬅/➡ - vaheta paneeli, (-) - sulge"
 "ZL/ZR - смена даты, Y - период, X - сортировка, (+) - выбрать пользователя","ZL/ZR - muuda kuupäeva, Y - periood, X - sorteeri, (+) - vali kasutaja"
-892,892
 . Время игры \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m,. Mänguaeg \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m
 Невозможно смонтировать системный раздел,Süsteemi sektsiooni ei saa monteerida
 "DPAD или стики для перемещения, (+) - Настройки","DPAD või kange liigutamiseks, (+) - Seaded"
@@ -35,7 +34,6 @@ SDK подменён,SDK on asendatud
 Удаление игр,Mängude kustutamine
 Удаление игры ,Mängu kustutamine 
 Удаление игры целиком: [{}],Kustuta kogu mäng: [{}]
-"SSID : {}, Пароль: {}","SSID : {}, Parool: {}"
 Удаление каталога LFS,LFS-kataloogi kustutamine
 Удаление контента,Sisu kustutamine
 Удаление настроек родительского контроля...,Vanemliku järelevalve seadete kustutamine...
@@ -57,7 +55,6 @@ SaveFS очищена,SaveFS puhastatud
 Удаление тайтла: [{}],Pealkirja kustutamine: [{}]
 Удаление тикетов ({}),Piletite kustutamine ({})
 Удаление...,Kustutamine...
-TempC0                : {:04x},TempC0                          : {:04x}
 Удалить,Kustuta
 Удалить LFS,Kustuta LFS
 Удалить сохранения,Kustuta salvestused
@@ -75,7 +72,6 @@ Titlekey не может быть инициализирован,Titlekey ei saa
 Удаляется старая запись о контенте...,Vana sisu kirje kustutamine...
 Удаляется старый cnmt.nca...,Vana cnmt.nca kustutamine...
 Удаляется тикет: {}...,Pileti kustutamine: {}...
-Удалять после установки :,Kustuta pärast installimist :
 Удаляются все объекты из альбома для игры,Kõigi üksuste kustutamine mängu albumist
 Удаляются все сохранения для игры,Kõigi mängu salvestuste kustutamine
 Удаляются сохранения...,Kustutan salvestatud andmeid...
@@ -112,7 +108,6 @@ USB Соединение,USB-ühendus
 Установленные тикеты ({}),Installitud piletid ({})
 Файл повреждён и не может быть установлен. Не найдена сигнатура HEAD,Fail on rikutud ja seda ei saa installida. HEAD-signatuuri ei leitud
 Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе root,Fail on rikutud ja seda ei saa installida. HFS0-signatuuri ei leitud juurpartitsioonis
-Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Juhtmevaba LAN-i MAC-aadress : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе secure,Fail on rikutud ja seda ei saa installida. HFS0-signatuuri ei leitud secure-partitsioonis
 Файл повреждён и не может быть установлен. Не найдена сигнатура PFS0,Fail on rikutud ja seda ei saa installida. PFS0 signatuuri ei leitud
 Файл слишком большой для хранилища,Fail on salvestusruumi jaoks liiga suur
@@ -123,7 +118,6 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Juhtmeva
 Форсированный язык    : {},Sunnitud keel    : {}
 Форсированный язык    : {} ({}),Sunnitud keel    : {} ({})
   Автоопределение,  Automaatne tuvastus
-Форсировано вклчение USB 3.0 : {},Sunnitud USB 3.0 lubatud : {}
 Форсировать UTF-8,Sunni UTF-8
 Форсировать язык,Sunni keel
 Французский,Prantsuse
@@ -144,8 +138,6 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Juhtmeva
 "Чтобы вернуться, нажмите B",Tagasiminemiseks vajutage B
 Шадок у Гиби,Shadok Gibis
 Шифрование секции ,Sektsiooni krüpteerimine
-Экзосфера очищает CAL0       : {},Eksofiir puhastab CAL0   : {}
-Экран                  : ({:08X}) {},Ekraan                       : ({:08X}) {}
 Экспорт SDK,SDK eksport
 Экспортировать,Ekspordi
 Экспортировать SDK,Ekspordi SDK
@@ -167,16 +159,7 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Juhtmeva
 Просмотр USB диска [{}],USB-ketta vaatamine [{}]
 Заряд батареи (сырое значение) : {},Aku laetus (toorväärtus) : {}
 ru,ru
-Конфигурация зарядки             : {},Laadimise konfiguratsioon      : {}
-Режим Hi-Z включён               : {},Hi-Z režiim lubatud            : {}
-Зарядка батареи включена         : {},Aku laadimine lubatud          : {}
-Маршрут электропитания           : {},Toite tee                      : {}
-Напряжение источника             : {} mV,Allika pinge                   : {} mV
-Ток источника                    : {} mA,Allika vool                    : {} mA
-Быстрая зарядка разрешена        : {},Kiirlaadimine lubatud          : {}
 [CRC ОШИБКА ФАЙЛА],[FAILI CRC VIGA]
-Целевая прошивка             : {}.{}.{},Siht-püsivara            : {}.{}.{}
-Поддерживаемая версия HOS    : {},Toetatud HOS-i versioon  : {}
 Будет скачана и установлена прошивка системы из файла {}.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены,Süsteemi püsivara laaditakse alla ja installitakse failist {}.\n\nVajuta (+) jätkamiseks\nMis tahes muu nupp tühistamiseks
 Распаковка архива не удалась,Arhiivi lahtipakkimine ebaõnnestus
 Сканирование архива не удалось,Arhiivi skannimine ebaõnnestus
@@ -207,11 +190,6 @@ ru,ru
 Пишется таблица хешей\n,Kirjutatakse räsitabeleid\n
 Пишется подпись видео\n,Video allkirja kirjutamine\n
 Операция завершена\n,Toiming lõpetatud\n
-Предел входного тока (буст)      : {} mA,Sisendvoolu piirang (boost)    : {} mA
-Предел тока быстрой зарядки      : {} mA,Kiirlaadimise voolu piirang    : {} mA
-Напряжение батареи               : {} mV,Aku pinge                      : {} mV
-Контроллер источника получен     : {},Allika kontroller vastu võetud : {}
-OTG Запрошен                     : {},OTG taotletud                  : {}
 "Будет скачана и установлена прошивка системы из файла {}.\n\nВНИМАНИЕ!!! Похоже, эта версия не поддерживается текущей атмосферой.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены","Süsteemi püsivara laaditakse alla ja installitakse failist {}.\n\nHOIATUS!!! Tundub, et see versioon pole praeguse Atmosphere'i poolt toetatud.\n\nVajutage jätkamiseks (+)\nKatkestamiseks vajutage mõnda muud nuppu"
 Копирование файла не удалось,Faili kopeerimine ebaõnnestus
 Daybreak.nro не найден,Daybreak.nro ei leitud
@@ -340,7 +318,6 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 {}: пропускается {}/{} ({:.2f} МБ/сек),{}: vahele jäetakse {}/{} ({:.2f} MB/sek)
 "{}\n\nВосстановление бекапа не удалось\n\nНажмите A - прервать, другая кнопка - продолжить","{}\n\nVarunduse taastamine ebaõnnestus\n\nVajuta A katkestamiseks, muu nupp jätkamiseks"
 {}МБ из {}МБ ({:.2f} МБ/сек)\x1b[0K\r,{}MB / {}MB ({:.2f} MB/sek)\x1b[0K\r
-Ёмкость с завода    : {} mAh,Tehasekapasiteet          : {} mAh
 АВТО,AUTO
 Аватар установлен,Avatar määratud
 Август,August
@@ -383,7 +360,6 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Введите номер DLC,Sisesta DLC number
 Версия  : ,Versioon: 
 Версия {} [v{}],Versioon {} [v{}]
-Версия атмосферы             : {}.{}.{},Atmosphere'i versioon    : {}.{}.{}
 Версия прошивки         : {}.{}.{}-{}.{},Püsivara versioon        : {}.{}.{}-{}.{}
 Вместо пользователя {} использовать:,Kasuta kasutaja {} asemel:
 Внимание! ,Tähelepanu! 
@@ -391,7 +367,6 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Во время разбора\n\n{}\n\nвозникла следующая ошибка:\n\n{},Parsimise ajal\n\n{}\n\ntekkis järgmine viga:\n\n{}
 Во время установки тикетов были ошибки. Проверьте наличие ES сигпатчей,Piletite paigaldamisel ilmnesid vead. Kontrollige ES sigpatches olemasolu
 Во время экспорта были ошибки,Eksportimisel esines vigu
-Возраст батареи                  : {}%,Aku vanus                      : {}%
 Возраст батареи                : {},Aku vanus                             : {}
 Возраст батареи                : {}%,Aku vanus                : {}%
  {} минута, {} minut
@@ -445,9 +420,7 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Выбрать все файлы игры,Vali kõik mängufailid
 Выбрать того же пользователя,Vali sama kasutaja
 Выбрать ту же игру,Vali sama mäng
-Выйти из DBI            :,Välju DBIst                 :
 Выключать экран,Lülita ekraan välja
-Выключить экран         :,Lülita ekraan välja         :
  Запуск игры, Mängu käivitamine
 Вырезать,Lõika
 Выход на рабочий стол,Välju avamenüüsse
@@ -481,7 +454,6 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Достаточное питание            : {},Piisav toide                          : {}
  Переключение на игру, Mängule ümberlülitumine
 Европа,Euroopa
-Есть исправление RCM бага    : {},RCM vea parandus olemas  : {}
 "Есть несохранёные изменения.\nВы хотите их сохранить?\n\n(+) - Да, сохранить\n\n(-) - Выйти без сохранения\n\nДругая кнопка - Отмена","On salvestamata muudatusi.\nKas soovite need salvestada?\n\n(+) - Jah, salvesta\n\n(-) - Välju salvestamata\n\nMuu nupp - Tühista"
 Желаемая версия: {},Soovitud versioon: {}
 Журнал активности,Tegevuslogi
@@ -506,7 +478,6 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Запаковка папки в RomFS,Kausta pakkimine RomFS-i
 Записанное время конца  : {},Salvestatud lõpuaeg  : {}
 Записанное время начала : {},Salvestatud algusaeg : {}
-Запись в CAL0 разрешена      : {},CAL0 kirjutamine lubatud : {}
 Запись в файл...,Kirjutan faili...
 Запись за пределами файла,Kirjutamine väljaspool faili
 Заполнение нулями,Nullidega täitmine
@@ -577,7 +548,6 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
  сортировка по имени игры, sorteeri mängu nime järgi
 Используется ,Kasutusel 
 Используется USB{},Kasutatakse USB{}
-Источник питания                 : {},Toiteallikas                   : {}
 Итальянский,Itaalia
 Ищется control для ProgramId {},Otsitakse control'i ProgramId {} jaoks
 Ищется exefs/romfs для ProgramId {},Otsitakse exefs/romfs ProgramId {} jaoks
@@ -617,7 +587,6 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Место в  NAND         : {},Ruum NAND-is         : {}
 Место на SD карте     : {},SD-kaardi ruum     : {}
 Место на приставке не занято,Konsoolil pole ruumi hõivatud
-Место установки         :,Paigalduskoht               :
 Мета контент отсутствует,Meta sisu puudub
 Миссия провалена\n\nНажмите А для выхода,Missioon ebaõnnestus\n\nVäljumiseks vajuta A
 Миссия успешна\n\nОсталось ходов: {}\n\nНажмите А для выхода,Missioon edukas\n\nKäike jäänud: {}\n\nVajuta A väljumiseks
@@ -635,7 +604,6 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Найден {} зарегистрированный контент-файл,Leitud {} registreeritud sisufail
 Найден {} контент-файл,Leitud {} sisufail
 Найден {} пользователь,Leitud {} kasutaja
-%% заряд-разряд     : {},%% laadimine-tühjendamine : {}
 Найден {} потерянный контент-файл,Leitud {} orbandunud sisufail
 Найден {} файл,Leitud {} fail
 Найден {} файл с ошибками,Leitud {} fail vigadega
@@ -770,15 +738,12 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Общее число запусков  : -,Käivituste koguarv : -
 Общее число игровых сессий    : {},Mängusessioonide koguarv      : {}
 Общие,Üldine
-Общий размер передачи   :,Ülekande kogumaht           :
-Общий размер установки  :,Paigalduse kogumaht         :
 Общий размер установки: {},Paigalduse kogumaht: {}
 Объединение списков,Loendite ühendamine
 Объект {} не допустим,Objekt {} ei ole lubatud
 Объект {} не может быть создан,Objekti {} ei saa luua
 Объект не открыт для редактирования,Objekt pole redigeerimiseks avatud
 Объект удалён,Objekt kustutatud
-Bluetooth MAC адрес    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC-aadress        : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Объект уже открыт для редактирования,Objekt on juba redigeerimiseks avatud
 Огибка получения адреса сокета: {} {},Viga sokli aadressi hankimisel: {} {}
 Ожидаемый размер: {},Eeldatav suurus: {}
@@ -799,7 +764,6 @@ CDIR в листинге,CDIR loendis
 Осталось ходов:    {:>3},Käike jäänud:    {:>3}
 Остаток файла пропускается,Faili ülejäänud osa jäetakse vahele
 Отключение связи с мобильным приложением...,Mobiilirakendusega ühenduse katkestamine...
-Configuration Id1      : {},Configuration Id1            : {}
 Открываем папку прошивки...,Avame püsivara kausta...
 Открыть,Ava
 Открыть вторую панель,Ava teine paneel
@@ -896,7 +860,6 @@ DramId                  : {} ({}),DramId                   : {} ({})
 Переименование объекта,Objekti ümbernimetamine
 Переименовать,Nimeta ümber
 Перейти к первой странице,Mine esimesele lehele
-Emummc включён               : {},Emummc lubatud           : {}
 Перейти к последней странице,Mine viimasele lehele
 Перейти к странице...,Mine lehele...
 Переместить,Liiguta
@@ -917,7 +880,6 @@ FTP сервер (нажмите B для остановки),FTP server (peatam
 Платформа               : {},Platvorm                 : {}
 Подготовка...,Ettevalmistamine...
 Подключаемся к {}...,Ühendamine {}...
-FullCap               : {:04x} ({} mAh),FullCap                         : {:04x} ({} mAh)
 Подключено к {}:{},Ühendatud {}:{}
 Подмена SDK,SDK asendamine
 Подменить SDK,Asenda SDK
@@ -928,7 +890,6 @@ FullCap               : {:04x} ({} mAh),FullCap                         : {:04x}
 Подсчитываются объекты в альбоме на SD карте,Loendatakse objekte albumis SD-kaardil
 Подсчёт метаданных...,Metaandmete loendamine...
 Подсчёт основного хэша,Peamise räsi arvutamine
-FullCapNom            : {:04x} ({} mAh),FullCapNom                      : {:04x} ({} mAh)
 Подсчёт хэша секции,Sektsiooni räsi arvutamine
 "Пожалуйста, подключите вашу консоль к ПК кабелем USB Type-C или нажмите B",Palun ühendage oma konsool arvutiga USB Type-C kaabli abil või vajutage B
 "Пожалуйста, подождите...",Palun oodake...
@@ -949,9 +910,6 @@ Get chargeInfoFields : {},Get chargeInfoFields : {}
 Показывать размер LFS (долго),Näita LFS suurust (aeglane)
 Показывать секунды,Kuva sekundeid
 Показывать часы в статусе,Näita kella olekus
-Поколение ключа              : {},Võtme generatsioon       : {}
-Git commit hash              : {:016X},Git commit hash          : {:016X}
-Полная ёмкость      : {} mAh,Täismaht                  : {} mAh
 Получен список из {} записей,Saadi nimekiri {} kirjega
 Получен список из {} записи,Saadi nimekiri {} kirjega
 Получение версий установленных игр,Paigaldatud mängude versioonide hankimine
@@ -962,7 +920,6 @@ Git commit hash              : {:016X},Git commit hash          : {:016X}
 Получение файла: {} МБ ({:.2f} МБ/сек),Faili vastuvõtmine: {} MB ({:.2f} MB/s)
 Получение файла: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Faili vastuvõtmine: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m MB/sek)
    Получение списка бекапов...{}/{}    ,   Varunduste nimekirja hankimine...{}/{}    
-IavgEmpty             : {:04x},IavgEmpty                       : {:04x}
 Полученное время: {},Saadud aeg: {}
 Полученный размер: {},Saadud suurus: {}
 "Получено: {}, ({:.2f} МБ/сек)","Vastu võetud: {}, ({:.2f} MB/s)"
@@ -978,8 +935,6 @@ IavgEmpty             : {:04x},IavgEmpty                       : {:04x}
 Посылается файл: {},Faili saatmine: {}
 Посылается файл: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Faili saatmine: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m MB/s)
 Превышен размер командного буфера,Käsupuhvri suurus ületatud
-Предел входного тока             : {} mA,Sisendvoolu limiit             : {} mA
-Предел напряжения заряда батареи : {} mV,Aku laadimispinge limiit       : {} mV
 LFS мод.: -,LFS režiim: -
 Предназначение          : {},Otstarve                 : {}
 Предоставить по FTP,Paku FTP kaudu
@@ -1074,14 +1029,11 @@ Nintendo Account не задан,Nintendo Account pole määratud
 Сервер предлагает выполнить обновление DBI\n\nНажите (+) для согласия\nЛюбую другую кнопку для отмены,Server pakub DBI värskendust\n\nVajutage (+) kinnitamiseks\nMis tahes muud nuppu tühistamiseks
 Серийный # прочитанный  : {},Seerianumber loetud      : {}
 Серийный # угаданный    : {},Seerianumber ära arvatud : {}
-Серийный номер         : {},Seerianumber                 : {}
 Сессии,Seansid
 Сессия закрыта,Seanss suletud
 Сессия открыта,Seanss avatud
-Силовая роль                     : {},Toiterolli                     : {}
 Синхронизация времени по NTP,NTP aja sünkroniseerimine
 Системные приложения,Süsteemirakendused
-QrTable00             : {:04x},QrTable00                       : {:04x}
 Системный по умолчанию,Süsteemi vaikeväärtus
 Сканирование директорий...,Kataloogide skaneerimine...
 Сканирование игр...,Mängude skaneerimine...
@@ -1092,7 +1044,6 @@ QrTable00             : {:04x},QrTable00                       : {:04x}
 Смещать курсор после выделения,Liiguta kursorit pärast valikut
 Собираются сведения...,Kogutakse teavet...
 Соединение сброшено,Ühendus lähtestatud
-QrTable10             : {:04x},QrTable10                       : {:04x}
 Сожжено предохранителей : {},Põletatud kaitsmeid      : {}
 Создавать LFS папку,Loo LFS kaust
 Создан zip-файл: ,Zip-fail loodud: 
@@ -1103,7 +1054,6 @@ QrTable10             : {:04x},QrTable10                       : {:04x}
 Создание дампа ({}),Tõmmise loomine ({})
 Создание дампа: {},Tõmmise loomine: {}
 Создание единого репака,Ühtse repaki loomine
-QrTable20             : {:04x},QrTable20                       : {:04x}
 Создание записи об игре...,Mängukirje loomine...
 Создание каталога: ,Kataloogi loomine: 
 Создание новой записи об игре...,Uue mängukirje loomine...
@@ -1114,7 +1064,6 @@ QrTable20             : {:04x},QrTable20                       : {:04x}
 Создание таблицы имён,Nimetabeli loomine
 Создание тела файла,Faili sisu loomine
 Создание точки доступа...,Pääsupunkti loomine...
-QrTable30             : {:04x},QrTable30                       : {:04x}
 Создание фейковой записи... ,Võltskirje loomine... 
 Создание хэш таблицы,Räsitabeli loomine
 Создание ярлыка,Otsetee loomine
@@ -1125,7 +1074,6 @@ QrTable30             : {:04x},QrTable30                       : {:04x}
 Создать новый каталог...,Loo uus kataloog...
 Создать новый файл...,Loo uus fail...
 Создать ярлык,Loo otsetee
-RCOMP0                : {:04x},RCOMP0                          : {:04x}
 Создать ярлык для hbmenu,Loo otsetee hbmenu jaoks
 Создать ярлык на рабочий стол для DBI...,Loo DBI töölaua otsetee...
 Создать ярлык с аргументами...,Loo otsetee argumentidega...
@@ -1139,27 +1087,18 @@ RTC запущены (приблизительно) : {},RTC käivitatud (ligika
 Сохранения удалённых игр ({}),Kustutatud mängude salvestused ({})
 Сохранения установленных игр ({}),Paigaldatud mängude salvestused ({})
 Сохранёные в системе параметры котроллера батареи,Süsteemi salvestatud aku kontrolleri parameetrid
-Средняя температура : {}°C,Keskmine temperatuur      : {}°C
 Статистика игры ,Mängu statistika 
 Строка поиска: ,Otsingustring: 
-Сумма %% заряд-разряд : {} (~{} 0-100 циклов),Kokku %% laadimine-tühjendamine : {} (~{} 0-100 tsüklit)
 Существующая запись об игре не найдена,Olemasolevat mängu kirjet ei leitud
 Существующее сохранение не найдено и новое не может быть создано,Olemasolevat salvestust ei leitud ja uut ei saa luua
 SDK {} уже был экспортирован: {},SDK {} on juba eksporditud: {}
 Тайтл не установлен,Pealkiri pole paigaldatud
 Тайтл установлен,Pealkiri paigaldatud
 Тайтлы с ошибками:,Pealkirjad vigadega:
-Текущая ёмкость                  : {}%,Praegune mahtuvus              : {}%
-Текущая ёмкость     : {} mAh,Praegune mahtuvus         : {} mAh
 Текущее время: {},Praegune aeg: {}
-Текущее напряжение  : {} mV,Praegune pinge            : {} mV
-Текущий заряд       : {}%,Praegune laetase          : {}%
-Текущий ток         : {} mA,Praegune vool             : {} mA
 SDK на подмену не найдены,Asendamiseks SDK-d ei leitud
 Тема,Teema
 Тема отображения,Kuvamisteema
-Температура         : {}°C,Temperatuur               : {}°C
-Температура батареи              : {}°C,Aku temperatuur                : {}°C
 Тикет исправлен,Pilet parandatud
 Тикеты,Piletid
 Тикеты не найдены,Pileteid ei leitud
@@ -1167,40 +1106,97 @@ SDK на подмену не найдены,Asendamiseks SDK-d ei leitud
 Тип источника питания          : {},Toiteallika tüüp                      : {}
 864,864
 881,881
-"больше жертв, тем выше вероятность,","tõenäosus, et lõpuks kõik õnnestub.'"
-быстро разгадали тайный замысел,otsustasid korralikult nalja teha. Nad
-"оцепили его там со всех сторон,","kord, kui ta näeb kiipi, võtavad"
-"Или, говоря иными словами: «Чем","'Mida rohkem ohvreid, seda suurem"
-"тактика буксует, но они твёрдо верят",usuvad kindlalt sellesse ühte
-при котором всё заработает… И они,hakkab tööle... Ja nad kiirustavad läbi
-"и теперь всякий раз, когда он",naabrid selle ära.
-лишь временным залогом величия».,suuruse pandiks.' Või teiste sõnadega:
-"в тот один шанс из миллиона,","võimalusse miljonist, mille puhul kõik"
-чтобы за ними пришла победа».,võit.» I. I. Pizdobolov. Läbimurde
-"такой беды, которая не являлась бы","õnnetust, mis ei oleks vaid ajutine"
-"из своих складов с техникой, но","kõigist külgedest ära, ja nüüd iga"
-"999999 первых фатальных ошибок,","fataalset viga, et nende järel tuleks"
-спешат поскорее совершить те самые,tegema need samad 999999 esimest
-"Те, будучи хитрыми из-за интернетов,",mõistsid kiiresti salaplaani ja
-прямиком к соседям за деталями.,"Need, olles interneti tõttu kavalad,"
-исправно принося отрицательный рост.,usinalt negatiivset kasvu. Kogu saladus
-догмате их глубинной логики: «Нет,fundamentaalses dogmas: 'Pole sellist
-что в финале всё получится». Их,"Nende taktika vänkerdab, kuid nad"
-"прямо из техники, стоящей в садах.",tehnikast. Soodest saadeti vabatahtlik
-и решили всласть поглумиться. Они,lubasid külalisel ronida ühte oma
-"видит чип, соседи его отбирают.»",guest to climb into one of their
-"падают, потому что чипов не хватает",sihtimissüsteemidesse ega унитазidesse.
-"ни в системах наводки, ни в унитазах.",Aga naabritel kiipe väidetavalt
-позволили гостю залезть в один,"tehnikalaost, aga piirdasid ta seal"
-«У жителей болот всё идёт по плану.,«Sooelanikel läheb kõik plaanipäraselt.
-"Процесс обнуления продолжается,","Nullimise protsess jätkub, tuues"
-А у соседей чипы якобы добывают,kaevandatakse otse aedades seisvast
-С болот был заслан доброволец,otse naabrite juurde detailide järele.
-"          Бункер, госиздат «Зазеркалье».",          «Peeglitagune». Peapoliitik t
-  И. И. Пиздоболов. Ритмы прорыва.,"  rütmid. Bunker, riigikirjastus"
-"    Главный стратег объявил, что ракеты","    raketid kukuvad, sest kiipe ei jätk"
-    Весь секрет таится в фундаментальном,    peitub nende sügava loogika
-"          Бункер, госиздат «Зазеркалье».","          Бункер, госиздат «Зазеркалье»."
-  И. И. Пиздоболов. Ритмы прорыва.,  И. И. Пиздоболов. Ритмы прорыва.
-"    Главный стратег объявил, что ракеты","    Главный стратег объявил, что ракеты"
-    Весь секрет таится в фундаментальном,    Весь секрет таится в фундаментальном
+"          Париж, издательство Грассе.",          «Peeglitagune». Peapoliitik t
+"больше шансов, что оно заработает». Их","tõenäosus, et lõpuks kõik õnnestub.'"
+быстро проникли в планы шадоков и,otsustasid korralikult nalja teha. Nad
+"всякий раз, когда растение расцветает","kord, kui ta näeb kiipi, võtavad"
+"выражениях: «Чем больше неудач, тем","'Mida rohkem ohvreid, seda suurem"
+"вычислили, что у них есть по крайней",usuvad kindlalt sellesse ühte
+заработает… И они торопятся поскорее,hakkab tööle... Ja nad kiirustavad läbi
+"и дает транзистор, они мчатся, чтобы",naabrid selle ära.
+"и не кончилось успехом». Или, в других",suuruse pandiks.' Või teiste sõnadega:
+"мере один шанс из миллиона, что она","võimalusse miljonist, mille puhul kõik"
+миллионная заработает».,võit.» I. I. Pizdobolov. Läbimurde
+"ничего, что бы непрерывно продолжалось","õnnetust, mis ei oleks vaid ajutine"
+"но окружили его со всех сторон, и","kõigist külgedest ära, ja nüüd iga"
+"опытов, чтобы быть уверенными, что","fataalset viga, et nende järel tuleks"
+осуществить 999999 первых неудачных,tegema need samad 999999 esimest
+"очень умные благодаря своим шляпам,",mõistsid kiiresti salaplaani ja
+"планету гиби искать транзисторы. Гиби,","Need, olles interneti tõttu kavalad,"
+постоянно кончаясь неудачами.,usinalt negatiivset kasvu. Kogu saladus
+принципов шадокской логики: «Нет,fundamentaalses dogmas: 'Pole sellist
+"ракета еще несовершенна, но они","Nende taktika vänkerdab, kuid nad"
+"растений, произрастающих на огородах.",tehnikast. Soodest saadeti vabatahtlik
+решили позабавиться. Они позволили,lubasid külalisel ronida ühte oma
+собрать урожай прежде шадока.,​
+"терпят неудачу потому, что не хватает",sihtimissüsteemidesse ega унитазidesse.
+транзисторов в системах безопасности.,Aga naabritel kiipe väidetavalt
+"шадоку забраться в один из их огородов,","tehnikalaost, aga piirdasid ta seal"
+  Жак Руксель. Великолепие навыворот.,"  rütmid. Bunker, riigikirjastus"
+«У шадоков ситуация удовлетворительна.,«Sooelanikel läheb kõik plaanipäraselt.
+"    Великий колдун сказал, что ракеты","    raketid kukuvad, sest kiipe ei jätk"
+"Испытания ракет продолжаются,","Nullimise protsess jätkub, tuues"
+    Дело здесь в одном из основных,    peitub nende sügava loogika
+Но у гиби транзисторы собирают с,kaevandatakse otse aedades seisvast
+Решено послать одного из шадоков на,otse naabrite juurde detailide järele.
+original,original
+"SSID : {}, Пароль: {}","SSID : {}, Parool: {}"
+TempC0                : {:04x},TempC0                  : {:04x}
+Удалять после установки :,Kustuta pärast paigaldamist :
+Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC aadress : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0 : {},USB 3.0 sunnitud lubamine : {}
+Экзосфера очищает CAL0       : {},Exosphere puhastab CAL0   : {}
+Экран                  : ({:08X}) {},Ekraan                   : ({:08X}) {}
+Конфигурация зарядки             : {},Laadimise konfiguratsioon   : {}
+Режим Hi-Z включён               : {},Hi-Z režiim sisse lülitatud : {}
+Зарядка батареи включена         : {},Aku laadimine lubatud       : {}
+Маршрут электропитания           : {},Toitevarustuse marsruut     : {}
+Напряжение источника             : {} mV,Allika pinge                : {} mV
+Ток источника                    : {} mA,Allika vool                 : {} mA
+Быстрая зарядка разрешена        : {},Kiirlaadimise lubatud       : {}
+Целевая прошивка             : {}.{}.{},Sihtfirmware              : {}.{}.{}
+Поддерживаемая версия HOS    : {},Toetatud HOS versioon     : {}
+Предел входного тока (буст)      : {} mA,Sisendvoolu limiit (boost)  : {} mA
+Предел тока быстрой зарядки      : {} mA,Kiirlaadimise voolupiir     : {} mA
+Напряжение батареи               : {} mV,Aku pinge                   : {} mV
+Контроллер источника получен     : {},Allika kontroller saadud    : {}
+OTG Запрошен                     : {},OTG taotletud               : {}
+Ёмкость с завода    : {} mAh,Tehasekapasiteet          : {} mAh
+Версия атмосферы             : {}.{}.{},Atmosphere'i versioon     : {}.{}.{}
+Возраст батареи                  : {}%,Aku vanus                   : {}%
+Выйти из DBI            :,Välju DBI-st                :
+Выключить экран         :,Lülita ekraan välja         :
+Есть исправление RCM бага    : {},RCM vea parandus olemas   : {}
+Запись в CAL0 разрешена      : {},CAL0 kirjutamine lubatud  : {}
+Источник питания                 : {},Toiteallikas                : {}
+Место установки         :,Paigalduskoht               :
+%% заряд-разряд     : {},%% laadimine-tühjendamine : {}
+Общий размер передачи   :,Ülekande kogumaht           :
+Общий размер установки  :,Paigalduse kogumaht         :
+Bluetooth MAC адрес    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC aadress    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Configuration Id1      : {},Configuration Id1        : {}
+Emummc включён               : {},Emummc lubatud            : {}
+FullCap               : {:04x} ({} mAh),FullCap                 : {:04x} ({} mAh)
+FullCapNom            : {:04x} ({} mAh),FullCapNom              : {:04x} ({} mAh)
+Поколение ключа              : {},Võtme genereerimine       : {}
+Git commit hash              : {:016X},Git commit hash           : {:016X}
+Полная ёмкость      : {} mAh,Täismaht                  : {} mAh
+IavgEmpty             : {:04x},IavgEmpty               : {:04x}
+Предел входного тока             : {} mA,Sisendvoolu limiit          : {} mA
+Предел напряжения заряда батареи : {} mV,Aku laadimispinge limiit    : {} mV
+Серийный номер         : {},Seerianumber             : {}
+Силовая роль                     : {},Toiterolli                  : {}
+QrTable00             : {:04x},QrTable00               : {:04x}
+QrTable10             : {:04x},QrTable10               : {:04x}
+QrTable20             : {:04x},QrTable20               : {:04x}
+QrTable30             : {:04x},QrTable30               : {:04x}
+RCOMP0                : {:04x},RCOMP0                  : {:04x}
+Средняя температура : {}°C,Keskmine temperatuur      : {}°C
+Сумма %% заряд-разряд : {} (~{} 0-100 циклов),Summa %% laad-tühjendus : {} (~{} 0-100 tsüklit)
+Текущая ёмкость                  : {}%,Praegune mahtuvus           : {}%
+Текущая ёмкость     : {} mAh,Praegune mahtuvus         : {} mAh
+Текущее напряжение  : {} mV,Praegune pinge            : {} mV
+Текущий заряд       : {}%,Praegune laetase          : {}%
+Текущий ток         : {} mA,Praegune vool             : {} mA
+Температура         : {}°C,Temperatuur               : {}°C
+Температура батареи              : {}°C,Aku temperatuur             : {}°C

@@ -6,7 +6,6 @@ original,translation
 "X - выбор, Y - инвертирование выбора, A - открыть, (-) - 2ая панель","X - atlasīt, Y - invertēt atlasi, A - atvērt, (-) - 2. panelis"
 "X - выбор, Y - инвертирование выбора, ⬅/➡ - смена панели, (-) - закрыть","X - atlasīt, Y - invertēt atlasi, ⬅/➡ - mainīt paneli, (-) - aizvērt"
 "ZL/ZR - смена даты, Y - период, X - сортировка, (+) - выбрать пользователя","ZL/ZR - mainīt datumu, Y - periods, X - kārtošana, (+) - atlasīt lietotāju"
-892,892
 . Время игры \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m,. Spēles laiks \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m
 Невозможно смонтировать системный раздел,Nevar montēt sistēmas nodalījumu
 "DPAD или стики для перемещения, (+) - Настройки","DPAD vai sviras, lai pārvietotos, (+) - Iestatījumi"
@@ -35,7 +34,6 @@ SDK подменён,SDK nomainīts
 Удаление игр,Spēļu dzēšana
 Удаление игры ,Spēles dzēšana 
 Удаление игры целиком: [{}],Pilnīga spēles dzēšana: [{}]
-"SSID : {}, Пароль: {}","SSID : {}, Parole: {}"
 Удаление каталога LFS,LFS direktorija dzēšana
 Удаление контента,Satura dzēšana
 Удаление настроек родительского контроля...,Vecāku kontroles iestatījumu dzēšana...
@@ -57,7 +55,6 @@ SaveFS очищена,SaveFS notīrīta
 Удаление тайтла: [{}],Virsraksta dzēšana: [{}]
 Удаление тикетов ({}),Biļešu dzēšana ({})
 Удаление...,Dzēšana...
-TempC0                : {:04x},TempC0                : {:04x}
 Удалить,Dzēst
 Удалить LFS,Dzēst LFS
 Удалить сохранения,Dzēst saglabātos datus
@@ -75,7 +72,6 @@ Titlekey не может быть инициализирован,Titlekey nevar 
 Удаляется старая запись о контенте...,Vecā satura ieraksta dzēšana...
 Удаляется старый cnmt.nca...,Vecā cnmt.nca dzēšana...
 Удаляется тикет: {}...,Biļetes dzēšana: {}...
-Удалять после установки :,Dzēst pēc instalēšanas       :
 Удаляются все объекты из альбома для игры,Visu vienumu dzēšana no spēles albuma
 Удаляются все сохранения для игры,Visu spēles saglabāto datu dzēšana
 Удаляются сохранения...,Dzēš saglabātos datus...
@@ -112,7 +108,6 @@ USB Соединение,USB savienojums
 Установленные тикеты ({}),Instalētās biļetes ({})
 Файл повреждён и не может быть установлен. Не найдена сигнатура HEAD,Fails ir bojāts un to nevar instalēt. HEAD paraksts nav atrasts
 Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе root,Fails ir bojāts un to nevar instalēt. HFS0 paraksts nav atrasts root nodalījumā
-Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bezvadu LAN MAC adrese : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе secure,Fails ir bojāts un to nevar instalēt. HFS0 paraksts nav atrasts secure nodalījumā
 Файл повреждён и не может быть установлен. Не найдена сигнатура PFS0,Fails ir bojāts un to nevar instalēt. PFS0 paraksts nav atrasts
 Файл слишком большой для хранилища,Fails ir pārāk liels krātuvei
@@ -123,7 +118,6 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bezvadu 
 Форсированный язык    : {},Piespiedu valoda    : {}
 Форсированный язык    : {} ({}),Piespiedu valoda    : {} ({})
   Автоопределение,  Automātiskā noteikšana
-Форсировано вклчение USB 3.0 : {},USB 3.0 piespiedu iespējošana : {}
 Форсировать UTF-8,Uzspiest UTF-8
 Форсировать язык,Uzspiest valodu
 Французский,Franču
@@ -144,8 +138,6 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bezvadu 
 "Чтобы вернуться, нажмите B","Lai atgrieztos, nospiediet B"
 Шадок у Гиби,Šadoks pie Gibi
 Шифрование секции ,Sekcijas šifrēšana
-Экзосфера очищает CAL0       : {},Eksosfēra tīra CAL0           : {}
-Экран                  : ({:08X}) {},Ekrāns                 : ({:08X}) {}
 Экспорт SDK,SDK eksports
 Экспортировать,Eksportēt
 Экспортировать SDK,Eksportēt SDK
@@ -167,16 +159,7 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bezvadu 
 Просмотр USB диска [{}],USB diska skatīšana [{}]
 Заряд батареи (сырое значение) : {},Akumulatora uzlāde (neapstrādāta vērtība) : {}
 ru,ru
-Конфигурация зарядки             : {},Uzlādes konfigurācija                : {}
-Режим Hi-Z включён               : {},Hi-Z režīms iespējots                : {}
-Зарядка батареи включена         : {},Akumulatora uzlāde iespējota         : {}
-Маршрут электропитания           : {},Strāvas padeves ceļš                 : {}
-Напряжение источника             : {} mV,Avota spriegums                      : {} mV
-Ток источника                    : {} mA,Avota strāva                         : {} mA
-Быстрая зарядка разрешена        : {},Ātrā uzlāde atļauta                  : {}
 [CRC ОШИБКА ФАЙЛА],[FAILA CRC KĻŪDA]
-Целевая прошивка             : {}.{}.{},Mērķa programmaparatūra       : {}.{}.{}
-Поддерживаемая версия HOS    : {},Atbalstītā HOS versija        : {}
 Будет скачана и установлена прошивка системы из файла {}.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены,"Sistēmas programmaparatūra tiks lejupielādēta un instalēta no faila {}.\n\nNospiediet (+) lai turpinātu\nJebkuru citu pogu, lai atceltu"
 Распаковка архива не удалась,Arhīva izpakošana neizdevās
 Сканирование архива не удалось,Arhīva skenēšana neizdevās
@@ -207,11 +190,6 @@ ru,ru
 Пишется таблица хешей\n,Tiek rakstīta jaucējkodu tabula\n
 Пишется подпись видео\n,Tiek rakstīts video paraksts\n
 Операция завершена\n,Operācija pabeigta\n
-Предел входного тока (буст)      : {} mA,Ieejas strāvas ierobežojums (boost)  : {} mA
-Предел тока быстрой зарядки      : {} mA,Ātrās uzlādes strāvas ierobežojums   : {} mA
-Напряжение батареи               : {} mV,Akumulatora spriegums                : {} mV
-Контроллер источника получен     : {},Avota kontrolleris saņemts           : {}
-OTG Запрошен                     : {},OTG pieprasīts                       : {}
 "Будет скачана и установлена прошивка системы из файла {}.\n\nВНИМАНИЕ!!! Похоже, эта версия не поддерживается текущей атмосферой.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены","Sistēmas programmaparatūra tiks lejupielādēta un instalēta no faila {}.\n\nUZMANĪBU!!! Šķiet, ka šī versija netiek atbalstīta ar pašreizējo Atmosphere.\n\nNospiediet (+), lai turpinātu\nNospiediet jebkuru citu pogu, lai atceltu"
 Копирование файла не удалось,Neizdevās nokopēt failu
 Daybreak.nro не найден,Daybreak.nro nav atrasts
@@ -340,7 +318,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 {}: пропускается {}/{} ({:.2f} МБ/сек),{}: izlaiž {}/{} ({:.2f} MB/sek)
 "{}\n\nВосстановление бекапа не удалось\n\nНажмите A - прервать, другая кнопка - продолжить","{}\n\nDublējuma atjaunošana neizdevās\n\nNospiediet A pārtraukt, citu pogu turpināt"
 {}МБ из {}МБ ({:.2f} МБ/сек)\x1b[0K\r,{}MB no {}MB ({:.2f} MB/sek)\x1b[0K\r
-Ёмкость с завода    : {} mAh,Rūpnīcas kapacitāte    : {} mAh
 АВТО,AUTO
 Аватар установлен,Avatars iestatīts
 Август,Augusts
@@ -383,7 +360,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Введите номер DLC,Ievadiet DLC numuru
 Версия  : ,Versija : 
 Версия {} [v{}],Versija {} [v{}]
-Версия атмосферы             : {}.{}.{},Atmosphere versija            : {}.{}.{}
 Версия прошивки         : {}.{}.{}-{}.{},Programmaparatūras versija : {}.{}.{}-{}.{}
 Вместо пользователя {} использовать:,Izmantot lietotāja {} vietā:
 Внимание! ,Uzmanību! 
@@ -391,7 +367,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Во время разбора\n\n{}\n\nвозникла следующая ошибка:\n\n{},Parsējot\n\n{}\n\nradās šāda kļūda:\n\n{}
 Во время установки тикетов были ошибки. Проверьте наличие ES сигпатчей,Biļešu instalēšanas laikā radās kļūdas. Pārbaudiet ES sigpatches esamību
 Во время экспорта были ошибки,Eksportēšanas laikā radās kļūdas
-Возраст батареи                  : {}%,Baterijas vecums                     : {}%
 Возраст батареи                : {},Baterijas vecums                          : {}
 Возраст батареи                : {}%,Baterijas vecums                : {}%
  {} минута, {} minūte
@@ -445,9 +420,7 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Выбрать все файлы игры,Atlasīt visus spēles failus
 Выбрать того же пользователя,Izvēlēties to pašu lietotāju
 Выбрать ту же игру,Izvēlēties to pašu spēli
-Выйти из DBI            :,Iziet no DBI                 :
 Выключать экран,Izslēgt ekrānu
-Выключить экран         :,Izslēgt ekrānu               :
  Запуск игры, Spēles palaišana
 Вырезать,Izgriezt
 Выход на рабочий стол,Iziet uz sākuma izvēlni
@@ -481,7 +454,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Достаточное питание            : {},Pietiekama barošana                       : {}
  Переключение на игру, Pārslēgšanās uz spēli
 Европа,Eiropa
-Есть исправление RCM бага    : {},RCM kļūdas labojums ir        : {}
 "Есть несохранёные изменения.\nВы хотите их сохранить?\n\n(+) - Да, сохранить\n\n(-) - Выйти без сохранения\n\nДругая кнопка - Отмена","Ir nesaglabātas izmaiņas.\nVai vēlaties tās saglabāt?\n\n(+) - Jā, saglabāt\n\n(-) - Iziet nesaglabājot\n\nCita poga - Atcelt"
 Желаемая версия: {},Vēlamā versija: {}
 Журнал активности,Darbību žurnāls
@@ -506,7 +478,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Запаковка папки в RomFS,Mapes iesaiņošana RomFS
 Записанное время конца  : {},Ierakstītais beigu laiks  : {}
 Записанное время начала : {},Ierakstītais sākuma laiks : {}
-Запись в CAL0 разрешена      : {},CAL0 rakstīšana atļauta       : {}
 Запись в файл...,Raksta failā...
 Запись за пределами файла,Rakstīšana ārpus faila
 Заполнение нулями,Aizpildīšana ar nullēm
@@ -577,7 +548,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
  сортировка по имени игры, kārtot pēc spēles nosaukuma
 Используется ,Izmantots 
 Используется USB{},Tiek izmantots USB{}
-Источник питания                 : {},Barošanas avots                      : {}
 Итальянский,Itāļu
 Ищется control для ProgramId {},Meklē control priekš ProgramId {}
 Ищется exefs/romfs для ProgramId {},Meklē exefs/romfs priekš ProgramId {}
@@ -617,7 +587,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Место в  NAND         : {},Vieta NAND           : {}
 Место на SD карте     : {},Vieta uz SD kartes     : {}
 Место на приставке не занято,Konsolē nav aizņemtas vietas
-Место установки         :,Instalācijas vieta           :
 Мета контент отсутствует,Meta saturs nav pieejams
 Миссия провалена\n\nНажмите А для выхода,"Misija neizdevās\n\nNospiediet A, lai izietu"
 Миссия успешна\n\nОсталось ходов: {}\n\nНажмите А для выхода,"Misija veiksmīga\n\nAtlikuši gājieni: {}\n\nNospiediet A, lai izietu"
@@ -635,7 +604,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Найден {} зарегистрированный контент-файл,Atrasts {} reģistrēts satura fails
 Найден {} контент-файл,Atrasts {} satura fails
 Найден {} пользователь,Atrasts {} lietotājs
-%% заряд-разряд     : {},%% uzlāde-izlāde       : {}
 Найден {} потерянный контент-файл,Atrasts {} bāreņa satura fails
 Найден {} файл,Atrasts {} fails
 Найден {} файл с ошибками,Atrasts {} fails ar kļūdām
@@ -770,15 +738,12 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Общее число запусков  : -,Kopējais palaišanas reižu skaits : -
 Общее число игровых сессий    : {},Kopējais spēļu sesiju skaits : {}
 Общие,Vispārīgi
-Общий размер передачи   :,Kopējais pārsūtīšanas izmērs :
-Общий размер установки  :,Kopējais instalācijas izmērs :
 Общий размер установки: {},Kopējais instalācijas izmērs: {}
 Объединение списков,Apvienot sarakstus
 Объект {} не допустим,Objekts {} nav atļauts
 Объект {} не может быть создан,Objektu {} nevar izveidot
 Объект не открыт для редактирования,Objekts nav atvērts rediģēšanai
 Объект удалён,Objekts izdzēsts
-Bluetooth MAC адрес    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC adrese   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Объект уже открыт для редактирования,Objekts jau ir atvērts rediģēšanai
 Огибка получения адреса сокета: {} {},"Kļūda, iegūstot ligzdas adresi: {} {}"
 Ожидаемый размер: {},Paredzamais izmērs: {}
@@ -799,7 +764,6 @@ CDIR в листинге,CDIR sarakstā
 Осталось ходов:    {:>3},Atlikušie gājieni:    {:>3}
 Остаток файла пропускается,Atlikušā faila daļa tiek izlaista
 Отключение связи с мобильным приложением...,Atvienojas no mobilās lietotnes...
-Configuration Id1      : {},Configuration Id1      : {}
 Открываем папку прошивки...,Atver programmaparatūras mapi...
 Открыть,Atvērt
 Открыть вторую панель,Atvērt otro paneli
@@ -896,7 +860,6 @@ DramId                  : {} ({}),DramId                     : {} ({})
 Переименование объекта,Objekta pārdēvēšana
 Переименовать,Pārdēvēt
 Перейти к первой странице,Doties uz pirmo lappusi
-Emummc включён               : {},Emummc iespējots              : {}
 Перейти к последней странице,Doties uz pēdējo lappusi
 Перейти к странице...,Doties uz lapu...
 Переместить,Pārvietot
@@ -917,7 +880,6 @@ FTP сервер (нажмите B для остановки),"FTP serveris (nos
 Платформа               : {},Platforma                  : {}
 Подготовка...,Sagatavošana...
 Подключаемся к {}...,Savienojas ar {}...
-FullCap               : {:04x} ({} mAh),FullCap               : {:04x} ({} mAh)
 Подключено к {}:{},Savienots ar {}:{}
 Подмена SDK,SDK aizstāšana
 Подменить SDK,Aizstāt SDK
@@ -928,7 +890,6 @@ FullCap               : {:04x} ({} mAh),FullCap               : {:04x} ({} mAh)
 Подсчитываются объекты в альбоме на SD карте,Skaita objektus albumā SD kartē
 Подсчёт метаданных...,Metadatu skaitīšana...
 Подсчёт основного хэша,Galvenā jaucējkoda aprēķināšana
-FullCapNom            : {:04x} ({} mAh),FullCapNom            : {:04x} ({} mAh)
 Подсчёт хэша секции,Aprēķina sekcijas jaucējkodu
 "Пожалуйста, подключите вашу консоль к ПК кабелем USB Type-C или нажмите B","Lūdzu, pievienojiet konsoli datoram ar USB Type-C kabeli vai nospiediet B"
 "Пожалуйста, подождите...","Lūdzu, uzgaidiet..."
@@ -949,9 +910,6 @@ Get chargeInfoFields : {},Get chargeInfoFields : {}
 Показывать размер LFS (долго),Rādīt LFS izmēru (lēni)
 Показывать секунды,Rādīt sekundes
 Показывать часы в статусе,Rādīt pulksteni statusā
-Поколение ключа              : {},Atslēgas paaudze              : {}
-Git commit hash              : {:016X},Git commit hash               : {:016X}
-Полная ёмкость      : {} mAh,Pilna kapacitāte       : {} mAh
 Получен список из {} записей,Saņemts saraksts ar {} ierakstiem
 Получен список из {} записи,Saņemts saraksts ar {} ierakstiem
 Получение версий установленных игр,Iegūst instalēto spēļu versijas
@@ -962,7 +920,6 @@ Git commit hash              : {:016X},Git commit hash               : {:016X}
 Получение файла: {} МБ ({:.2f} МБ/сек),Saņem failu: {} MB ({:.2f} MB/s)
 Получение файла: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Saņem failu: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m MB/sek)
    Получение списка бекапов...{}/{}    ,   Iegūst dublējumu sarakstu...{}/{}    
-IavgEmpty             : {:04x},IavgEmpty             : {:04x}
 Полученное время: {},Saņemtais laiks: {}
 Полученный размер: {},Saņemtais izmērs: {}
 "Получено: {}, ({:.2f} МБ/сек)","Saņemts: {}, ({:.2f} MB/s)"
@@ -978,8 +935,6 @@ IavgEmpty             : {:04x},IavgEmpty             : {:04x}
 Посылается файл: {},Sūta failu: {}
 Посылается файл: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Sūta failu: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m MB/s)
 Превышен размер командного буфера,Komandu bufera izmērs pārsniegts
-Предел входного тока             : {} mA,Ieejas strāvas limits                : {} mA
-Предел напряжения заряда батареи : {} mV,Akumulatora uzlādes sprieguma limits : {} mV
 LFS мод.: -,LFS režīms: -
 Предназначение          : {},Mērķis                     : {}
 Предоставить по FTP,Nodrošināt caur FTP
@@ -1074,14 +1029,11 @@ Nintendo Account не задан,Nintendo Account nav iestatīts
 Сервер предлагает выполнить обновление DBI\n\nНажите (+) для согласия\nЛюбую другую кнопку для отмены,Serveris piedāvā veikt DBI atjauninājumu\n\nNospiediet (+) apstiprināšanai\nJebkuru citu pogu atcelšanai
 Серийный # прочитанный  : {},Sērijas nr. nolasīts       : {}
 Серийный # угаданный    : {},Sērijas nr. uzminēts       : {}
-Серийный номер         : {},Sērijas numurs         : {}
 Сессии,Sesijas
 Сессия закрыта,Sesija aizvērta
 Сессия открыта,Sesija atvērta
-Силовая роль                     : {},Barošanas loma                       : {}
 Синхронизация времени по NTP,NTP laika sinhronizācija
 Системные приложения,Sistēmas lietojumprogrammas
-QrTable00             : {:04x},QrTable00             : {:04x}
 Системный по умолчанию,Sistēmas noklusējums
 Сканирование директорий...,Skenē direktorijas...
 Сканирование игр...,Spēļu skenēšana...
@@ -1092,7 +1044,6 @@ QrTable00             : {:04x},QrTable00             : {:04x}
 Смещать курсор после выделения,Pārvietot kursoru pēc atlases
 Собираются сведения...,Tiek apkopota informācija...
 Соединение сброшено,Savienojums atiestatīts
-QrTable10             : {:04x},QrTable10             : {:04x}
 Сожжено предохранителей : {},Sadedzinātas drošinātājas  : {}
 Создавать LFS папку,Izveidot LFS mapi
 Создан zip-файл: ,Izveidots zip fails: 
@@ -1103,7 +1054,6 @@ QrTable10             : {:04x},QrTable10             : {:04x}
 Создание дампа ({}),Izveido dampu ({})
 Создание дампа: {},Izveido dampu: {}
 Создание единого репака,Vienotas pārpakošanas izveide
-QrTable20             : {:04x},QrTable20             : {:04x}
 Создание записи об игре...,Izveido spēles ierakstu...
 Создание каталога: ,Kataloga izveide: 
 Создание новой записи об игре...,Izveido jaunu spēles ierakstu...
@@ -1114,7 +1064,6 @@ QrTable20             : {:04x},QrTable20             : {:04x}
 Создание таблицы имён,Nosaukumu tabulas izveide
 Создание тела файла,Faila pamatteksta izveide
 Создание точки доступа...,Izveido piekļuves punktu...
-QrTable30             : {:04x},QrTable30             : {:04x}
 Создание фейковой записи... ,Izveido viltus ierakstu... 
 Создание хэш таблицы,Jaucējfunkcijas tabulas izveide
 Создание ярлыка,Saīsnes izveide
@@ -1125,7 +1074,6 @@ QrTable30             : {:04x},QrTable30             : {:04x}
 Создать новый каталог...,Izveidot jaunu direktoriju...
 Создать новый файл...,Izveidot jaunu failu...
 Создать ярлык,Izveidot saīsni
-RCOMP0                : {:04x},RCOMP0                : {:04x}
 Создать ярлык для hbmenu,Izveidot saīsni hbmenu
 Создать ярлык на рабочий стол для DBI...,Izveidot DBI darbvirsmas saīsni...
 Создать ярлык с аргументами...,Izveidot saīsni ar argumentiem...
@@ -1139,27 +1087,18 @@ RTC запущены (приблизительно) : {},RTC palaists (aptuveni)
 Сохранения удалённых игр ({}),Dzēsto spēļu saglabājumi ({})
 Сохранения установленных игр ({}),Instalēto spēļu saglabājumi ({})
 Сохранёные в системе параметры котроллера батареи,Sistēmā saglabātie akumulatora kontroliera parametri
-Средняя температура : {}°C,Vidējā temperatūra     : {}°C
 Статистика игры ,Spēles statistika 
 Строка поиска: ,Meklēšanas virkne: 
-Сумма %% заряд-разряд : {} (~{} 0-100 циклов),Kopā %% uzlāde-izlāde : {} (~{} 0-100 cikli)
 Существующая запись об игре не найдена,Esošais spēles ieraksts nav atrasts
 Существующее сохранение не найдено и новое не может быть создано,Esošais saglabājums nav atrasts un jaunu nevar izveidot
 SDK {} уже был экспортирован: {},SDK {} jau ir eksportēts: {}
 Тайтл не установлен,Nosaukums nav instalēts
 Тайтл установлен,Nosaukums instalēts
 Тайтлы с ошибками:,Nosaukumi ar kļūdām:
-Текущая ёмкость                  : {}%,Pašreizējā kapacitāte                : {}%
-Текущая ёмкость     : {} mAh,Pašreizējā kapacitāte  : {} mAh
 Текущее время: {},Pašreizējais laiks: {}
-Текущее напряжение  : {} mV,Pašreizējais spriegums : {} mV
-Текущий заряд       : {}%,Pašreizējā uzlāde      : {}%
-Текущий ток         : {} mA,Pašreizējā strāva      : {} mA
 SDK на подмену не найдены,Nav atrasts SDK aizstāšanai
 Тема,Tēma
 Тема отображения,Attēlošanas tēma
-Температура         : {}°C,Temperatūra            : {}°C
-Температура батареи              : {}°C,Baterijas temperatūra                : {}°C
 Тикет исправлен,Biļete labota
 Тикеты,Biļetes
 Тикеты не найдены,Biļetes nav atrastas
@@ -1167,40 +1106,97 @@ SDK на подмену не найдены,Nav atrasts SDK aizstāšanai
 Тип источника питания          : {},Barošanas avota tips                      : {}
 864,864
 881,881
-"больше жертв, тем выше вероятность,","lielāka varbūtība, ka beigās viss"
-быстро разгадали тайный замысел,nolēma pamatīgi paizņirgāties. Viņi
-"оцепили его там со всех сторон,","reizi, kad viņš ierauga mikroshēmu,"
-"Или, говоря иными словами: «Чем","vārdiem sakot: 'Jo vairāk upuru, jo"
-"тактика буксует, но они твёрдо верят",stingri tic tai vienai iespējai no
-при котором всё заработает… И они,viņi steidzas pēc iespējas ātrāk
-"и теперь всякий раз, когда он",kaimiņi to atņem.
-лишь временным залогом величия».,"pagaidu lieluma ķīla.' Vai, citiem"
-"в тот один шанс из миллиона,","miljona, kad viss sāks darboties... Un"
-чтобы за ними пришла победа».,I. Pizdobolovs. Izrāviena ritmi.
-"такой беды, которая не являлась бы","'Nav tādas nelaimes, kas nebūtu tikai"
-"из своих складов с техникой, но","tur no visām pusēm, un tagad katru"
-"999999 первых фатальных ошибок,","kļūdas, lai pēc tām nāktu uzvara.» I."
-спешат поскорее совершить те самые,izdarīt tās pašas 999999 pirmās fatālās
-"Те, будучи хитрыми из-за интернетов,","dēļ, ātri atminēja slepeno nodomu un"
-прямиком к соседям за деталями.,"detaļām. Tie, būdami viltīgi internetu"
-исправно принося отрицательный рост.,neatlaidīgi nesot negatīvo izaugsmi.
-догмате их глубинной логики: «Нет,dziļās loģikas fundamentālajā dogmā:
-что в финале всё получится». Их,"izdosies.' Viņu taktika slīd, bet viņi"
-"прямо из техники, стоящей в садах.",dārzos. No purviem tika nosūtīts
-и решили всласть поглумиться. Они,ļāva viesim iekļūt vienā no saviem
-"видит чип, соседи его отбирают.»",guest to climb into one of their
-"падают, потому что чипов не хватает","mikroshēmu gan vadības sistēmās, gan"
-"ни в системах наводки, ни в унитазах.",tualetēs. Bet kaimiņi mikroshēmas esot
-позволили гостю залезть в один,"tehnikas noliktavām, bet ielenca viņu"
-«У жителей болот всё идёт по плану.,«Purvu iedzīvotājiem viss norit pēc
-"Процесс обнуления продолжается,","plāna. Nullificēšanas process turpinās,"
-А у соседей чипы якобы добывают,"iegūst tieši no tehnikas, kas stāv"
-С болот был заслан доброволец,brīvprātīgais taisni pie kaimiņiem pēc
-"          Бункер, госиздат «Зазеркалье».",          «Aizspogulijs». Galvenais str
-  И. И. Пиздоболов. Ритмы прорыва.,"  Bunkeris, valsts izdevniecība"
-"    Главный стратег объявил, что ракеты","    paziņoja, ka raķetes krīt, jo trūks"
-    Весь секрет таится в фундаментальном,    Visa noslēpuma atslēga slēpjas viņu
-"          Бункер, госиздат «Зазеркалье».",          «Aizspogulijs». Galvenais str
-  И. И. Пиздоболов. Ритмы прорыва.,"  Bunkeris, valsts izdevniecība"
-"    Главный стратег объявил, что ракеты","    paziņoja, ka raķetes krīt, jo trūks"
-    Весь секрет таится в фундаментальном,    Visa noslēpuma atslēga slēpjas viņu
+"          Париж, издательство Грассе.",          «Aizspogulijs». Galvenais str
+"больше шансов, что оно заработает». Их","lielāka varbūtība, ka beigās viss"
+быстро проникли в планы шадоков и,nolēma pamatīgi paizņirgāties. Viņi
+"всякий раз, когда растение расцветает","reizi, kad viņš ierauga mikroshēmu,"
+"выражениях: «Чем больше неудач, тем","vārdiem sakot: 'Jo vairāk upuru, jo"
+"вычислили, что у них есть по крайней",stingri tic tai vienai iespējai no
+заработает… И они торопятся поскорее,viņi steidzas pēc iespējas ātrāk
+"и дает транзистор, они мчатся, чтобы",kaimiņi to atņem.
+"и не кончилось успехом». Или, в других","pagaidu lieluma ķīla.' Vai, citiem"
+"мере один шанс из миллиона, что она","miljona, kad viss sāks darboties... Un"
+миллионная заработает».,I. Pizdobolovs. Izrāviena ritmi.
+"ничего, что бы непрерывно продолжалось","'Nav tādas nelaimes, kas nebūtu tikai"
+"но окружили его со всех сторон, и","tur no visām pusēm, un tagad katru"
+"опытов, чтобы быть уверенными, что","kļūdas, lai pēc tām nāktu uzvara.» I."
+осуществить 999999 первых неудачных,izdarīt tās pašas 999999 pirmās fatālās
+"очень умные благодаря своим шляпам,","dēļ, ātri atminēja slepeno nodomu un"
+"планету гиби искать транзисторы. Гиби,","detaļām. Tie, būdami viltīgi internetu"
+постоянно кончаясь неудачами.,neatlaidīgi nesot negatīvo izaugsmi.
+принципов шадокской логики: «Нет,dziļās loģikas fundamentālajā dogmā:
+"ракета еще несовершенна, но они","izdosies.' Viņu taktika slīd, bet viņi"
+"растений, произрастающих на огородах.",dārzos. No purviem tika nosūtīts
+решили позабавиться. Они позволили,ļāva viesim iekļūt vienā no saviem
+собрать урожай прежде шадока.,​
+"терпят неудачу потому, что не хватает","mikroshēmu gan vadības sistēmās, gan"
+транзисторов в системах безопасности.,tualetēs. Bet kaimiņi mikroshēmas esot
+"шадоку забраться в один из их огородов,","tehnikas noliktavām, bet ielenca viņu"
+  Жак Руксель. Великолепие навыворот.,"  Bunkeris, valsts izdevniecība"
+«У шадоков ситуация удовлетворительна.,«Purvu iedzīvotājiem viss norit pēc
+"    Великий колдун сказал, что ракеты","    paziņoja, ka raķetes krīt, jo trūks"
+"Испытания ракет продолжаются,","plāna. Nullificēšanas process turpinās,"
+    Дело здесь в одном из основных,    Visa noslēpuma atslēga slēpjas viņu
+Но у гиби транзисторы собирают с,"iegūst tieši no tehnikas, kas stāv"
+Решено послать одного из шадоков на,brīvprātīgais taisni pie kaimiņiem pēc
+original,original
+"SSID : {}, Пароль: {}","SSID : {}, Parole: {}"
+TempC0                : {:04x},TempC0                 : {:04x}
+Удалять после установки :,Dzēst pēc instalēšanas       :
+Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC adrese : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0 : {},Piespiedu kartā ieslēgts USB 3.0 : {}
+Экзосфера очищает CAL0       : {},Exosphere notīra CAL0            : {}
+Экран                  : ({:08X}) {},Ekrāns                  : ({:08X}) {}
+Конфигурация зарядки             : {},Uzlādes konfigurācija                : {}
+Режим Hi-Z включён               : {},Hi-Z režīms ieslēgts                 : {}
+Зарядка батареи включена         : {},Baterijas uzlāde iespējota           : {}
+Маршрут электропитания           : {},Barošanas maršruts                   : {}
+Напряжение источника             : {} mV,Avota spriegums                      : {} mV
+Ток источника                    : {} mA,Avota strāva                         : {} mA
+Быстрая зарядка разрешена        : {},Ātrā uzlāde atļauta                  : {}
+Целевая прошивка             : {}.{}.{},Mērķa programmaparatūra          : {}.{}.{}
+Поддерживаемая версия HOS    : {},Atbalstītā HOS versija           : {}
+Предел входного тока (буст)      : {} mA,Ieejas strāvas limits (boost)        : {} mA
+Предел тока быстрой зарядки      : {} mA,Ātrās uzlādes strāvas limits         : {} mA
+Напряжение батареи               : {} mV,Akumulatora spriegums                : {} mV
+Контроллер источника получен     : {},Avota kontrolieris iegūts            : {}
+OTG Запрошен                     : {},OTG pieprasīts                       : {}
+Ёмкость с завода    : {} mAh,Rūpnīcas kapacitāte            : {} mAh
+Версия атмосферы             : {}.{}.{},Atmosphere versija               : {}.{}.{}
+Возраст батареи                  : {}%,Baterijas vecums                     : {}%
+Выйти из DBI            :,Iziet no DBI                 :
+Выключить экран         :,Izslēgt ekrānu               :
+Есть исправление RCM бага    : {},Ir RCM kļūdas labojums           : {}
+Запись в CAL0 разрешена      : {},CAL0 rakstīšana atļauta          : {}
+Источник питания                 : {},Barošanas avots                      : {}
+Место установки         :,Instalācijas vieta           :
+%% заряд-разряд     : {},%% uzlāde-izlāde               : {}
+Общий размер передачи   :,Kopējais pārsūtīšanas izmērs :
+Общий размер установки  :,Kopējais instalācijas izmērs :
+Bluetooth MAC адрес    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC adrese    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Configuration Id1      : {},Configuration Id1       : {}
+Emummc включён               : {},Emummc iespējots                 : {}
+FullCap               : {:04x} ({} mAh),FullCap                : {:04x} ({} mAh)
+FullCapNom            : {:04x} ({} mAh),FullCapNom             : {:04x} ({} mAh)
+Поколение ключа              : {},Atslēgas ģenerēšana              : {}
+Git commit hash              : {:016X},Git commit hash                  : {:016X}
+Полная ёмкость      : {} mAh,Pilna kapacitāte               : {} mAh
+IavgEmpty             : {:04x},IavgEmpty              : {:04x}
+Предел входного тока             : {} mA,Ieejas strāvas limits                : {} mA
+Предел напряжения заряда батареи : {} mV,Akumulatora uzlādes sprieguma limits : {} mV
+Серийный номер         : {},Sērijas numurs          : {}
+Силовая роль                     : {},Barošanas loma                       : {}
+QrTable00             : {:04x},QrTable00              : {:04x}
+QrTable10             : {:04x},QrTable10              : {:04x}
+QrTable20             : {:04x},QrTable20              : {:04x}
+QrTable30             : {:04x},QrTable30              : {:04x}
+RCOMP0                : {:04x},RCOMP0                 : {:04x}
+Средняя температура : {}°C,Vidējā temperatūra             : {}°C
+Сумма %% заряд-разряд : {} (~{} 0-100 циклов),Summa %% uzlāde-izlāde : {} (~{} 0-100 cikli)
+Текущая ёмкость                  : {}%,Pašreizējā kapacitāte                : {}%
+Текущая ёмкость     : {} mAh,Pašreizējā kapacitāte          : {} mAh
+Текущее напряжение  : {} mV,Pašreizējais spriegums         : {} mV
+Текущий заряд       : {}%,Pašreizējais lādēšanas līmenis : {}%
+Текущий ток         : {} mA,Pašreizējā strāva              : {} mA
+Температура         : {}°C,Temperatūra                    : {}°C
+Температура батареи              : {}°C,Baterijas temperatūra                : {}°C

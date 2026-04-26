@@ -6,7 +6,6 @@ original,translation
 "X - выбор, Y - инвертирование выбора, A - открыть, (-) - 2ая панель","X - Seleziona, Y - Inverti selezione, A - Apri, (-) - 2° pannello"
 "X - выбор, Y - инвертирование выбора, ⬅/➡ - смена панели, (-) - закрыть","X - Seleziona, Y - Inverti selezione, ⬅/➡ - Cambia pannello, (-) - Chiudi"
 "ZL/ZR - смена даты, Y - период, X - сортировка, (+) - выбрать пользователя","ZL/ZR - Cambia data, Y - Periodo, X - Ordina, (+) - Seleziona utente"
-892,892
 . Время игры \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m,. Tempo di gioco \x1b[32;1m{:02}:{:02}:{:02}\x1b[37;1m
 Невозможно смонтировать системный раздел,Impossibile montare la partizione di sistema
 "DPAD или стики для перемещения, (+) - Настройки","DPAD o stick per muoversi, (+) - Impostazioni"
@@ -35,7 +34,6 @@ SDK подменён,SDK sostituito
 Удаление игр,Eliminazione giochi
 Удаление игры ,Eliminazione gioco 
 Удаление игры целиком: [{}],Elimina gioco completo: [{}]
-"SSID : {}, Пароль: {}","SSID : {}, Password: {}"
 Удаление каталога LFS,Eliminazione directory LFS
 Удаление контента,Eliminazione contenuto
 Удаление настроек родительского контроля...,Eliminazione delle impostazioni di parental control...
@@ -57,7 +55,6 @@ SaveFS очищена,SaveFS pulita
 Удаление тайтла: [{}],Eliminazione titolo: [{}]
 Удаление тикетов ({}),Eliminazione ticket ({})
 Удаление...,Eliminazione...
-TempC0                : {:04x},TempC0                   : {:04x}
 Удалить,Elimina
 Удалить LFS,Elimina LFS
 Удалить сохранения,Elimina salvataggi
@@ -75,7 +72,6 @@ Titlekey не может быть инициализирован,Titlekey non pu
 Удаляется старая запись о контенте...,Eliminazione vecchio record del contenuto...
 Удаляется старый cnmt.nca...,Eliminazione vecchio cnmt.nca...
 Удаляется тикет: {}...,Eliminazione ticket: {}...
-Удалять после установки :,Elimina dopo l'installazione    :
 Удаляются все объекты из альбома для игры,Eliminazione di tutti gli elementi dall'album di gioco
 Удаляются все сохранения для игры,Eliminazione di tutti i salvataggi per il gioco
 Удаляются сохранения...,Eliminazione dati di salvataggio...
@@ -112,7 +108,6 @@ USB Соединение,Connessione USB
 Установленные тикеты ({}),Ticket installati ({})
 Файл повреждён и не может быть установлен. Не найдена сигнатура HEAD,Il file è danneggiato e non può essere installato. Firma HEAD non trovata
 Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе root,Il file è danneggiato e non può essere installato. Firma HFS0 non trovata nella partizione root
-Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizzo MAC LAN wireless : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Файл повреждён и не может быть установлен. Не найдена сигнатура HFS0 в разделе secure,Il file è danneggiato e non può essere installato. Firma HFS0 non trovata nella partizione secure
 Файл повреждён и не может быть установлен. Не найдена сигнатура PFS0,Il file è danneggiato e non può essere installato. Firma PFS0 non trovata
 Файл слишком большой для хранилища,Il file è troppo grande per l'archiviazione
@@ -123,7 +118,6 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizz
 Форсированный язык    : {},Lingua forzata    : {}
 Форсированный язык    : {} ({}),Lingua forzata    : {} ({})
   Автоопределение,  Rilevamento automatico
-Форсировано вклчение USB 3.0 : {},Forza USB 3.0 abilitato     : {}
 Форсировать UTF-8,Forza UTF-8
 Форсировать язык,Forza lingua
 Французский,Francese
@@ -144,8 +138,6 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizz
 "Чтобы вернуться, нажмите B",Premi B per tornare indietro
 Шадок у Гиби,Shadok da Gibi
 Шифрование секции ,Cifratura della sezione
-Экзосфера очищает CAL0       : {},L'esosfera pulisce CAL0     : {}
-Экран                  : ({:08X}) {},Schermo                    : ({:08X}) {}
 Экспорт SDK,Esportazione SDK
 Экспортировать,Esporta
 Экспортировать SDK,Esporta SDK
@@ -167,16 +159,7 @@ Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizz
 Просмотр USB диска [{}],Visualizzazione disco USB [{}]
 Заряд батареи (сырое значение) : {},Carica batteria (valore grezzo) : {}
 ru,ru
-Конфигурация зарядки             : {},Configurazione di ricarica                  : {}
-Режим Hi-Z включён               : {},Modalità Hi-Z attivata                      : {}
-Зарядка батареи включена         : {},Ricarica batteria attivata                  : {}
-Маршрут электропитания           : {},Percorso alimentazione                      : {}
-Напряжение источника             : {} mV,Tensione sorgente                           : {} mV
-Ток источника                    : {} mA,Corrente sorgente                           : {} mA
-Быстрая зарядка разрешена        : {},Ricarica rapida abilitata                   : {}
 [CRC ОШИБКА ФАЙЛА],[ERRORE CRC FILE]
-Целевая прошивка             : {}.{}.{},Firmware di destinazione    : {}.{}.{}
-Поддерживаемая версия HOS    : {},Versione HOS supportata     : {}
 Будет скачана и установлена прошивка системы из файла {}.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены,Il firmware di sistema verrà scaricato e installato dal file {}.\n\nPremi (+) per continuare\nQualsiasi altro tasto per annullare
 Распаковка архива не удалась,Estrazione archivio fallita
 Сканирование архива не удалось,Scansione archivio fallita
@@ -207,11 +190,6 @@ ru,ru
 Пишется таблица хешей\n,Scrittura tabella hash\n
 Пишется подпись видео\n,Scrittura firma video\n
 Операция завершена\n,Operazione completata\n
-Предел входного тока (буст)      : {} mA,Limite corrente in ingresso (boost)         : {} mA
-Предел тока быстрой зарядки      : {} mA,Limite corrente di ricarica rapida          : {} mA
-Напряжение батареи               : {} mV,Tensione batteria                           : {} mV
-Контроллер источника получен     : {},Controller sorgente ricevuto                : {}
-OTG Запрошен                     : {},OTG richiesto                               : {}
 "Будет скачана и установлена прошивка системы из файла {}.\n\nВНИМАНИЕ!!! Похоже, эта версия не поддерживается текущей атмосферой.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены",Il firmware di sistema verrà scaricato e installato dal file {}.\n\nATTENZIONE!!! Sembra che questa versione non sia supportata dall'Atmosphere corrente.\n\nPremi (+) per continuare\nPremi un altro tasto per annullare
 Копирование файла не удалось,Copia del file fallita
 Daybreak.nro не найден,Daybreak.nro non trovato
@@ -340,7 +318,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 {}: пропускается {}/{} ({:.2f} МБ/сек),{}: saltato {}/{} ({:.2f} MB/sec)
 "{}\n\nВосстановление бекапа не удалось\n\nНажмите A - прервать, другая кнопка - продолжить","{}\n\nRipristino del backup non riuscito\n\nPremi A per interrompere, altro pulsante per continuare"
 {}МБ из {}МБ ({:.2f} МБ/сек)\x1b[0K\r,{}MB di {}MB ({:.2f} MB/sec)\x1b[0K\r
-Ёмкость с завода    : {} mAh,Capacità di fabbrica : {} mAh
 АВТО,AUTO
 Аватар установлен,Avatar impostato
 Август,Agosto
@@ -383,7 +360,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Введите номер DLC,Inserisci il numero DLC
 Версия  : ,Versione: 
 Версия {} [v{}],Versione {} [v{}]
-Версия атмосферы             : {}.{}.{},Versione Atmosphere         : {}.{}.{}
 Версия прошивки         : {}.{}.{}-{}.{},Versione firmware          : {}.{}.{}-{}.{}
 Вместо пользователя {} использовать:,Usa al posto dell'utente {}:
 Внимание! ,Attenzione! 
@@ -391,7 +367,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Во время разбора\n\n{}\n\nвозникла следующая ошибка:\n\n{},Durante l'analisi di\n\n{}\n\nsi è verificato il seguente errore:\n\n{}
 Во время установки тикетов были ошибки. Проверьте наличие ES сигпатчей,Si sono verificati errori durante l'installazione dei ticket. Verificare la presenza di sigpatch ES
 Во время экспорта были ошибки,Si sono verificati errori durante l'esportazione
-Возраст батареи                  : {}%,Età della batteria                          : {}%
 Возраст батареи                : {},Età della batteria              : {}
 Возраст батареи                : {}%,Età della batteria                : {}%
  {} минута, {} minuto
@@ -445,9 +420,7 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Выбрать все файлы игры,Seleziona tutti i file del gioco
 Выбрать того же пользователя,Seleziona lo stesso utente
 Выбрать ту же игру,Seleziona lo stesso gioco
-Выйти из DBI            :,Esci da DBI                     :
 Выключать экран,Spegni schermo
-Выключить экран         :,Spegni schermo                  :
  Запуск игры, Avvio del gioco
 Вырезать,Taglia
 Выход на рабочий стол,Esci al menu HOME
@@ -481,7 +454,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Достаточное питание            : {},Alimentazione sufficiente       : {}
  Переключение на игру, Passaggio al gioco
 Европа,Europa
-Есть исправление RCM бага    : {},Correzione bug RCM presente : {}
 "Есть несохранёные изменения.\nВы хотите их сохранить?\n\n(+) - Да, сохранить\n\n(-) - Выйти без сохранения\n\nДругая кнопка - Отмена","Ci sono modifiche non salvate.\nVuoi salvarle?\n\n(+) - Sì, salva\n\n(-) - Esci senza salvare\n\nAltro pulsante - Annulla"
 Желаемая версия: {},Versione desiderata: {}
 Журнал активности,Registro attività
@@ -506,7 +478,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Запаковка папки в RomFS,Compressione cartella in RomFS
 Записанное время конца  : {},Ora di fine registrata  : {}
 Записанное время начала : {},Ora di inizio registrata : {}
-Запись в CAL0 разрешена      : {},Scrittura CAL0 consentita   : {}
 Запись в файл...,Scrittura nel file...
 Запись за пределами файла,Scrittura oltre il file
 Заполнение нулями,Riempimento con zeri
@@ -577,7 +548,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
  сортировка по имени игры, ordina per nome del gioco
 Используется ,Usato 
 Используется USB{},Utilizzo di USB{}
-Источник питания                 : {},Fonte di alimentazione                      : {}
 Итальянский,Italiano
 Ищется control для ProgramId {},Ricerca control per ProgramId {}
 Ищется exefs/romfs для ProgramId {},Ricerca exefs/romfs per ProgramId {}
@@ -617,7 +587,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Место в  NAND         : {},Spazio in NAND       : {}
 Место на SD карте     : {},Spazio su scheda SD     : {}
 Место на приставке не занято,Nessuno spazio occupato sulla console
-Место установки         :,Posizione installazione         :
 Мета контент отсутствует,Contenuto meta mancante
 Миссия провалена\n\nНажмите А для выхода,Missione fallita\n\nPremi A per uscire
 Миссия успешна\n\nОсталось ходов: {}\n\nНажмите А для выхода,Missione riuscita\n\nMosse rimanenti: {}\n\nPremi A per uscire
@@ -635,7 +604,6 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Найден {} зарегистрированный контент-файл,Trovato {} file di contenuto registrato
 Найден {} контент-файл,Trovato {} file di contenuto
 Найден {} пользователь,Trovato {} utente
-%% заряд-разряд     : {},%% carica-scarica    : {}
 Найден {} потерянный контент-файл,Trovato {} file di contenuto orfano
 Найден {} файл,Trovato {} file
 Найден {} файл с ошибками,Trovato {} file con errori
@@ -770,15 +738,12 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Общее число запусков  : -,Numero totale di avvii : -
 Общее число игровых сессий    : {},Numero totale di sessioni di gioco : {}
 Общие,Generale
-Общий размер передачи   :,Dimensione totale trasferimento :
-Общий размер установки  :,Dimensione totale installazione :
 Общий размер установки: {},Dimensione totale installazione: {}
 Объединение списков,Unisci elenchi
 Объект {} не допустим,L'oggetto {} non è consentito
 Объект {} не может быть создан,L'oggetto {} non può essere creato
 Объект не открыт для редактирования,L'oggetto non è aperto per la modifica
 Объект удалён,Oggetto eliminato
-Bluetooth MAC адрес    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizzo MAC Bluetooth    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Объект уже открыт для редактирования,L'oggetto è già aperto per la modifica
 Огибка получения адреса сокета: {} {},Errore durante il recupero dell'indirizzo del socket: {} {}
 Ожидаемый размер: {},Dimensione prevista: {}
@@ -799,7 +764,6 @@ CDIR в листинге,CDIR nell'elenco
 Осталось ходов:    {:>3},Mosse rimanenti:    {:>3}
 Остаток файла пропускается,Il resto del file viene saltato
 Отключение связи с мобильным приложением...,Disconnessione dall'app mobile...
-Configuration Id1      : {},Configuration Id1          : {}
 Открываем папку прошивки...,Apertura cartella firmware...
 Открыть,Apri
 Открыть вторую панель,Apri secondo pannello
@@ -896,7 +860,6 @@ DramId                  : {} ({}),DramId                     : {} ({})
 Переименование объекта,Rinomina oggetto
 Переименовать,Rinomina
 Перейти к первой странице,Vai alla prima pagina
-Emummc включён               : {},Emummc abilitato            : {}
 Перейти к последней странице,Vai all'ultima pagina
 Перейти к странице...,Vai alla pagina...
 Переместить,Sposta
@@ -917,7 +880,6 @@ FTP сервер (нажмите B для остановки),Server FTP (premi 
 Платформа               : {},Piattaforma                : {}
 Подготовка...,Preparazione...
 Подключаемся к {}...,Connessione a {}...
-FullCap               : {:04x} ({} mAh),FullCap                  : {:04x} ({} mAh)
 Подключено к {}:{},Connesso a {}:{}
 Подмена SDK,Sostituzione SDK
 Подменить SDK,Sostituisci SDK
@@ -928,7 +890,6 @@ FullCap               : {:04x} ({} mAh),FullCap                  : {:04x} ({} mA
 Подсчитываются объекты в альбоме на SD карте,Conteggio oggetti nell'album sulla scheda SD
 Подсчёт метаданных...,Conteggio metadati...
 Подсчёт основного хэша,Calcolo dell'hash principale
-FullCapNom            : {:04x} ({} mAh),FullCapNom               : {:04x} ({} mAh)
 Подсчёт хэша секции,Calcolo hash sezione
 "Пожалуйста, подключите вашу консоль к ПК кабелем USB Type-C или нажмите B",Collega la tua console al PC con un cavo USB Type-C o premi B
 "Пожалуйста, подождите...",Attendere prego...
@@ -949,9 +910,6 @@ Get chargeInfoFields : {},Get chargeInfoFields : {}
 Показывать размер LFS (долго),Mostra dimensione LFS (lento)
 Показывать секунды,Mostra secondi
 Показывать часы в статусе,Mostra orologio nello stato
-Поколение ключа              : {},Generazione chiave          : {}
-Git commit hash              : {:016X},Git commit hash             : {:016X}
-Полная ёмкость      : {} mAh,Capacità totale      : {} mAh
 Получен список из {} записей,Ricevuta lista di {} voci
 Получен список из {} записи,Ricevuta lista di {} voci
 Получение версий установленных игр,Recupero versioni dei giochi installati
@@ -962,7 +920,6 @@ Git commit hash              : {:016X},Git commit hash             : {:016X}
 Получение файла: {} МБ ({:.2f} МБ/сек),Ricezione file: {} MB ({:.2f} MB/s)
 Получение файла: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Ricezione file: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m MB/sec)
    Получение списка бекапов...{}/{}    ,   Recupero elenco backup...{}/{}    
-IavgEmpty             : {:04x},IavgEmpty                : {:04x}
 Полученное время: {},Ora ricevuta: {}
 Полученный размер: {},Dimensione ricevuta: {}
 "Получено: {}, ({:.2f} МБ/сек)","Ricevuto: {}, ({:.2f} MB/s)"
@@ -978,8 +935,6 @@ IavgEmpty             : {:04x},IavgEmpty                : {:04x}
 Посылается файл: {},Invio file: {}
 Посылается файл: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Invio file: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m MB/s)
 Превышен размер командного буфера,Dimensione buffer comandi superata
-Предел входного тока             : {} mA,Limite corrente in ingresso                 : {} mA
-Предел напряжения заряда батареи : {} mV,Limite di tensione di carica della batteria : {} mV
 LFS мод.: -,Modalità LFS: -
 Предназначение          : {},Scopo                      : {}
 Предоставить по FTP,Fornisci tramite FTP
@@ -1074,14 +1029,11 @@ Nintendo Account не задан,Account Nintendo non impostato
 Сервер предлагает выполнить обновление DBI\n\nНажите (+) для согласия\nЛюбую другую кнопку для отмены,Il server offre di eseguire un aggiornamento di DBI\n\nPremi (+) per confermare\nQualsiasi altro pulsante per annullare
 Серийный # прочитанный  : {},Numero di serie letto      : {}
 Серийный # угаданный    : {},Numero di serie indovinato : {}
-Серийный номер         : {},Numero di serie            : {}
 Сессии,Sessioni
 Сессия закрыта,Sessione chiusa
 Сессия открыта,Sessione aperta
-Силовая роль                     : {},Ruolo di alimentazione                      : {}
 Синхронизация времени по NTP,Sincronizzazione ora NTP
 Системные приложения,Applicazioni di sistema
-QrTable00             : {:04x},QrTable00                : {:04x}
 Системный по умолчанию,Predefinito di sistema
 Сканирование директорий...,Scansione delle directory...
 Сканирование игр...,Scansione giochi...
@@ -1092,7 +1044,6 @@ QrTable00             : {:04x},QrTable00                : {:04x}
 Смещать курсор после выделения,Sposta il cursore dopo la selezione
 Собираются сведения...,Raccolta informazioni...
 Соединение сброшено,Connessione ripristinata
-QrTable10             : {:04x},QrTable10                : {:04x}
 Сожжено предохранителей : {},Fusibili bruciati          : {}
 Создавать LFS папку,Crea cartella LFS
 Создан zip-файл: ,File zip creato: 
@@ -1103,7 +1054,6 @@ QrTable10             : {:04x},QrTable10                : {:04x}
 Создание дампа ({}),Creazione dump ({})
 Создание дампа: {},Creazione dump: {}
 Создание единого репака,Creazione di un repack unificato
-QrTable20             : {:04x},QrTable20                : {:04x}
 Создание записи об игре...,Creazione record di gioco...
 Создание каталога: ,Creazione directory: 
 Создание новой записи об игре...,Creazione nuova voce di gioco...
@@ -1114,7 +1064,6 @@ QrTable20             : {:04x},QrTable20                : {:04x}
 Создание таблицы имён,Creazione tabella nomi
 Создание тела файла,Creazione del corpo del file
 Создание точки доступа...,Creazione punto di accesso...
-QrTable30             : {:04x},QrTable30                : {:04x}
 Создание фейковой записи... ,Creazione record falso... 
 Создание хэш таблицы,Creazione tabella hash
 Создание ярлыка,Creazione collegamento
@@ -1125,7 +1074,6 @@ QrTable30             : {:04x},QrTable30                : {:04x}
 Создать новый каталог...,Crea nuova cartella...
 Создать новый файл...,Crea nuovo file...
 Создать ярлык,Crea collegamento
-RCOMP0                : {:04x},RCOMP0                   : {:04x}
 Создать ярлык для hbmenu,Crea collegamento per hbmenu
 Создать ярлык на рабочий стол для DBI...,Crea collegamento sul desktop per DBI...
 Создать ярлык с аргументами...,Crea collegamento con argomenti...
@@ -1139,27 +1087,18 @@ RTC запущены (приблизительно) : {},RTC avviato (approssima
 Сохранения удалённых игр ({}),Salvataggi di giochi eliminati ({})
 Сохранения установленных игр ({}),Salvataggi dei giochi installati ({})
 Сохранёные в системе параметры котроллера батареи,Parametri del controller della batteria salvati nel sistema
-Средняя температура : {}°C,Temperatura media    : {}°C
 Статистика игры ,Statistiche di gioco 
 Строка поиска: ,Stringa di ricerca: 
-Сумма %% заряд-разряд : {} (~{} 0-100 циклов),Totale %% carica-scarica : {} (~{} 0-100 cicli)
 Существующая запись об игре не найдена,Record di gioco esistente non trovato
 Существующее сохранение не найдено и новое не может быть создано,Salvataggio esistente non trovato e impossibile crearne uno nuovo
 SDK {} уже был экспортирован: {},SDK {} è già stato esportato: {}
 Тайтл не установлен,Titolo non installato
 Тайтл установлен,Titolo installato
 Тайтлы с ошибками:,Titoli con errori:
-Текущая ёмкость                  : {}%,Capacità attuale                            : {}%
-Текущая ёмкость     : {} mAh,Capacità attuale     : {} mAh
 Текущее время: {},Ora attuale: {}
-Текущее напряжение  : {} mV,Tensione attuale     : {} mV
-Текущий заряд       : {}%,Carica attuale       : {}%
-Текущий ток         : {} mA,Corrente attuale     : {} mA
 SDK на подмену не найдены,Nessun SDK trovato per la sostituzione
 Тема,Tema
 Тема отображения,Tema di visualizzazione
-Температура         : {}°C,Temperatura          : {}°C
-Температура батареи              : {}°C,Temperatura batteria                        : {}°C
 Тикет исправлен,Ticket corretto
 Тикеты,Ticket
 Тикеты не найдены,Nessun ticket trovato
@@ -1167,40 +1106,97 @@ SDK на подмену не найдены,Nessun SDK trovato per la sostituzio
 Тип источника питания          : {},Tipo di alimentazione           : {}
 864,864
 881,881
-"больше жертв, тем выше вероятность,","grandezza'. O, detto in altre parole:"
-быстро разгадали тайный замысел,giardini. Dalle paludi fu inviato un
-"оцепили его там со всех сторон,",rapidamente l'intento segreto e
-"Или, говоря иными словами: «Чем",sia soltanto un pegno temporaneo di
-"тактика буксует, но они твёрдо верят",probabilità che alla fine tutto
-при котором всё заработает… И они,credono fermamente in quella
-"и теперь всякий раз, когда он",decisero di prendersi gioco a volontà.
-лишь временным залогом величия».,profonda: 'Non esiste disgrazia che non
-"в тот один шанс из миллиона,","funzioni'. La loro tattica arranca, ma"
-чтобы за ними пришла победа».,commettere al più presto quei primi
-"такой беды, которая не являлась бы",fondamentale della loro logica
-"из своих складов с техникой, но","causa degli internet, capirono"
-"999999 первых фатальных ошибок,",funzionerà... E si affrettano a
-спешат поскорее совершить те самые,possibilità su un milione in cui tutto
-"Те, будучи хитрыми из-за интернетов,",dalle attrezzature che stanno nei
-прямиком к соседям за деталями.,pare estraggano i chip direttamente
-исправно принося отрицательный рост.,"azzeramento continua, portando"
-догмате их глубинной логики: «Нет,L'intero segreto si cela nel dogma
-что в финале всё получится». Их,"'Più sacrifici ci sono, più alta è la"
-"прямо из техники, стоящей в садах.",mancano i chip sia nei sistemi di
-и решили всласть поглумиться. Они,volontario direttamente dai vicini per
-"видит чип, соседи его отбирают.»",Permisero all'ospite di entrare in uno
-"падают, потому что чипов не хватает",casa editrice statale 'Attraverso lo
-"ни в системах наводки, ни в унитазах.",specchio'. Il capo stratega ha
-позволили гостю залезть в один,"i componenti. Quelli, essendo furbi a"
-«У жителей болот всё идёт по плану.,«Tra gli abitanti delle paludi tutto
-"Процесс обнуления продолжается,",procede secondo i piani. Il processo di
-А у соседей чипы якобы добывают,dichiarato che i missili cadono perché
-С болот был заслан доброволец,puntamento che nei water. E i vicini
-"          Бункер, госиздат «Зазеркалье».",          essi arrivi la vittoria». I. 
-  И. И. Пиздоболов. Ритмы прорыва.,"  999.999 errori fatali, affinché dopo "
-"    Главный стратег объявил, что ракеты",    Pizdobolov. Ritmi della svolta. Bun
-    Весь секрет таится в фундаментальном,    fedelmente una crescita negativa.
-"          Бункер, госиздат «Зазеркалье».","          Бункер, госиздат «Зазеркалье»."
-  И. И. Пиздоболов. Ритмы прорыва.,  И. И. Пиздоболов. Ритмы прорыва.
-"    Главный стратег объявил, что ракеты","    Главный стратег объявил, что ракеты"
-    Весь секрет таится в фундаментальном,    Весь секрет таится в фундаментальном
+"          Париж, издательство Грассе.",          essi arrivi la vittoria». I. 
+"больше шансов, что оно заработает». Их","grandezza'. O, detto in altre parole:"
+быстро проникли в планы шадоков и,giardini. Dalle paludi fu inviato un
+"всякий раз, когда растение расцветает",rapidamente l'intento segreto e
+"выражениях: «Чем больше неудач, тем",sia soltanto un pegno temporaneo di
+"вычислили, что у них есть по крайней",probabilità che alla fine tutto
+заработает… И они торопятся поскорее,credono fermamente in quella
+"и дает транзистор, они мчатся, чтобы",decisero di prendersi gioco a volontà.
+"и не кончилось успехом». Или, в других",profonda: 'Non esiste disgrazia che non
+"мере один шанс из миллиона, что она","funzioni'. La loro tattica arranca, ma"
+миллионная заработает».,commettere al più presto quei primi
+"ничего, что бы непрерывно продолжалось",fondamentale della loro logica
+"но окружили его со всех сторон, и","causa degli internet, capirono"
+"опытов, чтобы быть уверенными, что",funzionerà... E si affrettano a
+осуществить 999999 первых неудачных,possibilità su un milione in cui tutto
+"очень умные благодаря своим шляпам,",dalle attrezzature che stanno nei
+"планету гиби искать транзисторы. Гиби,",pare estraggano i chip direttamente
+постоянно кончаясь неудачами.,"azzeramento continua, portando"
+принципов шадокской логики: «Нет,L'intero segreto si cela nel dogma
+"ракета еще несовершенна, но они","'Più sacrifici ci sono, più alta è la"
+"растений, произрастающих на огородах.",mancano i chip sia nei sistemi di
+решили позабавиться. Они позволили,volontario direttamente dai vicini per
+собрать урожай прежде шадока.,Permisero all'ospite di entrare in uno
+"терпят неудачу потому, что не хватает",casa editrice statale 'Attraverso lo
+транзисторов в системах безопасности.,specchio'. Il capo stratega ha
+"шадоку забраться в один из их огородов,","i componenti. Quelli, essendo furbi a"
+  Жак Руксель. Великолепие навыворот.,"  999.999 errori fatali, affinché dopo "
+«У шадоков ситуация удовлетворительна.,«Tra gli abitanti delle paludi tutto
+"    Великий колдун сказал, что ракеты",    Pizdobolov. Ritmi della svolta. Bun
+"Испытания ракет продолжаются,",procede secondo i piani. Il processo di
+    Дело здесь в одном из основных,    fedelmente una crescita negativa.
+Но у гиби транзисторы собирают с,dichiarato che i missili cadono perché
+Решено послать одного из шадоков на,puntamento che nei water. E i vicini
+original,original
+"SSID : {}, Пароль: {}","SSID : {}, Password: {}"
+TempC0                : {:04x},TempC0                  : {:04x}
+Удалять после установки :,Elimina dopo l'installazione    :
+Wireless LAN MAC адрес : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizzo MAC LAN wireless : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0 : {},USB 3.0 forzato abilitato : {}
+Экзосфера очищает CAL0       : {},Exosphere cancella CAL0   : {}
+Экран                  : ({:08X}) {},Schermo                    : ({:08X}) {}
+Конфигурация зарядки             : {},Configurazione di ricarica                  : {}
+Режим Hi-Z включён               : {},Modalità Hi-Z abilitata                     : {}
+Зарядка батареи включена         : {},Ricarica batteria abilitata                 : {}
+Маршрут электропитания           : {},Percorso di alimentazione                   : {}
+Напряжение источника             : {} mV,Tensione della sorgente                     : {} mV
+Ток источника                    : {} mA,Corrente sorgente                           : {} mA
+Быстрая зарядка разрешена        : {},Ricarica rapida consentita                  : {}
+Целевая прошивка             : {}.{}.{},Firmware di destinazione  : {}.{}.{}
+Поддерживаемая версия HOS    : {},Versione HOS supportata   : {}
+Предел входного тока (буст)      : {} mA,Limite corrente in ingresso (boost)         : {} mA
+Предел тока быстрой зарядки      : {} mA,Limite corrente ricarica rapida             : {} mA
+Напряжение батареи               : {} mV,Tensione batteria                           : {} mV
+Контроллер источника получен     : {},Controller sorgente ottenuto                : {}
+OTG Запрошен                     : {},OTG richiesto                               : {}
+Ёмкость с завода    : {} mAh,Capacità di fabbrica : {} mAh
+Версия атмосферы             : {}.{}.{},Versione di Atmosphere    : {}.{}.{}
+Возраст батареи                  : {}%,Età della batteria                          : {}%
+Выйти из DBI            :,Esci da DBI                     :
+Выключить экран         :,Spegni schermo                  :
+Есть исправление RCM бага    : {},Ha correzione bug RCM     : {}
+Запись в CAL0 разрешена      : {},Scrittura CAL0 consentita : {}
+Источник питания                 : {},Fonte di alimentazione                      : {}
+Место установки         :,Posizione di installazione      :
+%% заряд-разряд     : {},%% carica-scarica    : {}
+Общий размер передачи   :,Dimensione totale trasferimento :
+Общий размер установки  :,Dimensione totale installazione :
+Bluetooth MAC адрес    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Indirizzo MAC Bluetooth    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Configuration Id1      : {},Configuration Id1          : {}
+Emummc включён               : {},Emummc abilitato          : {}
+FullCap               : {:04x} ({} mAh),FullCap                 : {:04x} ({} mAh)
+FullCapNom            : {:04x} ({} mAh),FullCapNom              : {:04x} ({} mAh)
+Поколение ключа              : {},Generazione chiave        : {}
+Git commit hash              : {:016X},Git commit hash           : {:016X}
+Полная ёмкость      : {} mAh,Capacità totale      : {} mAh
+IavgEmpty             : {:04x},IavgEmpty               : {:04x}
+Предел входного тока             : {} mA,Limite corrente in ingresso                 : {} mA
+Предел напряжения заряда батареи : {} mV,Limite di tensione di carica della batteria : {} mV
+Серийный номер         : {},Numero di serie            : {}
+Силовая роль                     : {},Ruolo di alimentazione                      : {}
+QrTable00             : {:04x},QrTable00               : {:04x}
+QrTable10             : {:04x},QrTable10               : {:04x}
+QrTable20             : {:04x},QrTable20               : {:04x}
+QrTable30             : {:04x},QrTable30               : {:04x}
+RCOMP0                : {:04x},RCOMP0                  : {:04x}
+Средняя температура : {}°C,Temperatura media    : {}°C
+Сумма %% заряд-разряд : {} (~{} 0-100 циклов),Somma %% carica-scarica : {} (~{} 0-100 cicli)
+Текущая ёмкость                  : {}%,Capacità attuale                            : {}%
+Текущая ёмкость     : {} mAh,Capacità attuale     : {} mAh
+Текущее напряжение  : {} mV,Tensione attuale     : {} mV
+Текущий заряд       : {}%,Carica attuale       : {}%
+Текущий ток         : {} mA,Corrente attuale     : {} mA
+Температура         : {}°C,Temperatura          : {}°C
+Температура батареи              : {}°C,Temperatura della batteria                  : {}°C

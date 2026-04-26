@@ -435,9 +435,7 @@ def _parse_json_safe(json_str: str) -> dict[str, str]:
     # 2. Convert invalid escaped single quotes (\') to regular single quotes (')
     json_str = json_str.replace("\\'", "'")
     
-    # 3. Fix missing closing double quote right before the final brace
-    json_str = re.sub(r'([^"])\s*\}', r'\1"}', json_str)
-    
+
     try:
         return json.loads(json_str)
     except json.JSONDecodeError as decode_err:
