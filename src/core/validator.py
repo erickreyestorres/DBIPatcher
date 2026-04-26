@@ -23,13 +23,28 @@ class Validator:
                     pass
 
     def check_placeholders(self, original, translation):
-        """Checks if all technical placeholders like {} or %d are preserved."""
+        """Checks if all {…} tags and %x specifiers are preserved exactly."""
         pattern = r"(\{[^}]*\}|%[a-zA-Z])"
         orig_placeholders = re.findall(pattern, original)
         trans_placeholders = re.findall(pattern, translation)
         
         if sorted(orig_placeholders) != sorted(trans_placeholders):
             return f"Placeholder mismatch: expected {orig_placeholders}, found {trans_placeholders}"
+        return None
+
+    def check_square_bracket_tags(self, original, translation):
+        """Checks if all [content] tags are preserved exactly.
+        
+        Excludes [[TOKEN]] patterns (handled by check_tokens).
+        Matches single-bracket tags like [+], [-1], [NSP], etc.
+        """
+        # Match [content] but NOT [[content]]
+        pattern = r"(?<!\[)\[([^\[\]]+)\](?!\])"
+        orig_tags = re.findall(pattern, original)
+        trans_tags = re.findall(pattern, translation)
+        
+        if sorted(orig_tags) != sorted(trans_tags):
+            return f"Square bracket tag mismatch: expected {['['+t+']' for t in orig_tags]}, found {['['+t+']' for t in trans_tags]}"
         return None
 
     def check_tokens(self, original, translation):
@@ -55,11 +70,11 @@ class Validator:
             return "Unexpected colon in translation"
         return None
 
-    def check_bracket_counts(self, original, translation):
-        """Checks if the total count of each bracket type matches between original and translation."""
-        for char in "()[]":
+    def check_parentheses_count(self, original, translation):
+        """Checks if the count of round brackets ( ) matches between original and translation."""
+        for char in "()":
             if original.count(char) != translation.count(char):
-                return f"Bracket count mismatch for '{char}': expected {original.count(char)}, found {translation.count(char)}"
+                return f"Parenthesis count mismatch for '{char}': expected {original.count(char)}, found {translation.count(char)}"
         return None
 
     def validate_row(self, original, translation):
@@ -72,13 +87,16 @@ class Validator:
         err = self.check_placeholders(original, translation)
         if err: errors.append(err)
         
+        err = self.check_square_bracket_tags(original, translation)
+        if err: errors.append(err)
+        
         err = self.check_tokens(original, translation)
         if err: errors.append(err)
         
         err = self.check_colon(original, translation)
         if err: errors.append(err)
         
-        err = self.check_bracket_counts(original, translation)
+        err = self.check_parentheses_count(original, translation)
         if err: errors.append(err)
         
         return errors
