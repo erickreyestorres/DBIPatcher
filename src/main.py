@@ -214,6 +214,8 @@ def cmd_translate() -> None:
     wb = open_or_create_workbook()
     ws = wb[SHEET_NAME]
 
+    force_all = "--force" in sys.argv or "-f" in sys.argv
+
     header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
     col_map = {h: i + 1 for i, h in enumerate(header) if h}
 
@@ -856,6 +858,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="DBI Translation Pipeline")
     parser.add_argument("command", choices=[*COMMANDS.keys(), "all"], help="Pipeline step to run")
     parser.add_argument("lang", nargs="?", help="Language code (required for 'clear')")
+    parser.add_argument("-f", "--force", action="store_true", help="Force re-translate all strings")
     args = parser.parse_args()
 
     # Clear log at every start
