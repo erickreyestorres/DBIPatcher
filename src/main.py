@@ -1096,19 +1096,22 @@ Check the changelog at [https://github.com/rashevskyv/dbi/releases/](https://git
     body_path.write_text(release_body, encoding="utf-8")
 
     # 4. GitHub Release
-    print(f"  [GH] Creating release {dbi_ver}...")
-    assets = list(Path("output").glob("*.bin"))
-    nro_assets = list(Path(".").glob(f"DBI.{dbi_ver}*.nro"))
+    print(f"  [GH] Preparing release {dbi_ver}...")
+    
+    # Pre-delete existing release/tag to simulate overwrite (compatible with older gh)
+    subprocess.run(["gh", "release", "delete", dbi_ver, "--yes"], capture_output=True)
+    subprocess.run(["git", "push", "origin", ":refs/tags/" + dbi_ver], capture_output=True)
+
+    assets = [str(a) for a in Path("output").glob("*.bin")]
+    nro_assets = [str(n) for n in Path(".").glob(f"DBI.{dbi_ver}*.nro")]
     
     cmd = [
         "gh", "release", "create", dbi_ver,
         "--title", f"DBI {dbi_ver} Localization",
-        "--notes-file", str(body_path),
-        "--overwrite"
+        "--notes-file", str(body_path)
     ]
-    # Add files to the command
-    for a in assets: cmd.append(str(a))
-    for n in nro_assets: cmd.append(str(n))
+    cmd.extend(assets)
+    cmd.extend(nro_assets)
 
     try:
         subprocess.run(cmd, check=True)
