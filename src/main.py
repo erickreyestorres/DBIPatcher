@@ -278,122 +278,153 @@ def cmd_translate() -> None:
                 excel_lookup[str(val).strip()] = row
 
         shadok_rows = []
-        for i, item in enumerate(shadok_mapping):
+        shadok_order_idx = 0
+        # First, find Excel rows for each Shadok block
+        for item in shadok_config.get("mapping", []):
             orig_text = item["orig"]
             new_text = item["new"]
-            
-            # 1. Find row (by orig OR by new if we already replaced it once)
             row_idx = excel_lookup.get(orig_text.strip()) or excel_lookup.get(new_text.strip())
             
             if row_idx:
-                # 2. SYNC: Update Original and RU in Excel to the NEW satellite text
-                # This ensures the Russian translation and original match our new content
-                ws.cell(row_idx, col_map["Original"], new_text)
-                if "ru" in col_map:
-                    ws.cell(row_idx, col_map["ru"], new_text)
+                # Capture the exact leading whitespace from the actual Excel string before overwriting it
+                actual_val = str(ws.cell(row_idx, col_map["Original"]).value or "")
+                leading_spaces_count = len(actual_val) - len(actual_val.lstrip(' '))
                 
-                shadok_rows.append((i, row_idx, new_text))
+                padded_new_text = (" " * leading_spaces_count) + new_text.lstrip(' ')
+                # SYNC: Update Original and RU in Excel to the NEW satellite text (with proper padding)
+                ws.cell(row_idx, col_map["Original"], padded_new_text)
+                if "ru" in col_map:
+                    ws.cell(row_idx, col_map["ru"], padded_new_text)
+                # Ensure the original text falls into the dictionary mapping but pass the padding forward
+                shadok_rows.append((shadok_order_idx, row_idx, leading_spaces_count))
+                shadok_order_idx += 1
                 shadok_row_set.add(row_idx)
             else:
                 print(f"  [SHADOK] WARNING: original line not found in Excel: {orig_text[:40]}...")
 
-        # Progress tracking (translated_langs)
-        translated_langs = set(shadok_config.get("translated_langs", []))
-        config_changed = True
-
-        # CLEANUP: If any language in translated_langs has suspiciously few lines in the Excel,
-        # remove it from the set so it gets re-translated.
-        valid_translated_langs = []
-        for lc in sorted(list(translated_langs)):
-            if lc not in col_map: continue
-            col = col_map[lc]
-            non_empty_count = 0
-            for _, row_idx, _ in shadok_rows:
-                val = ws.cell(row_idx, col).value
-                if val and str(val).strip():
-                    non_empty_count += 1
-            if non_empty_count >= 20:
-                valid_translated_langs.append(lc)
-            else:
-                print(f"  [SHADOK] CLEANUP: Language '{lc}' has only {non_empty_count}/33 lines. Resetting.")
-        
-        translated_langs = set(valid_translated_langs)
-        shadok_config["translated_langs"] = valid_translated_langs
-        # Save cleanup results
-        with SHADOK_JSON.open("w", encoding="utf-8") as f:
-            json.dump(shadok_config, f, ensure_ascii=False, indent=2)
-
-        if not force_all and all(lc in translated_langs for lc in lang_codes):
-            print(f"  [SHADOK] All languages already translated. Skipping.")
+        if not shadok_rows:
+            print("  [SHADOK] No Shadok lines found in Excel! Skipping.")
         else:
-            if force_all:
-                langs_to_translate = sorted(lang_codes)
-                translated_langs = set()
-                print(f"  [SHADOK] Force re-translate all {len(langs_to_translate)} languages.")
-                # Clear all shadok cells before re-translating
+            # Progress tracking (translated_langs)
+            translated_langs = set(shadok_config.get("translated_langs", []))
+            config_changed = True
+
+            # CLEANUP: If any language in translated_langs has suspiciously few lines in the Excel,
+            # remove it from the set so it gets re-translated.
+            valid_translated_langs = []
+            for lc in sorted(list(translated_langs)):
+                if lc not in col_map: continue
+                col = col_map[lc]
+                non_empty_count = 0
                 for _, row_idx, _ in shadok_rows:
-                    for lc in langs_to_translate:
-                        if lc in col_map:
-                            ws.cell(row_idx, col_map[lc], "")
-                save_workbook(wb)
-                print(f"  [SHADOK] Cleared {len(shadok_rows)} × {len(langs_to_translate)} cells.")
+                    val = ws.cell(row_idx, col).value
+                    if val and str(val).strip():
+                        non_empty_count += 1
+                if non_empty_count >= 20:
+                    valid_translated_langs.append(lc)
+                else:
+                    print(f"  [SHADOK] CLEANUP: Language '{lc}' has only {non_empty_count}/{len(shadok_rows)} lines. Resetting.")
+            
+            translated_langs = set(valid_translated_langs)
+            shadok_config["translated_langs"] = valid_translated_langs
+            # Save cleanup results
+            with SHADOK_JSON.open("w", encoding="utf-8") as f:
+                json.dump(shadok_config, f, ensure_ascii=False, indent=2)
+
+            if not force_all and all(lc in translated_langs for lc in lang_codes):
+                print(f"  [SHADOK] All languages already translated. Skipping.")
             else:
-                # Filter out languages actually present in translated_langs
-                langs_to_translate = sorted([lc for lc in lang_codes if lc not in translated_langs])
-                print(f"  [SHADOK] {len(langs_to_translate)} languages remaining: {', '.join(langs_to_translate)}")
+                if force_all:
+                    langs_to_translate = sorted(lang_codes)
+                    translated_langs = set()
+                    print(f"  [SHADOK] Force re-translate all {len(langs_to_translate)} languages.")
+                    # Clear all shadok cells before re-translating
+                    for _, row_idx, _ in shadok_rows:
+                        for lc in langs_to_translate:
+                            if lc in col_map:
+                                ws.cell(row_idx, col_map[lc], "")
+                    save_workbook(wb)
+                    print(f"  [SHADOK] Cleared {len(shadok_rows)} × {len(langs_to_translate)} cells.")
+                else:
+                    # Filter out languages actually present in translated_langs
+                    langs_to_translate = sorted([lc for lc in lang_codes if lc not in translated_langs])
+                    print(f"  [SHADOK] {len(langs_to_translate)} languages remaining: {', '.join(langs_to_translate)}")
 
-            if langs_to_translate:
-                print()
-                print("=" * 60)
-                print("  SHADOK BLOCK TRANSLATION")
-                print("=" * 60)
-                print(f"  Lines: {len(shadok_rows)}, Langs to translate: {len(langs_to_translate)}")
-                print(f"  Max line length: {max_line_len}")
-                print("-" * 60)
+                if langs_to_translate:
+                    print()
+                    print("=" * 60)
+                    print("  SHADOK BLOCK TRANSLATION")
+                    print("=" * 60)
+                    print(f"  Lines: {len(shadok_rows)}, Langs to translate: {len(langs_to_translate)}")
+                    print(f"  Max line length: {max_line_len}")
+                    print("-" * 60)
 
-                init_session_shadok()
-                full_text = "\n".join(line for _, _, line in shadok_rows)
+                    init_session_shadok()
+                    # Use mapped orig text from config directly, NOT from excel since excel holds the satellite now
+                    # BUT wait. Where does full_text come from?
+                    # It comes from shadok.json! I'll map it natively from the config items
+                    mapped_origs = [item["new"].strip() for item in shadok_config.get("mapping", [])]
+                    full_text = "\n".join(mapped_origs)
 
-                try:
-                    SHADOK_BATCH_SIZE = 1 
-                    MAX_PASSES = 10
-                    
-                    for pass_idx in range(MAX_PASSES):
-                        # Re-calculate remaining languages in every pass
-                        remaining_langs = sorted([lc for lc in lang_codes if lc not in translated_langs])
-                        if not remaining_langs:
-                            break
-                            
-                        print(f"  [SHADOK] Pass {pass_idx + 1}/{MAX_PASSES}. Remaining: {len(remaining_langs)}")
-                        total_batches = len(remaining_langs)
-
-                        for batch_idx, lc in enumerate(remaining_langs):
-                            print(f"  [SHADOK] Pass {pass_idx+1}: {lc} ({batch_idx+1}/{total_batches})")
-
-                            try:
-                                batch_results = translate_shadok_block(full_text, [lc], max_line_len)
+                    try:
+                        SHADOK_BATCH_SIZE = 1 
+                        MAX_PASSES = 10
+                        
+                        for pass_idx in range(MAX_PASSES):
+                            # Re-calculate remaining languages in every pass
+                            remaining_langs = sorted([lc for lc in lang_codes if lc not in translated_langs])
+                            if not remaining_langs:
+                                break
                                 
-                                translated_block = batch_results.get(lc, "").strip()
-                                if not translated_block:
-                                    print(f"  [SHADOK][{lc}] Empty translation, skipping.")
+                            print(f"  [SHADOK] Pass {pass_idx + 1}/{MAX_PASSES}. Remaining: {len(remaining_langs)}")
+                            total_batches = len(remaining_langs)
+
+                            for batch_idx, lc in enumerate(remaining_langs):
+                                print(f"  [SHADOK] Pass {pass_idx+1}: {lc} ({batch_idx+1}/{total_batches})")
+
+                                try:
+                                    batch_results = translate_shadok_block(full_text, [lc], max_line_len)
+                                    
+                                    translated_block = batch_results.get(lc, "").strip()
+                                    if not translated_block:
+                                        print(f"  [SHADOK][{lc}] Empty translation, skipping.")
+                                        continue
+
+                                    # Client-side wrapping
+                                    trans_lines = wrap_text(translated_block, max_line_len, lc)
+                                    
+                                    print(f"  [SHADOK][{lc}] Wrapped into {len(trans_lines)} lines (Limit: {max_line_len}).")
+
+                                    for line_idx, (order_idx, row_idx, spaces_count) in enumerate(shadok_rows):
+                                        if line_idx < len(trans_lines):
+                                            line = trans_lines[line_idx]
+                                            
+                                            # Preserve exact leading spaces from the original string
+                                            prefix = " " * spaces_count
+                                            line = prefix + line.lstrip(' ')
+                                            
+                                            # Clip just in case
+                                            if len(line) > max_line_len:
+                                                line = line[:max_line_len]
+                                            ws.cell(row_idx, col_map[lc], line)
+                                        else:
+                                            ws.cell(row_idx, col_map[lc], "")
+
+                                    translated_langs.add(lc)
+                                    print(f"  [SHADOK][{lc}] SUCCESS: Written to Excel.")
+
+                                    # Save progress after each successful language
+                                    save_workbook(wb)
+                                    shadok_config["translated_langs"] = sorted(list(translated_langs))
+                                    with SHADOK_JSON.open("w", encoding="utf-8") as f:
+                                        json.dump(shadok_config, f, ensure_ascii=False, indent=2)
+                                    
+                                    time.sleep(0.8)
+
+                                except Exception as batch_error:
+                                    print(f"  [SHADOK][{lc}] FAILED: {batch_error}")
                                     continue
 
-                                # Client-side wrapping
-                                trans_lines = wrap_text(translated_block, max_line_len, lc)
-                                
-                                print(f"  [SHADOK][{lc}] Wrapped into {len(trans_lines)} lines (Limit: {max_line_len}).")
-
-                                for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
-                                    if line_idx < len(trans_lines):
-                                        line = trans_lines[line_idx]
-                                        # Clip just in case
-                                        if len(line) > max_line_len:
-                                            line = line[:max_line_len]
-                                        ws.cell(row_idx, col_map[lc], line)
-                                    else:
-                                        ws.cell(row_idx, col_map[lc], "")
-
-                                translated_langs.add(lc)
                                 print(f"  [SHADOK][{lc}] SUCCESS: Written to Excel.")
 
                                 # Save progress after each successful language
