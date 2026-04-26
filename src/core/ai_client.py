@@ -151,7 +151,7 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
     import time
 
     user_content = json.dumps(
-        {"text": full_text, "languages": target_langs, "max_line_length": max_line_length},
+        {"text": full_text, "languages": target_langs},
         ensure_ascii=True
     )
 
@@ -387,35 +387,58 @@ def _extract_json(content: str) -> dict[str, str]:
     content = content.strip()
 
     # Strategy 1: Look for ```json ... ``` code blocks
-    code_blocks = re.findall(r"```(?:json)?\s*(\{.*?\})\s*```", content, re.DOTALL)
-    if code_blocks:
-        json_str = code_blocks[-1]
+    # Extract everything between ``` markers, then brace-match for the JSON object
+    code_block_match = re.search(r"```(?:json)?\s*(.*?)\s*```", content, re.DOTALL)
+    if code_block_match:
+        inner = code_block_match.group(1).strip()
+        json_str = _find_outer_brace(inner)
+        if json_str:
+            return _parse_json_safe(json_str)
+
+    # Strategy 2: Find outermost { ... } using brace matching (handles nested braces in text)
+    json_str = _find_outer_brace(content)
+    if json_str:
         return _parse_json_safe(json_str)
 
-    # Strategy 2: Find the LAST large JSON-like block (the one with quoted keys)
-    # This avoids matching small {} format specifiers in translations
-    # Look for blocks that contain at least one "key": "value" pair
-    json_blocks = re.findall(r'(\{[^{}]*(?:"[^"]*"\s*:\s*"[^"]*"[^{}]*)+\})', content, re.DOTALL)
-    if json_blocks:
-        # Take the last one (most likely the actual translation JSON)
-        return _parse_json_safe(json_blocks[-1])
-
-    # Strategy 3: Find the biggest { ... } block (greedy, last resort)
-    # Use rfind to start from the end
-    last_close = content.rfind("}")
-    if last_close >= 0:
-        # Walk backwards to find matching opening brace
-        depth = 0
-        for i in range(last_close, -1, -1):
-            if content[i] == "}":
-                depth += 1
-            elif content[i] == "{":
-                depth -= 1
-                if depth == 0:
-                    json_str = content[i:last_close + 1]
-                    return _parse_json_safe(json_str)
-
     raise json.JSONDecodeError("No JSON object found in AI response", content, 0)
+
+
+def _find_outer_brace(text: str) -> str | None:
+    """Find the outermost { ... } in text using brace-depth tracking.
+    
+    Properly handles:
+    - Escaped characters inside JSON strings
+    - Nested braces inside string values
+    """
+    start = text.find("{")
+    if start < 0:
+        return None
+    
+    depth = 0
+    in_string = False
+    escape = False
+    
+    for i in range(start, len(text)):
+        c = text[i]
+        if escape:
+            escape = False
+            continue
+        if c == "\\":
+            escape = True
+            continue
+        if c == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if c == "{":
+            depth += 1
+        elif c == "}":
+            depth -= 1
+            if depth == 0:
+                return text[start:i + 1]
+    
+    return None
 
 
 def _parse_json_safe(json_str: str) -> dict[str, str]:
