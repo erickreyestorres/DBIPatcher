@@ -440,8 +440,51 @@ def _extract_json(content: str) -> dict[str, str]:
 
 
 def _parse_json_safe(json_str: str) -> dict[str, str]:
-    """Parse JSON string with common AI mistake fixes."""
+    """Parse JSON string with common AI mistake fixes.
+    
+    Handles:
+    - Trailing commas
+    - Unescaped double quotes inside values (e.g. Chinese using " instead of ')
+    """
     # Fix trailing commas
     json_str = re.sub(r",\s*}", "}", json_str)
     json_str = re.sub(r",\s*]", "]", json_str)
-    return json.loads(json_str)
+    
+    try:
+        return json.loads(json_str)
+    except json.JSONDecodeError:
+        pass
+    
+    # Fallback: manually extract "key": "value" pairs
+    # This handles cases where AI puts unescaped " inside values
+    result = {}
+    # Match: "lang_code" : "...text..." followed by , or }
+    # Use a state-machine approach to find key-value boundaries
+    pairs = re.finditer(r'"([a-z]{2,6})"\s*:\s*"', json_str)
+    
+    for match in pairs:
+        key = match.group(1)
+        val_start = match.end()  # position right after the opening quote of value
+        
+        # Find the closing quote of this value:
+        # Look for " followed by , or } or end of string
+        # This handles unescaped " inside the value
+        val_end = None
+        for end_match in re.finditer(r'"(?:\s*[,}]|\s*$)', json_str[val_start:]):
+            candidate = val_start + end_match.start()
+            # Make sure this isn't the start of the next key
+            remaining = json_str[candidate + 1:].lstrip()
+            if remaining.startswith(',') or remaining.startswith('}') or not remaining:
+                val_end = candidate
+                break
+        
+        if val_end is not None:
+            value = json_str[val_start:val_end]
+            # Replace any unescaped double quotes with single quotes in the value
+            value = value.replace('"', "'")
+            result[key] = value
+    
+    if result:
+        return result
+    
+    raise json.JSONDecodeError("Failed to parse JSON even with fallback", json_str, 0)

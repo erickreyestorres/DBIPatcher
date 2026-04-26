@@ -408,17 +408,7 @@ def cmd_translate() -> None:
             continue
 
         try:
-            # Batch large language lists to avoid JSON parsing issues
-            LANG_BATCH_SIZE = 8
-            results = {}
-            if len(missing) > LANG_BATCH_SIZE:
-                for batch_start in range(0, len(missing), LANG_BATCH_SIZE):
-                    batch = missing[batch_start:batch_start + LANG_BATCH_SIZE]
-                    batch_results = translate_batch(original, batch, row_id=row)
-                    results.update(batch_results)
-                    time.sleep(0.3)
-            else:
-                results = translate_batch(original, missing, row_id=row)
+            results = translate_batch(original, missing, row_id=row)
         except Exception as e:
             print(f"  [Row {row} | {idx}/{total_rows}] ERROR: {e}")
             total_failed += len(missing)
