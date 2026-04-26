@@ -146,6 +146,73 @@ def init_session_shadok() -> None:
     print(f"  [SHADOK-INIT] Ready!")
 
 
+
+def _make_request_with_retry(url: str, safe_data: bytes, payload: dict, row_id: Optional[int] = None, is_shadok: bool = False, is_refine: bool = False) -> dict[str, str]:
+    import time
+    MAX_RETRIES = 2
+    last_error = None
+    headers = {"Content-Type": "application/json"}
+    
+    tag = "SHADOK" if is_shadok else f"Row {row_id}"
+    log_id = "SHADOK" if is_shadok else row_id
+
+    for attempt in range(MAX_RETRIES + 1):
+        resp_text = "N/A"
+        try:
+            resp = requests.post(url, data=safe_data, headers=headers, timeout=300 if is_shadok else TIMEOUT)
+            resp_text = resp.text
+
+            if resp.status_code != 200:
+                if not is_shadok:
+                    print(f"  [{tag}] Proxy error {resp.status_code} (attempt {attempt + 1})")
+                _log_interaction(payload, resp_text, row_id=log_id)
+                raise requests.HTTPError(f"Status {resp.status_code}")
+
+            data = resp.json()
+            content = data["choices"][0]["message"]["content"]
+            _log_interaction(payload, resp_text, row_id=log_id)
+            if is_shadok:
+                print(f"  [{tag}-DEBUG] content len={len(content)}, first 80: {repr(content[:80])}")
+            return _extract_json(content)
+
+        except Exception as e:
+            last_error = e
+            if resp_text == "N/A" and hasattr(e, 'response') and e.response is not None:
+                resp_text = getattr(e.response, 'text', 'N/A')
+            elif resp_text == "N/A" and "resp" in locals():
+                resp_text = getattr(resp, 'text', 'N/A')
+            _log_interaction(payload, resp_text, row_id=log_id)
+
+            if attempt < MAX_RETRIES:
+                wait = 3 * (attempt + 1) if is_shadok else 2 * (attempt + 1)
+                action = "Refine retry" if is_refine else "Retry"
+                print(f"  [{tag}] {action} {attempt + 1}/{MAX_RETRIES} in {wait}s...")
+                time.sleep(wait)
+            else:
+                action_fail = "All retries failed" if not is_refine else "Refine retries exhausted"
+                print(f"  [{tag}] {action_fail}. Reinitializing...")
+                try:
+                    if is_shadok:
+                        init_session_shadok()
+                    else:
+                        init_session()
+                    time.sleep(1)
+                    resp = requests.post(url, data=safe_data, headers=headers, timeout=300 if is_shadok else TIMEOUT)
+                    resp_text = resp.text
+                    if resp.status_code == 200:
+                        data = resp.json()
+                        content = data["choices"][0]["message"]["content"]
+                        _log_interaction(payload, resp_text, row_id=log_id)
+                        if is_shadok:
+                            print(f"  [{tag}-DEBUG] content len={len(content)}, first 80: {repr(content[:80])}")
+                        return _extract_json(content)
+                except Exception as recovery_error:
+                    print(f"  [{tag}] Recovery failed: {recovery_error}")
+                    _log_interaction(payload, str(recovery_error), row_id=log_id)
+
+    raise RuntimeError(f"Translation failed after {MAX_RETRIES} retries + session recovery: {last_error}")
+
+
 def translate_shadok_block(full_text: str, target_langs: list[str], max_line_length: int) -> dict[str, str]:
     """Translate the full Shadok text as one literary block."""
     import time
@@ -174,50 +241,7 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
     # SAFE ENCODING: We manually dump and encode to ensure non-ASCII characters 
     # are escaped as \uXXXX. This prevents proxy-level encoding corruption.
     safe_data = json.dumps(payload, ensure_ascii=True).encode('utf-8')
-    MAX_RETRIES = 2
-    last_error = None
-    headers = {"Content-Type": "application/json"}
-
-    for attempt in range(MAX_RETRIES + 1):
-        resp_text = "N/A"
-        try:
-            resp = requests.post(url, data=safe_data, headers=headers, timeout=300)
-            resp_text = resp.text
-
-            if resp.status_code != 200:
-                _log_interaction(payload, resp_text, row_id="SHADOK")
-                raise requests.HTTPError(f"Status {resp.status_code}")
-
-            data = resp.json()
-            content = data["choices"][0]["message"]["content"]
-            _log_interaction(payload, resp_text, row_id="SHADOK")
-            print(f"  [SHADOK-DEBUG] content len={len(content)}, first 80: {repr(content[:80])}")
-            return _extract_json(content)
-
-        except Exception as e:
-            last_error = e
-            _log_interaction(payload, resp_text, row_id="SHADOK")
-
-            if attempt < MAX_RETRIES:
-                wait = 3 * (attempt + 1)
-                print(f"  [SHADOK] Retry {attempt + 1}/{MAX_RETRIES} in {wait}s...")
-                time.sleep(wait)
-            else:
-                print(f"  [SHADOK] All retries failed. Reinitializing...")
-                try:
-                    init_session_shadok()
-                    time.sleep(1)
-                    resp = requests.post(url, data=safe_data, headers=headers, timeout=300)
-                    resp_text = resp.text
-                    if resp.status_code == 200:
-                        data = resp.json()
-                        content = data["choices"][0]["message"]["content"]
-                        _log_interaction(payload, resp_text, row_id="SHADOK")
-                        return _extract_json(content)
-                except Exception as recovery_error:
-                    print(f"  [SHADOK] Recovery failed: {recovery_error}")
-
-    raise RuntimeError(f"Shadok translation failed: {last_error}")
+    return _make_request_with_retry(url, safe_data, payload, row_id=None, is_shadok=True)
 
 
 def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = None) -> dict[str, str]:
@@ -247,55 +271,7 @@ def translate_batch(text: str, target_langs: list[str], row_id: Optional[int] = 
 
     # SAFE ENCODING
     safe_data = json.dumps(payload, ensure_ascii=True).encode('utf-8')
-    MAX_RETRIES = 2
-    last_error = None
-    headers = {"Content-Type": "application/json"}
-
-    for attempt in range(MAX_RETRIES + 1):
-        resp_text = "N/A"
-        try:
-            resp = requests.post(url, data=safe_data, headers=headers, timeout=TIMEOUT)
-            resp_text = resp.text
-
-            if resp.status_code != 200:
-                print(f"  [Row {row_id}] Proxy error {resp.status_code} (attempt {attempt + 1})")
-                _log_interaction(payload, resp_text, row_id=row_id)
-                raise requests.HTTPError(f"Status {resp.status_code}")
-
-            data = resp.json()
-            content = data["choices"][0]["message"]["content"]
-            _log_interaction(payload, resp_text, row_id=row_id)
-            return _extract_json(content)
-
-        except Exception as e:
-            last_error = e
-            if resp_text == "N/A" and "resp" in locals():
-                resp_text = getattr(resp, 'text', 'N/A')
-            _log_interaction(payload, resp_text, row_id=row_id)
-
-            if attempt < MAX_RETRIES:
-                wait = 2 * (attempt + 1)
-                print(f"  [Row {row_id}] Retry {attempt + 1}/{MAX_RETRIES} in {wait}s...")
-                time.sleep(wait)
-            else:
-                # Both retries failed — session is likely broken
-                print(f"  [Row {row_id}] All {MAX_RETRIES} retries failed. Reinitializing session...")
-                try:
-                    init_session()
-                    time.sleep(1)
-                    # One final attempt with fresh session
-                    resp = requests.post(url, data=safe_data, headers=headers, timeout=TIMEOUT)
-                    resp_text = resp.text
-                    if resp.status_code == 200:
-                        data = resp.json()
-                        content = data["choices"][0]["message"]["content"]
-                        _log_interaction(payload, resp_text, row_id=row_id)
-                        return _extract_json(content)
-                except Exception as recovery_error:
-                    print(f"  [Row {row_id}] Session recovery also failed: {recovery_error}")
-                    _log_interaction(payload, str(recovery_error), row_id=row_id)
-
-    raise RuntimeError(f"Translation failed after {MAX_RETRIES} retries + session recovery: {last_error}")
+    return _make_request_with_retry(url, safe_data, payload, row_id=row_id, is_shadok=False)
 
 
 def refine(correction: str, target_langs: list[str], row_id: Optional[int] = None) -> dict[str, str]:
@@ -461,8 +437,8 @@ def _parse_json_safe(json_str: str) -> dict[str, str]:
     # This handles cases where AI puts unescaped " inside values
     result = {}
     # Match: "lang_code" : "...text..." followed by , or }
-    # Use a state-machine approach to find key-value boundaries
-    pairs = re.finditer(r'"([a-z]{2,6})"\s*:\s*"', json_str)
+    # [a-z0-9] supports codes like es419, ptbr, zhcn, zhtw, frca, engb
+    pairs = re.finditer(r'"([a-z0-9]{2,6})"\s*:\s*"', json_str)
     
     for match in pairs:
         key = match.group(1)

@@ -10,3 +10,6 @@ logs/
 scratch/
 debug_*.txt
 ~$*.xlsx
+*.md
+inspect_*.py
+data/*.csv

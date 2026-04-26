@@ -39,7 +39,15 @@ META_SHEET = "Metadata"
 
 BLOCK_JSON = DATA_DIR / "blocks.json"
 SHADOK_JSON = DATA_DIR / "shadok.json"
-DBI_VERSION_ROW = 9  # Row in dictionary.xlsx that holds DBI version number
+
+def find_dbi_version_row(ws, col_map) -> int:
+    """Find the row that likely contains the pure 3-4 digit version number."""
+    import re as _re
+    for row in range(2, min(50, ws.max_row + 1)):
+        val = str(ws.cell(row, col_map["Original"]).value or "").strip()
+        if _re.match(r"^\d{3,4}$", val):
+            return row
+    return 9  # fallback
 
 
 def load_shadok_config() -> dict | None:
@@ -188,12 +196,13 @@ def cmd_sync() -> None:
     # Update DBI version from NRO filename
     nro_ver = get_nro_version()
     if nro_ver:
-        current_ver = ws.cell(DBI_VERSION_ROW, col_map["Original"]).value
+        version_row = find_dbi_version_row(ws, col_map)
+        current_ver = ws.cell(version_row, col_map["Original"]).value
         if str(current_ver) != nro_ver:
-            print(f"  Updating DBI version: {current_ver} -> {nro_ver}")
+            print(f"  Updating DBI version at row {version_row}: {current_ver} -> {nro_ver}")
             # Write version to Original and ALL language columns
             for col_idx in col_map.values():
-                ws.cell(DBI_VERSION_ROW, col_idx, nro_ver)
+                ws.cell(version_row, col_idx, nro_ver)
         else:
             print(f"  DBI version already current: {nro_ver}")
     else:
@@ -450,7 +459,7 @@ def cmd_translate() -> None:
 
         # Skip AI translation if string has no Cyrillic characters — copy as-is
         cyrillic_count = len(re.findall(r'[а-яА-ЯёЁіІїЇєЄґҐ]', original))
-        if cyrillic_count <= 3:
+        if cyrillic_count < 2:
             for lc in missing:
                 ws.cell(row, col_map[lc], original)
                 total_translated += 1
@@ -693,24 +702,41 @@ def cmd_export() -> None:
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    missing_total = 0
+    
     for lc in langs:
         if lc not in col_map or lc == "ru":
             continue
         csv_path = OUTPUT_DIR / f"{lc}.csv"
         count = 0
+        missing_count = 0
         with csv_path.open("w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
             writer.writerow(["original", "translation"])
             for row in range(2, ws.max_row + 1):
                 original = ws.cell(row, col_map["Original"]).value
-                translation = ws.cell(row, col_map[lc]).value
-                if not original or not translation:
+                if not original:
                     continue
-                writer.writerow([detokenize(original), detokenize(str(translation))])
-                count += 1
-        print(f"  {lc}.csv: {count} entries")
+                    
+                translation = ws.cell(row, col_map[lc]).value
+                
+                if not translation or not str(translation).strip():
+                    english_fallback = ws.cell(row, col_map["en"]).value if "en" in col_map else None
+                    translation = english_fallback if english_fallback and str(english_fallback).strip() else original
+                    missing_count += 1
+                    missing_total += 1
+                    print(f"  [WARNING] Row {row} missing translation for '{lc}'. Fallback to: {translation[:30] + '...' if len(str(translation)) > 30 else translation}")
 
-    print("Export done.")
+                writer.writerow([detokenize(str(original)), detokenize(str(translation))])
+                count += 1
+                
+        print(f"  {lc}.csv: {count} entries" + (f" ({missing_count} missing translations filled with fallback)" if missing_count else ""))
+
+    if missing_total > 0:
+        print(f"\n[ALERT] Export finished with {missing_total} missing translations!")
+        print("Run `python -m src.main translate` to translate missing lines.")
+    else:
+        print("\nExport done.")
 
 
 # ── build ────────────────────────────────────────────────────────────

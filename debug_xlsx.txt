@@ -1,2 +1,0 @@
-Row 35 Value: 'Удаление записи об игре...'
-Hex: d0a3d0b4d0b0d0bbd0b5d0bdd0b8d0b520d0b7d0b0d0bfd0b8d181d0b820d0bed0b120d0b8d0b3d180d0b52e2e2e
