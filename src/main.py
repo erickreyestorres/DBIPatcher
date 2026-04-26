@@ -304,31 +304,44 @@ def cmd_translate() -> None:
                 full_text = "\n".join(line for _, _, line in shadok_rows)
 
                 try:
-                    results = translate_shadok_block(full_text, langs_to_translate, max_line_len)
+                    SHADOK_BATCH_SIZE = 3
+                    all_results = {}
+                    total_batches = (len(langs_to_translate) + SHADOK_BATCH_SIZE - 1) // SHADOK_BATCH_SIZE
 
-                    for lc in langs_to_translate:
-                        translated_text = results.get(lc, "")
-                        if not translated_text:
-                            print(f"  [SHADOK][{lc}] Empty translation, skipping.")
-                            continue
+                    for batch_idx in range(0, len(langs_to_translate), SHADOK_BATCH_SIZE):
+                        batch_langs = langs_to_translate[batch_idx:batch_idx + SHADOK_BATCH_SIZE]
+                        batch_num = batch_idx // SHADOK_BATCH_SIZE + 1
+                        print(f"  [SHADOK] Batch {batch_num}/{total_batches}: {', '.join(batch_langs)}")
 
-                        trans_lines = translated_text.split("\n")
-                        if len(trans_lines) > len(shadok_rows):
-                            trans_lines = trans_lines[:len(shadok_rows)]
+                        batch_results = translate_shadok_block(full_text, batch_langs, max_line_len)
+                        all_results.update(batch_results)
 
-                        for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
-                            if line_idx < len(trans_lines):
-                                line = trans_lines[line_idx]
-                                if len(line) > max_line_len:
-                                    line = line[:max_line_len]
-                                ws.cell(row_idx, col_map[lc], line)
-                            else:
-                                ws.cell(row_idx, col_map[lc], "")
+                        # Write batch results immediately (safety save)
+                        for lc in batch_langs:
+                            translated_text = batch_results.get(lc, "")
+                            if not translated_text:
+                                print(f"  [SHADOK][{lc}] Empty translation, skipping.")
+                                continue
 
-                        print(f"  [SHADOK][{lc}] Written {min(len(trans_lines), len(shadok_rows))} lines.")
+                            trans_lines = translated_text.split("\n")
+                            if len(trans_lines) > len(shadok_rows):
+                                trans_lines = trans_lines[:len(shadok_rows)]
 
-                    save_workbook(wb)
-                    print("  [SHADOK] Saved to dictionary.")
+                            for line_idx, (order_idx, row_idx, _orig) in enumerate(shadok_rows):
+                                if line_idx < len(trans_lines):
+                                    line = trans_lines[line_idx]
+                                    if len(line) > max_line_len:
+                                        line = line[:max_line_len]
+                                    ws.cell(row_idx, col_map[lc], line)
+                                else:
+                                    ws.cell(row_idx, col_map[lc], "")
+
+                            print(f"  [SHADOK][{lc}] Written {min(len(trans_lines), len(shadok_rows))} lines.")
+
+                        save_workbook(wb)
+                        time.sleep(0.5)
+
+                    print("  [SHADOK] All batches complete.")
 
                     shadok_config["translated"] = True
                     config_changed = True
