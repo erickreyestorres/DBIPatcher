@@ -75,3 +75,37 @@ def visual_length(text: str) -> int:
     s = s.replace('\\x1b', '')
     
     return len(s)
+
+
+def normalize_fullwidth(text: str) -> str:
+    """Replace CJK full-width characters with ASCII equivalents.
+    
+    DBI uses ASCII chars in its binary format, so full-width
+    brackets, colons etc. from CJK translations must be normalized.
+    """
+    if not text:
+        return text
+    replacements = {
+        "（": "(", "）": ")",
+        "［": "[", "］": "]",
+        "｛": "{", "｝": "}",
+        "：": ":",
+        "；": ";",
+        "，": ",",
+        "！": "!",
+        "？": "?",
+        "．": ".",
+        "＝": "=",
+        "＋": "+",
+        "－": "-",
+        "／": "/",
+        "＼": "\\",
+        "＊": "*",
+        "＆": "&",
+        "＠": "@",
+        "＃": "#",
+        "％": "%",
+    }
+    for fw, ascii_char in replacements.items():
+        text = text.replace(fw, ascii_char)
+    return text

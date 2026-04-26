@@ -68,6 +68,7 @@ STRICT RULES:
 4. If the source text is the literal string "ru", return the 2-letter language code for each language (e.g. "en", "ua", "fr").
 5. If the source text is pure ASCII/English, return it unchanged for every language.
 6. Do NOT wrap output in ```json``` blocks. Just raw JSON.
+7. Use ONLY ASCII punctuation: () NOT （）, : NOT ：, [] NOT ［］, ! NOT ！. Preserve the exact same count of brackets and colons as in the source text.
 
 EXAMPLE:
 Input:  {"text": "Привет, мир!", "languages": ["en", "de", "ua"]}

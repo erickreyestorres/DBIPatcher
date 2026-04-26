@@ -21,7 +21,7 @@ from pathlib import Path
 
 import openpyxl
 
-from src.core.text_utils import tokenize, detokenize, normalize_tokens_out, visual_length
+from src.core.text_utils import tokenize, detokenize, normalize_tokens_out, visual_length, normalize_fullwidth
 from src.core.validator import validate
 from src.core.ai_client import translate_batch, refine, init_session, init_session_shadok, translate_shadok_block
 
@@ -415,9 +415,9 @@ def cmd_translate() -> None:
             time.sleep(2)
             continue
 
-        # Normalize tokens in AI output
+        # Normalize tokens and full-width chars in AI output
         for lc in list(results.keys()):
-            results[lc] = normalize_tokens_out(results.get(lc, ""))
+            results[lc] = normalize_fullwidth(normalize_tokens_out(results.get(lc, "")))
 
         # ── Validate + Refine loop ───────────────────────────────────
         for attempt in range(MAX_REFINE_ATTEMPTS):
@@ -445,7 +445,7 @@ def cmd_translate() -> None:
                 try:
                     refined = refine(correction, missing, row_id=row)
                     for lc in list(refined.keys()):
-                        refined[lc] = normalize_tokens_out(refined.get(lc, ""))
+                        refined[lc] = normalize_fullwidth(normalize_tokens_out(refined.get(lc, "")))
                     results.update(refined)
                 except Exception as e:
                     print(f"    [Row {row} | {idx}/{total_rows}] Refine error: {e}")
