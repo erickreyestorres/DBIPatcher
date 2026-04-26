@@ -191,6 +191,7 @@ def translate_shadok_block(full_text: str, target_langs: list[str], max_line_len
             data = resp.json()
             content = data["choices"][0]["message"]["content"]
             _log_interaction(payload, resp_text, row_id="SHADOK")
+            print(f"  [SHADOK-DEBUG] content len={len(content)}, first 80: {repr(content[:80])}")
             return _extract_json(content)
 
         except Exception as e:
