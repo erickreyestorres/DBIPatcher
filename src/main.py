@@ -1020,6 +1020,103 @@ def cmd_clear(lang_code: str) -> None:
 
 # ── main ─────────────────────────────────────────────────────────────
 
+def cmd_deploy() -> None:
+    """Commit, push and create a GitHub release with assets."""
+    print("\n" + "="*60)
+    print("  STEP: deploy")
+    print("="*60)
+
+    # 1. Get versions
+    try:
+        dbi_ver = get_nro_version() or "unknown"
+        wb = open_or_create_workbook()
+        patcher_ver = get_version(wb)
+    except Exception as e:
+        print(f"  [ERROR] Failed to get version: {e}")
+        return
+
+    # 2. Git operations
+    print("  [GIT] Staging changes and pushing...")
+    try:
+        subprocess.run(["git", "add", "."], check=True)
+        # Check if there are changes to commit
+        status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout
+        if status.strip():
+            subprocess.run(["git", "commit", "-m", f"chore: deploy DBI {dbi_ver} localization (v{patcher_ver})"], check=True)
+            subprocess.run(["git", "push", "origin", "master"], check=True)
+            print("  [GIT] Changes pushed successfully.")
+        else:
+            print("  [GIT] No changes to commit.")
+    except subprocess.CalledProcessError as e:
+        print(f"  [ERROR] Git operation failed: {e}")
+        return
+
+    # 3. Prepare release body
+    langs_list = """*   **BE** — Belarusian
+*   **DE** — German
+*   **EN** — English (US)
+*   **ENGB** — English (UK)
+*   **ES** — Spanish (Spain)
+*   **ES419** — Spanish (Latin America)
+*   **ET** — Estonian
+*   **FR** — French
+*   **FRCA** — French (Canada)
+*   **IT** — Italian
+*   **JP** — Japanese
+*   **KK** — Kazakh
+*   **KR** — Korean
+*   **LT** — Lithuanian
+*   **LV** — Latvian
+*   **NL** — Dutch
+*   **PL** — Polish
+*   **PT** — Portuguese (Portugal)
+*   **PTBR** — Portuguese (Brazil)
+*   **UA** — Ukrainian
+*   **ZHCN** — Chinese (Simplified)
+*   **ZHTW** — Chinese (Traditional)"""
+
+    release_body = f"""![GitHub release (tag)](https://img.shields.io/github/downloads/rashevskyv/DBIPatcher/{dbi_ver}/total)
+
+{langs_list}
+
+***
+
+### ⚠️ IMPORTANT: Installation Instruction
+To use the translation on your Nintendo Switch:
+1. Download the `translation_XX.bin` file for your language from the assets below.
+2. **Rename the file to `translation.bin`** (it must be exactly this name).
+3. Place `translation.bin` in the same folder where your **DBI.nro** is located.
+
+***
+Check the changelog at [https://github.com/rashevskyv/dbi/releases/](https://github.com/rashevskyv/dbi/releases/).
+"""
+    
+    body_path = Path("scratch/release_body.md")
+    body_path.parent.mkdir(exist_ok=True)
+    body_path.write_text(release_body, encoding="utf-8")
+
+    # 4. GitHub Release
+    print(f"  [GH] Creating release {dbi_ver}...")
+    assets = list(Path("output").glob("*.bin"))
+    nro_assets = list(Path(".").glob(f"DBI.{dbi_ver}*.nro"))
+    
+    cmd = [
+        "gh", "release", "create", dbi_ver,
+        "--title", f"DBI {dbi_ver} Localization",
+        "--notes-file", str(body_path),
+        "--overwrite"
+    ]
+    # Add files to the command
+    for a in assets: cmd.append(str(a))
+    for n in nro_assets: cmd.append(str(n))
+
+    try:
+        subprocess.run(cmd, check=True)
+        print(f"  [GH] Release {dbi_ver} created successfully!")
+    except subprocess.CalledProcessError as e:
+        print(f"  [ERROR] GitHub release failed: {e}")
+
+
 COMMANDS = {
     "sync": cmd_sync,
     "translate": cmd_translate,
@@ -1028,11 +1125,12 @@ COMMANDS = {
     "export": cmd_export,
     "build": cmd_build,
     "clear": cmd_clear,
+    "deploy": cmd_deploy,
 }
 
 
 def cmd_all() -> None:
-    for name in ("sync", "translate", "align", "validate", "export", "build"):
+    for name in ("sync", "translate", "align", "validate", "export", "build", "deploy"):
         print(f"\n{'='*60}\n  STEP: {name}\n{'='*60}")
         COMMANDS[name]()
 
