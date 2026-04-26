@@ -261,6 +261,42 @@ def cmd_translate() -> None:
 
     lang_codes = [lc for lc in langs if lc in col_map and lc != "ru"]
 
+    # ── Phase -1: CLEANUP DUPLICATE ROWS ───────────────────────────────
+    # Rows are considered duplicates if their "Original" column is exactly the same
+    best_rows = {}
+    rows_to_delete = []
+    
+    for row in range(2, ws.max_row + 1):
+        original_val = str(ws.cell(row, col_map["Original"]).value or "")
+        key = original_val.strip()
+        if not key:
+            continue
+            
+        # Count translated languages
+        non_empty = 0
+        for lc in lang_codes:
+            if str(ws.cell(row, col_map[lc]).value or "").strip():
+                non_empty += 1
+                
+        if key in best_rows:
+            best_idx, best_count = best_rows[key]
+            if non_empty > best_count:
+                # The current row is better (more translations)
+                rows_to_delete.append(best_idx)
+                best_rows[key] = (row, non_empty)
+            else:
+                # The previous row was better or equal, so we delete the current row
+                rows_to_delete.append(row)
+        else:
+            best_rows[key] = (row, non_empty)
+            
+    if rows_to_delete:
+        # Sort in reverse to delete from bottom to top so indices don't shift
+        for row in sorted(rows_to_delete, reverse=True):
+            ws.delete_rows(row)
+        print(f"  [CLEANUP] Deleted {len(rows_to_delete)} exact duplicate rows.")
+        save_workbook(wb)
+
     # ── Phase 0: SHADOK BLOCK ────────────────────────────────────────
     shadok_config = load_shadok_config()
     shadok_row_set = set()  # rows to exclude from regular translation
@@ -320,7 +356,9 @@ def cmd_translate() -> None:
                     val = ws.cell(row_idx, col).value
                     if val and str(val).strip():
                         non_empty_count += 1
-                if non_empty_count >= 20:
+                # Flexible threshold: CJK languages are more compact
+                threshold = 10 if lc in ["zhcn", "zhtw", "jp", "kr"] else 20
+                if non_empty_count >= threshold:
                     valid_translated_langs.append(lc)
                 else:
                     print(f"  [SHADOK] CLEANUP: Language '{lc}' has only {non_empty_count}/{len(shadok_rows)} lines. Resetting.")
@@ -384,31 +422,50 @@ def cmd_translate() -> None:
 
                                 try:
                                     batch_results = translate_shadok_block(full_text, [lc], max_line_len)
-                                    
                                     translated_block = batch_results.get(lc, "").strip()
                                     if not translated_block:
                                         print(f"  [SHADOK][{lc}] Empty translation, skipping.")
                                         continue
 
-                                    # Client-side wrapping
-                                    trans_lines = wrap_text(translated_block, max_line_len, lc)
-                                    
-                                    print(f"  [SHADOK][{lc}] Wrapped into {len(trans_lines)} lines (Limit: {max_line_len}).")
-
-                                    for line_idx, (order_idx, row_idx, spaces_count) in enumerate(shadok_rows):
-                                        if line_idx < len(trans_lines):
-                                            line = trans_lines[line_idx]
-                                            
-                                            # Preserve exact leading spaces from the original string
-                                            prefix = " " * spaces_count
-                                            line = prefix + line.lstrip(' ')
-                                            
-                                            # Clip just in case
-                                            if len(line) > max_line_len:
-                                                line = line[:max_line_len]
-                                            ws.cell(row_idx, col_map[lc], line)
-                                        else:
+                                    # Logical wrapping: handle indented lines as mandatory break points
+                                    current_text = translated_block
+                                    for i in range(len(shadok_rows)):
+                                        order_idx, row_idx, lead_spaces = shadok_rows[i]
+                                        
+                                        if not current_text.strip():
                                             ws.cell(row_idx, col_map[lc], "")
+                                            continue
+                                            
+                                        # If lead_spaces > 0, we treat this as a start of a new part (like a signature).
+                                        # But we also have a limit for the line length.
+                                        wrapped = wrap_text(current_text, max_line_len, lc)
+                                        if not wrapped:
+                                            ws.cell(row_idx, col_map[lc], "")
+                                            continue
+                                            
+                                        line_val = wrapped[0]
+                                        padded_val = (" " * lead_spaces) + line_val.lstrip()
+                                        
+                                        # Clip just in case
+                                        if len(padded_val) > max_line_len:
+                                            padded_val = padded_val[:max_line_len]
+                                            
+                                        ws.cell(row_idx, col_map[lc], padded_val)
+                                        
+                                        # Mark text as consumed
+                                        consumed_len = len(line_val)
+                                        current_text = current_text[consumed_len:].lstrip()
+                                        
+                                        # Mandatory Break Logic:
+                                        # If the NEXT row in shadok_rows has leading spaces, we must NOT 
+                                        # put any more text into the current logical sequence.
+                                        if i + 1 < len(shadok_rows):
+                                            next_lead_spaces = shadok_rows[i+1][2]
+                                            if next_lead_spaces > 0:
+                                                # The rest of 'current_text' will start from the next cell 
+                                                # because it has indentation.
+                                                pass
+
 
                                     translated_langs.add(lc)
                                     print(f"  [SHADOK][{lc}] SUCCESS: Written to Excel.")
@@ -425,32 +482,18 @@ def cmd_translate() -> None:
                                     print(f"  [SHADOK][{lc}] FAILED: {batch_error}")
                                     continue
 
-                                print(f"  [SHADOK][{lc}] SUCCESS: Written to Excel.")
+                        if not any(lc not in translated_langs for lc in lang_codes):
+                            print("  [SHADOK] All languages complete!")
+                        else:
+                            print(f"  [SHADOK] Finished {MAX_PASSES} passes. Some languages might still be missing.")
 
-                                # Save progress after each successful language
-                                save_workbook(wb)
-                                shadok_config["translated_langs"] = sorted(list(translated_langs))
-                                with SHADOK_JSON.open("w", encoding="utf-8") as f:
-                                    json.dump(shadok_config, f, ensure_ascii=False, indent=2)
-                                
-                                time.sleep(0.8)
+                    except Exception as e:
+                        print(f"  [SHADOK] Fatal error: {e}")
 
-                            except Exception as batch_error:
-                                print(f"  [SHADOK][{lc}] FAILED: {batch_error}")
-                                continue
-
-                    if not any(lc not in translated_langs for lc in lang_codes):
-                        print("  [SHADOK] All languages complete!")
-                    else:
-                        print(f"  [SHADOK] Finished {MAX_PASSES} passes. Some languages might still be missing.")
-
-                except Exception as e:
-                    print(f"  [SHADOK] Fatal error: {e}")
-
-                print("=" * 60)
-                print()
-            else:
-                print(f"  [SHADOK] No languages to translate. Skipping.")
+                    print("=" * 60)
+                    print()
+                else:
+                    print(f"  [SHADOK] No languages to translate. Skipping.")
 
         # Save updated config at the end to be sure
         with SHADOK_JSON.open("w", encoding="utf-8") as f:
@@ -459,9 +502,22 @@ def cmd_translate() -> None:
 
     # ── Scan: count rows that need translation (excluding shadoks) ───
     rows_to_translate = []
+    
+    # Safety net: collect all known Shadok strings to ensure no duplicates slip into the general loop
+    shadok_all_strings = set()
+    for item in shadok_config.get("mapping", []):
+        shadok_all_strings.add(item["orig"].strip())
+        shadok_all_strings.add(item["new"].strip())
+
     for row in range(2, ws.max_row + 1):
         if row in shadok_row_set:
-            continue  # skip shadok rows
+            continue  # skip strictly mapped shadok rows
+            
+        actual_val = str(ws.cell(row, col_map["Original"]).value or "")
+        if actual_val.strip() in shadok_all_strings:
+            # Skip any duplicate or stray Shadok rows so they don't break the general pipeline
+            continue
+            
         original = ws.cell(row, col_map["Original"]).value
         if not original:
             continue
@@ -674,15 +730,18 @@ def cmd_validate() -> None:
         if "rows" in shadok_config and shadok_config["rows"]:
             shadok_row_set = {r for r in shadok_config["rows"] if r is not None}
         else:
-            # Fallback: find by text
             excel_lookup = {}
             for row in range(2, ws.max_row + 1):
                 val = ws.cell(row, col_map["Original"]).value
                 if val:
                     excel_lookup[str(val).strip()] = row
-            for line in shadok_config["lines"]:
-                if line in excel_lookup:
-                    shadok_row_set.add(excel_lookup[line])
+
+            for item in shadok_config.get("mapping", []):
+                orig_text = item["orig"].strip()
+                new_text = item["new"].strip()
+                r = excel_lookup.get(orig_text) or excel_lookup.get(new_text)
+                if r:
+                    shadok_row_set.add(r)
         if shadok_row_set:
             print(f"  Excluding {len(shadok_row_set)} shadok rows from validation.")
 
@@ -844,8 +903,8 @@ def cmd_align() -> None:
         matched_rows = []
         for pattern in patterns:
             try:
-                regex = _re.compile(pattern, _re.IGNORECASE)
-            except _re.error as e:
+                regex = re.compile(pattern, re.IGNORECASE)
+            except re.error as e:
                 print(f"  [WARN] Invalid regex in block {bid}: {pattern} -> {e}")
                 continue
 
@@ -973,7 +1032,7 @@ COMMANDS = {
 
 
 def cmd_all() -> None:
-    for name in ("sync", "translate", "align", "validate", "export"):
+    for name in ("sync", "translate", "align", "validate", "export", "build"):
         print(f"\n{'='*60}\n  STEP: {name}\n{'='*60}")
         COMMANDS[name]()
 

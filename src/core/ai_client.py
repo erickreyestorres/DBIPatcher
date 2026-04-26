@@ -204,7 +204,7 @@ def _make_request_with_retry(url: str, safe_data: bytes, payload: dict, row_id: 
                         content = data["choices"][0]["message"]["content"]
                         _log_interaction(payload, resp_text, row_id=log_id)
                         if is_shadok:
-                            print(f"  [{tag}-DEBUG] content len={len(content)}, first 80: {repr(content[:80])}")
+                            print(f"  [{tag}-DEBUG] content len={len(content)}:\n{content}\n" + "-"*40)
                         return _extract_json(content)
                 except Exception as recovery_error:
                     print(f"  [{tag}] Recovery failed: {recovery_error}")
@@ -428,9 +428,21 @@ def _parse_json_safe(json_str: str) -> dict[str, str]:
     json_str = re.sub(r",\s*}", "}", json_str)
     json_str = re.sub(r",\s*]", "]", json_str)
     
+    # Aggressively heal LLM syntax hallucinations for Shadok blocks
+    # 1. Convert literal newlines (which crash JSON parse) to spaces
+    json_str = json_str.replace('\n', ' ')
+    
+    # 2. Convert invalid escaped single quotes (\') to regular single quotes (')
+    json_str = json_str.replace("\\'", "'")
+    
+    # 3. Fix missing closing double quote right before the final brace
+    json_str = re.sub(r'([^"])\s*\}', r'\1"}', json_str)
+    
     try:
         return json.loads(json_str)
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as decode_err:
+        print(f"  [DEBUG] json.loads failed: {decode_err}")
+        print(f"  [DEBUG] json_str dump: {repr(json_str)}")
         pass
     
     # Fallback: manually extract "key": "value" pairs
