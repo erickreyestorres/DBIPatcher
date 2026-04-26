@@ -226,42 +226,40 @@ def cmd_translate() -> None:
     shadok_row_set = set()  # rows to exclude from regular translation
 
     if shadok_config:
-        shadok_lines = shadok_config["lines"]
-        max_line_len = shadok_config["max_line_length"]
+        shadok_mapping = shadok_config.get("mapping", [])
+        max_line_len = shadok_config.get("max_line_length", 39)
         config_changed = False
 
-        # Resolve row numbers: use cached or find them
-        if "rows" in shadok_config and shadok_config["rows"]:
-            # Use cached row numbers
-            shadok_rows = []
-            for i, (line, row_idx) in enumerate(zip(shadok_lines, shadok_config["rows"])):
-                shadok_rows.append((i, row_idx, line))
+        # Resolve row numbers by searching for original lines
+        excel_lookup = {}
+        for row in range(2, ws.max_row + 1):
+            val = ws.cell(row, col_map["Original"]).value
+            if val:
+                excel_lookup[str(val).strip()] = row
+
+        shadok_rows = []
+        for i, item in enumerate(shadok_mapping):
+            orig_text = item["orig"]
+            new_text = item["new"]
+            
+            # 1. Find row (by orig OR by new if we already replaced it once)
+            row_idx = excel_lookup.get(orig_text.strip()) or excel_lookup.get(new_text.strip())
+            
+            if row_idx:
+                # 2. SYNC: Update Original and RU in Excel to the NEW satellite text
+                # This ensures the Russian translation and original match our new content
+                ws.cell(row_idx, col_map["Original"], new_text)
+                if "ru" in col_map:
+                    ws.cell(row_idx, col_map["ru"], new_text)
+                
+                shadok_rows.append((i, row_idx, new_text))
                 shadok_row_set.add(row_idx)
-        else:
-            # Find rows in Excel and cache them
-            excel_lookup = {}
-            for row in range(2, ws.max_row + 1):
-                val = ws.cell(row, col_map["Original"]).value
-                if val:
-                    excel_lookup[str(val).strip()] = row
+            else:
+                print(f"  [SHADOK] WARNING: original line not found in Excel: {orig_text[:40]}...")
 
-            shadok_rows = []
-            cached_row_nums = []
-            for i, line in enumerate(shadok_lines):
-                if line in excel_lookup:
-                    row_idx = excel_lookup[line]
-                    shadok_rows.append((i, row_idx, line))
-                    shadok_row_set.add(row_idx)
-                    cached_row_nums.append(row_idx)
-                else:
-                    cached_row_nums.append(None)
-                    print(f"  [SHADOK] WARNING: line not found: {line[:40]}...")
-
-            shadok_config["rows"] = cached_row_nums
-            config_changed = True
-
-        # Determine what to do based on progress
+        # Progress tracking (translated_langs)
         translated_langs = set(shadok_config.get("translated_langs", []))
+        config_changed = True
 
         # CLEANUP: If any language in translated_langs has suspiciously few lines in the Excel,
         # remove it from the set so it gets re-translated.
