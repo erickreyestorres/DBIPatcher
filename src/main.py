@@ -16,9 +16,14 @@ import csv
 import json
 import re
 import subprocess
+import shutil
 import sys
 import time
 from pathlib import Path
+
+# Force stdout to UTF-8 on Windows
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding='utf-8')
 
 import openpyxl
 
@@ -33,6 +38,7 @@ UA_CSV = DATA_DIR / "ua.csv"
 LANG_JSON = DATA_DIR / "languages.json"
 OUTPUT_DIR = ROOT / "output"
 TRANSLATIONS_DIR = ROOT / "translations"
+DIST_DIR = ROOT / "dist"
 BUILD_SCRIPT = ROOT / "scripts" / "build_translation_bin.py"
 
 SHEET_NAME = "Translations"
@@ -956,6 +962,44 @@ def cmd_build() -> None:
     print("Build done.")
 
 
+def cmd_dist() -> None:
+    """Organize NRO and translation bins into per-language folders in 'dist'."""
+    langs = load_languages()
+    
+    if DIST_DIR.exists():
+        shutil.rmtree(DIST_DIR)
+    DIST_DIR.mkdir(parents=True)
+    
+    # Find any DBI*.nro file in the root
+    nro_files = list(ROOT.glob("DBI*.nro"))
+    if not nro_files:
+        print("  [ERROR] No DBI*.nro file found in root!")
+        return
+    
+    source_nro = nro_files[0]
+    print(f"  Found source NRO: {source_nro.name}")
+    
+    for lc in langs:
+        if lc == "ru": continue
+        
+        bin_path = OUTPUT_DIR / f"translation_{lc}.bin"
+        if not bin_path.exists():
+            # Try to build it if missing? No, user usually runs build before dist.
+            continue
+            
+        lang_dist = DIST_DIR / lc
+        lang_dist.mkdir(parents=True, exist_ok=True)
+        
+        # Copy and rename NRO to DBI.nro as requested by user's example
+        shutil.copy2(source_nro, lang_dist / "DBI.nro")
+        # Copy and rename BIN to translation.bin
+        shutil.copy2(bin_path, lang_dist / "translation.bin")
+        
+        print(f"  [OK] {lc}: DBI.nro + translation.bin")
+
+    print("\nOrganization in 'dist' folder complete.")
+
+
 def cmd_align() -> None:
     """Align colons in blocks defined in data/blocks.json (regex-based)."""
 
@@ -1006,10 +1050,7 @@ def cmd_align() -> None:
         print("No rows found matching blocks.json patterns.")
         return
 
-    # Language columns to process (all except 'ru' and 'Original')
     lang_cols = {lc: col_map[lc] for lc in langs if lc in col_map and lc != "ru"}
-    # Also always process Original column
-    lang_cols["Original"] = col_map["Original"]
 
     affected_count = 0
 
@@ -1103,9 +1144,6 @@ def cmd_clear(lang_code: str) -> None:
 
 def cmd_deploy() -> None:
     """Commit, push and create a GitHub release with assets."""
-    print("\n" + "="*60)
-    print("  STEP: deploy")
-    print("="*60)
 
     # 1. Get versions & Check completeness
     try:
@@ -1139,7 +1177,7 @@ def cmd_deploy() -> None:
 
     # 2. Check if tag already exists on GitHub
     print(f"  [CHECK] Checking if tag {dbi_ver} already exists...")
-    check_tag = subprocess.run(["gh", "release", "view", dbi_ver], capture_output=True, text=True)
+    check_tag = subprocess.run(["gh", "release", "view", dbi_ver], capture_output=True, text=True, encoding="utf-8")
     if check_tag.returncode == 0:
         print(f"  [ERROR] Release {dbi_ver} already exists on GitHub. Deployment aborted to prevent overwrite.")
         return
@@ -1149,7 +1187,7 @@ def cmd_deploy() -> None:
     try:
         subprocess.run(["git", "add", "."], check=True)
         # Check if there are changes to commit
-        status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True).stdout
+        status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, encoding="utf-8").stdout
         if status.strip():
             subprocess.run(["git", "commit", "-m", f"chore: deploy DBI {dbi_ver} localization (v{patcher_ver})"], check=True)
             subprocess.run(["git", "push", "origin", "master"], check=True)
@@ -1237,13 +1275,14 @@ COMMANDS = {
     "align": cmd_align,
     "export": cmd_export,
     "build": cmd_build,
+    "dist": cmd_dist,
     "clear": cmd_clear,
     "deploy": cmd_deploy,
 }
 
 
 def cmd_all() -> None:
-    for name in ("sync", "translate", "align", "validate", "export", "build", "deploy"):
+    for name in ("sync", "translate", "align", "validate", "export", "build", "dist", "deploy"):
         print(f"\n{'='*60}\n  STEP: {name}\n{'='*60}")
         COMMANDS[name]()
 
