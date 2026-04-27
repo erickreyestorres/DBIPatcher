@@ -1054,16 +1054,8 @@ SDK на подмену не найдены,Asendamiseks SDK-d ei leitud
 Решено послать одного из шадоков на,otse naabrite juurde detailide järele.
 original,original
 "SSID: {}, Пароль: {}","SSID: {}, Parool: {}"
-Удалять после установки:,Kustuta pärast paigaldamist:
-Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC aadress: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
-Форсировано вклчение USB 3.0: {},USB 3.0 sunnitud lubamine: {}
-Возраст батареи                 : {}%,Aku vanus                 : {}%
-Общий размер установки :,Paigalduse kogumaht:
-Предел напряжения заряда батареи: {} mV,Aku laadimispinge limiit: {} mV
-Средняя температура: {}°C,Keskmine temperatuur: {}°C
-Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Summa %% laad-tühjendus: {} (~{} 0-100 tsüklit)
 Тип оборудования        : {},Seadme tüüp              : {}
-TempC0               : {:04x},TempC0     : {:04x}
+TempC0               : {:04x},TempC0                  : {:04x}
 Уровень заряда батареи         : {},Aku laetuse tase         : {}
 URL для проверки обновлений,URL värskenduste kontrollimiseks
 Установка с картриджа,Paigaldamine mängukaardilt
@@ -1071,8 +1063,8 @@ URL для проверки обновлений,URL värskenduste kontrollimise
 Форсировать UTF-8,Sunni UTF-8
 Хэш версии              : {},Versiooni räsi           : {}
 Читать дату файлов,Loe faili kuupäev
-Экзосфера очищает CAL0      : {},Exosphere puhastab CAL0  : {}
-Экран                 : ({:08X}) {},Ekraan                : ({:08X}) {}
+Экзосфера очищает CAL0      : {},Exosphere puhastab CAL0   : {}
+Экран                 : ({:08X}) {},Ekraan                   : ({:08X}) {}
 Язык                    : {},Keel                     : {}
 "Интервал автобекапа сейвов, дни","Salvestuste automaatse varundamise intervall, päevad"
 Конфигурация зарядки            : {},Laadimise konfiguratsioon   : {}
@@ -1082,8 +1074,8 @@ URL для проверки обновлений,URL värskenduste kontrollimise
 Напряжение источника            : {} mV,Allika pinge                : {} mV
 Ток источника                   : {} mA,Allika vool                 : {} mA
 Быстрая зарядка разрешена       : {},Kiirlaadimise lubatud       : {}
-Целевая прошивка            : {}.{}.{},Sihtfirmware             : {}.{}.{}
-Поддерживаемая версия HOS   : {},Toetatud HOS versioon    : {}
+Целевая прошивка            : {}.{}.{},Sihtfirmware              : {}.{}.{}
+Поддерживаемая версия HOS   : {},Toetatud HOS versioon     : {}
 Предел входного тока (буст)     : {} mA,Sisendvoolu limiit (boost)  : {} mA
 Предел тока быстрой зарядки     : {} mA,Kiirlaadimise voolupiir     : {} mA
 Напряжение батареи              : {} mV,Aku pinge                   : {} mV
@@ -1096,21 +1088,21 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Серийный номер   : {:s},Seerianumber   : {:s}
 Ёмкость с завода   : {} mAh,Tehasekapasiteet          : {} mAh
 Автоповтор кнопок при удержании,Nuppude automaatne kordamine hoidmisel
-Версия атмосферы            : {}.{}.{},Atmosphere'i versioon    : {}.{}.{}
+Версия атмосферы            : {}.{}.{},Atmosphere'i versioon     : {}.{}.{}
 Версия прошивки         : {}.{}.{}-{}.{},Püsivara versioon        : {}.{}.{}-{}.{}
 Возраст батареи                : {}%,Aku vanus                : {}%
 Время гашения экрана в секундах,Ekraani tuhmumise aeg sekundites
-Выйти из DBI           :,Välju DBI-st        :
+Выйти из DBI           :,Välju DBI-st                :
 Выключать экран,Ekraan välja
-Выключить экран        :,Lülita ekraan välja :
+Выключить экран        :,Lülita ekraan välja         :
 Выход на рабочий стол,Välju avakuvale
 Дата первого игрового события : {},Esimese mängusündmuse kuupäev : {}
 Добавлять суффикс к имени файла,Lisa failinimele järelliide
 Достаточное питание            : {},Piisav toide             : {}
-Есть исправление RCM бага   : {},On RCM vea parandus      : {}
+Есть исправление RCM бага   : {},On RCM vea parandus       : {}
 Журналирование действий,Toimingute logimine
 Закладки на SD,SD järjehoidjad
-Запись в CAL0 разрешена     : {},CAL0 kirjutamine lubatud : {}
+Запись в CAL0 разрешена     : {},CAL0 kirjutamine lubatud  : {}
 Запускать точку доступа,Käivita pääsupunkt
 Запустить FTP сервер,Käivita FTP server
 Запустить HTTP сервер,Käivita HTTP server
@@ -1125,14 +1117,14 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Использовать скрытый SSID,Kasuta peidetud SSID-d
 Источник питания                : {},Toiteallikas                : {}
 Курсор на обеих панелях,Kursor mõlemal paneelil
-Место установки        :,Paigalduskoht       :
+Место установки        :,Paigalduskoht               :
 %% заряд-разряд    : {},%% laadimine-tühjendamine : {}
 Никнейм консоли         : {},Konsooli hüüdnimi        : {}
 Общее число игровых сессий    : {},Mängusessioonide koguarv      : {}
-Общий размер передачи  :,Ülekande kogumaht   :
-Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC aadress : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Общий размер передачи  :,Ülekande kogumaht           :
+Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC aadress    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 CDIR в листинге,CDIR loendis
-Configuration Id1     : {},Configuration Id1     : {}
+Configuration Id1     : {},Configuration Id1        : {}
 DeviceId                : {0:} ({0:016X}),DeviceId                 : {0:} ({0:016X})
 Папка для бекапа сохранений,Salvestusandmete varukoopiakaust
 Папка для дампа игр,Mängu tõmmise kaust
@@ -1141,12 +1133,12 @@ DramId                  : {} ({}),DramId                   : {} ({})
 Пароль,Parool
 Перевернуть джойконы,Pööra Joy-Conid
 Перевернуть экран,Pööra ekraani
-Emummc включён              : {},Emummc lubatud           : {}
+Emummc включён              : {},Emummc lubatud            : {}
 Переносить слова,Murra sõnu
 Платформа               : {},Platvorm                 : {}
-FullCap              : {:04x} ({} mAh),FullCap    : {:04x} ({} mAh)
+FullCap              : {:04x} ({} mAh),FullCap                 : {:04x} ({} mAh)
 Подсвечивать файлы обновлений,Tõsta esile värskenduste failid
-FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
+FullCapNom           : {:04x} ({} mAh),FullCapNom              : {:04x} ({} mAh)
 Показываемая версия     : {},Kuvatav versioon         : {}
 Показываемое название   : {},Kuvatav nimi             : {}
 Показывать 'Обновить отсюда',Näita 'Uuenda siit'
@@ -1156,10 +1148,10 @@ FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
 Показывать размер LFS (долго),Näita LFS suurust (aeglane)
 Показывать секунды,Kuva sekundeid
 Показывать часы в статусе,Näita kella olekuribal
-Поколение ключа             : {},Võtme genereerimine      : {}
-Git commit hash             : {:016X},Git commit hash          : {:016X}
+Поколение ключа             : {},Võtme genereerimine       : {}
+Git commit hash             : {:016X},Git commit hash           : {:016X}
 Полная ёмкость     : {} mAh,Täismaht                  : {} mAh
-IavgEmpty            : {:04x},IavgEmpty  : {:04x}
+IavgEmpty            : {:04x},IavgEmpty               : {:04x}
 Пользовательские хранилища,Kasutaja salvestusruumid
 Предел входного тока            : {} mA,Sisendvoolu limiit          : {} mA
 Предназначение          : {},Otstarve                 : {}
@@ -1178,16 +1170,16 @@ IavgEmpty            : {:04x},IavgEmpty  : {:04x}
 Родительский PIN        : {},Lapseluku PIN            : {}
 Серийный # прочитанный  : {},Seerianumber # loetud    : {}
 Серийный # угаданный    : {},Seerianumber ära arvatud : {}
-Серийный номер        : {},Seerianumber          : {}
+Серийный номер        : {},Seerianumber             : {}
 Силовая роль                    : {},Toiterolli                  : {}
-QrTable00            : {:04x},QrTable00  : {:04x}
+QrTable00            : {:04x},QrTable00               : {:04x}
 Смещать курсор после выделения,Liiguta kursorit pärast valikut
-QrTable10            : {:04x},QrTable10  : {:04x}
+QrTable10            : {:04x},QrTable10               : {:04x}
 Сожжено предохранителей : {},Kaitsmeid põletatud      : {}
 Создавать LFS папку,Loo LFS kaust
-QrTable20            : {:04x},QrTable20  : {:04x}
-QrTable30            : {:04x},QrTable30  : {:04x}
-RCOMP0               : {:04x},RCOMP0     : {:04x}
+QrTable20            : {:04x},QrTable20               : {:04x}
+QrTable30            : {:04x},QrTable30               : {:04x}
+RCOMP0               : {:04x},RCOMP0                  : {:04x}
 Сохранения только в RO режиме,Salvestused ainult RO-režiimis
 RTC запущены (приблизительно) : {},RTC käivitatud (ligikaudu)    : {}
 Текущая ёмкость                 : {}%,Praegune mahtuvus           : {}%
@@ -1200,3 +1192,11 @@ RTC запущены (приблизительно) : {},RTC käivitatud (ligika
 Температура батареи             : {}°C,Aku temperatuur             : {}°C
 Тип SoC                 : {},SoC tüüp                 : {}
 Тип источника питания          : {},Toiteallika tüüp         : {}
+Удалять после установки:,Kustuta pärast paigaldamist :
+Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC aadress : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0: {},USB 3.0 sunnitud lubamine : {}
+Возраст батареи                 : {}%,Aku vanus                   : {}%
+Общий размер установки :,Paigalduse kogumaht         :
+Предел напряжения заряда батареи: {} mV,Aku laadimispinge limiit    : {} mV
+Средняя температура: {}°C,Keskmine temperatuur      : {}°C
+Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Summa %% laad-tühjendus : {} (~{} 0-100 tsüklit)

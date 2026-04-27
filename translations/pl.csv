@@ -1054,16 +1054,8 @@ SDK на подмену не найдены,Nie znaleziono SDK do podmiany
 Решено послать одного из шадоков на,wydobywają wprost ze sprzętu stojącego
 original,original
 "SSID: {}, Пароль: {}","SSID: {}, Hasło: {}"
-Удалять после установки:,Usuń po instalacji:
-Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Adres MAC sieci Wireless LAN: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
-Форсировано вклчение USB 3.0: {},Wymuszono wlaczenie USB 3.0: {}
-Возраст батареи                 : {}%,Wiek baterii                 : {}%
-Общий размер установки :,Całkowity rozmiar instalacji:
-Предел напряжения заряда батареи: {} mV,Limit napięcia ładowania baterii: {} mV
-Средняя температура: {}°C,Średnia temperatura: {}°C
-Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Suma %% ładowanie-rozładowanie: {} (~{} 0-100 cykli)
 Тип оборудования        : {},Typ urządzenia            : {}
-TempC0               : {:04x},TempC0     : {:04x}
+TempC0               : {:04x},TempC0                         : {:04x}
 Уровень заряда батареи         : {},Poziom naładowania baterii           : {}
 URL для проверки обновлений,URL do sprawdzania aktualizacji
 Установка с картриджа,Instaluj z kartridża
@@ -1071,24 +1063,24 @@ URL для проверки обновлений,URL do sprawdzania aktualizacji
 Форсировать UTF-8,Wymuś UTF-8
 Хэш версии              : {},Hash wersji               : {}
 Читать дату файлов,Odczytaj datę pliku
-Экзосфера очищает CAL0      : {},Exosphere czyści CAL0   : {}
-Экран                 : ({:08X}) {},Ekran               : ({:08X}) {}
+Экзосфера очищает CAL0      : {},Exosphere czyści CAL0       : {}
+Экран                 : ({:08X}) {},Ekran                        : ({:08X}) {}
 Язык                    : {},Język                     : {}
 "Интервал автобекапа сейвов, дни","Interwał automatycznej kopii zapasowej zapisów, dni"
-Конфигурация зарядки            : {},Konfiguracja ładowania          : {}
-Режим Hi-Z включён              : {},Tryb Hi-Z włączony              : {}
-Зарядка батареи включена        : {},Ładowanie baterii włączone      : {}
-Маршрут электропитания          : {},Trasa zasilania                 : {}
-Напряжение источника            : {} mV,Napięcie źródła                 : {} mV
-Ток источника                   : {} mA,Prąd źródła                     : {} mA
-Быстрая зарядка разрешена       : {},Szybkie ładowanie dozwolone     : {}
-Целевая прошивка            : {}.{}.{},Docelowe oprogramowanie : {}.{}.{}
-Поддерживаемая версия HOS   : {},Obsługiwana wersja HOS  : {}
-Предел входного тока (буст)     : {} mA,Limit prądu wejściowego (boost) : {} mA
-Предел тока быстрой зарядки     : {} mA,Limit prądu szybkiego ładowania : {} mA
-Напряжение батареи              : {} mV,Napięcie baterii                : {} mV
-Контроллер источника получен    : {},Kontroler źródła uzyskany       : {}
-OTG Запрошен                    : {},OTG zażądano                    : {}
+Конфигурация зарядки            : {},Konfiguracja ładowania           : {}
+Режим Hi-Z включён              : {},Tryb Hi-Z włączony               : {}
+Зарядка батареи включена        : {},Ładowanie baterii włączone       : {}
+Маршрут электропитания          : {},Trasa zasilania                  : {}
+Напряжение источника            : {} mV,Napięcie źródła                  : {} mV
+Ток источника                   : {} mA,Prąd źródła                      : {} mA
+Быстрая зарядка разрешена       : {},Szybkie ładowanie dozwolone      : {}
+Целевая прошивка            : {}.{}.{},Docelowe oprogramowanie     : {}.{}.{}
+Поддерживаемая версия HOS   : {},Obsługiwana wersja HOS      : {}
+Предел входного тока (буст)     : {} mA,Limit prądu wejściowego (boost)  : {} mA
+Предел тока быстрой зарядки     : {} mA,Limit prądu szybkiego ładowania  : {} mA
+Напряжение батареи              : {} mV,Napięcie baterii                 : {} mV
+Контроллер источника получен    : {},Kontroler źródła uzyskany        : {}
+OTG Запрошен                    : {},OTG zażądano                     : {}
 Производитель    : {:s} ({:02X}),Producent        : {:s} ({:02X})
 OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Имя продукта     : {:s},Nazwa produktu   : {:s}
@@ -1096,21 +1088,21 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Серийный номер   : {:s},Numer seryjny    : {:s}
 Ёмкость с завода   : {} mAh,Pojemność fabryczna       : {} mAh
 Автоповтор кнопок при удержании,Automatyczne powtarzanie przycisków przy przytrzymaniu
-Версия атмосферы            : {}.{}.{},Wersja Atmosphere       : {}.{}.{}
+Версия атмосферы            : {}.{}.{},Wersja Atmosphere           : {}.{}.{}
 Версия прошивки         : {}.{}.{}-{}.{},Wersja oprogramowania     : {}.{}.{}-{}.{}
 Возраст батареи                : {}%,Wiek baterii                         : {}%
 Время гашения экрана в секундах,Czas przyciemniania ekranu w sekundach
-Выйти из DBI           :,Wyjdź z DBI                 :
+Выйти из DBI           :,Wyjdź z DBI                  :
 Выключать экран,Wyłącz ekran
-Выключить экран        :,Wyłącz ekran                :
+Выключить экран        :,Wyłącz ekran                 :
 Выход на рабочий стол,Wyjdź do menu HOME
 Дата первого игрового события : {},Data pierwszego wydarzenia w grze : {}
 Добавлять суффикс к имени файла,Dodaj sufiks do nazwy pliku
 Достаточное питание            : {},Wystarczające zasilanie              : {}
-Есть исправление RCM бага   : {},Ma poprawkę błędu RCM   : {}
+Есть исправление RCM бага   : {},Ma poprawkę błędu RCM       : {}
 Журналирование действий,Rejestrowanie działań
 Закладки на SD,Zakładki na SD
-Запись в CAL0 разрешена     : {},Zapis do CAL0 dozwolony : {}
+Запись в CAL0 разрешена     : {},Zapis do CAL0 dozwolony     : {}
 Запускать точку доступа,Uruchom punkt dostępu
 Запустить FTP сервер,Uruchom serwer FTP
 Запустить HTTP сервер,Uruchom serwer HTTP
@@ -1123,16 +1115,16 @@ OEM ID           : {:s} ({:s}),OEM ID           : {:s} ({:s})
 Использовать для неё TitleID,Użyj TitleID dla tego
 Использовать разгон,Użyj podkręcania
 Использовать скрытый SSID,Użyj ukrytego SSID
-Источник питания                : {},Źródło zasilania                : {}
+Источник питания                : {},Źródło zasilania                 : {}
 Курсор на обеих панелях,Kursor na obu panelach
-Место установки        :,Lokalizacja instalacji      :
+Место установки        :,Lokalizacja instalacji       :
 %% заряд-разряд    : {},%% ładowanie-rozładowanie : {}
 Никнейм консоли         : {},Pseudonim konsoli         : {}
 Общее число игровых сессий    : {},Całkowita liczba sesji gry        : {}
-Общий размер передачи  :,Całkowity rozmiar transferu :
-Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Adres MAC Bluetooth : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Общий размер передачи  :,Całkowity rozmiar transferu  :
+Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Adres MAC Bluetooth          : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 CDIR в листинге,CDIR w wykazie
-Configuration Id1     : {},Configuration Id1   : {}
+Configuration Id1     : {},Configuration Id1            : {}
 DeviceId                : {0:} ({0:016X}),DeviceId                  : {0:} ({0:016X})
 Папка для бекапа сохранений,Folder kopii zapasowej danych zapisu
 Папка для дампа игр,Folder zrzutów gier
@@ -1141,12 +1133,12 @@ DramId                  : {} ({}),DramId                    : {} ({})
 Пароль,Hasło
 Перевернуть джойконы,Odwróć Joy-Cony
 Перевернуть экран,Obróć ekran
-Emummc включён              : {},Emummc włączony         : {}
+Emummc включён              : {},Emummc włączony             : {}
 Переносить слова,Zawijaj słowa
 Платформа               : {},Platforma                 : {}
-FullCap              : {:04x} ({} mAh),FullCap    : {:04x} ({} mAh)
+FullCap              : {:04x} ({} mAh),FullCap                        : {:04x} ({} mAh)
 Подсвечивать файлы обновлений,Podświetlaj pliki aktualizacji
-FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
+FullCapNom           : {:04x} ({} mAh),FullCapNom                     : {:04x} ({} mAh)
 Показываемая версия     : {},Wyświetlana wersja        : {}
 Показываемое название   : {},Wyświetlana nazwa         : {}
 Показывать 'Обновить отсюда',Pokaż 'Aktualizuj stąd'
@@ -1156,12 +1148,12 @@ FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
 Показывать размер LFS (долго),Pokaż rozmiar LFS (wolno)
 Показывать секунды,Pokaż sekundy
 Показывать часы в статусе,Pokaż zegar w statusie
-Поколение ключа             : {},Generowanie klucza      : {}
-Git commit hash             : {:016X},Git commit hash         : {:016X}
+Поколение ключа             : {},Generowanie klucza          : {}
+Git commit hash             : {:016X},Git commit hash             : {:016X}
 Полная ёмкость     : {} mAh,Pełna pojemność           : {} mAh
-IavgEmpty            : {:04x},IavgEmpty  : {:04x}
+IavgEmpty            : {:04x},IavgEmpty                      : {:04x}
 Пользовательские хранилища,Magazyny użytkownika
-Предел входного тока            : {} mA,Limit prądu wejściowego         : {} mA
+Предел входного тока            : {} mA,Limit prądu wejściowego          : {} mA
 Предназначение          : {},Przeznaczenie             : {}
 Проверять хэш при установке,Weryfikuj hash podczas instalacji
 Просмотр SD карты,Przeglądaj kartę SD
@@ -1178,25 +1170,33 @@ IavgEmpty            : {:04x},IavgEmpty  : {:04x}
 Родительский PIN        : {},PIN rodzicielski          : {}
 Серийный # прочитанный  : {},Numer seryjny # odczytany : {}
 Серийный # угаданный    : {},Numer seryjny odgadnięty  : {}
-Серийный номер        : {},Numer seryjny       : {}
-Силовая роль                    : {},Rola zasilania                  : {}
-QrTable00            : {:04x},QrTable00  : {:04x}
+Серийный номер        : {},Numer seryjny                : {}
+Силовая роль                    : {},Rola zasilania                   : {}
+QrTable00            : {:04x},QrTable00                      : {:04x}
 Смещать курсор после выделения,Przesuń kursor po zaznaczeniu
-QrTable10            : {:04x},QrTable10  : {:04x}
+QrTable10            : {:04x},QrTable10                      : {:04x}
 Сожжено предохранителей : {},Spalonych bezpieczników   : {}
 Создавать LFS папку,Utwórz folder LFS
-QrTable20            : {:04x},QrTable20  : {:04x}
-QrTable30            : {:04x},QrTable30  : {:04x}
-RCOMP0               : {:04x},RCOMP0     : {:04x}
+QrTable20            : {:04x},QrTable20                      : {:04x}
+QrTable30            : {:04x},QrTable30                      : {:04x}
+RCOMP0               : {:04x},RCOMP0                         : {:04x}
 Сохранения только в RO режиме,Zapisy tylko w trybie RO
 RTC запущены (приблизительно) : {},RTC uruchomiony (w przybliżeniu)  : {}
-Текущая ёмкость                 : {}%,Obecna pojemność                : {}%
+Текущая ёмкость                 : {}%,Obecna pojemność                 : {}%
 Текущая ёмкость    : {} mAh,Aktualna pojemność        : {} mAh
 Текущее напряжение : {} mV,Aktualne napięcie         : {} mV
 Текущий заряд      : {}%,Bieżące naładowanie       : {}%
 Текущий ток        : {} mA,Prąd bieżący              : {} mA
 Тема отображения,Motyw wyświetlania
 Температура        : {}°C,Temperatura               : {}°C
-Температура батареи             : {}°C,Temperatura baterii             : {}°C
+Температура батареи             : {}°C,Temperatura baterii              : {}°C
 Тип SoC                 : {},Typ SoC                   : {}
 Тип источника питания          : {},Typ źródła zasilania                 : {}
+Удалять после установки:,Usuń po instalacji           :
+Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Adres MAC sieci Wireless LAN : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0: {},Wymuszone włączenie USB 3.0 : {}
+Возраст батареи                 : {}%,Wiek baterii                     : {}%
+Общий размер установки :,Całkowity rozmiar instalacji :
+Предел напряжения заряда батареи: {} mV,Limit napięcia ładowania baterii : {} mV
+Средняя температура: {}°C,Średnia temperatura       : {}°C
+Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Suma %% ładowanie-rozładowanie : {} (~{} 0-100 cykli)

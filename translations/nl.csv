@@ -1054,16 +1054,8 @@ SDK на подмену не найдены,Geen SDK gevonden voor vervanging
 Решено послать одного из шадоков на,En bij de buren zouden ze chips
 original,original
 "SSID: {}, Пароль: {}","SSID: {}, Wachtwoord: {}"
-Удалять после установки:,Verwijderen na installatie:
-Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC adres: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
-Форсировано вклчение USB 3.0: {},USB 3.0 geforceerd ingeschakeld: {}
-Возраст батареи                 : {}%,Batterijleeftijd                 : {}%
-Общий размер установки :,Totale installatiegrootte:
-Предел напряжения заряда батареи: {} mV,Batterij laadspanningslimiet: {} mV
-Средняя температура: {}°C,Gemiddelde temperatuur: {}°C
-Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Som %% opladen-ontladen: {} (~{} 0-100 cycli)
 Тип оборудования        : {},Apparaattype          : {}
-TempC0               : {:04x},TempC0     : {:04x}
+TempC0               : {:04x},TempC0                  : {:04x}
 Уровень заряда батареи         : {},Batterijlaadniveau                 : {}
 URL для проверки обновлений,URL voor update-controle
 Установка с картриджа,Installeren vanaf cartridge
@@ -1071,8 +1063,8 @@ URL для проверки обновлений,URL voor update-controle
 Форсировать UTF-8,Forceer UTF-8
 Хэш версии              : {},Versie-hash           : {}
 Читать дату файлов,Bestandsdatum lezen
-Экзосфера очищает CAL0      : {},Exosphere wist CAL0       : {}
-Экран                 : ({:08X}) {},Scherm              : ({:08X}) {}
+Экзосфера очищает CAL0      : {},Exosphere wist CAL0             : {}
+Экран                 : ({:08X}) {},Scherm                 : ({:08X}) {}
 Язык                    : {},Taal                  : {}
 "Интервал автобекапа сейвов, дни","Interval voor automatische back-up van saves, dagen"
 Конфигурация зарядки            : {},Laadconfiguratie              : {}
@@ -1082,8 +1074,8 @@ URL для проверки обновлений,URL voor update-controle
 Напряжение источника            : {} mV,Bronspanning                  : {} mV
 Ток источника                   : {} mA,Bronstroom                    : {} mA
 Быстрая зарядка разрешена       : {},Snelladen toegestaan          : {}
-Целевая прошивка            : {}.{}.{},Doelfirmware              : {}.{}.{}
-Поддерживаемая версия HOS   : {},Ondersteunde HOS-versie   : {}
+Целевая прошивка            : {}.{}.{},Doelfirmware                    : {}.{}.{}
+Поддерживаемая версия HOS   : {},Ondersteunde HOS-versie         : {}
 Предел входного тока (буст)     : {} mA,Ingangsstroom limiet (boost)  : {} mA
 Предел тока быстрой зарядки     : {} mA,Snellaadstroomlimiet          : {} mA
 Напряжение батареи              : {} mV,Batterijspanning              : {} mV
@@ -1094,23 +1086,23 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Имя продукта     : {:s},Productnaam    : {:s}
 Ревизия продукта : {:s},Productrevisie : {:s}
 Серийный номер   : {:s},Serienummer    : {:s}
-Ёмкость с завода   : {} mAh,Fabriekscapaciteit   : {} mAh
+Ёмкость с завода   : {} mAh,Fabriekscapaciteit     : {} mAh
 Автоповтор кнопок при удержании,Automatische knopherhaling bij ingedrukt houden
-Версия атмосферы            : {}.{}.{},Atmosphere-versie         : {}.{}.{}
+Версия атмосферы            : {}.{}.{},Atmosphere-versie               : {}.{}.{}
 Версия прошивки         : {}.{}.{}-{}.{},Firmwareversie        : {}.{}.{}-{}.{}
 Возраст батареи                : {}%,Batterijleeftijd                   : {}%
 Время гашения экрана в секундах,Schermdimmingstijd in seconden
-Выйти из DBI           :,DBI afsluiten             :
+Выйти из DBI           :,DBI afsluiten              :
 Выключать экран,Scherm uitschakelen
-Выключить экран        :,Scherm uitschakelen       :
+Выключить экран        :,Scherm uitschakelen        :
 Выход на рабочий стол,Afsluiten naar HOME-menu
 Дата первого игрового события : {},Datum eerste gameplay-gebeurtenis : {}
 Добавлять суффикс к имени файла,Achtervoegsel toevoegen aan bestandsnaam
 Достаточное питание            : {},Voldoende voeding                  : {}
-Есть исправление RCM бага   : {},Heeft RCM-bugfix          : {}
+Есть исправление RCM бага   : {},Heeft RCM-bugfix                : {}
 Журналирование действий,Actielogboek
 Закладки на SD,SD-bladwijzers
-Запись в CAL0 разрешена     : {},CAL0 schrijven toegestaan : {}
+Запись в CAL0 разрешена     : {},CAL0 schrijven toegestaan       : {}
 Запускать точку доступа,Toegangspunt starten
 Запустить FTP сервер,Start FTP-server
 Запустить HTTP сервер,HTTP-server starten
@@ -1125,14 +1117,14 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Использовать скрытый SSID,Verborgen SSID gebruiken
 Источник питания                : {},Stroombron                    : {}
 Курсор на обеих панелях,Cursor op beide panelen
-Место установки        :,Installatielocatie        :
-%% заряд-разряд    : {},%% opladen-ontladen  : {}
+Место установки        :,Installatielocatie         :
+%% заряд-разряд    : {},%% opladen-ontladen    : {}
 Никнейм консоли         : {},Console-bijnaam       : {}
 Общее число игровых сессий    : {},Totaal aantal speelsessies        : {}
-Общий размер передачи  :,Totale overdrachtsgrootte :
-Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC adres : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Общий размер передачи  :,Totale overdrachtsgrootte  :
+Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC adres    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 CDIR в листинге,CDIR in lijst
-Configuration Id1     : {},Configuration Id1   : {}
+Configuration Id1     : {},Configuration Id1      : {}
 DeviceId                : {0:} ({0:016X}),DeviceId              : {0:} ({0:016X})
 Папка для бекапа сохранений,Back-upmap voor opslaggegevens
 Папка для дампа игр,Map voor game-dumps
@@ -1141,12 +1133,12 @@ DramId                  : {} ({}),DramId                : {} ({})
 Пароль,Wachtwoord
 Перевернуть джойконы,Joy-Cons omdraaien
 Перевернуть экран,Scherm draaien
-Emummc включён              : {},Emummc ingeschakeld       : {}
+Emummc включён              : {},Emummc ingeschakeld             : {}
 Переносить слова,Woorden afbreken
 Платформа               : {},Platform              : {}
-FullCap              : {:04x} ({} mAh),FullCap    : {:04x} ({} mAh)
+FullCap              : {:04x} ({} mAh),FullCap                 : {:04x} ({} mAh)
 Подсвечивать файлы обновлений,Update-bestanden markeren
-FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
+FullCapNom           : {:04x} ({} mAh),FullCapNom              : {:04x} ({} mAh)
 Показываемая версия     : {},Weergegeven versie    : {}
 Показываемое название   : {},Weergavenaam          : {}
 Показывать 'Обновить отсюда',Toon 'Hier bijwerken'
@@ -1156,10 +1148,10 @@ FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
 Показывать размер LFS (долго),Toon LFS-grootte (traag)
 Показывать секунды,Seconden weergeven
 Показывать часы в статусе,Klok weergeven in status
-Поколение ключа             : {},Sleutelgeneratie          : {}
-Git commit hash             : {:016X},Git commit hash           : {:016X}
-Полная ёмкость     : {} mAh,Volledige capaciteit : {} mAh
-IavgEmpty            : {:04x},IavgEmpty  : {:04x}
+Поколение ключа             : {},Sleutelgeneratie                : {}
+Git commit hash             : {:016X},Git commit hash                 : {:016X}
+Полная ёмкость     : {} mAh,Volledige capaciteit   : {} mAh
+IavgEmpty            : {:04x},IavgEmpty               : {:04x}
 Пользовательские хранилища,Gebruikersopslag
 Предел входного тока            : {} mA,Ingangsstroom limiet          : {} mA
 Предназначение          : {},Doel                  : {}
@@ -1178,25 +1170,33 @@ IavgEmpty            : {:04x},IavgEmpty  : {:04x}
 Родительский PIN        : {},Ouderlijke PIN        : {}
 Серийный # прочитанный  : {},Serienummer # gelezen : {}
 Серийный # угаданный    : {},Serienummer geraden   : {}
-Серийный номер        : {},Serienummer         : {}
+Серийный номер        : {},Serienummer            : {}
 Силовая роль                    : {},Stroomrol                     : {}
-QrTable00            : {:04x},QrTable00  : {:04x}
+QrTable00            : {:04x},QrTable00               : {:04x}
 Смещать курсор после выделения,Cursor verplaatsen na selectie
-QrTable10            : {:04x},QrTable10  : {:04x}
+QrTable10            : {:04x},QrTable10               : {:04x}
 Сожжено предохранителей : {},Zekeringen verbrand   : {}
 Создавать LFS папку,LFS-map maken
-QrTable20            : {:04x},QrTable20  : {:04x}
-QrTable30            : {:04x},QrTable30  : {:04x}
-RCOMP0               : {:04x},RCOMP0     : {:04x}
+QrTable20            : {:04x},QrTable20               : {:04x}
+QrTable30            : {:04x},QrTable30               : {:04x}
+RCOMP0               : {:04x},RCOMP0                  : {:04x}
 Сохранения только в RO режиме,Opgeslagen bestanden alleen in RO-modus
 RTC запущены (приблизительно) : {},RTC gestart (ongeveer)            : {}
 Текущая ёмкость                 : {}%,Huidige capaciteit            : {}%
-Текущая ёмкость    : {} mAh,Huidige capaciteit   : {} mAh
-Текущее напряжение : {} mV,Huidige spanning     : {} mV
-Текущий заряд      : {}%,Huidige lading       : {}%
-Текущий ток        : {} mA,Huidige stroom       : {} mA
+Текущая ёмкость    : {} mAh,Huidige capaciteit     : {} mAh
+Текущее напряжение : {} mV,Huidige spanning       : {} mV
+Текущий заряд      : {}%,Huidige lading         : {}%
+Текущий ток        : {} mA,Huidige stroom         : {} mA
 Тема отображения,Weergavethema
-Температура        : {}°C,Temperatuur          : {}°C
+Температура        : {}°C,Temperatuur            : {}°C
 Температура батареи             : {}°C,Batterijtemperatuur           : {}°C
 Тип SoC                 : {},SoC-type              : {}
 Тип источника питания          : {},Type stroombron                    : {}
+Удалять после установки:,Verwijderen na installatie :
+Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC adres : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0: {},USB 3.0 geforceerd ingeschakeld : {}
+Возраст батареи                 : {}%,Batterijleeftijd              : {}%
+Общий размер установки :,Totale installatiegrootte  :
+Предел напряжения заряда батареи: {} mV,Batterij laadspanningslimiet  : {} mV
+Средняя температура: {}°C,Gemiddelde temperatuur : {}°C
+Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Som %% opladen-ontladen : {} (~{} 0-100 cycli)

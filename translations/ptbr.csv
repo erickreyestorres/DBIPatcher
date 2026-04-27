@@ -1054,16 +1054,8 @@ SDK на подмену не найдены,Nenhum SDK encontrado para substitui
 Решено послать одного из шадоков на,supostamente extraem chips diretamente
 original,original
 "SSID: {}, Пароль: {}","SSID: {}, Senha: {}"
-Удалять после установки:,Excluir após instalação:
-Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Endereco MAC LAN sem fio: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
-Форсировано вклчение USB 3.0: {},USB 3.0 forcado ativado: {}
-Возраст батареи                 : {}%,Idade da bateria                 : {}%
-Общий размер установки :,Tamanho total da instalação:
-Предел напряжения заряда батареи: {} mV,Limite de tensão de carga da bateria: {} mV
-Средняя температура: {}°C,Temperatura média: {}°C
-Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Soma %% carga-descarga: {} (~{} 0-100 ciclos)
 Тип оборудования        : {},Tipo de equipamento        : {}
-TempC0               : {:04x},TempC0     : {:04x}
+TempC0               : {:04x},TempC0                 : {:04x}
 Уровень заряда батареи         : {},Nível de carga da bateria      : {}
 URL для проверки обновлений,URL para verificação de atualizações
 Установка с картриджа,Instalar do cartucho
@@ -1072,7 +1064,7 @@ URL для проверки обновлений,URL para verificação de atual
 Хэш версии              : {},Hash da versão             : {}
 Читать дату файлов,Ler data do arquivo
 Экзосфера очищает CAL0      : {},Exosphere limpa CAL0      : {}
-Экран                 : ({:08X}) {},Tela                   : ({:08X}) {}
+Экран                 : ({:08X}) {},Tela                     : ({:08X}) {}
 Язык                    : {},Idioma                     : {}
 "Интервал автобекапа сейвов, дни","Intervalo de backup automático de saves, dias"
 Конфигурация зарядки            : {},Configuração de carregamento              : {}
@@ -1130,9 +1122,9 @@ OEM ID           : {:s} ({:s}),OEM ID             : {:s} ({:s})
 Никнейм консоли         : {},Apelido do console         : {}
 Общее число игровых сессий    : {},Número total de sessões de jogo : {}
 Общий размер передачи  :,Tamanho total da transferência :
-Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Endereço MAC Bluetooth : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Endereço MAC Bluetooth   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 CDIR в листинге,CDIR na listagem
-Configuration Id1     : {},Configuration Id1      : {}
+Configuration Id1     : {},Configuration Id1        : {}
 DeviceId                : {0:} ({0:016X}),DeviceId                   : {0:} ({0:016X})
 Папка для бекапа сохранений,Pasta de backup de dados salvos
 Папка для дампа игр,Pasta de dump de jogos
@@ -1144,9 +1136,9 @@ DramId                  : {} ({}),DramId                     : {} ({})
 Emummc включён              : {},Emummc ativado            : {}
 Переносить слова,Quebrar palavras
 Платформа               : {},Plataforma                 : {}
-FullCap              : {:04x} ({} mAh),FullCap    : {:04x} ({} mAh)
+FullCap              : {:04x} ({} mAh),FullCap                : {:04x} ({} mAh)
 Подсвечивать файлы обновлений,Destacar arquivos de atualização
-FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
+FullCapNom           : {:04x} ({} mAh),FullCapNom             : {:04x} ({} mAh)
 Показываемая версия     : {},Versão exibida             : {}
 Показываемое название   : {},Nome exibido               : {}
 Показывать 'Обновить отсюда',Mostrar 'Atualizar daqui'
@@ -1159,7 +1151,7 @@ FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
 Поколение ключа             : {},Geração de chave          : {}
 Git commit hash             : {:016X},Git commit hash           : {:016X}
 Полная ёмкость     : {} mAh,Capacidade total      : {} mAh
-IavgEmpty            : {:04x},IavgEmpty  : {:04x}
+IavgEmpty            : {:04x},IavgEmpty              : {:04x}
 Пользовательские хранилища,Armazenamentos de usuário
 Предел входного тока            : {} mA,Limite de corrente de entrada             : {} mA
 Предназначение          : {},Finalidade                 : {}
@@ -1178,16 +1170,16 @@ IavgEmpty            : {:04x},IavgEmpty  : {:04x}
 Родительский PIN        : {},PIN parental               : {}
 Серийный # прочитанный  : {},Número de série # lido     : {}
 Серийный # угаданный    : {},Número de série adivinhado : {}
-Серийный номер        : {},Número de série        : {}
+Серийный номер        : {},Número de série          : {}
 Силовая роль                    : {},Função de alimentação                     : {}
-QrTable00            : {:04x},QrTable00  : {:04x}
+QrTable00            : {:04x},QrTable00              : {:04x}
 Смещать курсор после выделения,Mover cursor após seleção
-QrTable10            : {:04x},QrTable10  : {:04x}
+QrTable10            : {:04x},QrTable10              : {:04x}
 Сожжено предохранителей : {},Fusíveis queimados         : {}
 Создавать LFS папку,Criar pasta LFS
-QrTable20            : {:04x},QrTable20  : {:04x}
-QrTable30            : {:04x},QrTable30  : {:04x}
-RCOMP0               : {:04x},RCOMP0     : {:04x}
+QrTable20            : {:04x},QrTable20              : {:04x}
+QrTable30            : {:04x},QrTable30              : {:04x}
+RCOMP0               : {:04x},RCOMP0                 : {:04x}
 Сохранения только в RO режиме,Salvamentos apenas no modo RO
 RTC запущены (приблизительно) : {},RTC iniciado (aproximadamente)  : {}
 Текущая ёмкость                 : {}%,Capacidade atual                          : {}%
@@ -1200,3 +1192,11 @@ RTC запущены (приблизительно) : {},RTC iniciado (aproximad
 Температура батареи             : {}°C,Temperatura da bateria                    : {}°C
 Тип SoC                 : {},Tipo de SoC                : {}
 Тип источника питания          : {},Tipo de fonte de alimentação   : {}
+Удалять после установки:,Excluir após instalação        :
+Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Endereco MAC LAN sem fio : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0: {},USB 3.0 forçado ativado   : {}
+Возраст батареи                 : {}%,Idade da bateria                          : {}%
+Общий размер установки :,Tamanho total da instalação    :
+Предел напряжения заряда батареи: {} mV,Limite de tensão de carga da bateria      : {} mV
+Средняя температура: {}°C,Temperatura média     : {}°C
+Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Soma %% carga-descarga : {} (~{} 0-100 ciclos)

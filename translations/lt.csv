@@ -1054,16 +1054,8 @@ SDK на подмену не найдены,Pakeitimui SDK nerasta
 Решено послать одного из шадоков на,"kaimynus dėl detalių. Tie, būdami"
 original,original
 "SSID: {}, Пароль: {}","SSID: {}, Slaptažodis: {}"
-Удалять после установки:,Ištrinti po diegimo:
-Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC adresas: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
-Форсировано вклчение USB 3.0: {},Priverstinai ijungtas USB 3.0: {}
-Возраст батареи                 : {}%,Baterijos amžius                 : {}%
-Общий размер установки :,Bendras diegimo dydis:
-Предел напряжения заряда батареи: {} mV,Baterijos įkrovimo įtampos riba: {} mV
-Средняя температура: {}°C,Vidutinė temperatūra: {}°C
-Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Suma %% įkrovimas-iškrovimas: {} (~{} 0-100 ciklų)
 Тип оборудования        : {},Įrangos tipas                  : {}
-TempC0               : {:04x},TempC0     : {:04x}
+TempC0               : {:04x},TempC0                       : {:04x}
 Уровень заряда батареи         : {},Baterijos įkrovos lygis               : {}
 URL для проверки обновлений,URL atnaujinimų patikrinimui
 Установка с картриджа,Įdiegti iš kasetės
@@ -1071,24 +1063,24 @@ URL для проверки обновлений,URL atnaujinimų patikrinimui
 Форсировать UTF-8,Priverstinis UTF-8
 Хэш версии              : {},Versijos maiša                 : {}
 Читать дату файлов,Skaityti failo datą
-Экзосфера очищает CAL0      : {},Exosphere išvalo CAL0      : {}
-Экран                 : ({:08X}) {},Ekranas               : ({:08X}) {}
+Экзосфера очищает CAL0      : {},Exosphere išvalo CAL0         : {}
+Экран                 : ({:08X}) {},Ekranas                  : ({:08X}) {}
 Язык                    : {},Kalba                          : {}
 "Интервал автобекапа сейвов, дни","Išsaugojimų automatinio atsarginės kopijos intervalas, dienos"
-Конфигурация зарядки            : {},Įkrovimo konfigūracija       : {}
-Режим Hi-Z включён              : {},Hi-Z režimas įjungtas        : {}
-Зарядка батареи включена        : {},Baterijos įkrovimas įjungtas : {}
-Маршрут электропитания          : {},Maitinimo maršrutas          : {}
-Напряжение источника            : {} mV,Šaltinio įtampa              : {} mV
-Ток источника                   : {} mA,Šaltinio srovė               : {} mA
-Быстрая зарядка разрешена       : {},Greitas įkrovimas leidžiamas : {}
-Целевая прошивка            : {}.{}.{},Tikslinė programinė įranga : {}.{}.{}
-Поддерживаемая версия HOS   : {},Palaikoma HOS versija      : {}
-Предел входного тока (буст)     : {} mA,Įėjimo srovės riba (boost)   : {} mA
-Предел тока быстрой зарядки     : {} mA,Greito įkrovimo srovės riba  : {} mA
-Напряжение батареи              : {} mV,Baterijos įtampa             : {} mV
-Контроллер источника получен    : {},Šaltinio valdiklis gautas    : {}
-OTG Запрошен                    : {},OTG užklausta                : {}
+Конфигурация зарядки            : {},Įkrovimo konfigūracija          : {}
+Режим Hi-Z включён              : {},Hi-Z režimas įjungtas           : {}
+Зарядка батареи включена        : {},Baterijos įkrovimas įjungtas    : {}
+Маршрут электропитания          : {},Maitinimo maršrutas             : {}
+Напряжение источника            : {} mV,Šaltinio įtampa                 : {} mV
+Ток источника                   : {} mA,Šaltinio srovė                  : {} mA
+Быстрая зарядка разрешена       : {},Greitas įkrovimas leidžiamas    : {}
+Целевая прошивка            : {}.{}.{},Tikslinė programinė įranga    : {}.{}.{}
+Поддерживаемая версия HOS   : {},Palaikoma HOS versija         : {}
+Предел входного тока (буст)     : {} mA,Įėjimo srovės riba (boost)      : {} mA
+Предел тока быстрой зарядки     : {} mA,Greito įkrovimo srovės riba     : {} mA
+Напряжение батареи              : {} mV,Baterijos įtampa                : {} mV
+Контроллер источника получен    : {},Šaltinio valdiklis gautas       : {}
+OTG Запрошен                    : {},OTG užklausta                   : {}
 Производитель    : {:s} ({:02X}),Gamintojas           : {:s} ({:02X})
 OEM ID           : {:s} ({:s}),OEM ID               : {:s} ({:s})
 Имя продукта     : {:s},Produkto pavadinimas : {:s}
@@ -1096,7 +1088,7 @@ OEM ID           : {:s} ({:s}),OEM ID               : {:s} ({:s})
 Серийный номер   : {:s},Serijos numeris      : {:s}
 Ёмкость с завода   : {} mAh,Gamyklinė talpa         : {} mAh
 Автоповтор кнопок при удержании,Mygtukų automatinis kartojimas laikant
-Версия атмосферы            : {}.{}.{},Atmosphere versija         : {}.{}.{}
+Версия атмосферы            : {}.{}.{},Atmosphere versija            : {}.{}.{}
 Версия прошивки         : {}.{}.{}-{}.{},Programinės įrangos versija    : {}.{}.{}-{}.{}
 Возраст батареи                : {}%,Baterijos amžius                      : {}%
 Время гашения экрана в секундах,Ekrano pritemdymo laikas sekundėmis
@@ -1107,10 +1099,10 @@ OEM ID           : {:s} ({:s}),OEM ID               : {:s} ({:s})
 Дата первого игрового события : {},Pirmojo žaidimo įvykio data     : {}
 Добавлять суффикс к имени файла,Pridėti priesagą prie failo pavadinimo
 Достаточное питание            : {},Pakankamas maitinimas                 : {}
-Есть исправление RCM бага   : {},Turi RCM klaidos pataisymą : {}
+Есть исправление RCM бага   : {},Turi RCM klaidos pataisymą    : {}
 Журналирование действий,Veiksmų registravimas
 Закладки на SD,SD žymės
-Запись в CAL0 разрешена     : {},CAL0 rašymas leidžiamas    : {}
+Запись в CAL0 разрешена     : {},CAL0 rašymas leidžiamas       : {}
 Запускать точку доступа,Paleisti prieigos tašką
 Запустить FTP сервер,Paleisti FTP serverį
 Запустить HTTP сервер,Paleisti HTTP serverį
@@ -1123,16 +1115,16 @@ OEM ID           : {:s} ({:s}),OEM ID               : {:s} ({:s})
 Использовать для неё TitleID,Naudoti TitleID tam
 Использовать разгон,Naudoti įrenginio spartinimą
 Использовать скрытый SSID,Naudoti paslėptą SSID
-Источник питания                : {},Maitinimo šaltinis           : {}
+Источник питания                : {},Maitinimo šaltinis              : {}
 Курсор на обеих панелях,Žymeklis abiejuose skydeliuose
 Место установки        :,Diegimo vieta           :
 %% заряд-разряд    : {},%% įkrovimas-iškrovimas : {}
 Никнейм консоли         : {},Konsolės slapyvardis           : {}
 Общее число игровых сессий    : {},Bendras žaidimo seansų skaičius : {}
 Общий размер передачи  :,Bendras perdavimo dydis :
-Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC adresas : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC adresas    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 CDIR в листинге,CDIR sąraše
-Configuration Id1     : {},Configuration Id1     : {}
+Configuration Id1     : {},Configuration Id1        : {}
 DeviceId                : {0:} ({0:016X}),DeviceId                       : {0:} ({0:016X})
 Папка для бекапа сохранений,Išsaugotų duomenų atsarginės kopijos aplankas
 Папка для дампа игр,Žaidimų išklotinės aplankas
@@ -1141,12 +1133,12 @@ DramId                  : {} ({}),DramId                         : {} ({})
 Пароль,Slaptažodis
 Перевернуть джойконы,Apversti Joy-Cons
 Перевернуть экран,Pasukti ekraną
-Emummc включён              : {},Emummc įjungta             : {}
+Emummc включён              : {},Emummc įjungta                : {}
 Переносить слова,Perkelti žodžius
 Платформа               : {},Platforma                      : {}
-FullCap              : {:04x} ({} mAh),FullCap    : {:04x} ({} mAh)
+FullCap              : {:04x} ({} mAh),FullCap                      : {:04x} ({} mAh)
 Подсвечивать файлы обновлений,Paryškinti atnaujinimo failus
-FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
+FullCapNom           : {:04x} ({} mAh),FullCapNom                   : {:04x} ({} mAh)
 Показываемая версия     : {},Rodoma versija                 : {}
 Показываемое название   : {},Rodomas pavadinimas            : {}
 Показывать 'Обновить отсюда',Rodyti 'Atnaujinti iš čia'
@@ -1156,12 +1148,12 @@ FullCapNom           : {:04x} ({} mAh),FullCapNom : {:04x} ({} mAh)
 Показывать размер LFS (долго),Rodyti LFS dydį (lėtai)
 Показывать секунды,Rodyti sekundes
 Показывать часы в статусе,Rodyti laikrodį būsenoje
-Поколение ключа             : {},Rakto generavimas          : {}
-Git commit hash             : {:016X},Git commit hash            : {:016X}
+Поколение ключа             : {},Rakto generavimas             : {}
+Git commit hash             : {:016X},Git commit hash               : {:016X}
 Полная ёмкость     : {} mAh,Pilnas talpa            : {} mAh
-IavgEmpty            : {:04x},IavgEmpty  : {:04x}
+IavgEmpty            : {:04x},IavgEmpty                    : {:04x}
 Пользовательские хранилища,Vartotojo saugyklos
-Предел входного тока            : {} mA,Įėjimo srovės riba           : {} mA
+Предел входного тока            : {} mA,Įėjimo srovės riba              : {} mA
 Предназначение          : {},Paskirtis                      : {}
 Проверять хэш при установке,Tikrinti maišą diegiant
 Просмотр SD карты,Naršyti SD kortelę
@@ -1178,25 +1170,33 @@ IavgEmpty            : {:04x},IavgEmpty  : {:04x}
 Родительский PIN        : {},Tėvų PIN                       : {}
 Серийный # прочитанный  : {},Serijos numeris # perskaitytas : {}
 Серийный # угаданный    : {},Serijinis numeris atspėtas     : {}
-Серийный номер        : {},Serijos numeris       : {}
-Силовая роль                    : {},Maitinimo vaidmuo            : {}
-QrTable00            : {:04x},QrTable00  : {:04x}
+Серийный номер        : {},Serijos numeris          : {}
+Силовая роль                    : {},Maitinimo vaidmuo               : {}
+QrTable00            : {:04x},QrTable00                    : {:04x}
 Смещать курсор после выделения,Perkelti žymeklį po pasirinkimo
-QrTable10            : {:04x},QrTable10  : {:04x}
+QrTable10            : {:04x},QrTable10                    : {:04x}
 Сожжено предохранителей : {},Sudeginta saugiklių            : {}
 Создавать LFS папку,Sukurti LFS aplanką
-QrTable20            : {:04x},QrTable20  : {:04x}
-QrTable30            : {:04x},QrTable30  : {:04x}
-RCOMP0               : {:04x},RCOMP0     : {:04x}
+QrTable20            : {:04x},QrTable20                    : {:04x}
+QrTable30            : {:04x},QrTable30                    : {:04x}
+RCOMP0               : {:04x},RCOMP0                       : {:04x}
 Сохранения только в RO режиме,Išsaugojimai tik RO režime
 RTC запущены (приблизительно) : {},RTC paleista (apytiksliai)      : {}
-Текущая ёмкость                 : {}%,Dabartinis talpa             : {}%
+Текущая ёмкость                 : {}%,Dabartinis talpa                : {}%
 Текущая ёмкость    : {} mAh,Dabartinis talpa        : {} mAh
 Текущее напряжение : {} mV,Dabartinė įtampa        : {} mV
 Текущий заряд      : {}%,Dabartinis įkrovimas    : {}%
 Текущий ток        : {} mA,Dabartinė srovė         : {} mA
 Тема отображения,Rodymo tema
 Температура        : {}°C,Temperatūra             : {}°C
-Температура батареи             : {}°C,Baterijos temperatūra        : {}°C
+Температура батареи             : {}°C,Baterijos temperatūra           : {}°C
 Тип SoC                 : {},SoC tipas                      : {}
 Тип источника питания          : {},Maitinimo šaltinio tipas              : {}
+Удалять после установки:,Ištrinti po diegimo     :
+Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC adresas : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
+Форсировано вклчение USB 3.0: {},Priverstinai įjungtas USB 3.0 : {}
+Возраст батареи                 : {}%,Baterijos amžius                : {}%
+Общий размер установки :,Bendras diegimo dydis   :
+Предел напряжения заряда батареи: {} mV,Baterijos įkrovimo įtampos riba : {} mV
+Средняя температура: {}°C,Vidutinė temperatūra    : {}°C
+Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Suma %% įkrovimas-iškrovimas : {} (~{} 0-100 ciklų)
