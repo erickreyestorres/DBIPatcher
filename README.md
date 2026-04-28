@@ -11,6 +11,10 @@ Automated translation system for [DBI](https://github.com/rashevskyv/dbi) - a Ni
 
 > Didn't have to calculate a single XOR manually - the program has 2100 real XORs and 1000 fake ones for obfuscation.
 
+**Not translated:**
+- Shadok fable strings (satirical text blocks)
+- In-game language names displayed in DBI settings
+
 ## Features
 
 - Automated translation for 22 languages using Claude Opus 4.5
