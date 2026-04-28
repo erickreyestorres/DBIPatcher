@@ -168,11 +168,20 @@ def _make_request_with_retry(url: str, safe_data: bytes, payload: dict, row_id: 
                 _log_interaction(payload, resp_text, row_id=log_id)
                 raise requests.HTTPError(f"Status {resp.status_code}")
 
-            data = resp.json()
+            # For Shadok blocks, fix invalid \' in the raw response text BEFORE parsing JSON
+            if is_shadok:
+                # Replace backslash-apostrophe with just apostrophe
+                # In the raw text, this is literally the two characters: \ and '
+                resp_text = resp_text.replace("\\'", "'")
+
+            # Parse JSON manually to handle the response
+            data = json.loads(resp_text)
             content = data["choices"][0]["message"]["content"]
-            _log_interaction(payload, resp_text, row_id=log_id)
+
             if is_shadok:
                 print(f"  [{tag}-DEBUG] content len={len(content)}, first 80: {repr(content[:80])}")
+
+            _log_interaction(payload, resp_text, row_id=log_id)
             return _extract_json(content)
 
         except Exception as e:
@@ -182,6 +191,10 @@ def _make_request_with_retry(url: str, safe_data: bytes, payload: dict, row_id: 
             elif resp_text == "N/A" and "resp" in locals():
                 resp_text = getattr(resp, 'text', 'N/A')
             _log_interaction(payload, resp_text, row_id=log_id)
+
+            # Debug: show raw bytes of response
+            if is_shadok and attempt == 0:
+                print(f"  [DEBUG] Raw response bytes (first 300): {resp_text[:300].encode('utf-8')}")
 
             if attempt < MAX_RETRIES:
                 wait = 3 * (attempt + 1) if is_shadok else 2 * (attempt + 1)
@@ -199,12 +212,19 @@ def _make_request_with_retry(url: str, safe_data: bytes, payload: dict, row_id: 
                     time.sleep(1)
                     resp = requests.post(url, data=safe_data, headers=headers, timeout=300 if is_shadok else TIMEOUT)
                     resp_text = resp.text
+
+                    # For Shadok blocks, fix invalid \' in raw response
+                    if is_shadok:
+                        resp_text = resp_text.replace("\\'", "'")
+
                     if resp.status_code == 200:
-                        data = resp.json()
+                        data = json.loads(resp_text)
                         content = data["choices"][0]["message"]["content"]
-                        _log_interaction(payload, resp_text, row_id=log_id)
+
                         if is_shadok:
                             print(f"  [{tag}-DEBUG] content len={len(content)}:\n{content}\n" + "-"*40)
+
+                        _log_interaction(payload, resp_text, row_id=log_id)
                         return _extract_json(content)
                 except Exception as recovery_error:
                     print(f"  [{tag}] Recovery failed: {recovery_error}")
@@ -355,7 +375,7 @@ def refine(correction: str, target_langs: list[str], row_id: Optional[int] = Non
 
 def _extract_json(content: str) -> dict[str, str]:
     """Robustly extract a JSON object from AI response text.
-    
+
     Handles cases where:
     - AI wraps JSON in ```json ... ``` code blocks
     - AI adds "thinking" text before the JSON
@@ -371,11 +391,22 @@ def _extract_json(content: str) -> dict[str, str]:
     # Step 2: Find the first { and last } — that's our JSON envelope
     first_brace = content.find("{")
     last_brace = content.rfind("}")
-    
+
     if first_brace < 0 or last_brace <= first_brace:
         raise json.JSONDecodeError("No JSON object found in AI response", content, 0)
-    
+
     json_str = content[first_brace:last_brace + 1]
+
+    # Step 3: Fix invalid \' sequences using regex
+    # Match backslash followed by single quote
+    original_len = len(json_str)
+    json_str = re.sub(r"\\\'", "'", json_str)
+    fixed_len = len(json_str)
+
+    if original_len != fixed_len:
+        print(f"  [DEBUG] Fixed {(original_len - fixed_len)} backslash-apostrophe sequences")
+        print(f"  [DEBUG] First 200 after fix: {repr(json_str[:200])}")
+
     return _parse_json_safe(json_str)
 
 
@@ -419,28 +450,32 @@ def _find_outer_brace(text: str) -> str | None:
 
 def _parse_json_safe(json_str: str) -> dict[str, str]:
     """Parse JSON string with common AI mistake fixes.
-    
+
     Handles:
     - Trailing commas
-    - Unescaped double quotes inside values (e.g. Chinese using " instead of ')
+    - Unescaped double quotes inside values
+    - Invalid escape sequences
     """
     # Fix trailing commas
     json_str = re.sub(r",\s*}", "}", json_str)
     json_str = re.sub(r",\s*]", "]", json_str)
-    
-    # Aggressively heal LLM syntax hallucinations for Shadok blocks
-    # 1. Convert literal newlines (which crash JSON parse) to spaces
+
+    # Convert literal newlines to spaces
     json_str = json_str.replace('\n', ' ')
-    
-    # 2. Convert invalid escaped single quotes (\') to regular single quotes (')
-    json_str = json_str.replace("\\'", "'")
-    
 
     try:
         return json.loads(json_str)
     except json.JSONDecodeError as decode_err:
         print(f"  [DEBUG] json.loads failed: {decode_err}")
         print(f"  [DEBUG] json_str dump: {repr(json_str)}")
+
+        # Try to extract the actual error position and show context
+        if hasattr(decode_err, 'pos'):
+            pos = decode_err.pos
+            start = max(0, pos - 50)
+            end = min(len(json_str), pos + 50)
+            context = json_str[start:end]
+            print(f"  [DEBUG] Error context: ...{repr(context)}...")
         pass
     
     # Fallback: manually extract "key": "value" pairs

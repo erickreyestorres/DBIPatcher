@@ -11,7 +11,6 @@ original,translation
 "DPAD или стики для перемещения, (+) - Настройки","DPAD või kange liigutamiseks, (+) - Seaded"
 Ошибка создания файла: {},Viga faili loomisel: {}
 Подключение к серверу...,Serveriga ühendamine...
-      Название: {}\n      Издатель: {}\n      Версия: ,      Pealkiri: {}\n      Väljaandja: {}\n      Versioon: 
    Это действие будет нельзя отменить   ,   Seda toimingut ei saa tühistada   
 SDK подменён,SDK on asendatud
 Точка доступа,Pääsupunkt
@@ -31,7 +30,6 @@ SDK подменён,SDK on asendatud
 Удаление бекапов,Varukoopiate kustutamine
 Удаление записи об игре...,Mängu kirje kustutamine...
 Удаление игр,Mängude kustutamine
-Удаление игры ,Mängu kustutamine 
 Удаление игры целиком: [{}],Kustuta kogu mäng: [{}]
 Удаление каталога LFS,LFS-kataloogi kustutamine
 Удаление контента,Sisu kustutamine
@@ -60,7 +58,6 @@ SaveFS очищена,SaveFS puhastatud
 Удалить старые бекапы,Kustuta vanad varukoopiad
 Удаляется {} из {}...,Kustutatakse {} / {}...
 Удаляется {}...,Kustutatakse {}...
-Удаляется бекап ,Varukoopia kustutamine 
 Удаляется запись о контенте...,Sisu kirje kustutamine...
 Удаляется запись об игре...,Mängu kirje kustutamine...
 Удаляется игра и весь связанный контент,Mängu ja kogu seotud sisu kustutamine
@@ -110,9 +107,8 @@ USB Соединение,USB-ühendus
 Фиксация ФС...,FS commit...
 Финальный размер: {},Lõplik suurus: {}
 Формирование списка...,Loendi genereerimine...
-Форсированный язык    : {},Sunnitud keel    : {}
-Форсированный язык    : {} ({}),Sunnitud keel    : {} ({})
-  Автоопределение,  Automaatne tuvastus
+Форсированный язык    : {},Sunnitud keel      : {}
+Форсированный язык    : {} ({}),Sunnitud keel      : {} ({})
 Форсировать язык,Sunni keel
 Французский,Prantsuse
 "Х:{}, Т:{}, РЦ:{}","H:{}, T:{}, R:{}"
@@ -129,13 +125,11 @@ USB Соединение,USB-ühendus
 Что-то пошло не так. Пропускаем оставшийся файл,Midagi läks valesti. Jätan ülejäänud faili vahele
 "Чтобы вернуться, нажмите B",Tagasiminemiseks vajutage B
 Шадок у Гиби,Shadok Gibis
-Шифрование секции ,Sektsiooni krüpteerimine
 Экспорт SDK,SDK eksport
 Экспортировать,Ekspordi
 Экспортировать SDK,Ekspordi SDK
 Январь,Jaanuar
 Японский,Jaapani
-Ярлык   : ,Otsetee   : 
 Ярлык для DBI,Otsetee DBI jaoks
 да,jah
 не является LFS папкой,ei ole LFS-kaust
@@ -148,7 +142,7 @@ USB Соединение,USB-ühendus
 Просмотр МТР устройства [{}],MTP-seadme vaatamine [{}]
 Просмотр USB диска [{}],USB-ketta vaatamine [{}]
 Заряд батареи (сырое значение) : {},Aku laetus (toorväärtus) : {}
-ru,ru
+ru,et
 [CRC ОШИБКА ФАЙЛА],[FAILI CRC VIGA]
 Будет скачана и установлена прошивка системы из файла {}.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены,Süsteemi püsivara laaditakse alla ja installitakse failist {}.\n\nVajuta (+) jätkamiseks\nMis tahes muu nupp tühistamiseks
 Распаковка архива не удалась,Arhiivi lahtipakkimine ebaõnnestus
@@ -160,14 +154,11 @@ ru,ru
 Октябрь,Oktoober
 [HASH MISMATCH: GC ➡ eShop],[HASH MISMATCH: GC ➡ eShop]
 Ноябрь,November
- {} минут, {} minutit
 Игрок,Mängija
 Время,Aeg
-Язык    : ,Keel    : 
 Контент,Sisu
 [HASH: OK],[HASH: OK]
 Красная,Punane
-Путь    : ,Tee :
 [HASH MISMATCH: Неисправимо],[HASHI EIRAVUS: Taastamatu]
 [ПРЕД],[EELM]
 Альбом,Album
@@ -223,7 +214,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 [КОНТЕНТ ОТСУТСТВУЕТ],[SISU PUUDUB]
 [НЕ СОЗДАТЬ ПЛЕЙСХОЛДЕР],[ÄRA LOO KOHAHOIDJAT]
 [НЕДОСТАТОЧНО МЕСТА],[POLE PIISAVALT RUUMI]
-  Кодировка...,  Kodeerimine...
 [НЕИЗВЕСТНОЕ СЖАТИЕ],[TUNDMATU TIHENDUS]
 [ОТСУТСТВУЕТ],[PUUDUB]
 [ОШБК],[VIGA]
@@ -234,7 +224,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 [ОШИБКА],[VIGA]
 [ОШИБКА] Отсутствует URL списка обновлений,[VIGA] Värskenduste loendi URL puudub
 [ПЕРЕДАЧА OK],[ÜLEKANNE OK]
-  Применить,  Rakenda
 [ПЕРЕДАЧА ПРЕРВАНА],[ÜLEKANNE KATKESTATUD]
 [ПОВРЕЖДЁННЫЙ NCA],[RIKUTUD NCA]
 [ПОДПИСЬ: OK],[ALLKIRI: OK]
@@ -244,7 +233,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 [ТРЕБУЕТСЯ РЕЖИМ ТАЙТЛА],[NÕUTAV ON PEALKIRJAREŽIIM]
 [ФАЙЛ ПОВРЕЖДЁН],[FAIL RIKUTUD]
 [ХЕШ ИСПРАВЛЕН],[RÄSI PARANDATUD]
-  Редактирование,  Redigeerimine
 [ХЕШ НЕ СОВПАДАЕТ],[RÄSI EI ÜHTI]
 \nНачало обработки dlc {}: {:016X},\nAlustan DLC töötlemist {}: {:016X}
 \nНачало обработки программы {},\nRakenduse {} töötlemine alustatud
@@ -255,7 +243,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 \nСборка RomFS,\nRomFS-i koostamine
 \nСекция 0,\nSektsioon 0
 \nСекция 1,\nJaotis 1
- (по времени игры), (mänguaja järgi)
 \nСекция 2,\nJaotis 2
 \nСоздан NSP: {},\nNSP loodud: {}
 \nШифрование NCA,\nNCA krüpteerimine
@@ -265,7 +252,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 {:4d} {}. Всего: {} час,{:4d} {}. Kokku: {} tundi
 {:4d} {}. Всего: {} часа,{:4d} {}. Kokku: {} tundi
 {:4d} {}. Всего: {} часов,{:4d} {}. Kokku: {} tundi
- (по названию игры), (mängu nime järgi)
 {:4d}. Всего: {} час,{:4d}. Kokku: {} t
 {:4d}. Всего: {} часа,{:4d}. Kokku: {} tundi
 {:4d}. Всего: {} часов,{:4d}. Kokku: {} tundi
@@ -275,7 +261,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 {} cохранение,{} salvestus
 {} cохранений,{} salvestatud
 {} cохранения,{} salvestused
- (по числу запусков), (käivituste arvu järgi)
 {} бекапа,{} varukoopia
 {} бекапов,{} varukoopiat
 {} записей ({}),{} kirjet ({})
@@ -296,8 +281,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 {}: {} потерянная запись,{}: {} orbkanne
 {}: {} потерянных записей,{}: {} kadunud kirjet
 {}: {} потерянных записи,{}: {} kadunud kirjet
-     {:<10} Шифрование: {} Размер установки: {}{:>10},     {:<10} Krüpteerimine: {} Paigalduse suurus: {}{:>10}
- [НЕ МОГУ ОТКРЫТЬ ФАЙЛ], [EI SAA FAILI AVADA]
 {}: {}/{} ({:.2f} МБ/сек),{}: {}/{} ({:.2f} MB/sek)
 {}: {}/{} ({}%) ({:.2f} МБ/сек),{}: {}/{} ({}%) ({:.2f} MB/s)
 {}: пропускается {}/{} ({:.2f} МБ/сек),{}: vahele jäetakse {}/{} ({:.2f} MB/sek)
@@ -307,34 +290,26 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Аватар установлен,Avatar määratud
 Август,August
 Австралия,Austraalia
-Автозапуск FTP: ,FTP automaatkäivitus: 
 Автозапуск MTP,MTP automaatkäivitus
 Автозапуск списка homebrew,Homebrew loendi automaatkäivitus
-Автор   : ,Autor   : 
 Агрументы для ярлыка,Otsetee argumendid
 Адрес FTP сервера: {},FTP serveri aadress: {}
 Адрес HTTP сервера: {},HTTP serveri aadress: {}
- {:>5} часа, {:>5} tundi
 Альбом (0°),Album (0°)
 Американский английский,Ameerika inglise keel
 Апрель,Aprill
 База этой игры не самодостаточна. Не забудьте установить обновление,Selle mängu baas ei ole iseseisev. Ärge unustage värskendust paigaldada
-Базовое хранилище: ,Põhimälu: 
 Бекапы,Varukoopiad
 Бекапы сохранений ({}),Salvestatud andmete varukoopiad ({})
 Британский английский,Briti inglise keel
- {:>5} часов, {:>5} tundi
 В альбоме найден {} объект,Albumist leitud {} objekt
 В альбоме найдено {} объекта,Albumist leiti {} objekti
 В альбоме найдено {} объектов,Albumist leitud {} objekti
 В альбоме отсутствуют объекты,Albumis pole objekte
 В файле /switch/prod.keys отсутствуют необходимые ключи.\n\nЧасть функций программы будет недоступна.\n\nПерегрузитесь в Hekate и используйте Lockpick_RCM.bin пейлоад\nдля дампа ключей из SysNAND.,"Vajalikud võtmed puuduvad failis /switch/prod.keys.\n\nMõned rakenduse funktsioonid ei ole kättesaadavad.\n\nTaaskäivitage Hekate'sse ja kasutage Lockpick_RCM.bin payload'i,\net dumpida võtmed SysNAND'ist."
-ВНИМАНИЕ ,HOIATUS 
-ВНИМАНИЕ! ,HOIATUS! 
 ВНИМАНИЕ! Тайтл {:016X} не установлен,HOIATUS! Pealkiri {:016X} ei ole paigaldatud
 ВНИМАНИЕ! Установленная версия ({}) не совпадает с желаемой ({}),HOIATUS! Paigaldatud versioon ({}) ei vasta soovitud versioonile ({})
 ВО ВРЕМЯ ПЕРЕДАЧИ ФАЙЛА НАЙДЕНЫ ОШИБКИ. УСТАНОВКА ПРЕРВАНА,FAILI ÜLEKANDMISEL LEITI VIGU. INSTALLIMINE KATKESTATUD
- {} в чёрном списке., {} on mustas nimekirjas.
 Введите URL сервера (HTTP или (S)FTP),Sisesta serveri URL (HTTP või (S)FTP)
 Введите агрументы для ярлыка или оставьте пустым,Sisestage otsetee argumendid või jätke tühjaks
 Введите желаемый номер страницы,Sisesta soovitud lehekülje number
@@ -342,16 +317,13 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Введите новое имя каталога,Sisesta uus kausta nimi
 Введите новое имя файла,Sisesta uus failinimi
 Введите номер DLC,Sisesta DLC number
-Версия  : ,Versioon: 
 Версия {} [v{}],Versioon {} [v{}]
 Вместо пользователя {} использовать:,Kasuta kasutaja {} asemel:
-Внимание! ,Tähelepanu! 
 Внимание!\nНекоторые файлы были заблокированы и поэтому пропущены.,Hoiatus!\nMõned failid olid lukustatud ja seetõttu vahele jäetud.
 Во время разбора\n\n{}\n\nвозникла следующая ошибка:\n\n{},Parsimise ajal\n\n{}\n\ntekkis järgmine viga:\n\n{}
 Во время установки тикетов были ошибки. Проверьте наличие ES сигпатчей,Piletite paigaldamisel ilmnesid vead. Kontrollige ES sigpatches olemasolu
 Во время экспорта были ошибки,Eksportimisel esines vigu
 Возраст батареи                : {},Aku vanus                             : {}
- {} минута, {} minut
 Возрастной рейтинг,Vanusepiirang
 Восстановить,Taasta
 Восстановить бекап...,Taasta varukoopia...
@@ -361,7 +333,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Восстановление не удалось,Taastamine ebaõnnestus
 Восстановление успешно,Taastamine õnnestus
 Восстановление: {},Taastamine: {}
- {} минуты, {} minutit
 Время игры: {:02}:{:02}:{:02},Mänguaeg: {:02}:{:02}:{:02}
 Время передачи {:d}:{:02d}:{:02d},Ülekande aeg {:d}:{:02d}:{:02d}
 Все игровые сессии,Kõik mängusessioonid
@@ -376,7 +347,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Всего {} байтов получено,Kokku {} baiti vastu võetud
 Всего {} байтов послано,{} baiti saadetud
 Всего записей: {},Kirjeid kokku: {}
-Всего освобождено места : ,Kokku vabastatud ruumi : 
 Всего отослано: {} ({}/сек),Kokku saadetud: {} ({}/sek)
 Всего программ: {},Programme kokku: {}
 Вставить,Sisesta
@@ -392,8 +362,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Вы уверены в удалении {} записи?\n\n(+) - ДА   B - Отмена,"Kas olete kindel, et soovite kustutada {} kirjet?\n\n(+) - JAH   B - Tühista"
 Вы уверены в удалении {} объекта?\n\n(+) - ДА   B - Отмена,"Kas olete kindel, et soovite kustutada {} objekti?\n\n(+) - JAH   B - Tühista"
 Вы уверены в удалении {} объектов?\n\n(+) - ДА   B - Отмена,"Kas olete kindel, et soovite kustutada {} objekti?\n\n(+) - JAH   B - Tühista"
-    {:>2} сек,    {:>2} sek
- Закрытие игры, Mängu sulgemine
 "Вы уверены, что хотите удалить {}?\n\n(+) - ДА, другая кнопка - НЕТ","Kas olete kindel, et soovite kustutada {}?\n\n(+) - JAH, muu nupp - EI"
 "Вы уверены, что хотите удалить\n{}?\n\n(+) - ДА  В - Отмена","Kas olete kindel, et soovite kustutada\n{}?\n\n(+) - JAH  B - Tühista"
 Выберите пользователя,Vali kasutaja
@@ -401,7 +369,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Выбрать все файлы игры,Vali kõik mängufailid
 Выбрать того же пользователя,Vali sama kasutaja
 Выбрать ту же игру,Vali sama mäng
- Запуск игры, Mängu käivitamine
 Вырезать,Lõika
 Вычисление хэша,Räsi arvutamine
 Вычисленное время конца : {},Arvutatud lõpuaeg : {}
@@ -410,7 +377,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Генерация DLC анлокера...,DLC avaja genereerimine...
 Генерируется анлокер для {:016X} с номером {} и версией {}...,Genereeritakse avajat {:016X} jaoks numbriga {} ja versiooniga {}...
 Генерируется ярлык для пути '{}' и аргументов '{}'...,Otsetee loomine teele '{}' ja argumentidega '{}'...
- Логаут пользователя \x1b[36;1m{}\x1b[37;1m, Kasutaja \x1b[36;1m{}\x1b[37;1m väljalogimine
 Главное меню,Peamenüü
 Голландский,Hollandi
 "Да, я уверен","Jah, olen kindel"
@@ -419,7 +385,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Дамп ярлыка в '{}'...,Otsetee dump faili '{}'...
 Действия с файлами,Failitoimingud
 Действия с файлами ({}),Failitoimingud ({})
- Логин пользователя \x1b[36;1m{}\x1b[37;1m, Kasutajanimi \x1b[36;1m{}\x1b[37;1m
 Декабрь,Detsember
 День,Päev
 Диаграмма активности,Aktiivsusdiagramm
@@ -428,16 +393,13 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Для дампов,Dumpide jaoks
 Для логов,Logide jaoks
 Добавить в любимые,Lisa lemmikutesse
- Переключение на игру, Mängule ümberlülitumine
 Европа,Euroopa
 "Есть несохранёные изменения.\nВы хотите их сохранить?\n\n(+) - Да, сохранить\n\n(-) - Выйти без сохранения\n\nДругая кнопка - Отмена","On salvestamata muudatusi.\nKas soovite need salvestada?\n\n(+) - Jah, salvesta\n\n(-) - Välju salvestamata\n\nMuu nupp - Tühista"
 Желаемая версия: {},Soovitud versioon: {}
 Журнал активности,Tegevuslogi
 Завершено,Lõpetatud
 Загружается список обновлений...,Värskenduste loendi laadimine...
-Загружено ,Laaditud 
 Загрузка изображения...,Pildi laadimine...
- Режим работы изменился: {}, Töörežiim muudetud: {}
 Загрузка текста...{}%,Teksti laadimine...{}%
 Загрузка файла... {}%,Faili laadimine... {}%
 Задать размер файла {} не удалось: {},Faili suuruse {} määramine ebaõnnestus: {}
@@ -446,7 +408,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Закончились дополнительные буферы. Скорость записи на носитель слишком низка,Lisapuhvrid otsas. Kirjutamiskiirus andmekandjale on liiga madal
 Закрытие соединения,Ühenduse sulgemine
 Закрытие соединения к {}:{},Ühenduse sulgemine aadressiga {}:{}
- Сброс системных часов, Süsteemikella lähtestamine
 Запаковать LFS в romfs.bin,Paki LFS faili romfs.bin
 Запаковать в romfs.bin,Paki romfs.bin faili
 Запаковка папки в RomFS,Kausta pakkimine RomFS-i
@@ -456,21 +417,17 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Запись за пределами файла,Kirjutamine väljaspool faili
 Заполнение нулями,Nullidega täitmine
 Заполнить свободное место на SD нулями,Täida SD vaba ruum nullidega
- Сворачивание игры, Mängu peatamine
 Запрет захвата видео,Keela video salvestamine
 Запрет скриншотов,Ekraanipiltide keeld
 Запрещено,Keelatud
-Запрос на удаление ,Kustutamise päring 
 Запускавшиеся игры,Käivitatud mängud
 Запустить FTP сервер...,Käivita FTP server...
 Запустить HTTP сервер...,HTTP serveri käivitamine...
- Состояние электропитания изменилось: {}, Toiteseisund muutus: {}
 Запустить МТР соединение,Käivita MTP ühendus
 Запустить случайную игру,Käivita juhuslik mäng
 Заряд батареи                  : {},Aku laetase                    : {}
 Здесь пусто,Siin pole midagi
 Игра анонсирует SDK {},Mäng teatab SDK {}
-" и {} новое DLC,"," ja {} uut DLC-d,"
 "Игра анонсирует более новый SDK ({}), чем текущая прошивка ({})",Mäng nõuab uuemat SDK-d ({}) kui praegune püsivara ({})
 Игра использует titleId от дополнения,Mäng kasutab DLC-st pärit titleId-d
 Игра использует titleId от обновления,Mäng kasutab uuenduse titleId-d
@@ -480,17 +437,14 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Изменить номер DLC (десятичный),Muuda DLC numbrit (kümnend)
 Изменить номер DLC (шестнадцатеричный),Muuda DLC numbrit (kuueteistkümnendsüsteem)
 Изменён размер SaveFS,SaveFS suurus muudetud
-" и {} новых DLC,"," ja {} uut DLC-d,"
 Импорт исправленного тикета...,Parandatud pileti importimine...
 Импорт тикета...,Tiketi importimine...
-Имя     : ,Nimi    : 
 "Имя каталога\n'{}'\nсодержит недопустимые символы.\nОн не может быть создан.\n\nНажмите A - прервать, B - пропустить, X - переименовать","Kataloogi nimi\n'{}'\nsisaldab kehtetuid märke.\nSeda ei saa luua.\n\nVajutage A - katkesta, B - jäta vahele, X - nimeta ümber"
 "Имя файла\n'{}'\nсодержит недопустимые символы.\nОн не может быть создан.\n\nНажмите A - прервать, B - пропустить, X - переименовать","Failinimi\n'{}'\nsisaldab kehtetuid märke.\nSeda ei saa luua.\n\nVajuta A - katkesta, B - jäta vahele, X - nimeta ümber"
 Инсталлируется romfs.bin,Paigaldatakse romfs.bin
 Информация о зарядке батареи,Aku laadimise teave
 Информация о контенте,Sisu informatsioon
 Информация о контенте ({}),Sisu informatsioon ({})
- сортировка по дате создания, sorteeri loomiskuupäeva järgi
 Информация о прошивке,Püsivara teave
 Информация о системе,Süsteemi teave
 Информация о сохранении,Salvestuse teave
@@ -501,31 +455,25 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Информация об атмосфере,Atmosphere'i teave
 Информация об игровой активности,Mängutegevuse teave
 Информация об источние питания,Toiteallika teave
- сортировка по имени, sorteeri nime järgi
 Информация об оборудовании,Riistvara teave
 Информация...,Informatsioon...
 Испанский,Hispaania
 Использовано дополнительной памяти: {}. Создано буферов: {},Kasutatud lisamälu: {}. Loodud puhvreid: {}
 Использовать папку для...,Kasuta kausta...
- сортировка по имени игры, sorteeri mängu nime järgi
-Используется ,Kasutusel 
 Используется USB{},Kasutatakse USB{}
 Итальянский,Itaalia
 Ищется control для ProgramId {},Otsitakse control'i ProgramId {} jaoks
 Ищется exefs/romfs для ProgramId {},Otsitakse exefs/romfs ProgramId {} jaoks
 Ищется exefs/romfs/logo для ProgramId {},Otsitakse exefs/romfs/logo ProgramId {} jaoks
 Ищется {},Otsin {}
- сортировка по месту установки, sorteeri paigalduskoha järgi
 Июль,Juuli
 Июнь,Juuni
 Канадский французский,Kanada prantsuse
 "Когда ваше устройство подключится, нажмите любую кнопку","Vajutage mis tahes nuppu, kui teie seade ühendub"
-Код партии батареи    : {} ({}),Aku partii kood       : {} ({})
+Код партии батареи    : {} ({}),Aku partii kood          : {} ({})
 Кодировка,Kodeering
-Конвертация в фейковые ,Teisendamine võltsiteks 
-Конец игры            : -,Mängu lõpp            : -
-Конец игры            : {},Mängu lõpp            : {}
- сортировка по общему размеру, sorteeri kogusuuruse järgi
+Конец игры            : -,Mängu lõpp         : -
+Конец игры            : {},Mängu lõpp         : {}
 Контент уже на месте,Sisu on juba olemas
 Копирование IVFC слой {} в nca: {},IVFC kihi {} kopeerimine nca-sse: {}
 Копирование PFS0 в nca,PFS0 kopeerimine nca-sse
@@ -535,7 +483,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Корейский,Korea
 Корень не найден,Juurt ei leitud
 Корень сохранения не существует,Salvestuse juur ei eksisteeri
- сортировка по пользователю, sorteeri kasutaja järgi
 Корея,Korea
 Латиноамериканский испанский,Ladina-Ameerika hispaania
 Май,Mai
@@ -544,7 +491,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Масштаб: По экрану,Skaala: Mahuta ekraanile
 Масштаб: Точка в точку,Skaala: Piksel-pikslilt
 Масштаб: Увеличение x2,Skaala: 2x suurendus
- сортировка по порядку игры, sorteeri mängu järjekorra järgi
 Место в  NAND         : {},Ruum NAND-is         : {}
 Место на SD карте     : {},SD-kaardi ruum     : {}
 Место на приставке не занято,Konsoolil pole ruumi hõivatud
@@ -554,13 +500,11 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Модификация файла не удалась,Faili muutmine ebaõnnestus
 На выбранном устройстве нет достаточного свободного места для установки,Valitud seadmes pole paigaldamiseks piisavalt vaba ruumi
 На месте нет достаточно свободного места,Pole piisavalt vaba ruumi
- сортировка по размеру, sorteeri suuruse järgi
 Нажмите (+) для перезаписи конфига обновлённым\n\nЛюбую другую кнопку для пропуска,"Vajutage (+), et kirjutada konfiguratsioon üle uuendatuga\n\nMis tahes muud nuppu vahele jätmiseks"
 "Нажмите (+) для удаления, любую другую кнопку для пропуска...\n (-) Удалять все, больше не спрашивая","Vajuta (+) kustutamiseks, mis tahes muud nuppu vahele jätmiseks...\n (-) Kustuta kõik, enam ei küsi"
 "Нажмите A, чтобы продолжить, другую кнопку, чтобы выйти","Jätkamiseks vajuta A, väljumiseks mõnda muud nuppu"
 "Нажмите B, чтобы вернуться","Vajuta B, et naasta"
 Нажмите любую кнопку,Vajuta suvalist nuppu
-Название: ,Nimi: 
 Найден SDK: {},SDK leitud: {}
 Найден {} зарегистрированный контент-файл,Leitud {} registreeritud sisufail
 Найден {} контент-файл,Leitud {} sisufail
@@ -606,11 +550,10 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Настройки,Seaded
 Настройки DBI,DBI seaded
 Настройки FB2,FB2 seaded
-Начало игры           : -,Mängu algus            : -
-Начало игры           : {},Mängu algus            : {}
+Начало игры           : -,Mängu algus        : -
+Начало игры           : {},Mängu algus        : {}
 Начало создания Control.nca,Control.nca loomise alustamine
 Начало создания Program.nca,Program.nca loomise alustamine
-Начало установки. Место установки: ,Paigaldamine algas. Paigalduskoht: 
 Начать установку,Alusta paigaldust
 Не доступно,Pole saadaval
 Не известно,Teadmata
@@ -640,7 +583,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Невозможно скопировать файл\n   '{}'\n➡ '{}'\n,Faili ei saa kopeerida\n   '{}'\n➡ '{}'\n
 Невозможно смонтировать сохранение,Salvestust ei saa ühendada
 Невозможно смонтировать устройство сохраниения,Salvestusseadet ei saa ühendada
-Невозможно создать выходной zip-файл: ,Väljund-zip-faili loomine ebaõnnestus: 
 Невозможно создать каталог,Kataloogi loomine ebaõnnestus
 Невозможно создать каталог '{}':,Kataloogi '{}' loomine ebaõnnestus:
 Невозможно создать файл,Faili loomine ebaõnnestus
@@ -650,7 +592,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 : {:>4} сохранение,: {:>4} salvestus
 Неизвестно,Teadmata
 Неизвестный тайтл,Tundmatu pealkiri
-Неиспользуемый тикет: ,Kasutamata pilet: 
 Немецкий,Saksa
 Неправильное хранилище,Vale salvestusruum
 Неправильный родительский объект,Vigane ülemobjekt
@@ -675,7 +616,6 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Обновить DBI,Uuenda DBI
 Обновить DBI из этого файла,Uuenda DBI sellest failist
 Обновить TitleDB,Uuenda TitleDB
-   {:>3} мин,   {:>3} min
 Обновление TitleDB,TitleDB uuendamine
 Обновление базы данных...,Andmebaasi uuendamine...
 Обновление версии до {} {}\n\nНажмите (+) для продолжения\nЛюбую другую кнопку для отмены,Versiooni uuendamine versioonile {} {}\n\nJätkamiseks vajutage (+)\nTühistamiseks vajutage mis tahes muud nuppu
@@ -687,9 +627,9 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Обрабатывается запись {:016X},Töödeldakse kirjet {:016X}
 Обратный альбом (180°),Pööratud album (180°)
 Обратный портрет (270°),Pööratud portree (270°)
-Общее время активной игры     : {} часов,Aktiivse mänguaja kogusumma     : {} tundi
+Общее время активной игры     : {} часов,Aktiivse mänguaja kogusumma      : {} tundi
 Общее время дампа {:d}:{:02d}:{:02d},Tõmmise koguaeg {:d}:{:02d}:{:02d}
-Общее время запущенных игр    : {} часов,Kogu mänguaeg    : {} tundi
+Общее время запущенных игр    : {} часов,Kogu mänguaeg                    : {} tundi
 Общее время игры      : -,Kogu mänguaeg      : -
 Общее время игры      : {:d} часов {:02d} минут,Kogu mänguaeg      : {:d} tundi {:02d} minutit
 Общее время установки: {:d}:{:02d}:{:02d},Paigaldamise koguaeg: {:d}:{:02d}:{:02d}
@@ -706,17 +646,13 @@ Daybreak.nro не найден,Daybreak.nro ei leitud
 Объект уже открыт для редактирования,Objekt on juba redigeerimiseks avatud
 Огибка получения адреса сокета: {} {},Viga sokli aadressi hankimisel: {} {}
 Ожидаемый размер: {},Eeldatav suurus: {}
-Ожидается ,Oodatakse 
 Ожидается большой (>4GB) файл,Oodatakse suurt (>4GB) faili
 Ожидается запуск dbibackend на стороне ПК...,Ootan dbibackend käivitamist arvuti poolel...
-Ожидание включения интерфейса: ,Ootan liidese aktiveerimist: 
 Ожидание: {} секунд,Ootamine: {} sekundit
 Ожидание: {} секунда,Ootan: {} sekund
 Ожидание: {} секунды,Ootamine: {} sekundit
 Ориентация,Orientatsioon
 Ориентация...,Orientatsioon...
-Освобождено места в NAND: ,NAND-i ruumi vabastatud: 
-Освобождено места на SD : ,SD-kaardil vabastatud ruumi : 
 Основной SDK не найден. Пробуем мультипрограмный вариант,Põhi-SDK ei leitud. Proovin mitme programmi varianti
 Оставить сохранения,Säilita salvestused
 Осталось ходов:    {:>3},Käike jäänud:    {:>3}
@@ -776,7 +712,6 @@ DBI Просмотр альбома,DBI Albumi vaade
 Ошибка получения: {},Tõrge hankimisel: {}
 Ошибка получения: {} {},Tõrge hankimisel: {} {}
 Ошибка посылки файла: {},Faili saatmise viga: {}
-   Получение списка бекапов...   ,   Varukoopialoendi hankimine...   
 Ошибка привязки сокета к порту {}: {},Viga sokli sidumise pordi {}: {}
 Ошибка привязки: {},Sidumise viga: {}
 Ошибка принятия соединения: {} {},Ühenduse vastuvõtmise viga: {} {}
@@ -787,15 +722,12 @@ DBI Просмотр альбома,DBI Albumi vaade
 Ошибка сжатия,Tihendamise viga
 Ошибка создания каталога: {},Kataloogi loomise viga: {}
 Ошибка создания сокета: {},Sokli loomise viga: {}
-DPAD/Стики - Навигация по страницам\n\n     ZR+ZL - Переход к странице... \n\n       L/R - Навигация по главам   \n\n       (-) - Эта подсказка         \n\n       (+) - Меню                  ,DPAD/Pulgad - Lehekülgede navigeerimine\n\n     ZR+ZL - Mine lehele... \n\n       L/R - Peatükkide navigeerimine   \n\n       (-) - See vihje         \n\n       (+) - Menüü                  
 Ошибка создания сохранения,Salvestuse loomise viga
 Ошибка удаления каталога: {},Kataloogi kustutamise viga: {}
 Ошибка удаления файла: {},Faili kustutamise viga: {}
 Ошибка установки флагов сокета: {},Viga sokli lipukute seadmisel: {}
 Ошибка чтения записи об игре: {},Mängu kirje lugemise viga: {}
 Ошибка чтения каталога: {},Kataloogi lugemise viga: {}
-Ошибка чтения регистров max17050: ,Viga max17050 registrite lugemisel: 
-Ошибка чтения сохранённых параметров контроллера: ,Viga salvestatud kontrolleri parameetrite lugemisel: 
 Ошибка чтения файла: {},Faili lugemise viga: {}
 Ошибок не найдено,Vigu ei leitud
 Ошибочный номер DLC (Должен быть в диапазоне 0x001-0x7FF),Vigane DLC number (Peab olema vahemikus 0x001-0x7FF)
@@ -857,7 +789,6 @@ Get chargeInfoFields : {},Get chargeInfoFields : {}
 Получение списка тикетов...,Piletite nimekirja hankimine...
 Получение файла: {} МБ ({:.2f} МБ/сек),Faili vastuvõtmine: {} MB ({:.2f} MB/s)
 Получение файла: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Faili vastuvõtmine: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m MB/sek)
-   Получение списка бекапов...{}/{}    ,   Varunduste nimekirja hankimine...{}/{}    
 Полученное время: {},Saadud aeg: {}
 Полученный размер: {},Saadud suurus: {}
 "Получено: {}, ({:.2f} МБ/сек)","Vastu võetud: {}, ({:.2f} MB/s)"
@@ -872,15 +803,13 @@ Get chargeInfoFields : {},Get chargeInfoFields : {}
 Посылается файл: {},Faili saatmine: {}
 Посылается файл: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Faili saatmine: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m MB/s)
 Превышен размер командного буфера,Käsupuhvri suurus ületatud
-LFS мод.: -,LFS režiim: -
+LFS мод.: -,LFS režiim : -
 Предоставить по FTP,Paku FTP kaudu
-Предупреждения: ,Hoiatused: 
 Прекращение прослушивания на {}:{},Kuulamise peatamine aadressil {}:{}
 Прервано пользователем,Kasutaja katkestas
 Привязка к {}:{},Sidumine {}:{}
 Принято соединение от {}:{},Ühendus vastu võetud aadressilt {}:{}
 Проверить целостность,Kontrolli terviklikkust
-"LFS мод.: Присутствует, Размер: ","LFS mod: Olemas, Suurus: "
 Проверка magic...,Kontrollin magic...
 "Проверка {} ({}, {}), {}","Kontrollimine {} ({}, {}), {}"
 Проверка картриджа...,Mängukaardi kontrollimine...
@@ -890,7 +819,7 @@ LFS мод.: -,LFS režiim: -
 Проверка сохранений,Salvestuste kontrollimine
 Проверка целостности ({}),Terviklikkuse kontroll ({})
 Проверяется: {},Kontrollimine: {}
-"LFS мод.: Присутствует, Размер: подсчёт отключен в настройках","LFS mod: Olemas, Suurus: arvutamine seadetes keelatud"
+"LFS мод.: Присутствует, Размер: подсчёт отключен в настройках","LFS mod    : Olemas, Suurus: arvutamine seadetes keelatud"
 Проверяются бекапы...,Varukoopiaid kontrollitakse...
 Проверяются сохранения,Salvestuste kontrollimine
 Программа {}. Control не найдена,Rakendus {}. Control ei leitud
@@ -899,7 +828,6 @@ LFS мод.: -,LFS režiim: -
 Произошла неизвестная ошибка,Tekkis tundmatu viga
 Произошла ошибка:,Ilmnes viga:
 Произошла ошибка: {},Ilmnes viga: {}
-Пропускаем файл до начала secure раздела ,Jätan faili vahele kuni turvalise sektsiooni alguseni 
 LFS папка игры,LFS mängu kaust
 Пропускается: {}          \r,Vahele jäetud: {}          \r
 Прослушивание на {}:{},Kuulatakse aadressil {}:{}
@@ -909,12 +837,11 @@ MTP Респондер (нажмите B для остановки),MTP Responde
 Просто запуск,Lihtsalt käivita
 Разбор,Parsimine
 Раздел secure не найден,Secure sektsioon ei leitud
-Размер  : ,Suurus  : 
 "Размер  : {}, {} файл","Suurus  : {}, {} fail"
 "Размер  : {}, {} файла","Suurus  : {}, {} fail"
 "Размер  : {}, {} файлов","Suurus  : {}, {} faili"
 Размер посылаемого файла   : {},Saadetava faili suurus: {}
-Размер сохранений     : {},Salvestuste suurus     : {}
+Размер сохранений     : {},Salvestuste suurus : {}
 Размер: {},Suurus: {}
 Разрешено,Lubatud
 Распаковать в подкаталог,Paki alamkataloogi
@@ -930,14 +857,12 @@ Nintendo Account задан и связан,Nintendo konto määratud ja seotud
 Рендеринг FB2,FB2 renderdamine
 "Nintendo Account задан, но не связан","Nintendo Account määratud, kuid pole seotud"
 Сброс требуемой версии,Lähtesta nõutav versioon
-Сброс требуемой версии к ,Nõutava versiooni lähtestamine väärtusele 
 Сбросить требуемую версию,Lähtesta nõutav versioon
 Сведения,Teave
 Сведения...,Teave...
 Свободное место в хранилище: {},Vaba salvestusruum: {}
 Свободное место: {},Vaba ruum: {}
 Сгенерировать и установить,Genereeri ja paigalda
-   Получение списка сохранений...   ,   Salvestuste loendi hankimine...   
 Nintendo Account не задан,Nintendo Account pole määratud
 Сдампить на SD карту,Tõmmise SD-kaardile
 Сдампить на внешний USB,Dump välisele USB-le
@@ -960,29 +885,23 @@ Nintendo Account не задан,Nintendo Account pole määratud
 Сканирование игр...,Mängude skaneerimine...
 Скачано {}/{},Alla laaditud {}/{}
 Скачивание файла не удалось,Faili allalaadimine ebaõnnestus
-Скорость USB интерфейса: ,USB liidese kiirus: 
 Скорость передачи: {:.2f} МБ/сек,Ülekandekiirus: {:.2f} MB/sek
 Собираются сведения...,Kogutakse teavet...
 Соединение сброшено,Ühendus lähtestatud
-Создан zip-файл: ,Zip-fail loodud: 
 Создание DLC анлокера,DLC avaja loomine
 Создание NSP,NSP loomine
 Создание sdmc:/versions.txt,Luuakse sdmc:/versions.txt
-Создание бекапа сохранения ,Salvestusandmete varukoopia loomine 
 Создание дампа ({}),Tõmmise loomine ({})
 Создание дампа: {},Tõmmise loomine: {}
 Создание единого репака,Ühtse repaki loomine
 Создание записи об игре...,Mängukirje loomine...
-Создание каталога: ,Kataloogi loomine: 
 Создание новой записи об игре...,Uue mängukirje loomine...
-Создание объекта: ,Objekti loomine: 
 Создание плейсхолдера: {}...,Kohatäite loomine: {}...
 "Создание репака Id: {:016X}, Версия: {}, Тип: {}","Repaki loomine Id: {:016X}, Versioon: {}, Tüüp: {}"
 Создание строк... {}%,Stringide loomine... {}%
 Создание таблицы имён,Nimetabeli loomine
 Создание тела файла,Faili sisu loomine
 Создание точки доступа...,Pääsupunkti loomine...
-Создание фейковой записи... ,Võltskirje loomine... 
 Создание хэш таблицы,Räsitabeli loomine
 Создание ярлыка,Otsetee loomine
 Создано новое сохранение. Восстанавливаю бекап в него...,Uus salvestus loodud. Taastamine varukoopiat...
@@ -995,7 +914,6 @@ Nintendo Account не задан,Nintendo Account pole määratud
 Создать ярлык для hbmenu,Loo otsetee hbmenu jaoks
 Создать ярлык на рабочий стол для DBI...,Loo DBI töölaua otsetee...
 Создать ярлык с аргументами...,Loo otsetee argumentidega...
-Создаётся MTP хранилище: ,MTP salvestusruumi loomine: 
 Создаётся обновлённая запись об игре...,Uuendatud mängukirje loomine...
 Сохранение для {} уже существует,Salvestus {} jaoks on juba olemas
 Сохранения,Salvestused
@@ -1003,8 +921,6 @@ Nintendo Account не задан,Nintendo Account pole määratud
 Сохранения удалённых игр ({}),Kustutatud mängude salvestused ({})
 Сохранения установленных игр ({}),Paigaldatud mängude salvestused ({})
 Сохранёные в системе параметры котроллера батареи,Süsteemi salvestatud aku kontrolleri parameetrid
-Статистика игры ,Mängu statistika 
-Строка поиска: ,Otsingustring: 
 Существующая запись об игре не найдена,Olemasolevat mängu kirjet ei leitud
 Существующее сохранение не найдено и новое не может быть создано,Olemasolevat salvestust ei leitud ja uut ei saa luua
 SDK {} уже был экспортирован: {},SDK {} on juba eksporditud: {}
@@ -1019,37 +935,33 @@ SDK на подмену не найдены,Asendamiseks SDK-d ei leitud
 Тикеты не найдены,Pileteid ei leitud
 864,864
 881,881
-"          Париж, издательство Грассе.",          «Peeglitagune». Peapoliitik t
 "больше шансов, что оно заработает». Их","tõenäosus, et lõpuks kõik õnnestub.'"
 быстро проникли в планы шадоков и,otsustasid korralikult nalja teha. Nad
-"всякий раз, когда растение расцветает","kord, kui ta näeb kiipi, võtavad"
-"выражениях: «Чем больше неудач, тем","'Mida rohkem ohvreid, seda suurem"
+"всякий раз, когда растение расцветает","kord, kui ta näeb kiipi, naabrid"
+"выражениях: «Чем больше неудач, тем","väljendites: ""Mida rohkem ebaõnnestumisi, seda"
 "вычислили, что у них есть по крайней",usuvad kindlalt sellesse ühte
-заработает… И они торопятся поскорее,hakkab tööle... Ja nad kiirustavad läbi
-"и дает транзистор, они мчатся, чтобы",naabrid selle ära.
-"и не кончилось успехом». Или, в других",suuruse pandiks.' Või teiste sõnadega:
+заработает… И они торопятся поскорее,hakkab tööle... Ja nad kiirustavad
+"и дает транзистор, они мчатся, чтобы",võtavad selle ära.»
+"и не кончилось успехом». Или, в других",ja ei lõppenud eduga». Või teistes
 "мере один шанс из миллиона, что она","võimalusse miljonist, mille puhul kõik"
-миллионная заработает».,võit.» I. I. Pizdobolov. Läbimurde
+миллионная заработает».,I. Pizdobolov. Läbimurde rütmid.
 "ничего, что бы непрерывно продолжалось","õnnetust, mis ei oleks vaid ajutine"
 "но окружили его со всех сторон, и","kõigist külgedest ära, ja nüüd iga"
-"опытов, чтобы быть уверенными, что","fataalset viga, et nende järel tuleks"
-осуществить 999999 первых неудачных,tegema need samad 999999 esimest
+"опытов, чтобы быть уверенными, что","viga, et nende järel tuleks võit.» I."
+осуществить 999999 первых неудачных,tegema neid esimest 999999 saatuslikku
 "очень умные благодаря своим шляпам,",mõistsid kiiresti salaplaani ja
 "планету гиби искать транзисторы. Гиби,","Need, olles interneti tõttu kavalad,"
 постоянно кончаясь неудачами.,usinalt negatiivset kasvu. Kogu saladus
 принципов шадокской логики: «Нет,fundamentaalses dogmas: 'Pole sellist
-"ракета еще несовершенна, но они","Nende taktika vänkerdab, kuid nad"
+"ракета еще несовершенна, но они","Nende taktika läheb lukku, kuid nad"
 "растений, произрастающих на огородах.",tehnikast. Soodest saadeti vabatahtlik
 решили позабавиться. Они позволили,lubasid külalisel ronida ühte oma
 собрать урожай прежде шадока.,​
 "терпят неудачу потому, что не хватает",sihtimissüsteemidesse ega унитазidesse.
 транзисторов в системах безопасности.,Aga naabritel kiipe väidetavalt
 "шадоку забраться в один из их огородов,","tehnikalaost, aga piirdasid ta seal"
-  Жак Руксель. Великолепие навыворот.,"  rütmid. Bunker, riigikirjastus"
 «У шадоков ситуация удовлетворительна.,«Sooelanikel läheb kõik plaanipäraselt.
-"    Великий колдун сказал, что ракеты","    raketid kukuvad, sest kiipe ei jätk"
 "Испытания ракет продолжаются,","Nullimise protsess jätkub, tuues"
-    Дело здесь в одном из основных,    peitub nende sügava loogika
 Но у гиби транзисторы собирают с,kaevandatakse otse aedades seisvast
 Решено послать одного из шадоков на,otse naabrite juurde detailide järele.
 original,original
@@ -1092,11 +1004,9 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Версия прошивки         : {}.{}.{}-{}.{},Püsivara versioon        : {}.{}.{}-{}.{}
 Возраст батареи                : {}%,Aku vanus                : {}%
 Время гашения экрана в секундах,Ekraani tuhmumise aeg sekundites
-Выйти из DBI           :,Välju DBI-st                :
 Выключать экран,Ekraan välja
-Выключить экран        :,Lülita ekraan välja         :
 Выход на рабочий стол,Välju avakuvale
-Дата первого игрового события : {},Esimese mängusündmuse kuupäev : {}
+Дата первого игрового события : {},Esimese mängusündmuse kuupäev    : {}
 Добавлять суффикс к имени файла,Lisa failinimele järelliide
 Достаточное питание            : {},Piisav toide             : {}
 Есть исправление RCM бага   : {},On RCM vea parandus       : {}
@@ -1117,11 +1027,9 @@ OEM ID           : {:s} ({:s}),OEM ID         : {:s} ({:s})
 Использовать скрытый SSID,Kasuta peidetud SSID-d
 Источник питания                : {},Toiteallikas                : {}
 Курсор на обеих панелях,Kursor mõlemal paneelil
-Место установки        :,Paigalduskoht               :
 %% заряд-разряд    : {},%% laadimine-tühjendamine : {}
 Никнейм консоли         : {},Konsooli hüüdnimi        : {}
-Общее число игровых сессий    : {},Mängusessioonide koguarv      : {}
-Общий размер передачи  :,Ülekande kogumaht           :
+Общее число игровых сессий    : {},Mängusessioonide koguarv         : {}
 Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC aadress    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 CDIR в листинге,CDIR loendis
 Configuration Id1     : {},Configuration Id1        : {}
@@ -1181,7 +1089,7 @@ QrTable20            : {:04x},QrTable20               : {:04x}
 QrTable30            : {:04x},QrTable30               : {:04x}
 RCOMP0               : {:04x},RCOMP0                  : {:04x}
 Сохранения только в RO режиме,Salvestused ainult RO-režiimis
-RTC запущены (приблизительно) : {},RTC käivitatud (ligikaudu)    : {}
+RTC запущены (приблизительно) : {},RTC käivitatud (ligikaudu)       : {}
 Текущая ёмкость                 : {}%,Praegune mahtuvus           : {}%
 Текущая ёмкость    : {} mAh,Praegune mahtuvus         : {} mAh
 Текущее напряжение : {} mV,Praegune pinge            : {} mV
@@ -1192,11 +1100,132 @@ RTC запущены (приблизительно) : {},RTC käivitatud (ligika
 Температура батареи             : {}°C,Aku temperatuur             : {}°C
 Тип SoC                 : {},SoC tüüp                 : {}
 Тип источника питания          : {},Toiteallika tüüp         : {}
-Удалять после установки:,Kustuta pärast paigaldamist :
 Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC aadress : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Форсировано вклчение USB 3.0: {},USB 3.0 sunnitud lubamine : {}
 Возраст батареи                 : {}%,Aku vanus                   : {}%
-Общий размер установки :,Paigalduse kogumaht         :
 Предел напряжения заряда батареи: {} mV,Aku laadimispinge limiit    : {} mV
 Средняя температура: {}°C,Keskmine temperatuur      : {}°C
 Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Summa %% laad-tühjendus : {} (~{} 0-100 tsüklit)
+"          Париж, издательство Грассе.","          Peapoliitik teatas, et raketi"
+      Название: {}\n      Издатель: {}\n      Версия: ,      Nimi: {}\n      Kirjastaja: {}\n      Versioon: 
+Удаление игры ,Mängu kustutamine 
+Удаляется бекап ,Varukoopia kustutamine 
+Удалять после установки: ,Kustuta pärast paigaldamist :
+  Автоопределение,  Automaatne tuvastamine
+Шифрование секции ,Sektsiooni krüpteerimine 
+Ярлык   : ,Otsetee   : 
+ {} минут, {} minutit
+Язык    : ,Keel       :
+Путь    : ,Tee     : 
+  Жак Руксель. Великолепие навыворот.,"  Bunker, riigikirjastus «Peeglitagune»"
+  Кодировка...,  Kodeerimine...
+  Применить,  Rakenda
+  Редактирование,  Redigeerimine
+ (по времени игры), (mänguaja järgi)
+ (по названию игры), (mängu nime järgi)
+ (по числу запусков), (käivituste arvu järgi)
+     {:<10} Шифрование: {} Размер установки: {}{:>10},     {:<10} Krüpteerimine: {} Paigalduse suurus: {}{:>10}
+ [НЕ МОГУ ОТКРЫТЬ ФАЙЛ], [EI SAA FAILI AVADA]
+Автозапуск FTP: ,FTP automaatkäivitus: 
+Автор   : ,Autor      :
+ {:>5} часа, {:>5} tundi
+Базовое хранилище: ,Põhimälu: 
+ {:>5} часов, {:>5} tundi
+ВНИМАНИЕ ,HOIATUS 
+ВНИМАНИЕ! ,HOIATUS! 
+ {} в чёрном списке., {} mustas nimekirjas.
+Версия  : ,Versioon   :
+Внимание! ,Tähelepanu! 
+ {} минута, {} minut
+ {} минуты, {} minutit
+Всего освобождено места : ,Kokku vabastatud ruumi : 
+    {:>2} сек,    {:>2} sek
+ Закрытие игры, Mängu sulgemine
+Выйти из DBI           : ,Välju DBIst                 :
+Выключить экран        : ,Lülita ekraan välja         :
+ Запуск игры, Käivita mäng
+ Логаут пользователя \x1b[36;1m{}\x1b[37;1m, Kasutaja \x1b[36;1m{}\x1b[37;1m väljalogimine
+ Логин пользователя \x1b[36;1m{}\x1b[37;1m, Kasutajanimi \x1b[36;1m{}\x1b[37;1m
+ Переключение на игру, Mängule lülitumine
+Загружено ,Laaditud 
+ Режим работы изменился: {}, Töörežiim muudetud: {}
+ Сброс системных часов, Lähtesta süsteemikell
+ Сворачивание игры, Mängu minimeerimine
+Запрос на удаление ,Kustutamise päring 
+ Состояние электропитания изменилось: {}, Toiteseisund muutus: {}
+" и {} новое DLC,"," ja {} uut DLC-d,"
+"    Великий колдун сказал, что ракеты","    alla, sest kiipe ei jätku ei"
+" и {} новых DLC,"," ja {} uut DLC-d,"
+Имя     : ,Nimi       :
+ сортировка по дате создания, sorteeri loomiskuupäeva järgi
+ сортировка по имени, sorteeri nime järgi
+ сортировка по имени игры, sorteeri mängu nime järgi
+Используется ,Kasutatakse 
+ сортировка по месту установки, sorteeri paigalduskoha järgi
+Конвертация в фейковые ,Teisendamine võltsiteks 
+ сортировка по общему размеру, sorteeri kogusuuruse järgi
+ сортировка по пользователю, sorteeri kasutaja järgi
+ сортировка по порядку игры, sorteeri mängu järjekorra järgi
+Место установки        : ,Paigalduskoht               :
+ сортировка по размеру, sorteeri suuruse järgi
+Название: ,Nimi: 
+    Дело здесь в одном из основных,    peitub nende sügava loogika
+Начало установки. Место установки: ,Paigaldamine algas. Paigalduskoht: 
+Невозможно создать выходной zip-файл: ,Väljund-zip-faili loomine ebaõnnestus: 
+Неиспользуемый тикет: ,Kasutamata pilet: 
+   {:>3} мин,   {:>3} min
+Общий размер передачи  : ,Ülekande kogumaht           :
+Общий размер установки : ,Paigalduse kogumaht         :
+Ожидается ,Oodatakse 
+Ожидание включения интерфейса: ,Ootan liidese aktiveerumist: 
+Освобождено места в NAND: ,NAND-is vabastatud ruumi: 
+Освобождено места на SD : ,SD ruumi vabastatud : 
+   Получение списка бекапов...   ,   Varukoopialoendi hankimine...   
+DPAD/Стики - Навигация по страницам\n\n     ZR+ZL - Переход к странице... \n\n       L/R - Навигация по главам   \n\n       (-) - Эта подсказка         \n\n       (+) - Меню                  ,DPAD/Pulgad - Lehekülgede navigeerimine\n\n     ZR+ZL - Hüppa lehele... \n\n       L/R - Peatükkide navigeerimine   \n\n       (-) - See vihje         \n\n       (+) - Menüü                  
+Ошибка чтения регистров max17050: ,Viga max17050 registrite lugemisel: 
+Ошибка чтения сохранённых параметров контроллера: ,Viga salvestatud kontrolleri parameetrite lugemisel: 
+   Получение списка бекапов...{}/{}    ,   Varukoopialoendi hankimine...{}/{}    
+Предупреждения: ,Hoiatused: 
+"LFS мод.: Присутствует, Размер: ","LFS mod.   : Olemas, Suurus:"
+Пропускаем файл до начала secure раздела ,Jätan faili vahele kuni secure sektsiooni alguseni 
+Размер  : ,Suurus  : 
+Сброс требуемой версии к ,Lähtesta nõutav versioon 
+   Получение списка сохранений...   ,   Salvestuste nimekirja hankimine...   
+Скорость USB интерфейса: ,USB liidese kiirus: 
+Создан zip-файл: ,Loodud zip-fail: 
+Создание бекапа сохранения ,Salvestuse varukoopia loomine 
+Создание каталога: ,Kataloogi loomine: 
+Создание объекта: ,Objekti loomine: 
+Создание фейковой записи... ,Võltskirje loomine... 
+Создаётся MTP хранилище: ,MTP salvestusruumi loomine: 
+Статистика игры ,Mängu statistika 
+Строка поиска: ,Otsingustring: 
+Не проверять место     : ,Ära kontrolli ruumi         :
+Проверять хеш-сумму NCA: ,Kontrolli NCA räsi          :
+Патчить имена (HOS 21+): ,Parandage nimesid (HOS 21+) :
+Занулять мастерключ    : ,Lähtesta põhivõti           :
+Патчить запись видео   : ,Parandab videosalvestust    :
+Патчить скриншоты      : ,Parandab ekraanipilte       :
+Игра использует SDK {},Mäng kasutab SDK {}
+Удалить старые обновления игр,Kustuta vanad mänguuuendused
+Удалить потерянный контент с SD,Kustuta SD-lt orbude sisu
+Удалить потерянный контент из NAND,Kustuta orbude sisu NAND-ist
+Удалить плейсхолдеры с SD,Kustuta kohahoidjad SD-lt
+Удалить плейсхолдеры из NAND,Kustuta kohahoidjad NAND-ist
+Удалить неиспользуемые тикеты,Kustuta kasutamata piletid
+Починить тикеты с ошибками дампа,Paranda tõrkeid sisaldavad piletid
+Удалить скачанное обновление системы,Kustuta allalaaditud süsteemivärskendus
+Очистить папку erpt_reports,Tühjenda kaust erpt_reports
+Очистить кеш тикетов,Tühista piletite vahemälu
+Очистить /atmosphere/contents,Tühjenda /atmosphere/contents
+Удалить сохранения удалённых пользователей,Kustuta kustutatud kasutajate salvestused
+Дата производства: {:s},Tootmiskuupäev : {:s}
+Ник: {},Hüüdnimi: {}
+Установить обновления из текущей папки,Paigalda värskendused praegusest kaustast
+Патчить требование NNID: ,Parandage NNID nõue         :
+Выполнить выбранные действия,Käivita valitud tegevused
+CID: {:s},CID            : {:s}
+TitleId : {} BID: {},TitleId    : {} BID: {}
+"Meta SDK: {},  Program SDK: {}","Meta SDK   : {},  Program SDK: {}"
+"Внимание!!! Включение следующих опций приведет к тому,","Hoiatus!!! Jargmiste valikute lubamine toob kaasa selle,"
+что установленные NCA файлы будут отличаться от исходных:,et paigaldatud NCA failid erinevad originaalidest:

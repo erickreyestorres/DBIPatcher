@@ -11,7 +11,6 @@ original,translation
 "DPAD или стики для перемещения, (+) - Настройки","DPAD arba svirtelės judėjimui, (+) - Nustatymai"
 Ошибка создания файла: {},Klaida kuriant failą: {}
 Подключение к серверу...,Jungiamasi prie serverio...
-      Название: {}\n      Издатель: {}\n      Версия: ,      Pavadinimas: {}\n      Leidėjas: {}\n      Versija: 
    Это действие будет нельзя отменить   ,   Šio veiksmo atšaukti nepavyks   
 SDK подменён,SDK pakeistas
 Точка доступа,Prieigos taškas
@@ -31,7 +30,6 @@ SDK подменён,SDK pakeistas
 Удаление бекапов,Atsarginių kopijų trynimas
 Удаление записи об игре...,Ištrinamas žaidimo įrašas...
 Удаление игр,Ištrinami žaidimai
-Удаление игры ,Ištrinamas žaidimas 
 Удаление игры целиком: [{}],Visiškas žaidimo pašalinimas: [{}]
 Удаление каталога LFS,Ištrinamas LFS katalogas
 Удаление контента,Ištrinamas turinys
@@ -60,7 +58,6 @@ SaveFS очищена,SaveFS išvalyta
 Удалить старые бекапы,Ištrinti senas atsargines kopijas
 Удаляется {} из {}...,Ištrinama {} iš {}...
 Удаляется {}...,Ištrinama {}...
-Удаляется бекап ,Ištrinama atsarginė kopija 
 Удаляется запись о контенте...,Ištrinamas turinio įrašas...
 Удаляется запись об игре...,Ištrinamas žaidimo įrašas...
 Удаляется игра и весь связанный контент,Ištrinamas žaidimas ir visas susijęs turinys
@@ -110,9 +107,8 @@ USB Соединение,USB ryšys
 Фиксация ФС...,FS įrašymas...
 Финальный размер: {},Galutinis dydis: {}
 Формирование списка...,Generuojamas sąrašas...
-Форсированный язык    : {},Priverstinė kalba    : {}
-Форсированный язык    : {} ({}),Priverstinė kalba    : {} ({})
-  Автоопределение,  Automatinis aptikimas
+Форсированный язык    : {},Priverstinė kalba      : {}
+Форсированный язык    : {} ({}),Priverstinė kalba      : {} ({})
 Форсировать язык,Priverstinai naudoti kalbą
 Французский,Prancūzų
 "Х:{}, Т:{}, РЦ:{}","H:{}, T:{}, R:{}"
@@ -129,13 +125,11 @@ USB Соединение,USB ryšys
 Что-то пошло не так. Пропускаем оставшийся файл,Įvyko klaida. Praleidžiamas likęs failas
 "Чтобы вернуться, нажмите B","Norėdami grįžti, paspauskite B"
 Шадок у Гиби,Šadokas pas Gibį
-Шифрование секции ,Sekcijos šifravimas
 Экспорт SDK,SDK eksportas
 Экспортировать,Eksportuoti
 Экспортировать SDK,Eksportuoti SDK
 Январь,Sausis
 Японский,Japonų
-Ярлык   : ,Nuoroda   : 
 Ярлык для DBI,Nuoroda į DBI
 да,taip
 не является LFS папкой,nėra LFS aplankas
@@ -148,7 +142,7 @@ USB Соединение,USB ryšys
 Просмотр МТР устройства [{}],MTP įrenginio peržiūra [{}]
 Просмотр USB диска [{}],USB disko peržiūra [{}]
 Заряд батареи (сырое значение) : {},Akumuliatoriaus įkrova (neapdorota vertė) : {}
-ru,ru
+ru,lt
 [CRC ОШИБКА ФАЙЛА],[FAILO CRC KLAIDA]
 Будет скачана и установлена прошивка системы из файла {}.\n\nНажимте (+) для продолжения\nЛюбую другую кнопку для отмены,Sistemos programinė įranga bus atsisiųsta ir įdiegta iš failo {}.\n\nPaspauskite (+) norėdami tęsti\nBet kurį kitą mygtuką norėdami atšaukti
 Распаковка архива не удалась,Archyvo išskleidimas nepavyko
@@ -160,14 +154,11 @@ ru,ru
 Октябрь,Spalis
 [HASH MISMATCH: GC ➡ eShop],[HASH MISMATCH: GC ➡ eShop]
 Ноябрь,Lapkritis
- {} минут, {} minučių
 Игрок,Žaidėjas
 Время,Laikas
-Язык    : ,Kalba   : 
 Контент,Turinys
 [HASH: OK],[HASH: OK]
 Красная,Raudona
-Путь    : ,Kelias :
 [HASH MISMATCH: Неисправимо],[MAIŠOS KLAIDA: Nepataisoma]
 [ПРЕД],[ATGAL]
 Альбом,Albumas
@@ -223,7 +214,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 [КОНТЕНТ ОТСУТСТВУЕТ],[TURINYS TRŪKSTA]
 [НЕ СОЗДАТЬ ПЛЕЙСХОЛДЕР],[NEKURTI VIETOS ŽYMEKLIO]
 [НЕДОСТАТОЧНО МЕСТА],[NEPAKANKA VIETOS]
-  Кодировка...,  Kodavimas...
 [НЕИЗВЕСТНОЕ СЖАТИЕ],[NEŽINOMAS SUSPAUDIMAS]
 [ОТСУТСТВУЕТ],[TRŪKSTA]
 [ОШБК],[KLAIDA]
@@ -234,7 +224,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 [ОШИБКА],[KLAIDA]
 [ОШИБКА] Отсутствует URL списка обновлений,[KLAIDA] Trūksta atnaujinimų sąrašo URL
 [ПЕРЕДАЧА OK],[PERDAVIMAS OK]
-  Применить,  Taikyti
 [ПЕРЕДАЧА ПРЕРВАНА],[PERDAVIMAS NUTRAUKTAS]
 [ПОВРЕЖДЁННЫЙ NCA],[SUGADINTAS NCA]
 [ПОДПИСЬ: OK],[PARAŠAS: OK]
@@ -244,7 +233,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 [ТРЕБУЕТСЯ РЕЖИМ ТАЙТЛА],[REIKALINGAS PAVADINIMO REŽIMAS]
 [ФАЙЛ ПОВРЕЖДЁН],[FAILAS SUGADINTAS]
 [ХЕШ ИСПРАВЛЕН],[MAIŠA PATAISYTA]
-  Редактирование,  Redagavimas
 [ХЕШ НЕ СОВПАДАЕТ],[MAIŠOS NESUTAMPA]
 \nНачало обработки dlc {}: {:016X},\nPradedamas DLC apdorojimas {}: {:016X}
 \nНачало обработки программы {},\nPradėtas programos {} apdorojimas
@@ -255,7 +243,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 \nСборка RomFS,\nRomFS kūrimas
 \nСекция 0,\nSekcija 0
 \nСекция 1,\nSkyrius 1
- (по времени игры), (pagal žaidimo laiką)
 \nСекция 2,\nSkyrius 2
 \nСоздан NSP: {},\nNSP sukurtas: {}
 \nШифрование NCA,\nNCA šifravimas
@@ -265,7 +252,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 {:4d} {}. Всего: {} час,{:4d} {}. Iš viso: {} val
 {:4d} {}. Всего: {} часа,{:4d} {}. Iš viso: {} valandos
 {:4d} {}. Всего: {} часов,{:4d} {}. Iš viso: {} valandų
- (по названию игры), (pagal žaidimo pavadinimą)
 {:4d}. Всего: {} час,{:4d}. Iš viso: {} val
 {:4d}. Всего: {} часа,{:4d}. Iš viso: {} valandos
 {:4d}. Всего: {} часов,{:4d}. Iš viso: {} valandų
@@ -275,7 +261,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 {} cохранение,{} išsaugojimas
 {} cохранений,{} išsaugotas
 {} cохранения,{} išsaugoti duomenys
- (по числу запусков), (pagal paleidimų skaičių)
 {} бекапа,{} atsarginė kopija
 {} бекапов,{} atsarginės kopijos
 {} записей ({}),{} įrašai ({})
@@ -296,8 +281,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 {}: {} потерянная запись,{}: {} našlaitinis įrašas
 {}: {} потерянных записей,{}: {} prarastų įrašų
 {}: {} потерянных записи,{}: {} prarastų įrašų
-     {:<10} Шифрование: {} Размер установки: {}{:>10},     {:<10} Šifravimas: {} Diegimo dydis: {}{:>10}
- [НЕ МОГУ ОТКРЫТЬ ФАЙЛ], [NEPAVYKSTA ATIDARYTI FAILO]
 {}: {}/{} ({:.2f} МБ/сек),{}: {}/{} ({:.2f} MB/sek)
 {}: {}/{} ({}%) ({:.2f} МБ/сек),{}: {}/{} ({}%) ({:.2f} MB/s)
 {}: пропускается {}/{} ({:.2f} МБ/сек),{}: praleidžiama {}/{} ({:.2f} MB/sek)
@@ -307,34 +290,26 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Аватар установлен,Avataras nustatytas
 Август,Rugpjūtis
 Австралия,Australija
-Автозапуск FTP: ,FTP automatinis paleidimas: 
 Автозапуск MTP,MTP automatinis paleidimas
 Автозапуск списка homebrew,Automatinis homebrew sąrašo paleidimas
-Автор   : ,Autorius: 
 Агрументы для ярлыка,Nuorodos argumentai
 Адрес FTP сервера: {},FTP serverio adresas: {}
 Адрес HTTP сервера: {},HTTP serverio adresas: {}
- {:>5} часа, {:>5} valandų
 Альбом (0°),Albumas (0°)
 Американский английский,Amerikiečių anglų
 Апрель,Balandis
 База этой игры не самодостаточна. Не забудьте установить обновление,Šio žaidimo bazė nėra savarankiška. Nepamirškite įdiegti atnaujinimo
-Базовое хранилище: ,Pagrindinė atmintis: 
 Бекапы,Atsarginės kopijos
 Бекапы сохранений ({}),Išsaugotų duomenų atsarginės kopijos ({})
 Британский английский,Britų anglų
- {:>5} часов, {:>5} valandų
 В альбоме найден {} объект,Albume rastas {} objektas
 В альбоме найдено {} объекта,Albume rasta {} objektų
 В альбоме найдено {} объектов,Albume rasta {} objektų
 В альбоме отсутствуют объекты,Albume nėra objektų
 В файле /switch/prod.keys отсутствуют необходимые ключи.\n\nЧасть функций программы будет недоступна.\n\nПерегрузитесь в Hekate и используйте Lockpick_RCM.bin пейлоад\nдля дампа ключей из SysNAND.,"Trūksta reikalingų raktų faile /switch/prod.keys.\n\nKai kurios programos funkcijos bus neprieinamos.\n\nPerkraukite į Hekate ir naudokite Lockpick_RCM.bin payload,\nkad išgautumėte raktus iš SysNAND."
-ВНИМАНИЕ ,DĖMESIO 
-ВНИМАНИЕ! ,DĖMESIO! 
 ВНИМАНИЕ! Тайтл {:016X} не установлен,DĖMESIO! Pavadinimas {:016X} neįdiegtas
 ВНИМАНИЕ! Установленная версия ({}) не совпадает с желаемой ({}),DĖMESIO! Įdiegta versija ({}) neatitinka norimos ({})
 ВО ВРЕМЯ ПЕРЕДАЧИ ФАЙЛА НАЙДЕНЫ ОШИБКИ. УСТАНОВКА ПРЕРВАНА,PERKELIANT FAILĄ RASTA KLAIDŲ. DIEGIMAS NUTRAUKTAS
- {} в чёрном списке., {} juodajame sąraše.
 Введите URL сервера (HTTP или (S)FTP),Įveskite serverio URL (HTTP arba (S)FTP)
 Введите агрументы для ярлыка или оставьте пустым,Įveskite nuorodos argumentus arba palikite tuščią
 Введите желаемый номер страницы,Įveskite norimą puslapio numerį
@@ -342,16 +317,13 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Введите новое имя каталога,Įveskite naują katalogo pavadinimą
 Введите новое имя файла,Įveskite naują failo pavadinimą
 Введите номер DLC,Įveskite DLC numerį
-Версия  : ,Versija : 
 Версия {} [v{}],Versija {} [v{}]
 Вместо пользователя {} использовать:,Naudoti vietoj vartotojo {}:
-Внимание! ,Dėmesio! 
 Внимание!\nНекоторые файлы были заблокированы и поэтому пропущены.,Dėmesio!\nKai kurie failai buvo užrakinti ir todėl praleisti.
 Во время разбора\n\n{}\n\nвозникла следующая ошибка:\n\n{},Analizuojant\n\n{}\n\nįvyko ši klaida:\n\n{}
 Во время установки тикетов были ошибки. Проверьте наличие ES сигпатчей,"Įdiegiant bilietus įvyko klaidų. Patikrinkite, ar yra ES sigpatches"
 Во время экспорта были ошибки,Eksportuojant įvyko klaidų
 Возраст батареи                : {},Baterijos amžius                      : {}
- {} минута, {} minutė
 Возрастной рейтинг,Amžiaus reitingas
 Восстановить,Atkurti
 Восстановить бекап...,Atkurti atsarginę kopiją...
@@ -361,7 +333,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Восстановление не удалось,Atkūrimas nepavyko
 Восстановление успешно,Atkūrimas sėkmingas
 Восстановление: {},Atkuriama: {}
- {} минуты, {} minutės
 Время игры: {:02}:{:02}:{:02},Žaidimo laikas: {:02}:{:02}:{:02}
 Время передачи {:d}:{:02d}:{:02d},Perdavimo laikas {:d}:{:02d}:{:02d}
 Все игровые сессии,Visos žaidimo sesijos
@@ -376,7 +347,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Всего {} байтов получено,Iš viso gauta {} baitų
 Всего {} байтов послано,{} baitų išsiųsta
 Всего записей: {},Iš viso įrašų: {}
-Всего освобождено места : ,Iš viso atlaisvinta vietos : 
 Всего отослано: {} ({}/сек),Iš viso išsiųsta: {} ({}/sek)
 Всего программ: {},Iš viso programų: {}
 Вставить,Įterpti
@@ -392,8 +362,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Вы уверены в удалении {} записи?\n\n(+) - ДА   B - Отмена,Ar tikrai norite ištrinti {} įrašą?\n\n(+) - TAIP   B - Atšaukti
 Вы уверены в удалении {} объекта?\n\n(+) - ДА   B - Отмена,Ar tikrai norite ištrinti {} objektą?\n\n(+) - TAIP   B - Atšaukti
 Вы уверены в удалении {} объектов?\n\n(+) - ДА   B - Отмена,Ar tikrai norite ištrinti {} objektus?\n\n(+) - TAIP   B - Atšaukti
-    {:>2} сек,    {:>2} sek
- Закрытие игры, Žaidimo uždarymas
 "Вы уверены, что хотите удалить {}?\n\n(+) - ДА, другая кнопка - НЕТ","Ar tikrai norite ištrinti {}?\n\n(+) - TAIP, kitas mygtukas - NE"
 "Вы уверены, что хотите удалить\n{}?\n\n(+) - ДА  В - Отмена",Ar tikrai norite ištrinti\n{}?\n\n(+) - TAIP  B - Atšaukti
 Выберите пользователя,Pasirinkti vartotoją
@@ -401,7 +369,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Выбрать все файлы игры,Pasirinkti visus žaidimo failus
 Выбрать того же пользователя,Pasirinkti tą patį vartotoją
 Выбрать ту же игру,Pasirinkti tą patį žaidimą
- Запуск игры, Paleidžiamas žaidimas
 Вырезать,Iškirpti
 Вычисление хэша,Skaičiuojama maiša
 Вычисленное время конца : {},Apskaičiuotas pabaigos laikas : {}
@@ -410,7 +377,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Генерация DLC анлокера...,Generuojamas DLC atrakintojas...
 Генерируется анлокер для {:016X} с номером {} и версией {}...,Generuojamas atrakintojas {:016X} su numeriu {} ir versija {}...
 Генерируется ярлык для пути '{}' и аргументов '{}'...,Generuojama nuoroda keliui '{}' ir argumentams '{}'...
- Логаут пользователя \x1b[36;1m{}\x1b[37;1m, Atsijungia naudotojas \x1b[36;1m{}\x1b[37;1m
 Главное меню,Pagrindinis meniu
 Голландский,Olandų
 "Да, я уверен","Taip, esu tikras"
@@ -419,7 +385,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Дамп ярлыка в '{}'...,Nuorodos išmetimas į '{}'...
 Действия с файлами,Failų operacijos
 Действия с файлами ({}),Failų veiksmai ({})
- Логин пользователя \x1b[36;1m{}\x1b[37;1m, Vartotojo vardas \x1b[36;1m{}\x1b[37;1m
 Декабрь,Gruodis
 День,Diena
 Диаграмма активности,Aktyvumo diagrama
@@ -428,16 +393,13 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Для дампов,Dumpams
 Для логов,Žurnalams
 Добавить в любимые,Pridėti prie mėgstamų
- Переключение на игру, Perjungiama į žaidimą
 Европа,Europa
 "Есть несохранёные изменения.\nВы хотите их сохранить?\n\n(+) - Да, сохранить\n\n(-) - Выйти без сохранения\n\nДругая кнопка - Отмена","Yra neišsaugotų pakeitimų.\nAr norite juos išsaugoti?\n\n(+) - Taip, išsaugoti\n\n(-) - Išeiti neišsaugant\n\nKitas mygtukas - Atšaukti"
 Желаемая версия: {},Norima versija: {}
 Журнал активности,Veiklos žurnalas
 Завершено,Užbaigta
 Загружается список обновлений...,Įkeliamas atnaujinimų sąrašas...
-Загружено ,Įkeltas 
 Загрузка изображения...,Įkeliamas vaizdas...
- Режим работы изменился: {}, Veikimo režimas pakeistas: {}
 Загрузка текста...{}%,Įkeliamas tekstas...{}%
 Загрузка файла... {}%,Įkeliamas failas... {}%
 Задать размер файла {} не удалось: {},Nepavyko nustatyti failo dydžio {}: {}
@@ -446,7 +408,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Закончились дополнительные буферы. Скорость записи на носитель слишком низка,Baigėsi papildomi buferiai. Rašymo į laikmeną greitis per mažas
 Закрытие соединения,Uždaromas ryšys
 Закрытие соединения к {}:{},Uždaromas ryšys su {}:{}
- Сброс системных часов, Atstatyti sistemos laikrodį
 Запаковать LFS в romfs.bin,Supakuoti LFS į romfs.bin
 Запаковать в romfs.bin,Supakuoti į romfs.bin
 Запаковка папки в RomFS,Aplanko pakavimas į RomFS
@@ -456,21 +417,17 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Запись за пределами файла,Rašymas už failo ribų
 Заполнение нулями,Užpildymas nuliais
 Заполнить свободное место на SD нулями,Užpildyti laisvą vietą SD nuliais
- Сворачивание игры, Žaidimo sustabdymas
 Запрет захвата видео,Drausti vaizdo įrašymą
 Запрет скриншотов,Ekrano kopijų draudimas
 Запрещено,Uždrausta
-Запрос на удаление ,Ištrynimo užklausa 
 Запускавшиеся игры,Paleisti žaidimai
 Запустить FTP сервер...,Paleisti FTP serverį...
 Запустить HTTP сервер...,Paleidžiamas HTTP serveris...
- Состояние электропитания изменилось: {}, Maitinimo būsena pasikeitė: {}
 Запустить МТР соединение,Paleisti MTP ryšį
 Запустить случайную игру,Paleisti atsitiktinį žaidimą
 Заряд батареи                  : {},Baterijos įkrova               : {}
 Здесь пусто,Čia nieko nėra
 Игра анонсирует SDK {},Žaidimas skelbia SDK {}
-" и {} новое DLC,"," ir {} naujas DLC,"
 "Игра анонсирует более новый SDK ({}), чем текущая прошивка ({})",Žaidimas reikalauja naujesnės SDK ({}) nei dabartinė programinė įranga ({})
 Игра использует titleId от дополнения,Žaidimas naudoja titleId iš DLC
 Игра использует titleId от обновления,Žaidimas naudoja titleId iš atnaujinimo
@@ -480,17 +437,14 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Изменить номер DLC (десятичный),Keisti DLC numerį (dešimtainis)
 Изменить номер DLC (шестнадцатеричный),Keisti DLC numerį (šešioliktainis)
 Изменён размер SaveFS,SaveFS dydis pakeistas
-" и {} новых DLC,"," ir {} nauji DLC,"
 Импорт исправленного тикета...,Importuojamas pataisytas bilietas...
 Импорт тикета...,Importuojamas bilietas...
-Имя     : ,Vardas  : 
 "Имя каталога\n'{}'\nсодержит недопустимые символы.\nОн не может быть создан.\n\nНажмите A - прервать, B - пропустить, X - переименовать","Katalogo pavadinimas\n'{}'\nturi neleistinų simbolių.\nJo sukurti negalima.\n\nPaspauskite A - nutraukti, B - praleisti, X - pervadinti"
 "Имя файла\n'{}'\nсодержит недопустимые символы.\nОн не может быть создан.\n\nНажмите A - прервать, B - пропустить, X - переименовать","Failo pavadinime\n'{}'\nyra neleistinų simbolių.\nJo sukurti negalima.\n\nPaspauskite A - nutraukti, B - praleisti, X - pervadinti"
 Инсталлируется romfs.bin,Įdiegiama romfs.bin
 Информация о зарядке батареи,Baterijos įkrovimo informacija
 Информация о контенте,Turinio informacija
 Информация о контенте ({}),Turinio informacija ({})
- сортировка по дате создания, rūšiuoti pagal sukūrimo datą
 Информация о прошивке,Programinės įrangos informacija
 Информация о системе,Sistemos informacija
 Информация о сохранении,Išsaugojimo informacija
@@ -501,31 +455,25 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Информация об атмосфере,Atmosphere informacija
 Информация об игровой активности,Žaidimo veiklos informacija
 Информация об источние питания,Maitinimo šaltinio informacija
- сортировка по имени, rūšiuoti pagal pavadinimą
 Информация об оборудовании,Aparatinės įrangos informacija
 Информация...,Informacija...
 Испанский,Ispanų
 Использовано дополнительной памяти: {}. Создано буферов: {},Panaudota papildomos atminties: {}. Sukurta buferių: {}
 Использовать папку для...,Naudoti aplanką...
- сортировка по имени игры, rūšiuoti pagal žaidimo pavadinimą
-Используется ,Naudojama 
 Используется USB{},Naudojamas USB{}
 Итальянский,Italų
 Ищется control для ProgramId {},Ieškoma control ProgramId {}
 Ищется exefs/romfs для ProgramId {},Ieškoma exefs/romfs ProgramId {}
 Ищется exefs/romfs/logo для ProgramId {},Ieškoma exefs/romfs/logo ProgramId {}
 Ищется {},Ieškoma {}
- сортировка по месту установки, rūšiuoti pagal diegimo vietą
 Июль,Liepa
 Июнь,Birželis
 Канадский французский,Kanados prancūzų
 "Когда ваше устройство подключится, нажмите любую кнопку","Paspauskite bet kurį mygtuką, kai prisijungs jūsų įrenginys"
-Код партии батареи    : {} ({}),Baterijos partijos kodas: {} ({})
+Код партии батареи    : {} ({}),Baterijos partijos kodas : {} ({})
 Кодировка,Kodavimas
-Конвертация в фейковые ,Konvertavimas į netikrus 
-Конец игры            : -,Žaidimo pabaiga       : -
-Конец игры            : {},Žaidimo pabaiga       : {}
- сортировка по общему размеру, rūšiuoti pagal bendrą dydį
+Конец игры            : -,Žaidimo pabaiga        : -
+Конец игры            : {},Žaidimo pabaiga        : {}
 Контент уже на месте,Turinys jau yra vietoje
 Копирование IVFC слой {} в nca: {},Kopijuojamas IVFC sluoksnis {} į nca: {}
 Копирование PFS0 в nca,Kopijuojama PFS0 į nca
@@ -535,7 +483,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Корейский,Korėjiečių
 Корень не найден,Šaknis nerasta
 Корень сохранения не существует,Išsaugojimo šaknis neegzistuoja
- сортировка по пользователю, rūšiuoti pagal vartotoją
 Корея,Korėja
 Латиноамериканский испанский,Lotynų Amerikos ispanų
 Май,Gegužė
@@ -544,7 +491,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Масштаб: По экрану,Mastelis: Pritaikyti ekranui
 Масштаб: Точка в точку,Mastelis: Pikselis į pikselį
 Масштаб: Увеличение x2,Mastelis: 2x didinimas
- сортировка по порядку игры, rūšiuoti pagal žaidimo tvarką
 Место в  NAND         : {},Vieta NAND           : {}
 Место на SD карте     : {},Vieta SD kortelėje     : {}
 Место на приставке не занято,Konsolėje neužimta vietos
@@ -554,13 +500,11 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Модификация файла не удалась,Failo modifikavimas nepavyko
 На выбранном устройстве нет достаточного свободного места для установки,Pasirinktame įrenginyje nepakanka laisvos vietos diegimui
 На месте нет достаточно свободного места,Nepakanka laisvos vietos
- сортировка по размеру, rūšiuoti pagal dydį
 Нажмите (+) для перезаписи конфига обновлённым\n\nЛюбую другую кнопку для пропуска,"Paspauskite (+), kad perrašytumėte konfigūraciją atnaujinta\n\nBet kurį kitą mygtuką, kad praleistumėte"
 "Нажмите (+) для удаления, любую другую кнопку для пропуска...\n (-) Удалять все, больше не спрашивая","Paspauskite (+) ištrinti, bet kurį kitą mygtuką praleisti...\n (-) Ištrinti viską, daugiau neklausti"
 "Нажмите A, чтобы продолжить, другую кнопку, чтобы выйти","Paspauskite A, kad tęstumėte, kitą mygtuką, kad išeitumėte"
 "Нажмите B, чтобы вернуться","Paspauskite B, kad grįžtumėte"
 Нажмите любую кнопку,Paspauskite bet kurį mygtuką
-Название: ,Pavadinimas: 
 Найден SDK: {},Rastas SDK: {}
 Найден {} зарегистрированный контент-файл,Rastas {} registruotas turinio failas
 Найден {} контент-файл,Rastas {} turinio failas
@@ -610,7 +554,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Начало игры           : {},Žaidimo pradžia        : {}
 Начало создания Control.nca,Pradedamas Control.nca kūrimas
 Начало создания Program.nca,Pradedamas Program.nca kūrimas
-Начало установки. Место установки: ,Diegimas pradėtas. Diegimo vieta: 
 Начать установку,Pradėti diegimą
 Не доступно,Nepasiekiama
 Не известно,Nežinoma
@@ -640,7 +583,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Невозможно скопировать файл\n   '{}'\n➡ '{}'\n,Nepavyko nukopijuoti failo\n   '{}'\n➡ '{}'\n
 Невозможно смонтировать сохранение,Nepavyko prijungti išsaugojimo
 Невозможно смонтировать устройство сохраниения,Nepavyko prijungti išsaugojimo įrenginio
-Невозможно создать выходной zip-файл: ,Nepavyko sukurti išvesties zip failo: 
 Невозможно создать каталог,Nepavyko sukurti katalogo
 Невозможно создать каталог '{}':,Nepavyko sukurti katalogo '{}':
 Невозможно создать файл,Nepavyko sukurti failo
@@ -650,7 +592,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 : {:>4} сохранение,: {:>4} išsaugojimas
 Неизвестно,Nežinoma
 Неизвестный тайтл,Nežinomas pavadinimas
-Неиспользуемый тикет: ,Nenaudotas bilietas: 
 Немецкий,Vokiečių
 Неправильное хранилище,Netinkama saugykla
 Неправильный родительский объект,Netinkamas pirminis objektas
@@ -675,7 +616,6 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Обновить DBI,Atnaujinti DBI
 Обновить DBI из этого файла,Atnaujinti DBI iš šio failo
 Обновить TitleDB,Atnaujinti TitleDB
-   {:>3} мин,   {:>3} min
 Обновление TitleDB,TitleDB atnaujinimas
 Обновление базы данных...,Atnaujinama duomenų bazė...
 Обновление версии до {} {}\n\nНажмите (+) для продолжения\nЛюбую другую кнопку для отмены,Atnaujinama versija į {} {}\n\nPaspauskite (+) tęsti\nBet kurį kitą mygtuką atšaukti
@@ -687,11 +627,11 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Обрабатывается запись {:016X},Apdorojamas įrašas {:016X}
 Обратный альбом (180°),Apverstas albumas (180°)
 Обратный портрет (270°),Atvirkštinis portretas (270°)
-Общее время активной игры     : {} часов,Bendras aktyvaus žaidimo laikas     : {} valandų
+Общее время активной игры     : {} часов,Bendras aktyvaus žaidimo laikas  : {} valandų
 Общее время дампа {:d}:{:02d}:{:02d},Bendra išklotinės trukmė {:d}:{:02d}:{:02d}
-Общее время запущенных игр    : {} часов,Bendras žaidimo laikas    : {} valandų
-Общее время игры      : -,Bendras žaidimo laikas      : -
-Общее время игры      : {:d} часов {:02d} минут,Bendras žaidimo laikas      : {:d} val. {:02d} min.
+Общее время запущенных игр    : {} часов,Bendras žaidimo laikas           : {} valandų
+Общее время игры      : -,Bendras žaidimo laikas : -
+Общее время игры      : {:d} часов {:02d} минут,Bendras žaidimo laikas : {:d} val. {:02d} min.
 Общее время установки: {:d}:{:02d}:{:02d},Bendras diegimo laikas: {:d}:{:02d}:{:02d}
 Общее время: {:02}:{:02}:{:02},Bendras laikas: {:02}:{:02}:{:02}
 Общее занимаемое место: N:{} + S:{} = {},Bendra užimta vieta: N:{} + S:{} = {}
@@ -706,17 +646,13 @@ Daybreak.nro не найден,Daybreak.nro nerastas
 Объект уже открыт для редактирования,Objektas jau atidarytas redagavimui
 Огибка получения адреса сокета: {} {},Klaida gaunant lizdo adresą: {} {}
 Ожидаемый размер: {},Tikėtinas dydis: {}
-Ожидается ,Tikimasi 
 Ожидается большой (>4GB) файл,Tikimasi didelio (>4GB) failo
 Ожидается запуск dbibackend на стороне ПК...,Laukiama dbibackend paleidimo kompiuterio pusėje...
-Ожидание включения интерфейса: ,Laukiama sąsajos įjungimo: 
 Ожидание: {} секунд,Laukiama: {} sekundės
 Ожидание: {} секунда,Laukiama: {} sekundė
 Ожидание: {} секунды,Laukiama: {} sekundės
 Ориентация,Orientacija
 Ориентация...,Orientacija...
-Освобождено места в NAND: ,Atlaisvinta NAND vietos: 
-Освобождено места на SD : ,Atlaisvinta vietos SD : 
 Основной SDK не найден. Пробуем мультипрограмный вариант,Pagrindinis SDK nerastas. Bandoma daugiaprogramė versija
 Оставить сохранения,Palikti išsaugojimus
 Осталось ходов:    {:>3},Liko ėjimų:    {:>3}
@@ -776,7 +712,6 @@ DBI Просмотр альбома,DBI Albumo peržiūra
 Ошибка получения: {},Gavimo klaida: {}
 Ошибка получения: {} {},Gavimo klaida: {} {}
 Ошибка посылки файла: {},Failo siuntimo klaida: {}
-   Получение списка бекапов...   ,   Gaunamas atsarginių kopijų sąrašas...   
 Ошибка привязки сокета к порту {}: {},Klaida prijungiant lizdą prie prievado {}: {}
 Ошибка привязки: {},Susiejimo klaida: {}
 Ошибка принятия соединения: {} {},Ryšio priėmimo klaida: {} {}
@@ -787,15 +722,12 @@ DBI Просмотр альбома,DBI Albumo peržiūra
 Ошибка сжатия,Suspaudimo klaida
 Ошибка создания каталога: {},Klaida kuriant katalogą: {}
 Ошибка создания сокета: {},Lizdo kūrimo klaida: {}
-DPAD/Стики - Навигация по страницам\n\n     ZR+ZL - Переход к странице... \n\n       L/R - Навигация по главам   \n\n       (-) - Эта подсказка         \n\n       (+) - Меню                  ,DPAD/Lazdelės - Puslapių naršymas\n\n     ZR+ZL - Eiti į puslapį... \n\n       L/R - Skyrių naršymas   \n\n       (-) - Ši užuomina         \n\n       (+) - Meniu                  
 Ошибка создания сохранения,Klaida kuriant išsaugojimą
 Ошибка удаления каталога: {},Katalogo ištrynimo klaida: {}
 Ошибка удаления файла: {},Failo ištrynimo klaida: {}
 Ошибка установки флагов сокета: {},Klaida nustatant lizdo vėliavėles: {}
 Ошибка чтения записи об игре: {},Klaida skaitant žaidimo įrašą: {}
 Ошибка чтения каталога: {},Katalogo skaitymo klaida: {}
-Ошибка чтения регистров max17050: ,Klaida skaitant max17050 registrus: 
-Ошибка чтения сохранённых параметров контроллера: ,Klaida skaitant išsaugotus valdiklio parametrus: 
 Ошибка чтения файла: {},Failo skaitymo klaida: {}
 Ошибок не найдено,Klaidų nerasta
 Ошибочный номер DLC (Должен быть в диапазоне 0x001-0x7FF),Netinkamas DLC numeris (Turi būti diapazone 0x001-0x7FF)
@@ -857,7 +789,6 @@ Get chargeInfoFields : {},Get chargeInfoFields : {}
 Получение списка тикетов...,Gaunamas bilietų sąrašas...
 Получение файла: {} МБ ({:.2f} МБ/сек),Gaunamas failas: {} MB ({:.2f} MB/s)
 Получение файла: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Gaunamas failas: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}%\x1b[37;1m) (\x1b[33;1m{:.2f}\x1b[37;1m MB/sek)
-   Получение списка бекапов...{}/{}    ,   Gaunamas atsarginių kopijų sąrašas...{}/{}    
 Полученное время: {},Gautas laikas: {}
 Полученный размер: {},Gautas dydis: {}
 "Получено: {}, ({:.2f} МБ/сек)","Gauta: {}, ({:.2f} MB/s)"
@@ -872,15 +803,13 @@ Get chargeInfoFields : {},Get chargeInfoFields : {}
 Посылается файл: {},Siunčiamas failas: {}
 Посылается файл: {}/\x1b[36;1m{}\x1b[37;1m МБ (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m МБ/сек),Siunčiamas failas: {}/\x1b[36;1m{}\x1b[37;1m MB (\x1b[32;1m{}\x1b[37;1m%) (\x1b[33;1m{:.2f}\x1b[37;1m MB/s)
 Превышен размер командного буфера,Viršytas komandų buferio dydis
-LFS мод.: -,LFS režimas: -
+LFS мод.: -,LFS režimas : -
 Предоставить по FTP,Pateikti per FTP
-Предупреждения: ,Įspėjimai: 
 Прекращение прослушивания на {}:{},Sustabdomas klausymasis {}:{}
 Прервано пользователем,Nutraukta vartotojo
 Привязка к {}:{},Prisijungimas prie {}:{}
 Принято соединение от {}:{},Priimtas ryšys iš {}:{}
 Проверить целостность,Patikrinti vientisumą
-"LFS мод.: Присутствует, Размер: ","LFS modifikacija: Yra, Dydis: "
 Проверка magic...,Tikrinama magic...
 "Проверка {} ({}, {}), {}","Tikrinimas {} ({}, {}), {}"
 Проверка картриджа...,Tikrinamas kasetė...
@@ -890,7 +819,7 @@ LFS мод.: -,LFS režimas: -
 Проверка сохранений,Tikrinami išsaugoti duomenys
 Проверка целостности ({}),Vientisumo patikra ({})
 Проверяется: {},Tikrinama: {}
-"LFS мод.: Присутствует, Размер: подсчёт отключен в настройках","LFS mod.: Yra, Dydis: skaičiavimas išjungtas nustatymuose"
+"LFS мод.: Присутствует, Размер: подсчёт отключен в настройках","LFS mod.    : Yra, Dydis: skaičiavimas išjungtas nustatymuose"
 Проверяются бекапы...,Tikrinamos atsarginės kopijos...
 Проверяются сохранения,Tikrinami išsaugojimai
 Программа {}. Control не найдена,Programa {}. Control nerasta
@@ -899,7 +828,6 @@ LFS мод.: -,LFS režimas: -
 Произошла неизвестная ошибка,Įvyko nežinoma klaida
 Произошла ошибка:,Įvyko klaida:
 Произошла ошибка: {},Įvyko klaida: {}
-Пропускаем файл до начала secure раздела ,Praleidžiamas failas iki saugios sekcijos pradžios 
 LFS папка игры,LFS žaidimo aplankas
 Пропускается: {}          \r,Praleidžiama: {}          \r
 Прослушивание на {}:{},Klausoma {}:{}
@@ -909,12 +837,11 @@ MTP Респондер (нажмите B для остановки),MTP Atsakikl
 Просто запуск,Tiesiog paleisti
 Разбор,Analizė
 Раздел secure не найден,Secure skyrius nerastas
-Размер  : ,Dydis  : 
 "Размер  : {}, {} файл","Dydis  : {}, {} failas"
 "Размер  : {}, {} файла","Dydis  : {}, {} failas"
 "Размер  : {}, {} файлов","Dydis  : {}, {} failai"
 Размер посылаемого файла   : {},Siunčiamo failo dydis: {}
-Размер сохранений     : {},Išsaugojimų dydis     : {}
+Размер сохранений     : {},Išsaugojimų dydis      : {}
 Размер: {},Dydis: {}
 Разрешено,Leidžiama
 Распаковать в подкаталог,Išskleisti į pakatalogį
@@ -930,14 +857,12 @@ Nintendo Account задан и связан,Nintendo paskyra nustatyta ir susiet
 Рендеринг FB2,FB2 atvaizdavimas
 "Nintendo Account задан, но не связан","Nintendo Account nustatytas, bet nesusietas"
 Сброс требуемой версии,Atstatyti reikalaujamą versiją
-Сброс требуемой версии к ,Reikalaujamos versijos atstatymas į 
 Сбросить требуемую версию,Atstatyti reikalaujamą versiją
 Сведения,Informacija
 Сведения...,Informacija...
 Свободное место в хранилище: {},Laisva saugyklos vieta: {}
 Свободное место: {},Laisva vieta: {}
 Сгенерировать и установить,Generuoti ir įdiegti
-   Получение списка сохранений...   ,   Gaunamas išsaugojimų sąrašas...   
 Nintendo Account не задан,Nintendo Account nenustatytas
 Сдампить на SD карту,Iškelti į SD kortelę
 Сдампить на внешний USB,Iškelti į išorinį USB
@@ -960,29 +885,23 @@ Nintendo Account не задан,Nintendo Account nenustatytas
 Сканирование игр...,Skenuojami žaidimai...
 Скачано {}/{},Atsisiųsta {}/{}
 Скачивание файла не удалось,Failo atsisiuntimas nepavyko
-Скорость USB интерфейса: ,USB sąsajos greitis: 
 Скорость передачи: {:.2f} МБ/сек,Perdavimo greitis: {:.2f} MB/sek
 Собираются сведения...,Renkama informacija...
 Соединение сброшено,Ryšys atstatytas
-Создан zip-файл: ,Sukurtas zip failas: 
 Создание DLC анлокера,DLC atrakintojo kūrimas
 Создание NSP,NSP kūrimas
 Создание sdmc:/versions.txt,Kuriamas sdmc:/versions.txt
-Создание бекапа сохранения ,Kuriama išsaugotų duomenų atsarginė kopija 
 Создание дампа ({}),Kuriamas išklotinė ({})
 Создание дампа: {},Kuriamas išklotinė: {}
 Создание единого репака,Vieningo perpakavimo kūrimas
 Создание записи об игре...,Kuriamas žaidimo įrašas...
-Создание каталога: ,Kuriamas katalogas: 
 Создание новой записи об игре...,Kuriamas naujas žaidimo įrašas...
-Создание объекта: ,Objekto kūrimas: 
 Создание плейсхолдера: {}...,Kuriamas vietažymis: {}...
 "Создание репака Id: {:016X}, Версия: {}, Тип: {}","Kuriamas repakavimas Id: {:016X}, Versija: {}, Tipas: {}"
 Создание строк... {}%,Kuriamos eilutės... {}%
 Создание таблицы имён,Kuriama vardų lentelė
 Создание тела файла,Kuriamas failo turinys
 Создание точки доступа...,Kuriama prieigos taškas...
-Создание фейковой записи... ,Kuriamas netikras įrašas... 
 Создание хэш таблицы,Maišos lentelės kūrimas
 Создание ярлыка,Kuriama nuoroda
 Создано новое сохранение. Восстанавливаю бекап в него...,Sukurtas naujas išsaugojimas. Atkuriama atsarginė kopija...
@@ -995,7 +914,6 @@ Nintendo Account не задан,Nintendo Account nenustatytas
 Создать ярлык для hbmenu,Sukurti nuorodą hbmenu
 Создать ярлык на рабочий стол для DBI...,Sukurti DBI nuorodą darbalaukyje...
 Создать ярлык с аргументами...,Sukurti nuorodą su argumentais...
-Создаётся MTP хранилище: ,Kuriama MTP saugykla: 
 Создаётся обновлённая запись об игре...,Kuriamas atnaujintas žaidimo įrašas...
 Сохранение для {} уже существует,Išsaugoti duomenys {} jau egzistuoja
 Сохранения,Išsaugoti duomenys
@@ -1003,8 +921,6 @@ Nintendo Account не задан,Nintendo Account nenustatytas
 Сохранения удалённых игр ({}),Ištrintų žaidimų išsaugojimai ({})
 Сохранения установленных игр ({}),Įdiegtų žaidimų išsaugojimai ({})
 Сохранёные в системе параметры котроллера батареи,Sistemoje išsaugoti baterijos valdiklio parametrai
-Статистика игры ,Žaidimo statistika 
-Строка поиска: ,Paieškos eilutė: 
 Существующая запись об игре не найдена,Esamas žaidimo įrašas nerastas
 Существующее сохранение не найдено и новое не может быть создано,Esamas išsaugojimas nerastas ir naujo sukurti nepavyksta
 SDK {} уже был экспортирован: {},SDK {} jau buvo eksportuotas: {}
@@ -1019,15 +935,14 @@ SDK на подмену не найдены,Pakeitimui SDK nerasta
 Тикеты не найдены,Bilietų nerasta
 864,864
 881,881
-"          Париж, издательство Грассе.","          pareiškė, kad raketos krenta,"
 "больше шансов, что оно заработает». Их","tikimybė, kad finale viskas pavyks.' Jų"
 быстро проникли в планы шадоков и,pasityčioti. Jie leido svečiui įlįsti į
 "всякий раз, когда растение расцветает",kaimynai jį atima.
-"выражениях: «Чем больше неудач, тем","'Kuo daugiau aukų, tuo didesnė"
+"выражениях: «Чем больше неудач, тем","posakiuose: ""Kuo daugiau nesėkmių, tuo"
 "вычислили, что у них есть по крайней","tiki tą vieną šansą iš milijono, kuriuo"
 заработает… И они торопятся поскорее,greičiau padaryti tas pačias pirmąsias
 "и дает транзистор, они мчатся, чтобы",​
-"и не кончилось успехом». Или, в других","didybės užstato.' Arba, kitaip tariant:"
+"и не кончилось успехом». Или, в других","ir nepasibaigė sėkmingai». Arba, kituose"
 "мере один шанс из миллиона, что она",viskas suveiks... Ir jie skuba kuo
 миллионная заработает».,"ritmai. Bunkeris, valstybinė leidykla"
 "ничего, что бы непрерывно продолжалось","nelaimės, kuri nebūtų tik laikina"
@@ -1045,11 +960,8 @@ SDK на подмену не найдены,Pakeitimui SDK nerasta
 "терпят неудачу потому, что не хватает",nei unitazuose. O kaimynai lustus
 транзисторов в системах безопасности.,"tariamai gauna tiesiai iš technikos,"
 "шадоку забраться в один из их огородов,","apsupo jį ten iš visų pusių, ir dabar"
-  Жак Руксель. Великолепие навыворот.,  'Užveidrodis'. Vyriausiasis strategas
-«У шадоков ситуация удовлетворительна.,«Pelkių gyventojams viskas vyksta pagal
-"    Великий колдун сказал, что ракеты",    trūksta lustų nei taikymosi sistemo
-"Испытания ракет продолжаются,","planą. Nulinimo procesas tęsiasi,"
-    Дело здесь в одном из основных,    Visa paslaptis slypi fundamentalioj
+«У шадоков ситуация удовлетворительна.,«Pas pelkių gyventojus viskas vyksta
+"Испытания ракет продолжаются,","pagal planą. Nulinimo procesas tęsiasi,"
 Но у гиби транзисторы собирают с,stovinčios soduose. Iš pelkių buvo
 Решено послать одного из шадоков на,"kaimynus dėl detalių. Tie, būdami"
 original,original
@@ -1092,11 +1004,9 @@ OEM ID           : {:s} ({:s}),OEM ID               : {:s} ({:s})
 Версия прошивки         : {}.{}.{}-{}.{},Programinės įrangos versija    : {}.{}.{}-{}.{}
 Возраст батареи                : {}%,Baterijos amžius                      : {}%
 Время гашения экрана в секундах,Ekrano pritemdymo laikas sekundėmis
-Выйти из DBI           :,Išeiti iš DBI           :
 Выключать экран,Išjungti ekraną
-Выключить экран        :,Išjungti ekraną         :
 Выход на рабочий стол,Išeiti į pagrindinį meniu
-Дата первого игрового события : {},Pirmojo žaidimo įvykio data     : {}
+Дата первого игрового события : {},Pirmojo žaidimo įvykio data      : {}
 Добавлять суффикс к имени файла,Pridėti priesagą prie failo pavadinimo
 Достаточное питание            : {},Pakankamas maitinimas                 : {}
 Есть исправление RCM бага   : {},Turi RCM klaidos pataisymą    : {}
@@ -1117,11 +1027,9 @@ OEM ID           : {:s} ({:s}),OEM ID               : {:s} ({:s})
 Использовать скрытый SSID,Naudoti paslėptą SSID
 Источник питания                : {},Maitinimo šaltinis              : {}
 Курсор на обеих панелях,Žymeklis abiejuose skydeliuose
-Место установки        :,Diegimo vieta           :
 %% заряд-разряд    : {},%% įkrovimas-iškrovimas : {}
 Никнейм консоли         : {},Konsolės slapyvardis           : {}
-Общее число игровых сессий    : {},Bendras žaidimo seansų skaičius : {}
-Общий размер передачи  :,Bendras perdavimo dydis :
+Общее число игровых сессий    : {},Bendras žaidimo seansų skaičius  : {}
 Bluetooth MAC адрес   : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Bluetooth MAC adresas    : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 CDIR в листинге,CDIR sąraše
 Configuration Id1     : {},Configuration Id1        : {}
@@ -1181,7 +1089,7 @@ QrTable20            : {:04x},QrTable20                    : {:04x}
 QrTable30            : {:04x},QrTable30                    : {:04x}
 RCOMP0               : {:04x},RCOMP0                       : {:04x}
 Сохранения только в RO режиме,Išsaugojimai tik RO režime
-RTC запущены (приблизительно) : {},RTC paleista (apytiksliai)      : {}
+RTC запущены (приблизительно) : {},RTC paleista (apytiksliai)       : {}
 Текущая ёмкость                 : {}%,Dabartinis talpa                : {}%
 Текущая ёмкость    : {} mAh,Dabartinis talpa        : {} mAh
 Текущее напряжение : {} mV,Dabartinė įtampa        : {} mV
@@ -1192,11 +1100,132 @@ RTC запущены (приблизительно) : {},RTC paleista (apytiksli
 Температура батареи             : {}°C,Baterijos temperatūra           : {}°C
 Тип SoC                 : {},SoC tipas                      : {}
 Тип источника питания          : {},Maitinimo šaltinio tipas              : {}
-Удалять после установки:,Ištrinti po diegimo     :
 Wireless LAN MAC адрес: {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X},Wireless LAN MAC adresas : {:02X}:{:02X}:{:02X}:{:02X}:{:02X}:{:02X}
 Форсировано вклчение USB 3.0: {},Priverstinai įjungtas USB 3.0 : {}
 Возраст батареи                 : {}%,Baterijos amžius                : {}%
-Общий размер установки :,Bendras diegimo dydis   :
 Предел напряжения заряда батареи: {} mV,Baterijos įkrovimo įtampos riba : {} mV
 Средняя температура: {}°C,Vidutinė temperatūra    : {}°C
 Сумма %% заряд-разряд: {} (~{} 0-100 циклов),Suma %% įkrovimas-iškrovimas : {} (~{} 0-100 ciklų)
+"          Париж, издательство Грассе.","          pareiškė, kad raketos krenta,"
+      Название: {}\n      Издатель: {}\n      Версия: ,      Pavadinimas: {}\n      Leidėjas: {}\n      Versija: 
+Удаление игры ,Žaidimo šalinimas 
+Удаляется бекап ,Atsarginė kopija šalinama 
+Удалять после установки: ,Ištrinti po diegimo             :
+  Автоопределение,  Automatinis aptikimas
+Шифрование секции ,Sekcijos šifravimas 
+Ярлык   : ,Nuoroda   : 
+ {} минут, {} minutės
+Язык    : ,Kalba       :
+Путь    : ,Kelias  : 
+  Жак Руксель. Великолепие навыворот.,  'Užveidrodis'. Vyriausiasis strategas
+  Кодировка...,  Kodavimas...
+  Применить,  Taikyti
+  Редактирование,  Redagavimas
+ (по времени игры), (pagal žaidimo laiką)
+ (по названию игры), (pagal žaidimo pavadinimą)
+ (по числу запусков), (pagal paleidimų skaičių)
+     {:<10} Шифрование: {} Размер установки: {}{:>10},     {:<10} Šifravimas: {} Diegimo dydis: {}{:>10}
+ [НЕ МОГУ ОТКРЫТЬ ФАЙЛ], [NEGALIU ATIDARYTI FAILO]
+Автозапуск FTP: ,FTP automatinis paleidimas: 
+Автор   : ,Autorius    :
+ {:>5} часа, {:>5} valandos
+Базовое хранилище: ,Pagrindinė atmintis: 
+ {:>5} часов, {:>5} valandų
+ВНИМАНИЕ ,ĮSPĖJIMAS 
+ВНИМАНИЕ! ,DĖMESIO! 
+ {} в чёрном списке., {} juodajame sąraše.
+Версия  : ,Versija     :
+Внимание! ,Dėmesio! 
+ {} минута, {} minutė
+ {} минуты, {} minutės
+Всего освобождено места : ,Iš viso atlaisvinta vietos : 
+    {:>2} сек,    {:>2} sek
+ Закрытие игры, Žaidimo uždarymas
+Выйти из DBI           : ,Išeiti iš DBI                   :
+Выключить экран        : ,Išjungti ekraną                 :
+ Запуск игры, Paleisti žaidimą
+ Логаут пользователя \x1b[36;1m{}\x1b[37;1m, Atsijungiama nuo vartotojo \x1b[36;1m{}\x1b[37;1m
+ Логин пользователя \x1b[36;1m{}\x1b[37;1m, Vartotojo vardas \x1b[36;1m{}\x1b[37;1m
+ Переключение на игру, Perjungiama į žaidimą
+Загружено ,Įkelta 
+ Режим работы изменился: {}, Veikimo režimas pakeistas: {}
+ Сброс системных часов, Atstatyti sistemos laikrodį
+ Сворачивание игры, Sumažinti žaidimą
+Запрос на удаление ,Ištrynimo užklausa 
+ Состояние электропитания изменилось: {}, Maitinimo būsena pasikeitė: {}
+" и {} новое DLC,"," ir {} naujas DLC,"
+"    Великий колдун сказал, что ракеты",    trūksta lustų nei taikymosi sistemo
+" и {} новых DLC,"," ir {} nauji DLC,"
+Имя     : ,Vardas      :
+ сортировка по дате создания, rūšiuoti pagal sukūrimo datą
+ сортировка по имени, rūšiuoti pagal pavadinimą
+ сортировка по имени игры, rūšiuoti pagal žaidimo pavadinimą
+Используется ,Naudojama 
+ сортировка по месту установки, rūšiuoti pagal diegimo vietą
+Конвертация в фейковые ,Konvertavimas į netikrus 
+ сортировка по общему размеру, rūšiuoti pagal bendrą dydį
+ сортировка по пользователю, rūšiuoti pagal naudotoją
+ сортировка по порядку игры, rūšiuoti pagal žaidimo tvarką
+Место установки        : ,Diegimo vieta                   :
+ сортировка по размеру, rūšiuoti pagal dydį
+Название: ,Pavadinimas: 
+    Дело здесь в одном из основных,    Visa paslaptis slypi fundamentalioj
+Начало установки. Место установки: ,Diegimas pradėtas. Diegimo vieta: 
+Невозможно создать выходной zip-файл: ,Nepavyko sukurti išvesties zip failo: 
+Неиспользуемый тикет: ,Nenaudotas bilietas: 
+   {:>3} мин,   {:>3} min
+Общий размер передачи  : ,Bendras perdavimo dydis         :
+Общий размер установки : ,Bendras diegimo dydis           :
+Ожидается ,Tikimasi 
+Ожидание включения интерфейса: ,Laukiama sąsajos įjungimo: 
+Освобождено места в NAND: ,Atlaisvinta vietos NAND: 
+Освобождено места на SD : ,Atlaisvinta vietos SD : 
+   Получение списка бекапов...   ,   Gaunamas atsarginių kopijų sąrašas...   
+DPAD/Стики - Навигация по страницам\n\n     ZR+ZL - Переход к странице... \n\n       L/R - Навигация по главам   \n\n       (-) - Эта подсказка         \n\n       (+) - Меню                  ,DPAD/Lazdelės - Puslapių navigacija\n\n     ZR+ZL - Pereiti į puslapį... \n\n       L/R - Skyrių navigacija   \n\n       (-) - Ši užuomina         \n\n       (+) - Meniu                  
+Ошибка чтения регистров max17050: ,Klaida skaitant max17050 registrus: 
+Ошибка чтения сохранённых параметров контроллера: ,Klaida skaitant išsaugotus valdiklio parametrus: 
+   Получение списка бекапов...{}/{}    ,   Gaunamas atsarginių kopijų sąrašas...{}/{}    
+Предупреждения: ,Įspėjimai: 
+"LFS мод.: Присутствует, Размер: ","LFS mod.    : Yra, Dydis:"
+Пропускаем файл до начала secure раздела ,Praleidžiamas failas iki secure skyriaus pradžios 
+Размер  : ,Dydis  : 
+Сброс требуемой версии к ,Atstatyti reikalaujamą versiją į 
+   Получение списка сохранений...   ,   Gaunamas išsaugojimų sąrašas...   
+Скорость USB интерфейса: ,USB sąsajos greitis: 
+Создан zip-файл: ,Sukurtas zip failas: 
+Создание бекапа сохранения ,Kuriama išsaugojimo atsarginė kopija 
+Создание каталога: ,Kuriamas katalogas: 
+Создание объекта: ,Objekto kūrimas: 
+Создание фейковой записи... ,Kuriamas netikras įrašas... 
+Создаётся MTP хранилище: ,Kuriama MTP saugykla: 
+Статистика игры ,Žaidimo statistika 
+Строка поиска: ,Paieškos eilutė: 
+Не проверять место     : ,Netikrinti vietos               :
+Проверять хеш-сумму NCA: ,Patikrinti NCA maišą            :
+Патчить имена (HOS 21+): ,Pataisyti pavadinimus (HOS 21+) :
+Занулять мастерключ    : ,Atstatyti pagrindinį raktą      :
+Патчить запись видео   : ,Taisyti vaizdo įrašą            :
+Патчить скриншоты      : ,Taisyti ekrano kopijas          :
+Игра использует SDK {},Žaidimas naudoja SDK {}
+Удалить старые обновления игр,Ištrinti senus žaidimų atnaujinimus
+Удалить потерянный контент с SD,Ištrinti našlaitinį turinį iš SD
+Удалить потерянный контент из NAND,Ištrinti našlaitinį turinį iš NAND
+Удалить плейсхолдеры с SD,Ištrinti vietų žymeklius iš SD
+Удалить плейсхолдеры из NAND,Ištrinti vietų žymeklius iš NAND
+Удалить неиспользуемые тикеты,Ištrinti nenaudojamus bilietus
+Починить тикеты с ошибками дампа,Taisyti bilietus su išklotinės klaidomis
+Удалить скачанное обновление системы,Ištrinti atsisiųstą sistemos atnaujinimą
+Очистить папку erpt_reports,Išvalyti aplanką erpt_reports
+Очистить кеш тикетов,Išvalyti bilietų talpyklą
+Очистить /atmosphere/contents,Išvalyti /atmosphere/contents
+Удалить сохранения удалённых пользователей,Ištrinti ištrintų vartotojų išsaugojimus
+Дата производства: {:s},Gamybos data         : {:s}
+Ник: {},Slapyvardis: {}
+Установить обновления из текущей папки,Įdiegti atnaujinimus iš dabartinio aplanko
+Патчить требование NNID: ,Pataisyti NNID reikalavimą      :
+Выполнить выбранные действия,Vykdyti pasirinktus veiksmus
+CID: {:s},CID                  : {:s}
+TitleId : {} BID: {},TitleId     : {} BID: {}
+"Meta SDK: {},  Program SDK: {}","Meta SDK    : {},  Program SDK: {}"
+"Внимание!!! Включение следующих опций приведет к тому,","Dėmesio!!! Įjungus šias parinktis,"
+что установленные NCA файлы будут отличаться от исходных:,kad įdiegti NCA failai skirsis nuo originalių:

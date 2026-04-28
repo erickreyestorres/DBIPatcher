@@ -66,12 +66,17 @@ def load_shadok_config() -> dict | None:
 
 
 def get_nro_version() -> str | None:
-    """Extract DBI version from NRO filename (e.g. DBI.892.ru_patched.nro -> '892')."""
+    """Extract DBI version from NRO filename (e.g. DBI.892.ru_patched.nro -> '892').
+    Returns the highest version number found."""
     import re as _re
+    versions = []
     for nro_file in ROOT.glob("DBI.*.nro"):
         match = _re.search(r'DBI\.(\d+)\.', nro_file.name)
         if match:
-            return match.group(1)
+            versions.append(int(match.group(1)))
+
+    if versions:
+        return str(max(versions))
     return None
 
 # ── helpers ──────────────────────────────────────────────────────────
@@ -263,6 +268,7 @@ def wrap_text(text: str, max_chars: int, lang_code: str) -> list[str]:
 
 def cmd_translate() -> None:
     """Find empty cells and translate via AI with continuous chat."""
+    import re
     MAX_REFINE_ATTEMPTS = 3
 
     langs = load_languages()
@@ -313,222 +319,27 @@ def cmd_translate() -> None:
         save_workbook(wb)
 
     # ── Phase 0: SHADOK BLOCK ────────────────────────────────────────
-    shadok_config = load_shadok_config()
+    # TEMPORARILY DISABLED - will fix later
     shadok_row_set = set()  # rows to exclude from regular translation
+    shadok_config = {}
+    shadok_all_strings = set()
 
-    if shadok_config:
-        shadok_mapping = shadok_config.get("mapping", [])
-        max_line_len = shadok_config.get("max_line_length", 39)
-        config_changed = False
-
-        # Resolve row numbers by searching for original lines
-        excel_lookup = {}
-        for row in range(2, ws.max_row + 1):
-            val = ws.cell(row, col_map["Original"]).value
-            if val:
-                excel_lookup[str(val).strip()] = row
-
-        shadok_rows = []
-        shadok_order_idx = 0
-        # First, find Excel rows for each Shadok block
-        for item in shadok_config.get("mapping", []):
-            orig_text = item["orig"]
-            new_text = item["new"]
-            row_idx = excel_lookup.get(orig_text.strip()) or excel_lookup.get(new_text.strip())
-            
-            if row_idx:
-                # Capture the exact leading whitespace from the actual Excel string before overwriting it
-                actual_val = str(ws.cell(row_idx, col_map["Original"]).value or "")
-                leading_spaces_count = len(actual_val) - len(actual_val.lstrip(' '))
-                
-                padded_new_text = sanitize_string((" " * leading_spaces_count) + new_text.lstrip(' '))
-                # Preserve Original column (it's our binary mapping key!)
-                # We only update the language columns (ru, en, etc.)
-                if "ru" in col_map:
-                    ws.cell(row_idx, col_map["ru"], padded_new_text)
-                if "ua" in col_map:
-                    ws.cell(row_idx, col_map["ua"], padded_new_text)
-                # Ensure the original text falls into the dictionary mapping but pass the padding forward
-                shadok_rows.append((shadok_order_idx, row_idx, leading_spaces_count))
-                shadok_order_idx += 1
-                shadok_row_set.add(row_idx)
-            else:
-                print(f"  [SHADOK] WARNING: original line not found in Excel: {orig_text[:40]}...")
-
-        if not shadok_rows:
-            print("  [SHADOK] No Shadok lines found in Excel! Skipping.")
-        else:
-            # Progress tracking (translated_langs)
-            translated_langs = set(shadok_config.get("translated_langs", []))
-            config_changed = True
-
-            # CLEANUP: If any language in translated_langs has suspiciously few lines in the Excel,
-            # remove it from the set so it gets re-translated.
-            valid_translated_langs = []
-            for lc in sorted(list(translated_langs)):
-                if lc not in col_map: continue
-                col = col_map[lc]
-                # Check if this language is REALLY complete in Excel
-                # (Every row in shadok_rows must be non-empty)
-                excel_complete = True
-                for _, row_idx, _ in shadok_rows:
-                    val = ws.cell(row_idx, col_map[lc]).value
-                    if not val or not str(val).strip():
-                        excel_complete = False
-                        break
-                
-                if excel_complete:
-                    valid_translated_langs.append(lc)
-                else:
-                    # If even one cell is empty, it needs translation
-                    print(f"  [SHADOK] Language '{lc}' is incomplete in Excel. Resetting.")
-
-            
-            translated_langs = set(valid_translated_langs)
-            shadok_config["translated_langs"] = valid_translated_langs
-            # Save cleanup results
-            with SHADOK_JSON.open("w", encoding="utf-8") as f:
-                json.dump(shadok_config, f, ensure_ascii=False, indent=2)
-
-            if not force_all and all(lc in translated_langs for lc in lang_codes):
-                print(f"  [SHADOK] All languages already translated. Skipping.")
-            else:
-                if force_all:
-                    langs_to_translate = sorted(lang_codes)
-                    translated_langs = set()
-                    print(f"  [SHADOK] Force re-translate all {len(langs_to_translate)} languages.")
-                    # Clear all shadok cells before re-translating
-                    for _, row_idx, _ in shadok_rows:
-                        for lc in langs_to_translate:
-                            if lc in col_map:
-                                ws.cell(row_idx, col_map[lc], "")
-                    save_workbook(wb)
-                    print(f"  [SHADOK] Cleared {len(shadok_rows)} × {len(langs_to_translate)} cells.")
-                else:
-                    # Filter out languages actually present in translated_langs
-                    langs_to_translate = sorted([lc for lc in lang_codes if lc not in translated_langs])
-                    print(f"  [SHADOK] {len(langs_to_translate)} languages remaining: {', '.join(langs_to_translate)}")
-
-                if langs_to_translate:
-                    print()
-                    print("=" * 60)
-                    print("  SHADOK BLOCK TRANSLATION")
-                    print("=" * 60)
-                    print(f"  Lines: {len(shadok_rows)}, Langs to translate: {len(langs_to_translate)}")
-                    print(f"  Max line length: {max_line_len}")
-                    print("-" * 60)
-
-                    init_session_shadok()
-                    # Use mapped orig text from config directly, NOT from excel since excel holds the satellite now
-                    # BUT wait. Where does full_text come from?
-                    # It comes from shadok.json! I'll map it natively from the config items
-                    mapped_origs = [item["new"].strip() for item in shadok_config.get("mapping", [])]
-                    full_text = "\n".join(mapped_origs)
-
-                    try:
-                        SHADOK_BATCH_SIZE = 1 
-                        MAX_PASSES = 10
-                        
-                        for pass_idx in range(MAX_PASSES):
-                            # Re-calculate remaining languages in every pass
-                            remaining_langs = sorted([lc for lc in lang_codes if lc not in translated_langs])
-                            if not remaining_langs:
-                                break
-                                
-                            print(f"  [SHADOK] Pass {pass_idx + 1}/{MAX_PASSES}. Remaining: {len(remaining_langs)}")
-                            total_batches = len(remaining_langs)
-
-                            for batch_idx, lc in enumerate(remaining_langs):
-                                print(f"  [SHADOK] Pass {pass_idx+1}: {lc} ({batch_idx+1}/{total_batches})")
-
-                                try:
-                                    batch_results = translate_shadok_block(full_text, [lc], max_line_len)
-                                    translated_block = batch_results.get(lc, "").strip()
-                                    if not translated_block:
-                                        print(f"  [SHADOK][{lc}] Empty translation, skipping.")
-                                        continue
-
-                                    # Logical wrapping: handle indented lines as mandatory break points
-                                    current_text = translated_block
-                                    for i in range(len(shadok_rows)):
-                                        order_idx, row_idx, lead_spaces = shadok_rows[i]
-                                        
-                                        if not current_text.strip():
-                                            ws.cell(row_idx, col_map[lc], "\u200b")
-                                            continue
-                                            
-                                        # If lead_spaces > 0, we treat this as a start of a new part (like a signature).
-                                        # But we also have a limit for the line length.
-                                        wrapped = wrap_text(current_text, max_line_len, lc)
-                                        if not wrapped:
-                                            ws.cell(row_idx, col_map[lc], "\u200b")
-                                            continue
-                                            
-                                        line_val = wrapped[0]
-                                        padded_val = (" " * lead_spaces) + line_val.lstrip()
-                                        
-                                        # Clip just in case
-                                        if len(padded_val) > max_line_len:
-                                            padded_val = padded_val[:max_line_len]
-                                            
-                                        ws.cell(row_idx, col_map[lc], padded_val)
-                                        
-                                        # Mark text as consumed
-                                        consumed_len = len(line_val)
-                                        current_text = current_text[consumed_len:].lstrip()
-                                        
-                                        # Mandatory Break Logic:
-                                        # If the NEXT row in shadok_rows has leading spaces, we must NOT 
-                                        # put any more text into the current logical sequence.
-                                        if i + 1 < len(shadok_rows):
-                                            next_lead_spaces = shadok_rows[i+1][2]
-                                            if next_lead_spaces > 0:
-                                                # The rest of 'current_text' will start from the next cell 
-                                                # because it has indentation.
-                                                pass
-
-
-                                    translated_langs.add(lc)
-                                    print(f"  [SHADOK][{lc}] SUCCESS: Written to Excel.")
-
-                                    # Save progress after each successful language
-                                    save_workbook(wb)
-                                    shadok_config["translated_langs"] = sorted(list(translated_langs))
-                                    with SHADOK_JSON.open("w", encoding="utf-8") as f:
-                                        json.dump(shadok_config, f, ensure_ascii=False, indent=2)
-                                    
-                                    time.sleep(0.8)
-
-                                except Exception as batch_error:
-                                    print(f"  [SHADOK][{lc}] FAILED: {batch_error}")
-                                    continue
-
-                        if not any(lc not in translated_langs for lc in lang_codes):
-                            print("  [SHADOK] All languages complete!")
-                        else:
-                            print(f"  [SHADOK] Finished {MAX_PASSES} passes. Some languages might still be missing.")
-
-                    except Exception as e:
-                        print(f"  [SHADOK] Fatal error: {e}")
-
-                    print("=" * 60)
-                    print()
-                else:
-                    print(f"  [SHADOK] No languages to translate. Skipping.")
-
-        # Save updated config at the end to be sure
-        with SHADOK_JSON.open("w", encoding="utf-8") as f:
-            json.dump(shadok_config, f, ensure_ascii=False, indent=2)
+    # shadok_config = load_shadok_config()
+    # shadok_row_set = set()  # rows to exclude from regular translation
+    #
+    # if shadok_config:
+    #     ... (all shadok code commented out)
 
 
     # ── Scan: count rows that need translation (excluding shadoks) ───
     rows_to_translate = []
-    
+
     # Safety net: collect all known Shadok strings to ensure no duplicates slip into the general loop
-    shadok_all_strings = set()
-    for item in shadok_config.get("mapping", []):
-        shadok_all_strings.add(item["orig"].strip())
-        shadok_all_strings.add(item["new"].strip())
+    # TEMPORARILY DISABLED
+    # shadok_all_strings = set()
+    # for item in shadok_config.get("mapping", []):
+    #     shadok_all_strings.add(item["orig"].strip())
+    #     shadok_all_strings.add(item["new"].strip())
 
     for row in range(2, ws.max_row + 1):
         if row in shadok_row_set:
@@ -588,7 +399,11 @@ def cmd_translate() -> None:
         cyrillic_count = len(re.findall(r'[а-яА-ЯёЁіІїЇєЄґҐ]', original))
         if cyrillic_count < 2:
             for lc in missing:
-                ws.cell(row, col_map[lc], original)
+                # Auto-fix: replace 'ru' language code with target language code
+                translation = original
+                if re.search(r'\bru\b', original, re.IGNORECASE):
+                    translation = re.sub(r'\bru\b', lc, original, flags=re.IGNORECASE)
+                ws.cell(row, col_map[lc], translation)
                 total_translated += 1
             save_workbook(wb)
             print(f"    [Row {row} | {idx}/{total_rows}] Cyrillic count {cyrillic_count} <= 3 — copied as-is.")
@@ -648,7 +463,11 @@ def cmd_translate() -> None:
             if not translation or not translation.strip():
                 failed_langs.append(lc)
                 continue
-            
+
+            # Auto-fix: replace 'ru' language code with target language code
+            if re.search(r'\bru\b', original, re.IGNORECASE):
+                translation = re.sub(r'\bru\b', lc, translation, flags=re.IGNORECASE)
+
             ok, msg = validate(original, translation, lc)
             if ok:
                 ws.cell(row, col_map[lc], translation)
@@ -692,6 +511,12 @@ def cmd_translate() -> None:
                     if not translation or not translation.strip():
                         still_failed.append(lc)
                         continue
+
+                    # Auto-fix: replace 'ru' language code with target language code
+                    import re
+                    if re.search(r'\bru\b', original, re.IGNORECASE):
+                        translation = re.sub(r'\bru\b', lc, translation, flags=re.IGNORECASE)
+
                     ok, msg = validate(original, translation, lc)
                     if ok:
                         ws.cell(row, col_map[lc], translation)
@@ -789,7 +614,7 @@ def cmd_validate() -> None:
                 continue
             
             checked += 1
-            row_errors = validator.validate_row(original_str, str(translation))
+            row_errors = validator.validate_row(original_str, str(translation), lc)
             if row_errors:
                 errors += len(row_errors)
                 print(f"  [Row {row}][{lc}] Error(s):")
@@ -798,9 +623,9 @@ def cmd_validate() -> None:
 
     print(f"\n--- Translation checks: {checked} checked, {errors} issues ---")
 
-    # Phase 2: Regex block validation (blocks.json patterns vs Original column)
-    if validator.compiled_blocks:
-        print("\nRunning regex block validation (blocks.json)...")
+    # Phase 2: Exact block validation (blocks.json vs Original column)
+    if validator.blocks:
+        print("\nRunning exact block validation (blocks.json)...")
         originals = {}
         for row in range(2, ws.max_row + 1):
             val = ws.cell(row, col_map["Original"]).value
@@ -880,59 +705,61 @@ def cmd_sync() -> None:
     col_map = {h: i + 1 for i, h in enumerate(header) if h}
 
     # 1. Collect all current keys from Excel
-    excel_keys = {}  # original_text -> row_index
+    excel_keys = {}  # original_text -> list of row_indices
     for row in range(2, ws.max_row + 1):
         val = ws.cell(row, col_map["Original"]).value
         if val:
-            excel_keys[str(val).strip()] = row
+            v_str = str(val)
+            if v_str not in excel_keys:
+                excel_keys[v_str] = []
+            excel_keys[v_str].append(row)
 
     # 2. Collect all valid keys from source CSVs
-    valid_source_keys = set()
     source_data = {} # key -> tokenized_text
-    
+
     # Read from DATA_DIR (Source of truth), NOT translations/
     for csv_file in [DATA_DIR / "ua.csv", DATA_DIR / "ru.csv"]:
         path = Path(csv_file)
         if not path.exists(): continue
-        
+
         with open(path, "r", encoding="utf-8-sig") as f:
             reader = csv.reader(f)
             for row in reader:
                 if len(row) >= 1:
-                    orig_tok = tokenize(row[0].strip())
+                    orig_tok = tokenize(row[0])
                     if not orig_tok: continue
-                    valid_source_keys.add(orig_tok)
                     if orig_tok not in source_data:
-                        trans = tokenize(row[1].strip()) if len(row) > 1 else orig_tok
+                        trans = tokenize(row[1]) if len(row) > 1 else orig_tok
                         source_data[orig_tok] = trans
 
-    # 3. Synchronize: Add missing, update existing, DELETE orphans
+    # 3. Synchronize: Add missing, update existing
+    # NOTE: We do NOT delete rows that are not in source CSVs anymore
+    # This preserves manually added rows in the dictionary
     added = 0
-    
+
     for orig_tok, trans_tok in source_data.items():
         if orig_tok not in excel_keys:
+            # Add new row
             new_row = ws.max_row + 1
             ws.cell(new_row, col_map["Original"], orig_tok)
             if "ru" in col_map: ws.cell(new_row, col_map["ru"], trans_tok)
             if "ua" in col_map: ws.cell(new_row, col_map["ua"], trans_tok)
             added += 1
-            excel_keys[orig_tok] = new_row
+            excel_keys[orig_tok] = [new_row]
 
-
-    # 4. Critical Cleanup: Delete rows from Excel that are NO LONGER in source CSVs
-    to_delete = []
-    for orig, row_idx in excel_keys.items():
-        if orig not in valid_source_keys:
-            to_delete.append(row_idx)
-    
-    if to_delete:
-        print(f"  [SYNC] Deleting {len(to_delete)} orphaned rows not found in source CSVs.")
-        for row_idx in sorted(to_delete, reverse=True):
-            ws.delete_rows(row_idx)
+    # 4. Remove duplicates only (keep first occurrence)
+    duplicates_removed = 0
+    for orig, row_indices in excel_keys.items():
+        if len(row_indices) > 1:
+            print(f"  [SYNC] Removing {len(row_indices)-1} duplicate(s) for: {repr(orig[:30])}...")
+            # Delete all duplicates except the first one
+            for row_idx in sorted(row_indices[1:], reverse=True):
+                ws.delete_rows(row_idx)
+                duplicates_removed += 1
 
     # Bump version or just update status
     ver = get_version(wb)
-    print(f"Sync done. Added: {added}, Version: {ver}")
+    print(f"Sync done. Added: {added}, Duplicates removed: {duplicates_removed}, Version: {ver}")
     save_workbook(wb)
 
 
@@ -970,13 +797,19 @@ def cmd_dist() -> None:
         shutil.rmtree(DIST_DIR)
     DIST_DIR.mkdir(parents=True)
     
-    # Find any DBI*.nro file in the root
+    # Find the latest DBI*.nro file in the root
     nro_files = list(ROOT.glob("DBI*.nro"))
     if not nro_files:
         print("  [ERROR] No DBI*.nro file found in root!")
         return
-    
-    source_nro = nro_files[0]
+
+    # Sort by version number to get the latest
+    import re
+    def extract_version(nro_path):
+        match = re.search(r'DBI\.(\d+)\.', nro_path.name)
+        return int(match.group(1)) if match else 0
+
+    source_nro = max(nro_files, key=extract_version)
     print(f"  Found source NRO: {source_nro.name}")
     
     for lc in langs:
@@ -1001,7 +834,7 @@ def cmd_dist() -> None:
 
 
 def cmd_align() -> None:
-    """Align colons in blocks defined in data/blocks.json (regex-based)."""
+    """Align colons in blocks by longest line per language per block."""
 
     blocks = load_blocks()
     if not blocks:
@@ -1014,12 +847,12 @@ def cmd_align() -> None:
     header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
     col_map = {h: i + 1 for i, h in enumerate(header) if h}
 
-    # Cache all Original values for faster regex matching
+    # Cache all Original values for faster matching
     originals = {}  # row -> original_str
     for row in range(2, ws.max_row + 1):
         val = ws.cell(row, col_map["Original"]).value
         if val:
-            originals[row] = str(val).strip()
+            originals[row] = str(val)
 
     # Build grouped_data[block_id] = list of matched row indices
     grouped_data = {}  # block_id -> [row_idx, ...]
@@ -1027,21 +860,15 @@ def cmd_align() -> None:
     for bid, patterns in blocks.items():
         matched_rows = []
         for pattern in patterns:
-            try:
-                regex = re.compile(pattern, re.IGNORECASE)
-            except re.error as e:
-                print(f"  [WARN] Invalid regex in block {bid}: {pattern} -> {e}")
-                continue
-
             found = False
             for row, orig_val in originals.items():
-                if regex.search(orig_val):
+                if orig_val == pattern:
                     matched_rows.append(row)
                     found = True
                     break
 
             if not found:
-                print(f"  [WARN] Pattern not found for block {bid}: {pattern[:50]}...")
+                print(f"  [WARN] String not found for block {bid}: {pattern[:50]}...")
 
         if matched_rows:
             grouped_data[bid] = matched_rows
@@ -1054,13 +881,37 @@ def cmd_align() -> None:
 
     affected_count = 0
 
+    # Process each block
     for bid, matched_rows in grouped_data.items():
-        print(f"  Aligning block: {bid} ({len(matched_rows)} rows)")
+        print(f"  Aligning block: {bid:<25} (Rows: {len(matched_rows)})")
 
+        # Special handling for TITLE_INFO block with double-colon strings
+        is_title_info = (bid == "TITLE_INFO")
+
+        # For each language, find max length and align
         for lc, col_idx in lang_cols.items():
-            # 1. Collect prefix lengths for this language in this block
-            max_prefix_len = 0
-            row_parts = []
+            # Find max prefix length for this language in this block
+            max_len = 0
+            for row_idx in matched_rows:
+                val = ws.cell(row_idx, col_idx).value
+                if not val:
+                    continue
+                val_str = str(val).strip()
+
+                if ":" in val_str:
+                    # For TITLE_INFO: only consider first colon for alignment
+                    if is_title_info:
+                        prefix = val_str.split(":", 1)[0]
+                    else:
+                        prefix = val_str.split(":", 1)[0]
+                    clean_prefix = prefix.rstrip()
+                    max_len = max(max_len, len(clean_prefix))
+
+            if max_len == 0:
+                continue
+
+            # Align all rows in this block for this language
+            target_len = max_len + 1  # +1 for at least one space before colon
 
             for row_idx in matched_rows:
                 val = ws.cell(row_idx, col_idx).value
@@ -1070,33 +921,18 @@ def cmd_align() -> None:
 
                 if ":" in val_str:
                     prefix, suffix = val_str.split(":", 1)
-                    clean_prefix = prefix.rstrip()  # remove trailing spaces before colon
-                    visual_len = visual_length(clean_prefix)
-                    max_prefix_len = max(max_prefix_len, visual_len)
-                    row_parts.append((row_idx, clean_prefix, suffix))
-                else:
-                    row_parts.append((row_idx, None, val_str))
+                    clean_prefix = prefix.rstrip()
+                    current_len = len(clean_prefix)
 
-            if max_prefix_len == 0:
-                continue
+                    padding = target_len - current_len
+                    if padding < 1:
+                        padding = 1
 
-            # 2. Apply padding so all colons line up
-            target_len = max_prefix_len + 1  # at least 1 space before colon
+                    new_val = clean_prefix + (' ' * padding) + ':' + suffix
 
-            for row_idx, prefix, suffix in row_parts:
-                if prefix is None:
-                    continue
-
-                current_visual_len = visual_length(prefix)
-                padding = target_len - current_visual_len
-                if padding < 1:
-                    padding = 1
-
-                new_val = f"{prefix}{' ' * padding}:{suffix}"
-                old_val = ws.cell(row_idx, col_idx).value
-                if old_val != new_val:
-                    ws.cell(row_idx, col_idx).value = new_val
-                    affected_count += 1
+                    if new_val != val_str:
+                        ws.cell(row_idx, col_idx, new_val)
+                        affected_count += 1
 
     if affected_count > 0:
         ver = bump_version(wb)
@@ -1104,6 +940,7 @@ def cmd_align() -> None:
         print(f"\nAlignment done. Adjusted {affected_count} cells. Version: {ver}")
     else:
         print("\nAlignment done. No changes needed.")
+
 
 
 
@@ -1268,6 +1105,49 @@ Check the changelog at [https://github.com/rashevskyv/dbi/releases/](https://git
         print(f"  [ERROR] GitHub release failed: {e}")
 
 
+def cmd_check() -> None:
+    """Check dictionary integrity against source CSV and blocks.json"""
+    print("\n" + "="*60 + "\n  STEP: check\n" + "="*60)
+    
+    ua_path = DATA_DIR / "ua.csv"
+    ua_originals = []
+    if ua_path.exists():
+        with open(ua_path, "r", encoding="utf-8-sig") as f:
+            for row in csv.reader(f):
+                if row:
+                    ua_originals.append(tokenize(row[0]))
+                    
+    wb = open_or_create_workbook()
+    ws = wb[SHEET_NAME]
+    header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
+    col_map = {h: i + 1 for i, h in enumerate(header) if h}
+    
+    dict_originals = set()
+    for row in range(2, ws.max_row + 1):
+        v = ws.cell(row, col_map["Original"]).value
+        if v:
+            dict_originals.add(str(v))
+            
+    mismatches = 0
+    for k in ua_originals:
+        if k not in dict_originals:
+            print(f"  [ERROR] Source key missing or altered in dictionary: {repr(k)}")
+            mismatches += 1
+            
+    blocks = load_blocks()
+    if blocks:
+        for bid, patterns in blocks.items():
+            for pat in patterns:
+                if pat not in dict_originals:
+                    print(f"  [ERROR] Block {bid} string missing in dictionary: {repr(pat)}")
+                    mismatches += 1
+                
+    if mismatches == 0:
+        print("  [OK] Health check passed successfully! All strings match identically.")
+    else:
+        print(f"\n  [FAIL] Health check failed with {mismatches} issues.")
+
+
 COMMANDS = {
     "sync": cmd_sync,
     "translate": cmd_translate,
@@ -1278,13 +1158,25 @@ COMMANDS = {
     "dist": cmd_dist,
     "clear": cmd_clear,
     "deploy": cmd_deploy,
+    "check": cmd_check,
+    "test": lambda: cmd_test(),
 }
 
 
 def cmd_all() -> None:
-    for name in ("sync", "translate", "align", "validate", "export", "build", "dist", "deploy"):
+    for name in ("sync", "translate", "align", "validate", "export", "build", "dist"):
         print(f"\n{'='*60}\n  STEP: {name}\n{'='*60}")
         COMMANDS[name]()
+
+
+def cmd_test() -> None:
+    """Run all steps except deploy (sync, translate, align, validate, export, build, dist)."""
+    for name in ("sync", "translate", "align", "validate", "export", "build", "dist"):
+        print(f"\n{'='*60}\n  STEP: {name}\n{'='*60}")
+        COMMANDS[name]()
+    print(f"\n{'='*60}\n  TEST COMPLETE\n{'='*60}")
+    print("All steps completed successfully. Ready for deployment.")
+    print("To deploy, run: python -m src.main deploy")
 
 
 def main() -> int:

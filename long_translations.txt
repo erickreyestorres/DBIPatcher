@@ -1,0 +1,197 @@
+Found 39 translations exceeding 32 chars before colon
+
+Block: CHARGE_INFO, Lang: it, Row: 1106
+Colon at: 43 (+11 over limit)
+Original (32): Предел напряжения заряда батареи: {} mV
+Translation: Limite di tensione di carica della batteria: {} mV
+
+Block: CHARGE_INFO, Lang: fr, Row: 1106
+Colon at: 42 (+10 over limit)
+Original (32): Предел напряжения заряда батареи: {} mV
+Translation: Limite de tension de charge de la batterie: {} mV
+
+Block: CHARGE_INFO, Lang: frca, Row: 1106
+Colon at: 42 (+10 over limit)
+Original (32): Предел напряжения заряда батареи: {} mV
+Translation: Limite de tension de charge de la batterie: {} mV
+
+Block: POWER_INFO, Lang: lv, Row: 1020
+Colon at: 41 (+9 over limit)
+Original (31): Заряд батареи (сырое значение) : {}%
+Translation: Akumulatora uzlāde (neapstrādāta vērtība): {}%
+
+Block: CHARGE_INFO, Lang: pt, Row: 992
+Colon at: 41 (+9 over limit)
+Original (32): Предел тока быстрой зарядки     : {} mA
+Translation: Limite de corrente de carregamento rápido: {} mA
+
+Block: CHARGE_INFO, Lang: ptbr, Row: 992
+Colon at: 41 (+9 over limit)
+Original (32): Предел тока быстрой зарядки     : {} mA
+Translation: Limite de corrente de carregamento rápido: {} mA
+
+Block: CHARGE_INFO, Lang: es, Row: 1106
+Colon at: 40 (+8 over limit)
+Original (32): Предел напряжения заряда батареи: {} mV
+Translation: Límite de voltaje de carga de la batería: {} mV
+
+Block: CHARGE_INFO, Lang: es419, Row: 1106
+Colon at: 40 (+8 over limit)
+Original (32): Предел напряжения заряда батареи: {} mV
+Translation: Límite de voltaje de carga de la batería: {} mV
+
+Block: CHARGE_INFO, Lang: es, Row: 991
+Colon at: 38 (+6 over limit)
+Original (32): Предел входного тока (буст)     : {} mA
+Translation: Límite de corriente de entrada (boost): {} mA
+
+Block: CHARGE_INFO, Lang: es419, Row: 991
+Colon at: 38 (+6 over limit)
+Original (32): Предел входного тока (буст)     : {} mA
+Translation: Límite de corriente de entrada (boost): {} mA
+
+Block: POWER_INFO, Lang: es, Row: 1020
+Colon at: 37 (+5 over limit)
+Original (31): Заряд батареи (сырое значение) : {}%
+Translation: Carga de batería (valor sin procesar): {}%
+
+Block: POWER_INFO, Lang: es419, Row: 1020
+Colon at: 37 (+5 over limit)
+Original (31): Заряд батареи (сырое значение) : {}%
+Translation: Carga de batería (valor sin procesar): {}%
+
+Block: POWER_INFO, Lang: lt, Row: 1020
+Colon at: 37 (+5 over limit)
+Original (31): Заряд батареи (сырое значение) : {}%
+Translation: Baterijos įkrova (neapdorota reikšmė): {}%
+
+Block: CHARGE_INFO, Lang: pt, Row: 991
+Colon at: 37 (+5 over limit)
+Original (32): Предел входного тока (буст)     : {} mA
+Translation: Limite de corrente de entrada (boost): {} mA
+
+Block: CHARGE_INFO, Lang: ptbr, Row: 991
+Colon at: 37 (+5 over limit)
+Original (32): Предел входного тока (буст)     : {} mA
+Translation: Limite de corrente de entrada (boost): {} mA
+
+Block: POWER_INFO, Lang: fr, Row: 1020
+Colon at: 36 (+4 over limit)
+Original (31): Заряд батареи (сырое значение) : {}%
+Translation: Charge de la batterie (valeur brute): {}%
+
+Block: POWER_INFO, Lang: frca, Row: 1020
+Colon at: 36 (+4 over limit)
+Original (31): Заряд батареи (сырое значение) : {}%
+Translation: Charge de la batterie (valeur brute): {}%
+
+Block: POWER_INFO, Lang: pl, Row: 1020
+Colon at: 36 (+4 over limit)
+Original (31): Заряд батареи (сырое значение) : {}%
+Translation: Naładowanie baterii (wartość surowa): {}%
+
+Block: CHARGE_INFO, Lang: lv, Row: 1106
+Colon at: 36 (+4 over limit)
+Original (32): Предел напряжения заряда батареи: {} mV
+Translation: Akumulatora uzlādes sprieguma limits: {} mV
+
+Block: CHARGE_INFO, Lang: pt, Row: 1106
+Colon at: 36 (+4 over limit)
+Original (32): Предел напряжения заряда батареи: {} mV
+Translation: Limite de tensão de carga da bateria: {} mV
+
+Block: CHARGE_INFO, Lang: ptbr, Row: 1106
+Colon at: 36 (+4 over limit)
+Original (32): Предел напряжения заряда батареи: {} mV
+Translation: Limite de tensão de carga da bateria: {} mV
+
+Block: ACTIVITY_INFO, Lang: kk, Row: 630
+Colon at: 36 (+4 over limit)
+Original (30): Общее время активной игры     : {} часов
+Translation: Белсенді ойын уақытының жалпы сомасы: {} сағат
+
+Block: CHARGE_INFO, Lang: it, Row: 991
+Colon at: 35 (+3 over limit)
+Original (32): Предел входного тока (буст)     : {} mA
+Translation: Limite corrente in ingresso (boost): {} mA
+
+Block: CHARGE_INFO, Lang: es, Row: 992
+Colon at: 35 (+3 over limit)
+Original (32): Предел тока быстрой зарядки     : {} mA
+Translation: Límite de corriente de carga rápida: {} mA
+
+Block: CHARGE_INFO, Lang: es419, Row: 992
+Colon at: 35 (+3 over limit)
+Original (32): Предел тока быстрой зарядки     : {} mA
+Translation: Límite de corriente de carga rápida: {} mA
+
+Block: POWER_INFO, Lang: nl, Row: 1020
+Colon at: 34 (+2 over limit)
+Original (31): Заряд батареи (сырое значение) : {}%
+Translation: Batterijlading (onbewerkte waarde): {}%
+
+Block: CHARGE_INFO, Lang: fr, Row: 991
+Colon at: 34 (+2 over limit)
+Original (32): Предел входного тока (буст)     : {} mA
+Translation: Limite de courant d'entrée (boost): {} mA
+
+Block: CHARGE_INFO, Lang: frca, Row: 991
+Colon at: 34 (+2 over limit)
+Original (32): Предел входного тока (буст)     : {} mA
+Translation: Limite de courant d'entrée (boost): {} mA
+
+Block: CHARGE_INFO, Lang: fr, Row: 992
+Colon at: 34 (+2 over limit)
+Original (32): Предел тока быстрой зарядки     : {} mA
+Translation: Limite de courant de charge rapide: {} mA
+
+Block: CHARGE_INFO, Lang: frca, Row: 992
+Colon at: 34 (+2 over limit)
+Original (32): Предел тока быстрой зарядки     : {} mA
+Translation: Limite de courant de charge rapide: {} mA
+
+Block: ACTIVITY_INFO, Lang: be, Row: 1032
+Colon at: 34 (+2 over limit)
+Original (30): Общее число игровых сессий    : {}
+Translation: Агульная колькасць гульнявых сесій: {}
+
+Block: ACTIVITY_INFO, Lang: it, Row: 1032
+Colon at: 34 (+2 over limit)
+Original (30): Общее число игровых сессий    : {}
+Translation: Numero totale di sessioni di gioco: {}
+
+Block: AMS_INFO, Lang: lv, Row: 1104
+Colon at: 33 (+1 over limit)
+Original (28): Форсировано вклчение USB 3.0: {}
+Translation: Piespiedu kārtā iespējots USB 3.0: {}
+
+Block: ACTIVITY_INFO, Lang: it, Row: 1092
+Colon at: 33 (+1 over limit)
+Original (30): RTC запущены (приблизительно) : {}
+Translation: RTC avviato (approssimativamente): {}
+
+Block: ACTIVITY_INFO, Lang: de, Row: 1009
+Colon at: 33 (+1 over limit)
+Original (30): Дата первого игрового события : {}
+Translation: Datum des ersten Spielereignisses: {}
+
+Block: ACTIVITY_INFO, Lang: nl, Row: 1009
+Colon at: 33 (+1 over limit)
+Original (30): Дата первого игрового события : {}
+Translation: Datum eerste gameplay-gebeurtenis: {}
+
+Block: ACTIVITY_INFO, Lang: pl, Row: 1009
+Colon at: 33 (+1 over limit)
+Original (30): Дата первого игрового события : {}
+Translation: Data pierwszego wydarzenia w grze: {}
+
+Block: ACTIVITY_INFO, Lang: es, Row: 1032
+Colon at: 33 (+1 over limit)
+Original (30): Общее число игровых сессий    : {}
+Translation: Número total de sesiones de juego: {}
+
+Block: ACTIVITY_INFO, Lang: es419, Row: 1032
+Colon at: 33 (+1 over limit)
+Original (30): Общее число игровых сессий    : {}
+Translation: Número total de sesiones de juego: {}
+
