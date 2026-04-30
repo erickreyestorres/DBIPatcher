@@ -66,11 +66,11 @@ def load_shadok_config() -> dict | None:
 
 
 def get_nro_version() -> str | None:
-    """Extract DBI version from NRO filename (e.g. DBI.892.ru_patched.nro -> '892').
-    Returns the highest version number found."""
+    """Extract DBI version from patched NRO filename (e.g. DBI.892.ru_patched.nro -> '892').
+    Returns the highest version number found from *_patched.nro files."""
     import re as _re
     versions = []
-    for nro_file in ROOT.glob("DBI.*.nro"):
+    for nro_file in ROOT.glob("DBI.*_patched.nro"):
         match = _re.search(r'DBI\.(\d+)\.', nro_file.name)
         if match:
             versions.append(int(match.group(1)))
@@ -78,6 +78,20 @@ def get_nro_version() -> str | None:
     if versions:
         return str(max(versions))
     return None
+
+
+def get_patched_nro_path() -> Path | None:
+    """Get the path to the latest patched NRO file."""
+    import re as _re
+    nro_files = list(ROOT.glob("DBI.*_patched.nro"))
+    if not nro_files:
+        return None
+
+    def extract_version(nro_path):
+        match = _re.search(r'DBI\.(\d+)\.', nro_path.name)
+        return int(match.group(1)) if match else 0
+
+    return max(nro_files, key=extract_version)
 
 # ── helpers ──────────────────────────────────────────────────────────
 
@@ -230,9 +244,11 @@ def cmd_sync() -> None:
             existing.add(ru_tok)
             added += 1
 
-    # Update DBI version from NRO filename
-    nro_ver = get_nro_version()
-    if nro_ver:
+    # Update DBI version from patched NRO filename
+    patched_nro = get_patched_nro_path()
+    if patched_nro:
+        nro_ver = get_nro_version()
+        print(f"  Using patched NRO: {patched_nro.name} (version {nro_ver})")
         version_row = find_dbi_version_row(ws, col_map)
         current_ver = ws.cell(version_row, col_map["Original"]).value
         if str(current_ver) != nro_ver:
@@ -243,7 +259,7 @@ def cmd_sync() -> None:
         else:
             print(f"  DBI version already current: {nro_ver}")
     else:
-        print("  WARNING: No DBI.*.nro file found, version not updated.")
+        print("  WARNING: No DBI.*_patched.nro file found, version not updated.")
 
     ver = bump_version(wb)
     save_workbook(wb)
@@ -792,45 +808,39 @@ def cmd_build() -> None:
 def cmd_dist() -> None:
     """Organize NRO and translation bins into per-language folders in 'dist'."""
     langs = load_languages()
-    
+
     if DIST_DIR.exists():
         shutil.rmtree(DIST_DIR)
     DIST_DIR.mkdir(parents=True)
-    
-    # Find the latest DBI*.nro file in the root
-    nro_files = list(ROOT.glob("DBI*.nro"))
-    if not nro_files:
-        print("  [ERROR] No DBI*.nro file found in root!")
+
+    # Find the latest patched DBI NRO file
+    source_nro = get_patched_nro_path()
+    if not source_nro:
+        print("  [ERROR] No DBI.*_patched.nro file found in root!")
         return
 
-    # Sort by version number to get the latest
-    import re
-    def extract_version(nro_path):
-        match = re.search(r'DBI\.(\d+)\.', nro_path.name)
-        return int(match.group(1)) if match else 0
+    nro_ver = get_nro_version()
+    print(f"  Using patched NRO: {source_nro.name} (version {nro_ver})")
 
-    source_nro = max(nro_files, key=extract_version)
-    print(f"  Found source NRO: {source_nro.name}")
-    
     for lc in langs:
         if lc == "ru": continue
-        
+
         bin_path = OUTPUT_DIR / f"translation_{lc}.bin"
         if not bin_path.exists():
             # Try to build it if missing? No, user usually runs build before dist.
             continue
-            
+
         lang_dist = DIST_DIR / lc
         lang_dist.mkdir(parents=True, exist_ok=True)
-        
+
         # Copy and rename NRO to DBI.nro as requested by user's example
         shutil.copy2(source_nro, lang_dist / "DBI.nro")
         # Copy and rename BIN to translation.bin
         shutil.copy2(bin_path, lang_dist / "translation.bin")
-        
+
         print(f"  [OK] {lc}: DBI.nro + translation.bin")
 
-    print("\nOrganization in 'dist' folder complete.")
+    print(f"\nOrganization in 'dist' folder complete using {source_nro.name}")
 
 
 def cmd_align() -> None:
@@ -984,11 +994,18 @@ def cmd_deploy() -> None:
 
     # 1. Get versions & Check completeness
     try:
-        dbi_ver = get_nro_version() or "unknown"
+        patched_nro = get_patched_nro_path()
+        if not patched_nro:
+            print("  [ERROR] No DBI.*_patched.nro file found!")
+            return
+
+        dbi_ver = get_nro_version()
+        print(f"  Using patched NRO: {patched_nro.name} (version {dbi_ver})")
+
         wb = open_or_create_workbook()
         ws = wb[SHEET_NAME]
         patcher_ver = get_version(wb)
-        
+
         header = [ws.cell(1, c).value for c in range(1, ws.max_column + 1)]
         col_map = {h: i + 1 for i, h in enumerate(header) if h}
         langs = load_languages()
@@ -1002,7 +1019,7 @@ def cmd_deploy() -> None:
                 val = ws.cell(row, col_map[lc]).value
                 if not val or not str(val).strip():
                     missing_count += 1
-        
+
         if missing_count > 0:
             print(f"  [ERROR] Cannot deploy: Found {missing_count} missing translations!")
             print("  Please run 'python -m src.main translate' first.")
@@ -1012,12 +1029,43 @@ def cmd_deploy() -> None:
         print(f"  [ERROR] Preparation failed: {e}")
         return
 
-    # 2. Check if tag already exists on GitHub
-    print(f"  [CHECK] Checking if tag {dbi_ver} already exists...")
-    check_tag = subprocess.run(["gh", "release", "view", dbi_ver], capture_output=True, text=True, encoding="utf-8")
-    if check_tag.returncode == 0:
-        print(f"  [ERROR] Release {dbi_ver} already exists on GitHub. Deployment aborted to prevent overwrite.")
-        return
+    # 2. Copy files to target directories (always execute)
+    print("  [COPY] Copying files to target directories...")
+    try:
+        # Find the patched NRO
+        patched_nro = get_patched_nro_path()
+
+        if not patched_nro:
+            print(f"  [WARN] No patched NRO found for version {dbi_ver}")
+        else:
+            print(f"  [COPY] Using: {patched_nro.name}")
+            # Copy to D:\git\dev\_kefir\kefir\switch\DBI\DBI.nro
+            kefir_dir = Path("D:/git/dev/_kefir/kefir/switch/DBI")
+            kefir_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(patched_nro, kefir_dir / "DBI.nro")
+            print(f"  [COPY] {patched_nro.name} -> {kefir_dir / 'DBI.nro'}")
+
+            # Copy translation_en.bin to D:\git\dev\_kefir\kefir\switch\DBI\translation.bin
+            en_bin = OUTPUT_DIR / "translation_en.bin"
+            if en_bin.exists():
+                shutil.copy2(en_bin, kefir_dir / "translation.bin")
+                print(f"  [COPY] translation_en.bin -> {kefir_dir / 'translation.bin'}")
+            else:
+                print(f"  [WARN] translation_en.bin not found")
+
+            # Copy translation_ua.bin to E:\Switch\addons\switch\DBI\translation.bin
+            ua_bin = OUTPUT_DIR / "translation_ua.bin"
+            switch_dir = Path("E:/Switch/addons/switch/DBI")
+            if ua_bin.exists():
+                switch_dir.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(ua_bin, switch_dir / "translation.bin")
+                print(f"  [COPY] translation_ua.bin -> {switch_dir / 'translation.bin'}")
+            else:
+                print(f"  [WARN] translation_ua.bin not found")
+
+        print("  [COPY] File copying completed!")
+    except Exception as e:
+        print(f"  [ERROR] File copying failed: {e}")
 
     # 3. Git operations
     print("  [GIT] Staging changes and pushing...")
@@ -1080,29 +1128,52 @@ Check the changelog at [https://github.com/rashevskyv/dbi/releases/](https://git
     body_path.parent.mkdir(exist_ok=True)
     body_path.write_text(release_body, encoding="utf-8")
 
-    # 4. GitHub Release
-    print(f"  [GH] Preparing release {dbi_ver}...")
-    
-    # Pre-delete existing release/tag to simulate overwrite (compatible with older gh)
-    subprocess.run(["gh", "release", "delete", dbi_ver, "--yes"], capture_output=True)
-    subprocess.run(["git", "push", "origin", ":refs/tags/" + dbi_ver], capture_output=True)
+    # 5. GitHub Release - Create or update
+    print(f"  [GH] Checking if release {dbi_ver} exists...")
+    check_tag = subprocess.run(["gh", "release", "view", dbi_ver], capture_output=True, text=True, encoding="utf-8")
 
     assets = [str(a) for a in Path("output").glob("*.bin")]
-    nro_assets = [str(n) for n in Path(".").glob(f"DBI.{dbi_ver}*.nro")]
-    
-    cmd = [
-        "gh", "release", "create", dbi_ver,
-        "--title", f"DBI {dbi_ver} Localization",
-        "--notes-file", str(body_path)
-    ]
-    cmd.extend(assets)
-    cmd.extend(nro_assets)
 
-    try:
-        subprocess.run(cmd, check=True)
-        print(f"  [GH] Release {dbi_ver} created successfully!")
-    except subprocess.CalledProcessError as e:
-        print(f"  [ERROR] GitHub release failed: {e}")
+    # Get the patched NRO for release
+    patched_nro = get_patched_nro_path()
+    nro_assets = [str(patched_nro)] if patched_nro else []
+
+    if patched_nro:
+        print(f"  [GH] Including NRO asset: {patched_nro.name}")
+    else:
+        print(f"  [WARN] No patched NRO found to include in release")
+
+    if check_tag.returncode == 0:
+        # Release exists - update assets
+        print(f"  [GH] Release {dbi_ver} exists, updating assets...")
+
+        # Upload all assets with --clobber to overwrite existing files
+        upload_cmd = ["gh", "release", "upload", dbi_ver, "--clobber"]
+        upload_cmd.extend(assets)
+        upload_cmd.extend(nro_assets)
+
+        try:
+            subprocess.run(upload_cmd, check=True)
+            print(f"  [GH] Assets updated successfully in release {dbi_ver}!")
+        except subprocess.CalledProcessError as e:
+            print(f"  [ERROR] Failed to update assets: {e}")
+    else:
+        # Release doesn't exist - create new one
+        print(f"  [GH] Creating new release {dbi_ver}...")
+
+        cmd = [
+            "gh", "release", "create", dbi_ver,
+            "--title", f"DBI {dbi_ver} Localization",
+            "--notes-file", str(body_path)
+        ]
+        cmd.extend(assets)
+        cmd.extend(nro_assets)
+
+        try:
+            subprocess.run(cmd, check=True)
+            print(f"  [GH] Release {dbi_ver} created successfully!")
+        except subprocess.CalledProcessError as e:
+            print(f"  [ERROR] GitHub release failed: {e}")
 
 
 def cmd_check() -> None:
@@ -1179,29 +1250,87 @@ def cmd_test() -> None:
     print("To deploy, run: python -m src.main deploy")
 
 
+def cmd_help() -> None:
+    """Display all available commands with descriptions."""
+    print("\n" + "="*60)
+    print("  DBI TRANSLATION PIPELINE - Available Commands")
+    print("="*60)
+    print("\nUsage: python -m src.main <command> [command2 ...] [options]\n")
+    print("Commands:")
+    print("  sync        - Sync ua.csv into dictionary.xlsx")
+    print("  translate   - Translate missing cells via AI")
+    print("  validate    - Validate all translations")
+    print("  align       - Align colons in blocks by longest line")
+    print("  export      - Export per-language CSVs")
+    print("  build       - Build .bin files from CSVs")
+    print("  dist        - Organize NRO and bins into dist folders")
+    print("  clear       - Clear all translations for a language")
+    print("                Usage: python -m src.main clear <lang_code>")
+    print("  deploy      - Commit, push and create GitHub release")
+    print("  check       - Check dictionary integrity")
+    print("  test        - Run all steps except deploy")
+    print("  all         - Run full pipeline (sync → dist)")
+    print("  help        - Show this help message")
+    print("\nOptions:")
+    print("  -f, --force - Force re-translate all strings")
+    print("\nExamples:")
+    print("  python -m src.main sync")
+    print("  python -m src.main translate -f")
+    print("  python -m src.main align build")
+    print("  python -m src.main export build dist")
+    print("  python -m src.main clear ua")
+    print("  python -m src.main all")
+    print("="*60 + "\n")
+
+
 def main() -> int:
-    parser = argparse.ArgumentParser(description="DBI Translation Pipeline")
-    parser.add_argument("command", choices=[*COMMANDS.keys(), "all"], help="Pipeline step to run")
-    parser.add_argument("lang", nargs="?", help="Language code (required for 'clear')")
+    parser = argparse.ArgumentParser(description="DBI Translation Pipeline", add_help=False)
+    parser.add_argument("commands", nargs="*", help="Pipeline steps to run")
     parser.add_argument("-f", "--force", action="store_true", help="Force re-translate all strings")
+    parser.add_argument("-h", "--help", action="store_true", help="Show help message")
     args = parser.parse_args()
+
+    if args.help or not args.commands or (len(args.commands) == 1 and args.commands[0] == "help"):
+        cmd_help()
+        return 0
+
+    # Validate commands
+    valid_commands = {*COMMANDS.keys(), "all", "help"}
+    for cmd in args.commands:
+        if cmd not in valid_commands and cmd not in load_languages():
+            print(f"Error: Unknown command '{cmd}'")
+            print(f"Valid commands: {', '.join(sorted(valid_commands))}")
+            return 1
 
     # Clear log at every start
     log_path = ROOT / "logs" / "ai_proxy.log"
     log_path.parent.mkdir(parents=True, exist_ok=True)
     from datetime import datetime, timezone
     with open(log_path, "w", encoding="utf-8") as f:
-        f.write(f"--- SESSION: {args.command} | {datetime.now(timezone.utc).isoformat()} ---\n")
+        f.write(f"--- SESSION: {' '.join(args.commands)} | {datetime.now(timezone.utc).isoformat()} ---\n")
 
-    if args.command == "all":
-        cmd_all()
-    elif args.command == "clear":
-        if not args.lang:
-            print("Error: 'clear' command requires a language code (e.g., 'ua')")
-            sys.exit(1)
-        cmd_clear(args.lang)
-    else:
-        COMMANDS[args.command]()
+    # Execute commands sequentially
+    for i, cmd in enumerate(args.commands):
+        if len(args.commands) > 1:
+            print(f"\n{'='*60}\n  STEP {i+1}/{len(args.commands)}: {cmd}\n{'='*60}")
+
+        if cmd == "all":
+            cmd_all()
+        elif cmd == "clear":
+            # For clear command, next argument should be language code
+            if i + 1 >= len(args.commands):
+                print("Error: 'clear' command requires a language code (e.g., 'ua')")
+                return 1
+            lang_code = args.commands[i + 1]
+            cmd_clear(lang_code)
+            # Skip next argument as it was the language code
+            args.commands[i + 1] = None
+        elif cmd is None:
+            # Skip (was consumed as language code for clear)
+            continue
+        else:
+            COMMANDS[cmd]()
+
     return 0
 
 

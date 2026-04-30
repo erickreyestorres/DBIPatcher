@@ -349,7 +349,7 @@ Daybreak.nro не найден,Daybreak.nro not found
 Всего записей: {},Total entries: {}
 Всего отослано: {} ({}/сек),Total sent: {} ({}/sec)
 Всего программ: {},Total titles: {}
-Вставить,Insert
+Вставить,Paste
 Вставка...,Inserting...
 Всё время. Всего: {} час,All time. Total: {} hours
 Всё время. Всего: {} часа,All time. Total: {} hours
@@ -1229,3 +1229,4 @@ TitleId : {} BID: {},TitleId  : {} BID: {}
 "Meta SDK: {},  Program SDK: {}","Meta SDK : {},  Program SDK: {}"
 "Внимание!!! Включение следующих опций приведет к тому,",Warning!!! Enabling the following options will result in
 что установленные NCA файлы будут отличаться от исходных:,that installed NCA files will differ from the originals:
+Включение синхронизации времени по сети...,Enabling network time synchronization…

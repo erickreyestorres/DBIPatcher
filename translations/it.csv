@@ -1229,3 +1229,4 @@ TitleId : {} BID: {},TitleId      : {} BID: {}
 "Meta SDK: {},  Program SDK: {}","Meta SDK     : {},  Program SDK: {}"
 "Внимание!!! Включение следующих опций приведет к тому,",Attenzione!!! Abilitare le seguenti opzioni portera a
 что установленные NCA файлы будут отличаться от исходных:,che i file NCA installati differiranno dagli originali:
+Включение синхронизации времени по сети...,Abilitazione sincronizzazione ora di rete…

@@ -1229,3 +1229,4 @@ TitleId : {} BID: {},TitleId     : {} BID: {}
 "Meta SDK: {},  Program SDK: {}","Meta SDK    : {},  Program SDK: {}"
 "Внимание!!! Включение следующих опций приведет к тому,","Dėmesio!!! Įjungus šias parinktis,"
 что установленные NCA файлы будут отличаться от исходных:,kad įdiegti NCA failai skirsis nuo originalių:
+Включение синхронизации времени по сети...,Įjungiamas tinklo laiko sinchronizavimas…

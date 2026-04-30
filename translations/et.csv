@@ -1229,3 +1229,4 @@ TitleId : {} BID: {},TitleId    : {} BID: {}
 "Meta SDK: {},  Program SDK: {}","Meta SDK   : {},  Program SDK: {}"
 "Внимание!!! Включение следующих опций приведет к тому,","Hoiatus!!! Jargmiste valikute lubamine toob kaasa selle,"
 что установленные NCA файлы будут отличаться от исходных:,et paigaldatud NCA failid erinevad originaalidest:
+Включение синхронизации времени по сети...,Võrguaja sünkroniseerimise lubamine…
