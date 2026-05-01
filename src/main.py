@@ -1139,7 +1139,7 @@ This release provides high-quality translations for **DBI version {dbi_ver}**.
     print(f"  [GH] Checking if release {dbi_ver} exists...")
     check_tag = subprocess.run(["gh", "release", "view", dbi_ver], capture_output=True, text=True, encoding="utf-8")
 
-    assets = [str(a) for a in Path("output").glob("*.bin")]
+    assets = [str(a) for a in Path("output").glob("translation_*.bin")]
 
     # Get the patched NRO for release and rename it for the asset upload
     patched_nro = get_patched_nro_path()
