@@ -39,10 +39,9 @@ An advanced, AI-powered localization engine for [DBI](https://github.com/rashevs
 ## 📥 Installation
 
 1. Go to the [Latest Release](https://github.com/rashevskyv/DBIPatcher/releases/latest).
-2. Download the `translation_XX.bin` for your language.
-3. **Rename** it to `translation.bin`.
-4. Place it in the same folder as `DBI.nro` on your SD card (usually `/switch/DBI/`).
-5. *Note: We now provide the official `DBI.nro` in our assets for your convenience.*
+2. Download the compatible **`DBI.nro`** and the `translation_XX.bin` for your language.
+3. **Rename** the translation file to `translation.bin` (it must be exactly this name).
+4. Place both files (`DBI.nro` and `translation.bin`) in the same folder on your SD card (usually `/switch/DBI/`).
 
 > [!CAUTION]
 > These translations are **strictly compatible only with the version of DBI provided in the release assets**. Using them with other versions of DBI may lead to layout issues or crashes.

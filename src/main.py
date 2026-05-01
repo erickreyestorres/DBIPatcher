@@ -1122,13 +1122,13 @@ This release provides high-quality translations for **DBI version {dbi_ver}**.
 ***
 
 ### 🛠️ Installation Instruction
-1. Download **`DBI.nro`** from this release.
+1. Download **`DBI.nro`** (Patched/Compatible version) from this release.
 2. Download the **`translation_XX.bin`** file for your desired language.
 3. **Rename** the translation file to exactly `translation.bin`.
 4. Place both `DBI.nro` and `translation.bin` into the `/switch/DBI/` folder on your SD card.
 
 ***
-*Official DBI source and changelog: [rashevskyv/dbi](https://github.com/rashevskyv/dbi/releases/tag/{dbi_ver}ru)*
+*Note: This NRO is a modified version of the [original DBI](https://github.com/rashevskyv/dbi/releases/tag/{dbi_ver}ru) optimized for these translations.*
 """
     
     body_path = Path("scratch/release_body.md")
@@ -1153,8 +1153,15 @@ This release provides high-quality translations for **DBI version {dbi_ver}**.
         print(f"  [WARN] No patched NRO found to include in release")
 
     if check_tag.returncode == 0:
-        # Release exists - update assets
-        print(f"  [GH] Release {dbi_ver} exists, updating assets...")
+        # Release exists - update assets and notes
+        print(f"  [GH] Release {dbi_ver} exists, updating assets and notes...")
+
+        # Update release notes
+        try:
+            subprocess.run(["gh", "release", "edit", dbi_ver, "--notes-file", str(body_path)], check=True)
+            print(f"  [GH] Release notes updated for {dbi_ver}")
+        except subprocess.CalledProcessError as e:
+            print(f"  [ERROR] Failed to update release notes: {e}")
 
         # Upload all assets with --clobber to overwrite existing files
         upload_cmd = ["gh", "release", "upload", dbi_ver, "--clobber"]
