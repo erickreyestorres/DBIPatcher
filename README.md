@@ -1,76 +1,94 @@
-# DBI Patcher
+# 💎 DBI Patcher: Universal Localization
 
-Automated translation system for [DBI](https://github.com/rashevskyv/dbi) - a Nintendo Switch homebrew application.
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/rashevskyv/DBIPatcher)](https://github.com/rashevskyv/DBIPatcher/releases)
+[![GitHub downloads](https://img.shields.io/github/downloads/rashevskyv/DBIPatcher/total)](https://github.com/rashevskyv/DBIPatcher/releases)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Authors
+An advanced, AI-powered localization engine for [DBI](https://github.com/rashevskyv/dbi) — the ultimate Nintendo Switch homebrew tool. This project provides high-quality translations for 22+ languages, ensuring that every Switch user can enjoy DBI in their native tongue.
 
-- **DBI**: duckbill
-- **Translation Script**: tg:@buinich_bohdan
+---
 
-## Notes from Bohdan
+## 🌟 Features
 
-> Didn't have to calculate a single XOR manually - the program has 2100 real XORs and 1000 fake ones for obfuscation.
+- **🤖 AI-Powered Precision**: Uses **Claude 3.5 Sonnet** to provide context-aware, literary-grade translations.
+- **🌍 22+ Languages**: Comprehensive support from Ukrainian to Japanese, with automatic English fallbacks.
+- **📏 Visual Perfection**: Smart alignment engine that ensures colons and brackets match the original UI layout.
+- **✅ Strict Validation**: Automated checks for token preservation (`[[LF]]`, `[[TAB]]`), bracket balance, and placeholder integrity.
+- **🚀 One-Click Deploy**: Fully automated pipeline from translation to GitHub Release.
 
-**Not translated:**
-- Shadok fable strings (satirical text blocks)
-- In-game language names displayed in DBI settings
+---
 
-## Features
+## 🛠️ Supported Languages
 
-- Automated translation for 22 languages using Claude Opus 4.5
-- Smart formatting with automatic alignment and validation
+| Code | Language | Code | Language |
+| :--- | :--- | :--- | :--- |
+| **UA** | Ukrainian | **EN** | English (US) |
+| **BE** | Belarusian | **ENGB** | English (UK) |
+| **PL** | Polish | **DE** | German |
+| **FR** | French | **FRCA** | French (Canada) |
+| **IT** | Italian | **ES** | Spanish (Spain) |
+| **JP** | Japanese | **ES419** | Spanish (Latin America) |
+| **KR** | Korean | **PT** | Portuguese (Portugal) |
+| **ZHCN** | Simplified Chinese | **PTBR** | Portuguese (Brazil) |
+| **ZHTW** | Traditional Chinese | **NL** | Dutch |
+| **KK** | Kazakh | **ET** | Estonian |
+| **LT** | Lithuanian | **LV** | Latvian |
 
-## Supported Languages
+---
 
-BE (Belarusian), DE (German), EN (English US), ENGB (English UK), ES (Spanish Spain), ES419 (Spanish Latin America), ET (Estonian), FR (French), FRCA (French Canada), IT (Italian), JP (Japanese), KK (Kazakh), KR (Korean), LT (Lithuanian), LV (Latvian), NL (Dutch), PL (Polish), PT (Portuguese Portugal), PTBR (Portuguese Brazil), UA (Ukrainian), ZHCN (Chinese Simplified), ZHTW (Chinese Traditional)
+## 📥 Installation
 
-## Adding a New Language
+1. Go to the [Latest Release](https://github.com/rashevskyv/DBIPatcher/releases/latest).
+2. Download the `translation_XX.bin` for your language.
+3. **Rename** it to `translation.bin`.
+4. Place it in the same folder as `DBI.nro` on your SD card (usually `/switch/DBI/`).
+5. *Note: We now provide the official `DBI.nro` in our assets for your convenience.*
 
-To add support for a new language:
+> [!CAUTION]
+> These translations are **strictly compatible only with the version of DBI provided in the release assets**. Using them with other versions of DBI may lead to layout issues or crashes.
 
-1. **Option 1**: Open an [issue](https://github.com/rashevskyv/DBIPatcher/issues) requesting the language
-2. **Option 2**: Add the language code to `data/languages.json` and submit a pull request
+---
 
-## Fixing Translations
+## 🏗️ For Developers: Pipeline Usage
 
-To fix or improve existing translations:
-
-1. Fork this repository
-2. Edit the translation file for your language in `translations/` directory (e.g., `translations/en.csv`)
-3. Commit your changes
-4. Submit a pull request
-
-## Usage
+If you want to run the patcher locally:
 
 ### Prerequisites
 - Python 3.12+
-- `openpyxl`, `requests`
+- GitHub CLI (`gh`) for deployment
+- Access to Claude 3.5 API (via proxy)
 
 ### Commands
-
-```bash
-# Run full pipeline (sync, translate, align, validate, export, build, dist)
+```powershell
+# Run the full test cycle (sync, translate, align, validate, build)
 python -m src.main test
 
-# Deploy to GitHub (creates release with assets)
+# Deploy a new version (Commit, Push, GitHub Release)
 python -m src.main deploy
 
-# Run individual steps
-python -m src.main sync       # Sync dictionary with source CSVs
-python -m src.main translate  # Translate missing strings
-python -m src.main align      # Align text formatting
-python -m src.main validate   # Validate translations
-python -m src.main export     # Export to CSV files
-python -m src.main build      # Build binary files
-python -m src.main dist       # Create distribution packages
+# Individual steps
+python -m src.main sync       # Update dictionary from source CSVs
+python -m src.main translate  # Run AI translation for new strings
+python -m src.main align      # Fix UI alignment for specific blocks
+python -m src.main validate   # Verify data integrity
+python -m src.main build      # Generate binary .bin files
 ```
 
-## Installation on Nintendo Switch
+---
 
-1. Download the `translation_XX.bin` file for your language from [releases](https://github.com/rashevskyv/DBIPatcher/releases)
-2. Rename the file to `translation.bin`
-3. Place `translation.bin` in the same folder as your `DBI.nro`
+## 🤝 Contributing
 
-## Official DBI Releases
+Translations are stored in the `translations/` directory as CSV files. To improve a translation:
+1. Fork the repo.
+2. Edit the `.csv` for your language.
+3. Submit a Pull Request!
 
-Official Russian versions of DBI are available at: https://github.com/rashevskyv/dbi/releases/
+---
+
+## 📜 Credits
+
+- **DBI Creator**: [duckbill](https://github.com/rashevskyv/dbi)
+- **Localization Engine**: [tg:@buinich_bohdan](https://github.com/rashevskyv)
+- **Special Thanks**: Claude 3.5 Sonnet for the heavy lifting.
+
+> *Created with ❤️ for the Switch community.*

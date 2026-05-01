@@ -1108,20 +1108,27 @@ def cmd_deploy() -> None:
 *   **ZHCN** — Chinese (Simplified)
 *   **ZHTW** — Chinese (Traditional)"""
 
-    release_body = f"""![GitHub release (tag)](https://img.shields.io/github/downloads/rashevskyv/DBIPatcher/{dbi_ver}/total)
+    release_body = f"""### 🌍 DBI Multilingual Localization (v{patcher_ver})
+![GitHub release (tag)](https://img.shields.io/github/downloads/rashevskyv/DBIPatcher/{dbi_ver}/total)
 
+This release provides high-quality translations for **DBI version {dbi_ver}**.
+
+> [!IMPORTANT]
+> This translation is **strictly compatible only with the DBI.nro version provided in this release**. Do not use it with other versions of DBI as it may cause UI glitches or crashes.
+
+### 📦 Supported Languages
 {langs_list}
 
 ***
 
-### ⚠️ IMPORTANT: Installation Instruction
-To use the translation on your Nintendo Switch:
-1. Download the `translation_XX.bin` file for your language from the assets below.
-2. **Rename the file to `translation.bin`** (it must be exactly this name).
-3. Place `translation.bin` in the same folder where your **DBI.nro** is located.
+### 🛠️ Installation Instruction
+1. Download **`DBI.nro`** from this release.
+2. Download the **`translation_XX.bin`** file for your desired language.
+3. **Rename** the translation file to exactly `translation.bin`.
+4. Place both `DBI.nro` and `translation.bin` into the `/switch/DBI/` folder on your SD card.
 
 ***
-Check the changelog at [https://github.com/rashevskyv/dbi/releases/](https://github.com/rashevskyv/dbi/releases/).
+*Official DBI source and changelog: [rashevskyv/dbi](https://github.com/rashevskyv/dbi/releases/tag/{dbi_ver}ru)*
 """
     
     body_path = Path("scratch/release_body.md")
@@ -1134,12 +1141,14 @@ Check the changelog at [https://github.com/rashevskyv/dbi/releases/](https://git
 
     assets = [str(a) for a in Path("output").glob("*.bin")]
 
-    # Get the patched NRO for release
+    # Get the patched NRO for release and rename it for the asset upload
     patched_nro = get_patched_nro_path()
-    nro_assets = [str(patched_nro)] if patched_nro else []
-
+    nro_assets = []
     if patched_nro:
-        print(f"  [GH] Including NRO asset: {patched_nro.name}")
+        print(f"  [GH] Preparing NRO asset: {patched_nro.name} -> DBI.nro")
+        release_nro = Path("scratch/DBI.nro")
+        shutil.copy2(patched_nro, release_nro)
+        nro_assets = [str(release_nro)]
     else:
         print(f"  [WARN] No patched NRO found to include in release")
 
