@@ -1230,3 +1230,8 @@ TitleId : {} BID: {},TitleId  : {} BID: {}
 "Внимание!!! Включение следующих опций приведет к тому,",Warning!!! Enabling the following options will result in
 что установленные NCA файлы будут отличаться от исходных:,that installed NCA files will differ from the originals:
 Включение синхронизации времени по сети...,Enabling network time synchronisation…
+ Да ,Yes 
+Нет , No 
+Это действие будет нельзя отменить,This action cannot be undone
+Да,Yes
+Произошла ошибка: ,An error occurred: 

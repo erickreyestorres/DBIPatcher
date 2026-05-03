@@ -1230,3 +1230,8 @@ TitleId : {} BID: {},TitleId     : {} BID: {}
 "Внимание!!! Включение следующих опций приведет к тому,","Dėmesio!!! Įjungus šias parinktis,"
 что установленные NCA файлы будут отличаться от исходных:,kad įdiegti NCA failai skirsis nuo originalių:
 Включение синхронизации времени по сети...,Įjungiamas tinklo laiko sinchronizavimas…
+ Да ,Taip
+Нет , Ne 
+Это действие будет нельзя отменить,Šio veiksmo negalima atšaukti
+Да,Taip
+Произошла ошибка: ,Įvyko klaida: 

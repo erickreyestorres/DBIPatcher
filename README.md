@@ -77,7 +77,7 @@ python -m src.main build      # Generate binary .bin files
 
 ## ⚠️ Known Issues
 
-- **Hardcoded Strings**: Some interface elements are hardcoded within the DBI binary and cannot be localized via `translation.bin`. For example, confirmation prompts may still display in Russian: **Да** (Yes) and **Нет** (No).
+- ~~**Hardcoded Strings**: Some interface elements are hardcoded within the DBI binary and cannot be localized via `translation.bin`. For example, confirmation prompts may still display in Russian: **Да** (Yes) and **Нет** (No).~~ ✅ Fixed!
 - **Shadok Fables**: Satirical text blocks and stories (Shadok fables) remain in their original form.
 - **System Language Names**: Names of languages in the DBI settings menu are hardcoded in the binary.
 

@@ -1230,3 +1230,8 @@ TitleId : {} BID: {},TitleId      : {} BID: {}
 "Внимание!!! Включение следующих опций приведет к тому,",Attenzione!!! Abilitare le seguenti opzioni portera a
 что установленные NCA файлы будут отличаться от исходных:,che i file NCA installati differiranno dagli originali:
 Включение синхронизации времени по сети...,Abilitazione sincronizzazione ora di rete…
+ Да , Sì 
+Нет , No 
+Это действие будет нельзя отменить,Questa azione non può essere annullata
+Да,Sì
+Произошла ошибка: ,Si è verificato un errore: 

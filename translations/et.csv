@@ -1230,3 +1230,8 @@ TitleId : {} BID: {},TitleId    : {} BID: {}
 "Внимание!!! Включение следующих опций приведет к тому,","Hoiatus!!! Jargmiste valikute lubamine toob kaasa selle,"
 что установленные NCA файлы будут отличаться от исходных:,et paigaldatud NCA failid erinevad originaalidest:
 Включение синхронизации времени по сети...,Võrguaja sünkroniseerimise lubamine…
+ Да ,Jah 
+Нет , Ei 
+Это действие будет нельзя отменить,Seda tegevust ei saa tagasi võtta
+Да,Jah
+Произошла ошибка: ,Ilmnes viga: 

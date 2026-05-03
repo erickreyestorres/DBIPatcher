@@ -70,9 +70,11 @@ def get_nro_version() -> str | None:
     Returns the highest version number found from *_patched.nro files."""
     import re as _re
     versions = []
-    for nro_file in ROOT.glob("DBI.*_patched.nro"):
+    for nro_file in ROOT.glob("DBI.*.nro"):
+        if "debug" in nro_file.name.lower():
+            continue
         match = _re.search(r'DBI\.(\d+)\.', nro_file.name)
-        if match:
+        if match and nro_file.name.endswith("_patched.nro"):
             versions.append(int(match.group(1)))
 
     if versions:
@@ -83,7 +85,7 @@ def get_nro_version() -> str | None:
 def get_patched_nro_path() -> Path | None:
     """Get the path to the latest patched NRO file."""
     import re as _re
-    nro_files = list(ROOT.glob("DBI.*_patched.nro"))
+    nro_files = [f for f in ROOT.glob("DBI.*.nro") if f.name.endswith("_patched.nro") and "debug" not in f.name.lower()]
     if not nro_files:
         return None
 
@@ -305,8 +307,8 @@ def cmd_translate() -> None:
     
     for row in range(2, ws.max_row + 1):
         original_val = str(ws.cell(row, col_map["Original"]).value or "")
-        key = original_val.strip()
-        if not key:
+        key = original_val  # Use exact string — spaces are significant
+        if not key.strip():
             continue
             
         # Count translated languages
@@ -810,7 +812,17 @@ def cmd_dist() -> None:
     langs = load_languages()
 
     if DIST_DIR.exists():
-        shutil.rmtree(DIST_DIR)
+        for attempt in range(5):
+            try:
+                shutil.rmtree(DIST_DIR)
+                break
+            except PermissionError:
+                if attempt < 4:
+                    print(f"  [!] dist/ is locked. Retrying in 2s... ({attempt + 1}/5)")
+                    time.sleep(2)
+                else:
+                    print("  [CRITICAL] Could not clean dist/ — close Explorer or other programs using it.")
+                    raise
     DIST_DIR.mkdir(parents=True)
 
     # Find the latest patched DBI NRO file
@@ -894,6 +906,33 @@ def cmd_align() -> None:
     # Process each block
     for bid, matched_rows in grouped_data.items():
         print(f"  Aligning block: {bid:<25} (Rows: {len(matched_rows)})")
+
+        # Special handling for NSP_INSTALL_ANSWERS: pad to exactly 4 chars
+        if bid == "NSP_INSTALL_ANSWERS":
+            for lc, col_idx in lang_cols.items():
+                for row_idx in matched_rows:
+                    val = ws.cell(row_idx, col_idx).value
+                    if not val:
+                        continue
+                    val_str = str(val)
+                    stripped = val_str.strip()
+                    char_count = len(stripped)
+
+                    if char_count >= 4:
+                        new_val = stripped[:4]
+                    elif char_count == 3:
+                        new_val = stripped + " "
+                    elif char_count == 2:
+                        new_val = " " + stripped + " "
+                    elif char_count == 1:
+                        new_val = " " + stripped + "  "
+                    else:
+                        new_val = "    "
+
+                    if new_val != val_str:
+                        ws.cell(row_idx, col_idx, new_val)
+                        affected_count += 1
+            continue
 
         # Special handling for TITLE_INFO block with double-colon strings
         is_title_info = (bid == "TITLE_INFO")
@@ -1128,7 +1167,7 @@ This release provides high-quality translations for **DBI version {dbi_ver}**.
 4. Place both `DBI.nro` and `translation.bin` into the `/switch/DBI/` folder on your SD card.
 
 ### ⚠️ Known Issues
-- **Hardcoded Strings**: Some interface elements are hardcoded within the DBI binary and cannot be localized via `translation.bin`. Confirmation prompts may still display in Russian: **Да** (Yes) and **Нет** (No).
+- ~~**Hardcoded Strings**: Some interface elements are hardcoded within the DBI binary and cannot be localized via `translation.bin`. Confirmation prompts may still display in Russian: **Да** (Yes) and **Нет** (No).~~ ✅ Fixed!
 - **Shadok Fables**: Satirical text blocks and stories (Shadok fables) remain in their original form.
 - **System Language Names**: Names of languages in the DBI settings menu are hardcoded in the binary.
 
@@ -1160,6 +1199,39 @@ This release provides high-quality translations for **DBI version {dbi_ver}**.
     if check_tag.returncode == 0:
         # Release exists - update assets and notes
         print(f"  [GH] Release {dbi_ver} exists, updating assets and notes...")
+
+        # Detect if NRO changed by comparing local file size with release asset
+        nro_changed = False
+        if patched_nro and patched_nro.exists():
+            local_nro_size = patched_nro.stat().st_size
+            asset_info = subprocess.run(
+                ["gh", "release", "view", dbi_ver, "--json", "assets", "-q", ".assets[] | select(.name==\"DBI.nro\") | .size"],
+                capture_output=True, text=True, encoding="utf-8"
+            )
+            remote_nro_size = int(asset_info.stdout.strip()) if asset_info.stdout.strip().isdigit() else 0
+            if remote_nro_size != local_nro_size:
+                nro_changed = True
+                print(f"  [GH] NRO changed: remote={remote_nro_size} vs local={local_nro_size}")
+
+        # Add update notice to release body
+        from datetime import datetime, timezone, timedelta
+        kyiv_tz = timezone(timedelta(hours=3))
+        kyiv_time = datetime.now(kyiv_tz).strftime("%Y-%m-%d %H:%M")
+
+        redownload_items = "**translation files**"
+        if nro_changed:
+            redownload_items = "**DBI.nro** and **translation files**"
+
+        update_notice = f"""> [!WARNING]
+> 🔄 **Release updated on {kyiv_time} (Kyiv time).** Please re-download {redownload_items} to get the latest version.
+"""
+        # Insert update notice after the badge line
+        badge_line = f"![GitHub release (tag)](https://img.shields.io/github/downloads/rashevskyv/DBIPatcher/{dbi_ver}/total)"
+        release_body = release_body.replace(
+            badge_line,
+            badge_line + "\n\n" + update_notice
+        )
+        body_path.write_text(release_body, encoding="utf-8")
 
         # Update release notes
         try:
