@@ -1169,7 +1169,7 @@ This release provides high-quality translations for **DBI version {dbi_ver}**.
 ### ⚠️ Known Issues
 - ~~**Hardcoded Strings**: Some interface elements are hardcoded within the DBI binary and cannot be localized via `translation.bin`. Confirmation prompts may still display in Russian: **Да** (Yes) and **Нет** (No).~~ ✅ Fixed!
 - **Shadok Fables**: Satirical text blocks and stories (Shadok fables) remain in their original form.
-- **System Language Names**: Names of languages in the DBI settings menu are hardcoded in the binary.
+- ~~**System Language Names**: Names of languages in the DBI settings menu are hardcoded in the binary.~~ ✅ Fixed!
 
 ***
 *Note: This NRO is a modified version of the [original DBI](https://github.com/rashevskyv/dbi/releases/tag/{dbi_ver}ru) optimized for these translations.*
