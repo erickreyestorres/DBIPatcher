@@ -628,7 +628,10 @@ def cmd_validate() -> None:
             if lc not in col_map or lc == "ru":
                 continue
             translation = ws.cell(row, col_map[lc]).value
-            if not translation:
+            if translation is None or not str(translation).strip():
+                errors += 1
+                print(f"  [Row {row}][{lc}] Error:")
+                print("    - Translation is empty")
                 continue
             
             checked += 1
@@ -660,6 +663,8 @@ def cmd_validate() -> None:
             print("--- Block regex checks: all OK ---")
 
     print(f"\nValidation complete. Total issues: {errors}")
+    if errors:
+        raise SystemExit(1)
 
 
 # ── export ───────────────────────────────────────────────────────────
