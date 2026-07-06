@@ -29,6 +29,9 @@ jobs:
       - name: Run ES-419 quality checks
         run: python -m unittest discover -s tests -v
 
+      - name: Verify master dictionary synchronization
+        run: python scripts/import_translation_csv.py es419 --check
+
       - name: Build ES-419 translation
         run: >-
           python scripts/build_translation_bin.py

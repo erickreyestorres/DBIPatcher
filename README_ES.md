@@ -77,6 +77,9 @@ python -m unittest discover -s tests -v
 
 # Generar solamente la traducción ES-419
 python scripts/build_translation_bin.py translations/es419.csv -o output/translation_es419.bin
+
+# Sincronizar el CSV ES-419 revisado con el diccionario maestro
+python scripts/import_translation_csv.py es419
 ```
 
 ### Comandos principales

@@ -30,6 +30,10 @@ import openpyxl
 from src.core.text_utils import tokenize, detokenize, normalize_tokens_out, visual_length, normalize_fullwidth
 from src.core.validator import validate
 from src.core.ai_client import translate_batch, refine, init_session, init_session_shadok, translate_shadok_block
+from src.core.errors import (
+    DBIPatcherError, ConfigurationError, DataValidationError,
+    check_file_exists, check_file_readable, check_dependencies, handle_command_error
+)
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -1382,6 +1386,45 @@ def cmd_help() -> None:
     print("="*60 + "\n")
 
 
+def check_prerequisites(commands: list[str]) -> None:
+    """Validate prerequisites based on commands to be executed.
+    
+    Args:
+        commands: List of commands that will be executed
+        
+    Raises:
+        ConfigurationError: If any prerequisite check fails
+    """
+    from src.core.ai_client import PROVIDER
+    
+    # Always check Python dependencies
+    try:
+        check_dependencies()
+    except ConfigurationError as e:
+        raise e
+    
+    # Check for data files if any data-reading command is run
+    if any(cmd in commands for cmd in ["validate", "translate", "export", "build", "all", "test", "check"]):
+        check_file_readable(LANG_JSON, "Language configuration")
+        check_file_readable(BLOCK_JSON, "Block configuration")
+    
+    # Check for UA CSV if sync is run
+    if any(cmd in commands for cmd in ["sync", "all", "test"]):
+        check_file_readable(UA_CSV, "Source Ukrainian CSV")
+    
+    # Check for AI service if translate is run
+    if any(cmd in commands for cmd in ["translate", "all", "test"]):
+        try:
+            from src.core.ai_client import PROVIDER
+            # Don't validate AI service during init - user will get error during translate
+            # if service is down. This allows other commands to work offline.
+        except Exception:
+            pass
+
+
+
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="DBI Translation Pipeline", add_help=False)
     parser.add_argument("commands", nargs="*", help="Pipeline steps to run")
@@ -1392,6 +1435,13 @@ def main() -> int:
     if args.help or not args.commands or (len(args.commands) == 1 and args.commands[0] == "help"):
         cmd_help()
         return 0
+
+    # Check prerequisites before running any commands
+    try:
+        check_prerequisites(args.commands)
+    except ConfigurationError as e:
+        print(str(e))
+        return 1
 
     # Validate commands
     valid_commands = {*COMMANDS.keys(), "all", "help"}
@@ -1408,27 +1458,36 @@ def main() -> int:
     with open(log_path, "w", encoding="utf-8") as f:
         f.write(f"--- SESSION: {' '.join(args.commands)} | {datetime.now(timezone.utc).isoformat()} ---\n")
 
-    # Execute commands sequentially
+    # Execute commands sequentially with error handling
     for i, cmd in enumerate(args.commands):
         if len(args.commands) > 1:
             print(f"\n{'='*60}\n  STEP {i+1}/{len(args.commands)}: {cmd}\n{'='*60}")
 
-        if cmd == "all":
-            cmd_all()
-        elif cmd == "clear":
-            # For clear command, next argument should be language code
-            if i + 1 >= len(args.commands):
-                print("Error: 'clear' command requires a language code (e.g., 'ua')")
-                return 1
-            lang_code = args.commands[i + 1]
-            cmd_clear(lang_code)
-            # Skip next argument as it was the language code
-            args.commands[i + 1] = None
-        elif cmd is None:
-            # Skip (was consumed as language code for clear)
-            continue
-        else:
-            COMMANDS[cmd]()
+        try:
+            if cmd == "all":
+                cmd_all()
+            elif cmd == "clear":
+                # For clear command, next argument should be language code
+                if i + 1 >= len(args.commands):
+                    print("Error: 'clear' command requires a language code (e.g., 'ua')")
+                    return 1
+                lang_code = args.commands[i + 1]
+                cmd_clear(lang_code)
+                # Skip next argument as it was the language code
+                args.commands[i + 1] = None
+            elif cmd is None:
+                # Skip (was consumed as language code for clear)
+                continue
+            else:
+                COMMANDS[cmd]()
+        except DBIPatcherError as e:
+            handle_command_error(cmd, e)
+            return 1
+        except Exception as e:
+            handle_command_error(cmd, DBIPatcherError(f"Unexpected error: {e}"))
+            import traceback
+            traceback.print_exc()
+            return 1
 
     return 0
 

@@ -74,6 +74,9 @@ python -m unittest discover -s tests -v
 
 # Build only the ES-419 translation
 python scripts/build_translation_bin.py translations/es419.csv -o output/translation_es419.bin
+
+# Synchronize reviewed ES-419 strings with the master dictionary
+python scripts/import_translation_csv.py es419
 ```
 
 ### Commands

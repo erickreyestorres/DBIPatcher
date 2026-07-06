@@ -20,7 +20,7 @@ ejecución.
 | Press a button | Presiona | Pulsa, Oprime |
 | Backup (interfaz) | Respaldo | Copia, Backup |
 | Restore | Restaurar | Recuperar |
-| Save data | Datos guardados | Saves |
+| Save data | Datos de guardado | Saves, partidas guardadas |
 | Storage | Almacenamiento | Depósito |
 | File browser | Explorador de archivos | Navegador de archivos |
 | Dump (acción técnica) | Volcar | Dumpear |

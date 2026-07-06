@@ -9,6 +9,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
+from openpyxl import load_workbook
+
 
 ROOT = Path(__file__).resolve().parents[1]
 ES_CSV = ROOT / "translations" / "es.csv"
@@ -17,6 +19,7 @@ ES419_CSV = ROOT / "translations" / "es419.csv"
 sys.path.insert(0, str(ROOT))
 
 from src.core.validator import Validator  # noqa: E402
+from src.core.text_utils import tokenize  # noqa: E402
 
 
 EXPECTED_HEADERS = ["original", "translation"]
@@ -87,11 +90,53 @@ class Es419TranslationTests(unittest.TestCase):
         ]
         self.assertEqual(broken, [])
 
+    def test_preferred_es419_terminology(self) -> None:
+        forbidden = {
+            r"\bajustes?\b": "Configuración",
+            r"\bpulsa\b": "Presiona",
+            r"\bcopias? de seguridad\b": "Respaldo",
+            r"\bpartidas? guardadas?\b": "Datos de guardado",
+            r"\bsticks?\b": "Palancas",
+            r"\blanzar\b": "Iniciar",
+            r"\bborrando\b": "Eliminando",
+        }
+        errors = []
+        for index, row in enumerate(self.rows, start=2):
+            for pattern, preferred in forbidden.items():
+                if re.search(pattern, row["translation"], re.IGNORECASE):
+                    errors.append(
+                        f"row {index}: use {preferred!r} instead of "
+                        f"{row['translation']!r}"
+                    )
+        self.assertEqual(errors, [], "\n".join(errors))
+
     def test_language_code_is_es419(self) -> None:
         translations_by_source = {
             row["original"]: row["translation"] for row in self.rows
         }
         self.assertEqual(translations_by_source.get("ru"), "es419")
+
+    def test_master_dictionary_matches_es419_csv(self) -> None:
+        workbook = load_workbook(
+            ROOT / "data" / "dictionary.xlsx", read_only=True, data_only=False
+        )
+        sheet = workbook["Translations"]
+        workbook_rows = sheet.iter_rows(values_only=True)
+        headers = list(next(workbook_rows))
+        original_column = headers.index("Original")
+        es419_column = headers.index("es419")
+        dictionary = {}
+        for row in workbook_rows:
+            original = row[original_column]
+            if original:
+                dictionary[str(original)] = str(row[es419_column] or "")
+        workbook.close()
+
+        csv_values = {
+            tokenize(row["original"]): tokenize(row["translation"])
+            for row in self.rows
+        }
+        self.assertEqual(csv_values, dictionary)
 
     def test_binary_builder_produces_a_valid_table(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
